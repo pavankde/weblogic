@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<weblogic-web-app xmlns="http://xmlns.oracle.com/weblogic/weblogic-web-app" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.oracle.com/weblogic/weblogic-web-app http://xmlns.oracle.com/weblogic/weblogic-web-app/1.6/weblogic-web-app.xsd">
+  <session-descriptor>
+    <timeout-secs>3600</timeout-secs>
+    <invalidation-interval-secs>60</invalidation-interval-secs>
+    <cookie-name>ADMINCONSOLESESSION</cookie-name>
+    <cookie-max-age-secs>-1</cookie-max-age-secs>
+  </session-descriptor>
+  <jsp-descriptor>
+    <keepgenerated>false</keepgenerated>
+    <page-check-seconds>-1</page-check-seconds>
+    <verbose>true</verbose>
+    <debug>true</debug>
+  </jsp-descriptor>
+  <container-descriptor>
+    <filter-dispatched-requests-enabled>false</filter-dispatched-requests-enabled>
+    <prefer-application-packages>
+      <package-name>org.xmlsoap.schemas.*</package-name>
+    </prefer-application-packages>
+  </container-descriptor>
+  <virtual-directory-mapping>
+    <local-path>virtualdirectory/console-help-html.jar</local-path>
+    <url-pattern>/en-us/*</url-pattern>
+  </virtual-directory-mapping>
+  <virtual-directory-mapping>
+    <local-path>virtualdirectory/console-help-html-l10n.jar</local-path>
+    <url-pattern>/*</url-pattern>
+  </virtual-directory-mapping>
+  <security-permission>
+    <security-permission-spec>grant { permission java.security.AllPermission ; } ;</security-permission-spec>
+  </security-permission>
+</weblogic-web-app>
+
+

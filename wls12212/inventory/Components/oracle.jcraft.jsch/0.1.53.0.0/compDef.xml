@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.jcraft.jsch" version="0.1.53.0.0" description="Java implementation of SSH2" gdr-version="1.8.0.0" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="thirdparty.symbol" source="filegroup1.jar" expanded="true" compacted="true" bootstrap="true">
+      <directory dest="modules" mode="750" patchable="true">
+         <directory dest="com.jcraft" mode="750" patchable="true">
+            <directory dest="jsch" mode="750" patchable="true">
+               <directory dest="0.1.53" mode="750" patchable="true">
+                  <file size="280205" dest="jsch-0.1.53.jar" mode="640" patchable="true" group="com.jcraft" artifact="jsch" version="0.1.53"/>
+               </directory>
+            </directory>
+         </directory>
+      </directory>
+      <file-perms>
+         <permission mode="640" regex=".*" match-dirs="false"/>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+         <permission mode="750" regex=".*\.sh" match-dirs="false"/>
+         <permission mode="750" regex=".*\.cmd" match-dirs="false"/>
+         <permission mode="750" regex=".*\.bat" match-dirs="false"/>
+      </file-perms>
+   </file-map>
+   <libraries>
+      <library name="jcraft_jsch" type="none" suppress-version="true" size="280205">
+         <entry explode="true" include-parent="false" name="modules/com.jcraft/jsch/0.1.53/jsch-0.1.53.jar"/>
+      </library>
+   </libraries>
+</component-def>

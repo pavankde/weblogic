@@ -1,0 +1,163 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.wls.security.core.sharedlib" version="12.2.1.2.0" description="oracle.wls.security.core.sharedlib" gdr-version="1.8.0.0" groupId="com.oracle.weblogic" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="wls.server.symbol" source="filegroup1.jar" expanded="true" compacted="true">
+      <exclude regex="\.ade_path" match-dirs="true"/>
+      <directory dest="" patchable="true">
+         <directory dest="modules" mode="750" patchable="true">
+            <file size="41744" pack="true" dest="com.oracle.weblogic.security.crypto.utils.jar" mode="640"/>
+            <file size="88624" pack="true" dest="com.oracle.weblogic.security.logger.css.jar" mode="640"/>
+            <file size="56235" pack="true" dest="com.oracle.weblogic.security.subject.jar" mode="640"/>
+            <file size="6232" pack="true" dest="com.bea.core.weblogic.security.auth.jar" mode="640"/>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+   <libraries>
+      <library name="oracle.weblogic.security.jps-platform" type="client" visibility="none" size="154741">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.logger.css.jar">
+            <include name="com/bea/common/logger/spi/LoggableMessageSpi.class" match-path="true"/>
+            <include name="com/bea/common/logger/spi/LoggerSpi.class" match-path="true"/>
+            <include name="com/bea/common/security/ApiLogger$LoggableMessageSpiImpl.class" match-path="true"/>
+            <include name="com/bea/common/security/ApiLogger.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.subject.jar">
+            <include name="com/bea/common/security/principal/OPPrincipalConfigurationDelegateImpl.class" match-path="true"/>
+            <include name="weblogic/security/principal/IdentityDomainPrincipal.class" match-path="true"/>
+            <include name="weblogic/security/principal/PrincipalConfigurationDelegate$1.class" match-path="true"/>
+            <include name="weblogic/security/principal/PrincipalConfigurationDelegate.class" match-path="true"/>
+            <include name="weblogic/security/principal/PrincipalFactory.class" match-path="true"/>
+            <include name="weblogic/security/principal/WLSAbstractPrincipal$1.class" match-path="true"/>
+            <include name="weblogic/security/principal/WLSAbstractPrincipal$GetSignatureProperty.class" match-path="true"/>
+            <include name="weblogic/security/principal/WLSAbstractPrincipal.class" match-path="true"/>
+            <include name="weblogic/security/principal/WLSGroupImpl.class" match-path="true"/>
+            <include name="weblogic/security/principal/WLSPrincipal.class" match-path="true"/>
+            <include name="weblogic/security/principal/WLSUserImpl.class" match-path="true"/>
+            <include name="weblogic/security/spi/WLSGroup.class" match-path="true"/>
+            <include name="weblogic/security/spi/WLSUser.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.weblogic.security.auth.jar">
+            <include name="weblogic/security/auth/callback/IdentityDomainGroupCallback.class" match-path="true"/>
+            <include name="weblogic/security/auth/callback/IdentityDomainNames.class" match-path="true"/>
+            <include name="weblogic/security/auth/callback/IdentityDomainUserCallback.class" match-path="true"/>
+         </entry>
+      </library>
+      <library name="wls_common_nodemanager_comp_lib" type="none" visibility="none" size="191345">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.crypto.utils.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.logger.css.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.subject.jar"/>
+      </library>
+      <library name="wlstt3client" type="none" visibility="none" size="198083">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.crypto.utils.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.logger.css.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.subject.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.weblogic.security.auth.jar"/>
+      </library>
+      <library name="wlthint3client" type="client" visibility="none" size="108497">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.crypto.utils.jar">
+            <include name="com/bea/security/utils/random/AbstractRandomData$EntropyConfig$1.class" match-path="true"/>
+            <include name="com/bea/security/utils/random/AbstractRandomData$EntropyConfig.class" match-path="true"/>
+            <include name="com/bea/security/utils/random/AbstractRandomData.class" match-path="true"/>
+            <include name="com/bea/security/utils/random/SecureRandomData.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.subject.jar">
+            <include name="weblogic/security/WLSPrincipals.class" match-path="true"/>
+            <include name="weblogic/security/acl/User.class" match-path="true"/>
+            <include name="weblogic/security/acl/UserInfo.class" match-path="true"/>
+            <include name="weblogic/security/principal/IdentityDomainPrincipal.class" match-path="true"/>
+            <include name="weblogic/security/principal/WLSAbstractPrincipal$1.class" match-path="true"/>
+            <include name="weblogic/security/principal/WLSAbstractPrincipal$GetSignatureProperty.class" match-path="true"/>
+            <include name="weblogic/security/principal/WLSAbstractPrincipal.class" match-path="true"/>
+            <include name="weblogic/security/principal/WLSGroupImpl.class" match-path="true"/>
+            <include name="weblogic/security/principal/WLSPrincipal.class" match-path="true"/>
+            <include name="weblogic/security/principal/WLSUserImpl.class" match-path="true"/>
+            <include name="weblogic/security/spi/WLSGroup.class" match-path="true"/>
+            <include name="weblogic/security/spi/WLSUser.class" match-path="true"/>
+            <include name="weblogic/security/subject/AbstractSubject.class" match-path="true"/>
+            <include name="weblogic/security/subject/SubjectProxy.class" match-path="true"/>
+            <include name="weblogic/security/subject/SubjectStack.class" match-path="true"/>
+            <include name="weblogic/security/subject/SubjectStackDelegate.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.weblogic.security.auth.jar">
+            <include name="weblogic/security/auth/callback/IdentityDomainNames.class" match-path="true"/>
+            <include name="weblogic/security/auth/callback/IdentityDomainNamesEncoder.class" match-path="true"/>
+         </entry>
+      </library>
+      <library name="com.oracle.webservices.wls.jaxws-wlswss-client" type="none" visibility="none" size="198083">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.crypto.utils.jar">
+            <include name="com/bea/common/security/utils/encoders/BASE64Encoder.class" match-path="true"/>
+            <include name="com/bea/common/security/utils/encoders/CharacterEncoder.class" match-path="true"/>
+            <include name="com/bea/security/utils/DigestUtils.class" match-path="true"/>
+            <include name="com/bea/security/utils/random/AbstractRandomData$EntropyConfig$1.class" match-path="true"/>
+            <include name="com/bea/security/utils/random/AbstractRandomData$EntropyConfig.class" match-path="true"/>
+            <include name="com/bea/security/utils/random/AbstractRandomData.class" match-path="true"/>
+            <include name="com/bea/security/utils/random/FastRandomData.class" match-path="true"/>
+            <include name="com/bea/security/utils/random/SecureRandomData.class" match-path="true"/>
+            <include name="com/bea/security/utils/ssl/SSLContextProtocolSelector.class" match-path="true"/>
+         </entry>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.logger.css.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.subject.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.weblogic.security.auth.jar">
+            <include name="weblogic/security/auth/callback/IdentityDomainNames.class" match-path="true"/>
+            <include name="weblogic/security/auth/callback/IdentityDomainNamesEncoder.class" match-path="true"/>
+         </entry>
+      </library>
+      <library name="com.oracle.webservices.wls.jaxrpc-client" type="none" visibility="none" size="65155">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.subject.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.bea.core.weblogic.security.auth.jar"/>
+      </library>
+      <library name="oracle.jrf.tenancy.ee.library" type="none" visibility="none" suppress-version="true" size="58417">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.subject.jar"/>
+      </library>
+      <library name="wlclient" type="none" size="58417">
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.subject.jar">
+            <include name="weblogic/security/subject/AbstractSubject.class" match-path="true"/>
+            <include name="weblogic/security/subject/DelegatingSubjectStack.class" match-path="true"/>
+            <include name="weblogic/security/subject/SubjectManager$1.class" match-path="true"/>
+            <include name="weblogic/security/subject/SubjectManager$2.class" match-path="true"/>
+            <include name="weblogic/security/subject/SubjectManager$GetKernelIdentityAction.class" match-path="true"/>
+            <include name="weblogic/security/subject/SubjectManager$KernelIdentityMaker.class" match-path="true"/>
+            <include name="weblogic/security/subject/SubjectManager$SetSubjectManagerAction.class" match-path="true"/>
+            <include name="weblogic/security/subject/SubjectManager.class" match-path="true"/>
+            <include name="weblogic/security/subject/SubjectProxy.class" match-path="true"/>
+            <include name="weblogic/security/subject/SubjectStack.class" match-path="true"/>
+            <include name="weblogic/security/subject/SubjectStackDelegate.class" match-path="true"/>
+         </entry>
+      </library>
+      <library name="wljmxclient" type="mergedJar" location="server/lib" visibility="none" suppress-version="true" symbol="wls.server.symbol" size="58417">
+         <resolvers>
+            <resolver type="FirstEntryWins" wildcard="*"/>
+            <manifest-resolver type="WLS"/>
+         </resolvers>
+         <manifest>
+            <attribute name="sealed" value="false"/>
+            <attribute name="Class-Path" value="wlclient.jar"/>
+         </manifest>
+         <entry explode="true" include-parent="false" name="modules/com.oracle.weblogic.security.subject.jar">
+            <include name="weblogic/security/SimplePrincipal.class" match-path="true"/>
+            <include name="weblogic/security/SubjectUtils.class" match-path="true"/>
+            <include name="weblogic/security/WLSPrincipals.class" match-path="true"/>
+            <include name="weblogic/security/acl/UserInfo.class" match-path="true"/>
+            <include name="weblogic/security/acl/internal/AuthenticatedSubject$1.class" match-path="true"/>
+            <include name="weblogic/security/acl/internal/AuthenticatedSubject$2.class" match-path="true"/>
+            <include name="weblogic/security/acl/internal/AuthenticatedSubject$SealableSet$1.class" match-path="true"/>
+            <include name="weblogic/security/acl/internal/AuthenticatedSubject$SealableSet$2.class" match-path="true"/>
+            <include name="weblogic/security/acl/internal/AuthenticatedSubject$SealableSet.class" match-path="true"/>
+            <include name="weblogic/security/acl/internal/AuthenticatedSubject.class" match-path="true"/>
+            <include name="weblogic/security/acl/internal/AuthenticatedUser.class" match-path="true"/>
+            <include name="weblogic/security/principal/WLSKernelIdentity.class" match-path="true"/>
+            <include name="weblogic/security/principal/WLSPrincipal.class" match-path="true"/>
+            <include name="weblogic/security/service/NotAuthorizedRuntimeException.class" match-path="true"/>
+            <include name="weblogic/security/service/SecurityManager.class" match-path="true"/>
+            <include name="weblogic/security/service/SubjectManagerImpl.class" match-path="true"/>
+            <include name="weblogic/security/service/internal/SubjectRoleDelegate.class" match-path="true"/>
+            <include name="weblogic/security/spi/WLSGroup.class" match-path="true"/>
+            <include name="weblogic/security/spi/WLSUser.class" match-path="true"/>
+         </entry>
+      </library>
+   </libraries>
+</component-def>

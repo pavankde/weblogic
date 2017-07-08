@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<application xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="7">
+  <description>WebLogic Server Administration Console</description>
+  <display-name>Console</display-name>
+  <module>
+    <web>
+      <web-uri>webapp</web-uri>
+      <context-root>console</context-root>
+    </web>
+  </module>
+  <module>
+    <web>
+      <web-uri>consolehelp</web-uri>
+      <context-root>consolehelp</context-root>
+    </web>
+  </module>
+</application>

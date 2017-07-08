@@ -1,0 +1,30 @@
+<oneoff_actions>
+    <oracle.dbjava.jdbc version="12.1.0.2.0" opt_req="O">
+        <jar name="ojdbc6_g.jar" path="%ORACLE_HOME%/jdbc/lib" class_name="/jdbc/lib/ojdbc6_g.jar/oracle/jdbc/driver/OracleDatabaseMetaData.class"/>
+        <jar name="ojdbc6dms.jar" path="%ORACLE_HOME%/jdbc/lib" class_name="/jdbc/lib/ojdbc6dms.jar/oracle/jdbc/driver/OracleDatabaseMetaData.class"/>
+        <jar name="ojdbc6dms_g.jar" path="%ORACLE_HOME%/jdbc/lib" class_name="/jdbc/lib/ojdbc6dms_g.jar/oracle/jdbc/driver/OracleDatabaseMetaData.class"/>
+        <jar name="ojdbc7_g.jar" path="%ORACLE_HOME%/jdbc/lib" class_name="/jdbc/lib/ojdbc7_g.jar/oracle/jdbc/driver/OracleDatabaseMetaData.class"/>
+        <jar name="ojdbc7dms.jar" path="%ORACLE_HOME%/jdbc/lib" class_name="/jdbc/lib/ojdbc7dms.jar/oracle/jdbc/driver/OracleDatabaseMetaData.class"/>
+        <jar name="ojdbc7dms_g.jar" path="%ORACLE_HOME%/jdbc/lib" class_name="/jdbc/lib/ojdbc7dms_g.jar/oracle/jdbc/driver/OracleDatabaseMetaData.class"/>
+    </oracle.dbjava.jdbc>
+    <oracle.javavm.jrf version="12.1.0.2.1" opt_req="O" symbol="rdbms.jrf.common.symbol">
+        <jar name="ojdbc6.jar" path="%ORACLE_HOME%/%SYMBOL%/modules/oracle.jdbc" class_name="/modules/oracle.jdbc/ojdbc6.jar/oracle/jdbc/driver/OracleDatabaseMetaData.class"/>
+        <jar name="ojdbc6_g.jar" path="%ORACLE_HOME%/%SYMBOL%/modules/oracle.jdbc" class_name="/modules/oracle.jdbc/ojdbc6_g.jar/oracle/jdbc/driver/OracleDatabaseMetaData.class"/>
+        <jar name="ojdbc6dms.jar" path="%ORACLE_HOME%/%SYMBOL%/modules/oracle.jdbc" class_name="/modules/oracle.jdbc/ojdbc6dms.jar/oracle/jdbc/driver/OracleDatabaseMetaData.class"/>
+        <jar name="ojdbc7.jar" path="%ORACLE_HOME%/%SYMBOL%/modules/oracle.jdbc" class_name="/modules/oracle.jdbc/ojdbc7.jar/oracle/jdbc/driver/OracleDatabaseMetaData.class"/>
+        <jar name="ojdbc7_g.jar" path="%ORACLE_HOME%/%SYMBOL%/modules/oracle.jdbc" class_name="/modules/oracle.jdbc/ojdbc7_g.jar/oracle/jdbc/driver/OracleDatabaseMetaData.class"/>
+        <jar name="ojdbc7dms.jar" path="%ORACLE_HOME%/%SYMBOL%/modules/oracle.jdbc" class_name="/modules/oracle.jdbc/ojdbc7dms.jar/oracle/jdbc/driver/OracleDatabaseMetaData.class"/>
+    </oracle.javavm.jrf>
+    <oracle.javavm.jrf version="12.1.0.2.0" opt_req="O" symbol="rdbms.jrf.common.symbol">
+        <jar name="ojdbc6.jar" path="%ORACLE_HOME%/%SYMBOL%/modules/oracle.jdbc" class_name="/modules/oracle.jdbc/ojdbc6.jar/oracle/jdbc/driver/OracleDatabaseMetaData.class"/>
+        <jar name="ojdbc6_g.jar" path="%ORACLE_HOME%/%SYMBOL%/modules/oracle.jdbc" class_name="/modules/oracle.jdbc/ojdbc6_g.jar/oracle/jdbc/driver/OracleDatabaseMetaData.class"/>
+        <jar name="ojdbc6dms.jar" path="%ORACLE_HOME%/%SYMBOL%/modules/oracle.jdbc" class_name="/modules/oracle.jdbc/ojdbc6dms.jar/oracle/jdbc/driver/OracleDatabaseMetaData.class"/>
+        <jar name="ojdbc7.jar" path="%ORACLE_HOME%/%SYMBOL%/modules/oracle.jdbc" class_name="/modules/oracle.jdbc/ojdbc7.jar/oracle/jdbc/driver/OracleDatabaseMetaData.class"/>
+        <jar name="ojdbc7_g.jar" path="%ORACLE_HOME%/%SYMBOL%/modules/oracle.jdbc" class_name="/modules/oracle.jdbc/ojdbc7_g.jar/oracle/jdbc/driver/OracleDatabaseMetaData.class"/>
+        <jar name="ojdbc7dms.jar" path="%ORACLE_HOME%/%SYMBOL%/modules/oracle.jdbc" class_name="/modules/oracle.jdbc/ojdbc7dms.jar/oracle/jdbc/driver/OracleDatabaseMetaData.class"/>
+    </oracle.javavm.jrf>
+    <oracle.dbjava.ic version="12.1.0.2.0" opt_req="O">
+        <jar name="ojdbc6.jar" path="%ORACLE_HOME%/jdbc/lib" class_name="/jdbc/lib/ojdbc6.jar/oracle/jdbc/driver/OracleDatabaseMetaData.class"/>
+        <jar name="ojdbc7.jar" path="%ORACLE_HOME%/jdbc/lib" class_name="/jdbc/lib/ojdbc7.jar/oracle/jdbc/driver/OracleDatabaseMetaData.class"/>
+    </oracle.dbjava.ic>
+</oneoff_actions>

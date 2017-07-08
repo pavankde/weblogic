@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portal:root xmlns:netuix="http://www.bea.com/servers/netuix/xsd/controls/netuix/1.0.0"
+       xmlns:html="http://www.w3.org/1999/xhtml-netuix-modified/1.0.0"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:portal="http://www.bea.com/servers/netuix/xsd/portal/support/1.0.0"
+       xsi:schemaLocation="http://www.bea.com/servers/netuix/xsd/portal/support/1.0.0 portal-support-1_0_0.xsd">
+<!--
+  Definition file for the pages for interacting with Resource Group in WebLogic Server.
+
+  Copyright (c) 2015, Oracle and/or its affiliates. All rights reserved.
+-->
+  <netuix:book definitionLabel="ResourceGroupBook" title="book.title" markupName="book"
+         presentationClass="invisible">
+  <netuix:content>
+
+<!-- Definition for the Resource Group table page -->
+    <netuix:book definitionLabel="ResourceGroupTableBook" markupName="book"
+                 backingFile="com.bea.console.utils.GeneralBackingFile"
+                 threadsafe="true"
+                 title="resourcegroups.title"
+                 presentationClass="wlsc-frame">
+      <netuix:titlebar/>
+      <netuix:content>
+        <netuix:page markupName="page" definitionLabel="ResourceGroupTablePages" title="not.used"
+                     hidden="true">
+          <netuix:content>
+            <netuix:layout type="no" markupName="NoLayout">
+              <netuix:placeholder usingFlow="false" markupName="ph1">
+                <netuix:book markupName="book" definitionLabel="ResourceGroupPagesBook" title="resourcegroups.title">
+                  <netuix:singleLevelMenu markupType="Menu" markupName="singleLevelMenu"/>
+                  <netuix:content>
+
+                    <!-- Definition for the configuration tab -->
+                    <netuix:page markupName="page"  definitionLabel="ResourceGroupTablePage"
+                          title="tab.configuration"
+                          presentationClass="page-content">
+                      <netuix:meta name="helpid" content="Core.core.resourcegroup.table.title;core"/>
+                      <netuix:meta name="breadcrumb" content="resourcegroups.title"/>
+                      <netuix:content>
+                        <netuix:layout type="no"  markupName="NoLayout">
+                          <netuix:placeholder usingFlow="false"  markupName="ph1">
+                            <netuix:portlet definitionLabel="ResourceGroupTablePortlet">
+                              <netuix:strutsContent module="/core" action="ResourceGroupTable" refreshAction="ResourceGroupTable"/>
+                            </netuix:portlet>
+                          </netuix:placeholder>
+                        </netuix:layout>
+                      </netuix:content>
+                    </netuix:page>
+
+                    <!-- Definition for the control tab -->
+                    <netuix:page markupName="page"  definitionLabel="ResourceGroupControlTablePage"
+                                 title="tab.control"
+                                 presentationClass="page-content">
+                      <netuix:meta name="helpid" content="Core.core.resourcegroup.controltable.title;core"/>
+                      <netuix:meta name="breadcrumb" content="resourcegroups.title"/>
+                      <netuix:content>
+                        <netuix:layout type="no"  markupName="NoLayout">
+                          <netuix:placeholder usingFlow="false"  markupName="ph1">
+                            <netuix:portlet definitionLabel="ResourceGroupControlTablePortlet">
+                              <netuix:strutsContent module="/core" action="ResourceGroupControlTable" refreshAction="ResourceGroupControlTable"/>
+                            </netuix:portlet>
+                          </netuix:placeholder>
+                        </netuix:layout>
+                      </netuix:content>
+                    </netuix:page>
+                  </netuix:content>
+                </netuix:book>
+              </netuix:placeholder>
+            </netuix:layout>
+          </netuix:content>
+        </netuix:page>
+      </netuix:content>
+    </netuix:book>
+
+
+    <!-- Definition for the  Resource Group creation assistant page -->
+    <netuix:book definitionLabel="ResourceGroupCreateResourceGroupBook" markupName="book" markupType="Book"
+           backingFile="com.bea.console.utils.GeneralBackingFile"
+           threadsafe="true"
+           title="assistant.create.resourcegroup.title"
+           presentationClass="wlsc-frame">
+      <netuix:titlebar/>
+      <netuix:content>
+        <netuix:page markupName="page" markupType="Page" definitionLabel="CreateResourceGroup"
+               title="not.used"
+               hidden="true"
+               presentationClass="page-assistant">
+          <netuix:meta name="helpid" content="Core.core.partition.createresourcegroup.title;core"/>
+          <netuix:content>
+            <netuix:layout type="no" markupType="Layout" markupName="NoLayout">
+              <netuix:placeholder usingFlow="false" markupType="Placeholder" markupName="ph1">
+                <netuix:portlet definitionLabel="CreateResourceGroupPortlet">
+                  <netuix:pageflowContent contentUri="/com/bea/console/actions/core/partition/createresourcegroup/CreateResourceGroup.jpf"
+                              action="begin"
+                              refreshAction="begin"/>
+                </netuix:portlet>
+              </netuix:placeholder>
+            </netuix:layout>
+          </netuix:content>
+        </netuix:page>
+      </netuix:content>
+    </netuix:book>
+    <!-- Definition for the  Resource Group deletion assistant page -->
+    <netuix:book definitionLabel="ResourceGroupDeleteResourceGroupBook" markupName="book" markupType="Book"
+           backingFile="com.bea.console.utils.GeneralBackingFile"
+           threadsafe="true"
+           title="assistant.delete.resourcegroup.title"
+           presentationClass="wlsc-frame">
+      <netuix:titlebar/>
+      <netuix:content>
+        <netuix:page markupName="page" markupType="Page" definitionLabel="DeleteResourceGroup"
+               title="not.used"
+               hidden="true"
+               presentationClass="page-assistant">
+          <netuix:meta name="helpid" content="Core.core.partition.deleteresourcegroup.title;core"/>
+          <netuix:content>
+            <netuix:layout type="no" markupType="Layout" markupName="NoLayout">
+              <netuix:placeholder usingFlow="false" markupType="Placeholder" markupName="ph1">
+                <netuix:portlet definitionLabel="DeleteResourceGroupPortlet">
+                  <netuix:pageflowContent contentUri="/com/bea/console/actions/core/partition/deleteresourcegroup/DeleteResourceGroup.jpf"
+                              action="begin"
+                              refreshAction="begin"/>
+                </netuix:portlet>
+              </netuix:placeholder>
+            </netuix:layout>
+          </netuix:content>
+        </netuix:page>
+      </netuix:content>
+    </netuix:book>
+
+    <!-- Definition for the Start Resource Group assistant -->
+    <netuix:book definitionLabel="ResourceGroupStartResourceGroupBook" markupName="book"
+                 backingFile="com.bea.console.utils.GeneralBackingFile"
+                 threadsafe="true"
+                 title="assistant.resourcegroup.lifecycle.title"
+                 presentationClass="wlsc-frame">
+      <netuix:titlebar/>
+      <netuix:content>
+        <netuix:page markupName="page" definitionLabel="StartResourceGroupPage" title="not.used"
+                     hidden="true">
+          <netuix:meta name="helpid" content="Core.core.resourcegroup.lifecycle.title;core"/>
+          <netuix:content>
+            <netuix:layout type="no" markupName="NoLayout">
+              <netuix:placeholder usingFlow="false" markupName="ph1">
+                <netuix:portlet definitionLabel="StartResourceGroupPortlet">
+                  <netuix:pageflowContent contentUri="/com/bea/console/actions/core/partition/lifecycleresourcegroup/ResourceGroupLifecycle.jpf"
+                        action="start"
+                        refreshAction="start"/>
+                </netuix:portlet>
+              </netuix:placeholder>
+            </netuix:layout>
+          </netuix:content>
+        </netuix:page>
+      </netuix:content>
+    </netuix:book>
+
+    <!-- Definition for the Resume Resource Group assistant -->
+    <netuix:book definitionLabel="ResourceGroupResumeResourceGroupBook" markupName="book"
+                 backingFile="com.bea.console.utils.GeneralBackingFile"
+                 threadsafe="true"
+                 title="assistant.resourcegroup.lifecycle.title"
+                 presentationClass="wlsc-frame">
+      <netuix:titlebar/>
+      <netuix:content>
+        <netuix:page markupName="page" definitionLabel="ResumeResourceGroupPage" title="not.used"
+                     hidden="true">
+          <netuix:meta name="helpid" content="Core.core.resourcegroup.lifecycle.title;core"/>
+          <netuix:content>
+            <netuix:layout type="no" markupName="NoLayout">
+              <netuix:placeholder usingFlow="false" markupName="ph1">
+                <netuix:portlet definitionLabel="ResumeResourceGroupPortlet">
+                  <netuix:pageflowContent contentUri="/com/bea/console/actions/core/partition/lifecycleresourcegroup/ResourceGroupLifecycle.jpf"
+                                          action="resume"
+                                          refreshAction="resume"/>
+                </netuix:portlet>
+              </netuix:placeholder>
+            </netuix:layout>
+          </netuix:content>
+        </netuix:page>
+      </netuix:content>
+    </netuix:book>
+
+    <!-- Definition for the Shutdown Resource Group assistant -->
+    <netuix:book definitionLabel="ResourceGroupShutdownBook" markupName="book"
+                 backingFile="com.bea.console.utils.GeneralBackingFile"
+                 threadsafe="true"
+                 title="assistant.resourcegroup.lifecycle.title"
+                 presentationClass="wlsc-frame">
+      <netuix:titlebar/>
+      <netuix:content>
+        <netuix:page markupName="page" definitionLabel="ShutdownResourceGroupPage" title="not.used"
+                     hidden="true">
+          <netuix:meta name="helpid" content="Core.core.resourcegroup.lifecycle.title;core"/>
+          <netuix:content>
+            <netuix:layout type="no" markupName="NoLayout">
+              <netuix:placeholder usingFlow="false" markupName="ph1">
+                <netuix:portlet definitionLabel="ShutdownResourceGroupPortlet">
+                  <netuix:pageflowContent contentUri="/com/bea/console/actions/core/partition/lifecycleresourcegroup/ResourceGroupLifecycle.jpf"
+                        action="shutdown"
+                        refreshAction="shutdown"/>
+                </netuix:portlet>
+              </netuix:placeholder>
+            </netuix:layout>
+          </netuix:content>
+        </netuix:page>
+      </netuix:content>
+    </netuix:book>
+
+    <!-- Definition for the ForceShutdown Resource Group assistant -->
+    <netuix:book definitionLabel="ResourceGroupForceShutdownBook" markupName="book"
+                 backingFile="com.bea.console.utils.GeneralBackingFile"
+                 threadsafe="true"
+                 title="assistant.resourcegroup.lifecycle.title"
+                 presentationClass="wlsc-frame">
+      <netuix:titlebar/>
+      <netuix:content>
+        <netuix:page markupName="page" definitionLabel="ForceShutdownResourceGroupPage" title="not.used"
+                     hidden="true">
+          <netuix:meta name="helpid" content="Core.core.resourcegroup.lifecycle.title;core"/>
+          <netuix:content>
+            <netuix:layout type="no" markupName="NoLayout">
+              <netuix:placeholder usingFlow="false" markupName="ph1">
+                <netuix:portlet definitionLabel="ForceShutdownResourceGroupPortlet">
+                  <netuix:pageflowContent contentUri="/com/bea/console/actions/core/partition/lifecycleresourcegroup/ResourceGroupLifecycle.jpf"
+                                          action="forceShutdown"
+                                          refreshAction="forceShutdown"/>
+                </netuix:portlet>
+              </netuix:placeholder>
+            </netuix:layout>
+          </netuix:content>
+        </netuix:page>
+      </netuix:content>
+    </netuix:book>
+
+
+    <!-- Definition for the Suspend Resource Group assistant -->
+    <netuix:book definitionLabel="ResourceGroupSuspendBook" markupName="book"
+                 backingFile="com.bea.console.utils.GeneralBackingFile"
+                 threadsafe="true"
+                 title="assistant.resourcegroup.lifecycle.title"
+                 presentationClass="wlsc-frame">
+      <netuix:titlebar/>
+      <netuix:content>
+        <netuix:page markupName="page" definitionLabel="SuspendResourceGroupPage" title="not.used"
+                     hidden="true">
+          <netuix:meta name="helpid" content="Core.core.resourcegroup.lifecycle.title;core"/>
+          <netuix:content>
+            <netuix:layout type="no" markupName="NoLayout">
+              <netuix:placeholder usingFlow="false" markupName="ph1">
+                <netuix:portlet definitionLabel="SuspendResourceGroupPortlet">
+                  <netuix:pageflowContent contentUri="/com/bea/console/actions/core/partition/lifecycleresourcegroup/ResourceGroupLifecycle.jpf"
+                                          action="suspend"
+                                          refreshAction="suspend"/>
+                </netuix:portlet>
+              </netuix:placeholder>
+            </netuix:layout>
+          </netuix:content>
+        </netuix:page>
+      </netuix:content>
+    </netuix:book>
+
+    <!-- Definition for the ForceSuspend Resource Group assistant -->
+    <netuix:book definitionLabel="ResourceGroupForceSuspendBook" markupName="book"
+                 backingFile="com.bea.console.utils.GeneralBackingFile"
+                 threadsafe="true"
+                 title="assistant.resourcegroup.lifecycle.title"
+                 presentationClass="wlsc-frame">
+      <netuix:titlebar/>
+      <netuix:content>
+        <netuix:page markupName="page" definitionLabel="ForceSuspendResourceGroupPage" title="not.used"
+                     hidden="true">
+          <netuix:meta name="helpid" content="Core.core.resourcegroup.lifecycle.title;core"/>
+          <netuix:content>
+            <netuix:layout type="no" markupName="NoLayout">
+              <netuix:placeholder usingFlow="false" markupName="ph1">
+                <netuix:portlet definitionLabel="ForceSuspendResourceGroupPortlet">
+                  <netuix:pageflowContent contentUri="/com/bea/console/actions/core/partition/lifecycleresourcegroup/ResourceGroupLifecycle.jpf"
+                                          action="forceSuspend"
+                                          refreshAction="forceSuspend"/>
+                </netuix:portlet>
+              </netuix:placeholder>
+            </netuix:layout>
+          </netuix:content>
+        </netuix:page>
+      </netuix:content>
+    </netuix:book>
+
+    <!-- Definition for the Application Overwrite assistant page -->
+    <netuix:book definitionLabel="AppApplicationOverwrite" markupName="book"
+                 backingFile="com.bea.console.utils.CorePartitionBackingFile"
+                 threadsafe="true"
+                 title="assistant.deployment.overwrite.title"
+                 presentationClass="wlsc-frame">
+      <netuix:titlebar/>
+      <netuix:content>
+        <netuix:page markupName="page" definitionLabel="AppApplicationOverwritePage" title="not.used"
+                     hidden="true"
+                     presentationClass="page-assistant">
+          <netuix:meta name="helpid" content="Core-partition.core.partition.resourcegroup.deployments.overwrite.title;core"/>
+          <netuix:content>
+            <netuix:layout type="no" markupName="NoLayout">
+              <netuix:placeholder usingFlow="false" markupName="ph1">
+                <netuix:portlet definitionLabel="AppApplicationOverwritePortlet">
+                  <netuix:pageflowContent contentUri="/com/bea/console/actions/core/partition/rgdeploymentoverwrite/Overwrite.jpf" action="begin"
+                                          refreshAction="begin"/>
+                </netuix:portlet>
+              </netuix:placeholder>
+            </netuix:layout>
+          </netuix:content>
+        </netuix:page>
+      </netuix:content>
+    </netuix:book>
+
+
+    <!-- Definition for the Application Remove Override assistant page -->
+    <netuix:book definitionLabel="AppApplicationRemoveOverride" markupName="book"
+                 backingFile="com.bea.console.utils.CorePartitionBackingFile"
+                 threadsafe="true"
+                 title="assistant.deployment.removeoverride.title"
+                 presentationClass="wlsc-frame">
+      <netuix:titlebar/>
+      <netuix:content>
+        <netuix:page markupName="page" definitionLabel="AppApplicationRemoveOverridePage" title="not.used"
+                     hidden="true"
+                     presentationClass="page-assistant">
+          <netuix:meta name="helpid" content="Core-partition.core.partition.resourcegroup.deployments.removeoverride.title;core"/>
+          <netuix:content>
+            <netuix:layout type="no" markupName="NoLayout">
+              <netuix:placeholder usingFlow="false" markupName="ph1">
+                <netuix:portlet definitionLabel="AppApplicationRemoveOverridePortlet">
+                  <netuix:pageflowContent contentUri="/com/bea/console/actions/core/partition/rgdeploymentremoveoverride/RemoveOverride.jpf" action="begin"
+                                          refreshAction="begin"/>
+                </netuix:portlet>
+              </netuix:placeholder>
+            </netuix:layout>
+          </netuix:content>
+        </netuix:page>
+      </netuix:content>
+    </netuix:book>
+
+
+
+    <netuix:book definitionLabel="ResourceGroupResourceGroupBook" title="book.title" markupName="book"
+                   backingFile="com.bea.console.utils.GeneralBackingFile"
+                   threadsafe="true"
+                   presentationClass="wlsc-frame">
+      <netuix:titlebar/>
+      <netuix:content>
+        <netuix:page markupName="page" definitionLabel="ResourceGroupResourceGroupPages" title="not.used"
+                       hidden="true">
+            <netuix:content>
+              <netuix:layout type="no" markupName="NoLayout">
+                <netuix:placeholder usingFlow="false" markupName="ph1">
+                  <netuix:book markupName="book" definitionLabel="ResourceGroupResourceGroupTabsBook"
+                           title="ResourceGroupResourceGroupTabsBook">
+                    <netuix:singleLevelMenu markupType="Menu" markupName="singleLevelMenu"/>
+                    <netuix:content>
+
+                      <!-- Definition for the general tab -->
+                      <netuix:page markupName="page" definitionLabel="ResourceGroupResourceGroupConfigGeneral"
+                            presentationClass="page-content" title="tab.general">
+                        <netuix:meta name="helpid" content="Core.core.partition.resourcegroupconfiggeneral.title;core"/>
+                        <netuix:meta name="configuration-page" content="ResourceGroup"/>
+                        <netuix:meta name="breadcrumb-context" content="handle"/>
+                        <netuix:content>
+                          <netuix:layout type="no" markupName="NoLayout">
+                            <netuix:placeholder usingFlow="false" markupName="ph1">
+                              <netuix:portlet definitionLabel="RGResourceGroupConfigGeneralPortlet">
+                                <netuix:strutsContent module="/core" action="RGResourceGroupConfigGeneral"
+                                    refreshAction="RGResourceGroupConfigGeneral"/>
+                              </netuix:portlet>
+                            </netuix:placeholder>
+                          </netuix:layout>
+                        </netuix:content>
+                      </netuix:page>
+
+
+                      <!-- Definition for the Resource Group/App Deployment and Libraries tab -->
+                      <netuix:page markupName="page" definitionLabel="ResourceGroupResourceGroupDeployments"
+                                   presentationClass="page-table"
+                                   title="tab.deployments">
+                        <netuix:meta name="helpid" content="Core.core.partition.rgresourcegroupdeployments.table.title;core"/>
+                        <netuix:content>
+                          <netuix:layout type="no" markupType="Layout" markupName="NoLayout">
+                            <netuix:placeholder usingFlow="false" markupType="Placeholder" markupName="ph1">
+                              <netuix:portlet definitionLabel="ResourceGroupResourceGroupDeploymentsPortlet">
+                                <netuix:strutsContent module="/core" action="ResourceGroupResourceGroupDeploymentsTable"
+                                      refreshAction="ResourceGroupResourceGroupDeploymentsTable"/>
+                              </netuix:portlet>
+                            </netuix:placeholder>
+                          </netuix:layout>
+                        </netuix:content>
+                      </netuix:page>
+
+                      <netuix:book markupName="book" definitionLabel="ResourceGroupRGServiceTabPage"  title="tab.services">
+                        <netuix:singleLevelMenu markupType="Menu" markupName="singleLevelMenu" presentationClass="menu-level1"/>
+                        <netuix:content>
+
+                          <netuix:page markupName="page" definitionLabel="RGServiceJDBCDataSources"
+                                       presentationClass="page-content"
+                                       title="tab.JDBC">
+                            <netuix:meta name="helpid" content="Core.core.resourcegroup.jdbc.title;core"/>
+                            <netuix:content>
+                              <netuix:layout type="no" markupName="NoLayout">
+                                <netuix:placeholder usingFlow="false" markupName="ph1">
+                                  <netuix:portlet definitionLabel="RGServiceJDBCTablePortlet">
+                                    <netuix:strutsContent module="/core" action="RGServiceJDBCTable"
+                                                          refreshAction="RGServiceJDBCTable"/>
+                                    </netuix:portlet>
+                                </netuix:placeholder>
+                              </netuix:layout>
+                            </netuix:content>
+                          </netuix:page>
+
+                          <netuix:page markupName="page" definitionLabel="RGServiceJMS"
+                                       title="tab.JMS"
+                                       presentationClass="page-table">
+                            <netuix:meta name="helpid" content="Core.core.resourcegroup.servicesjms.title;jms"/>
+                            <netuix:content>
+                              <netuix:layout type="no" markupName="NoLayout">
+                                <netuix:placeholder usingFlow="false" markupName="ph1">
+                                  <netuix:portlet definitionLabel="RGServiceJMSPortlet">
+                                    <netuix:strutsContent module="/core" action="RGServiceJMSTable"
+                                                          refreshAction="RGServiceJMSTable"/>
+                                  </netuix:portlet>
+                                </netuix:placeholder>
+                              </netuix:layout>
+                            </netuix:content>
+                          </netuix:page>
+
+
+                          <!-- Definition for the Bridges tab -->
+                          <netuix:book markupName="book" definitionLabel="ResourceGroupRGbridgeTabPage"  title="tree.bridges">
+                            <netuix:singleLevelMenu markupType="Menu" markupName="singleLevelMenu" presentationClass="menu-level1"/>
+                            <netuix:content>
+                              <!-- Definition for the Bridge tab -->
+                              <netuix:page markupName="page" definitionLabel="RGServiceMessagingBridges"
+                                           presentationClass="page-content"
+                                           title="tab.MessagingBridges">
+                                <netuix:meta name="helpid" content="Core.core.resourcegroup.messagingbridges.title;core"/>
+                                <netuix:content>
+                                  <netuix:layout type="no" markupName="NoLayout">
+                                    <netuix:placeholder usingFlow="false" markupName="ph1">
+                                      <netuix:portlet definitionLabel="RGServiceMessagingBridgesPortlet">
+                                        <netuix:strutsContent module="/core" action="RGServiceMessagingBridgeTable"
+                                                              refreshAction="RGServiceMessagingBridgeTable"/>
+                                      </netuix:portlet>
+                                    </netuix:placeholder>
+                                  </netuix:layout>
+                                </netuix:content>
+                              </netuix:page>
+
+                              <!-- Definition for the JMS Bridge Destinations tab -->
+                              <netuix:page markupName="page" definitionLabel="RGServiceJMSBridgeDestination"
+                                           presentationClass="page-content"
+                                           title="tree.bridgedestinations">
+                                <netuix:meta name="helpid" content="Core.core.resourcegroup.jmsbridgedestination.title;core"/>
+                                <netuix:meta name="breadcrumb-context" content="handle"/>
+                                <netuix:content>
+                                  <netuix:layout type="no" markupName="NoLayout">
+                                    <netuix:placeholder usingFlow="false" markupName="ph1">
+                                      <netuix:portlet definitionLabel="RGServiceJMSBridgeDestinationTablePortlet">
+                                        <netuix:strutsContent module="/core" action="RGServiceJMSBridgeDestinationTable"
+                                                              refreshAction="RGServiceJMSBridgeDestinationTable"/>
+                                      </netuix:portlet>
+                                    </netuix:placeholder>
+                                  </netuix:layout>
+                                </netuix:content>
+                              </netuix:page>
+                            </netuix:content>
+                          </netuix:book>
+
+                        <netuix:page markupName="page" definitionLabel="RGServiceMailSessions"
+                                     presentationClass="page-content"
+                                     title="tab.MailSessions">
+                          <netuix:meta name="helpid" content="Core.core.resourcegroup.mailsessions.title;core"/>
+                          <netuix:content>
+                            <netuix:layout type="no" markupName="NoLayout">
+                              <netuix:placeholder usingFlow="false" markupName="ph1">
+                                <netuix:portlet definitionLabel="RGServiceMailSessionTablePortlet">
+                                  <netuix:strutsContent module="/core" action="RGServiceMailSessionTable"
+                                                        refreshAction="RGServiceMailSessionTable"/>
+                                </netuix:portlet>
+                              </netuix:placeholder>
+                            </netuix:layout>
+                          </netuix:content>
+                        </netuix:page>
+
+                        <netuix:page markupName="page" definitionLabel="RGServicePersistentStores"
+                                     presentationClass="page-content"
+                                     title="tree.persistentstores">
+                          <netuix:meta name="helpid" content="Core.core.resourcegroup.jmsstoretable.title;core"/>
+                          <netuix:content>
+                            <netuix:layout type="no" markupName="NoLayout">
+                              <netuix:placeholder usingFlow="false" markupName="ph1">
+                                <netuix:portlet definitionLabel="RGServiceJMSStoreTablePortlet">
+                                  <netuix:strutsContent module="/core" action="RGServiceJMSStoreTable"
+                                                        refreshAction="RGServiceJMSStoreTable"/>
+                                </netuix:portlet>
+                              </netuix:placeholder>
+                            </netuix:layout>
+                          </netuix:content>
+                        </netuix:page>
+
+                        <netuix:page markupName="page" definitionLabel="RGServicesPathService"
+                                     presentationClass="page-content"
+                                     title="tab.PathServices">
+                          <netuix:meta name="helpid" content="Core.core.resourcegroup.pathservice.title;core"/>
+                          <netuix:content>
+                            <netuix:layout type="no" markupName="NoLayout">
+                              <netuix:placeholder usingFlow="false" markupName="ph1">
+                                <netuix:portlet definitionLabel="RGServicesPathServiceTablePortlet">
+                                  <netuix:strutsContent module="/core" action="RGServicesPathServiceTable"
+                                                        refreshAction="RGServicesPathServiceTable"/>
+                                </netuix:portlet>
+                              </netuix:placeholder>
+                            </netuix:layout>
+                          </netuix:content>
+                        </netuix:page>
+
+                        <netuix:page markupName="page" definitionLabel="RGServiceForeignJNDIProviders"
+                                   presentationClass="page-content"
+                                   title="tab.ForeignJNDIProviders">
+                        <netuix:meta name="helpid" content="Core.core.resourcegroup.foreignjndiprovidertable.title;core"/>
+                          <netuix:content>
+                            <netuix:layout type="no" markupName="NoLayout">
+                              <netuix:placeholder usingFlow="false" markupName="ph1">
+                                <netuix:portlet definitionLabel="RGServiceForeignJNDIProviderTablePortlet">
+                                  <netuix:strutsContent module="/core" action="RGServiceForeignJNDIProviderTable"
+                                                        refreshAction="RGServiceForeignJNDIProviderTable"/>
+                                </netuix:portlet>
+                              </netuix:placeholder>
+                            </netuix:layout>
+                          </netuix:content>
+                        </netuix:page>
+
+                        <netuix:page markupName="page" definitionLabel="RGServiceWLDFSystemResources"
+                                     presentationClass="page-content"
+                                     title="tab.WLDFSystemResources">
+                          <netuix:meta name="helpid" content="Core.core.resourcegroup.moduletable.title;core"/>
+                          <netuix:content>
+                            <netuix:layout type="no" markupName="NoLayout">
+                              <netuix:placeholder usingFlow="false" markupName="ph1">
+                                <netuix:portlet definitionLabel="RGServiceWLDFSystemResourceTablePortlet">
+                                  <netuix:strutsContent module="/core" action="RGServiceWLDFSystemResourceTable"
+                                                        refreshAction="RGServiceWLDFSystemResourceTable"/>
+                                </netuix:portlet>
+                              </netuix:placeholder>
+                            </netuix:layout>
+                          </netuix:content>
+                        </netuix:page>
+
+                        <netuix:page markupName="page" definitionLabel="RGServiceSAFAgents"
+                                     presentationClass="page-content"
+                                     title="tab.SAFAgents">
+                          <netuix:meta name="helpid" content="Core.core.resourcegroup.safagents.title;core"/>
+                          <netuix:content>
+                            <netuix:layout type="no" markupName="NoLayout">
+                              <netuix:placeholder usingFlow="false" markupName="ph1">
+                                <netuix:portlet definitionLabel="RGServiceSAFAgentTablePortlet">
+                                  <netuix:strutsContent module="/core" action="RGServiceSAFAgentTable"
+                                                        refreshAction="RGServiceSAFAgentTable"/>
+                                </netuix:portlet>
+                              </netuix:placeholder>
+                            </netuix:layout>
+                          </netuix:content>
+                        </netuix:page>
+
+                        <netuix:page markupName="page" definitionLabel="RGServiceOsgiFramework"
+                                                             presentationClass="page-content"
+                                                             title="tab.OsgiFrameworks">
+                          <netuix:meta name="helpid" content="Core.core.resourcegroup.osgiframework.title;core"/>
+                          <netuix:content>
+                            <netuix:layout type="no" markupName="NoLayout">
+                              <netuix:placeholder usingFlow="false" markupName="ph1">
+                                <netuix:portlet definitionLabel="RGServiceOsgiFrameworkTablePortlet">
+                                  <netuix:strutsContent module="/core" action="RGServiceOsgiFrameworkTable"
+                                                        refreshAction="RGServiceOsgiFrameworkTable"/>
+                                </netuix:portlet>
+                              </netuix:placeholder>
+                            </netuix:layout>
+                          </netuix:content>
+                        </netuix:page>
+
+                      </netuix:content>
+                    </netuix:book>
+
+                    <!-- Definition for the notes tab -->
+                    <netuix:page markupName="page" definitionLabel="ResourceGroupResourceGroupNotes"
+                                 presentationClass="page-content"
+                                 title="tab.notes">
+                      <netuix:meta name="helpid" content="Core.core.partition.resourcegroupsnotes.title;core"/>
+                      <netuix:content>
+                        <netuix:layout type="no" markupName="NoLayout">
+                          <netuix:placeholder usingFlow="false" markupName="ph1">
+                            <netuix:portletInstance markupType="Portlet" instanceLabel="ResourceGroupResourceGroupsNotesPortlet"
+                                  contentUri="/PortalConfig/core/CoreNotes.portlet"/>
+                          </netuix:placeholder>
+                        </netuix:layout>
+                      </netuix:content>
+                    </netuix:page>
+
+                  </netuix:content>
+                </netuix:book>
+
+              </netuix:placeholder>
+              </netuix:layout>
+            </netuix:content>
+          </netuix:page>
+        </netuix:content>
+      </netuix:book>
+
+  </netuix:content>
+  </netuix:book>
+</portal:root>

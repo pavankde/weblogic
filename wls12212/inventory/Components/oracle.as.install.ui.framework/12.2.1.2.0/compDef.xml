@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.as.install.ui.framework" version="12.2.1.2.0" description="Oracle Fusion Middleware Installer UI Framework Files" description-key="component.description" gdr-version="1.8.0.0" pom-gen="false" groupId="com.oracle.fmwshare" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="asinst.framework.symbol" source="filegroup1.jar" expanded="true" compacted="true" bootstrap="true">
+      <directory dest="" patchable="true">
+         <directory dest="mw" mode="750" patchable="true">
+            <directory dest="common" mode="750" patchable="true">
+               <directory dest="framework" mode="750" patchable="true">
+                  <directory dest="jlib" mode="750" patchable="true">
+                     <file size="1332644" dest="template.jar" mode="640"/>
+                     <file size="3376313" dest="engine-nextgen.jar" mode="640"/>
+                     <directory dest="handlers" mode="750" patchable="true">
+                        <file size="295591" dest="genericHandlers.jar" mode="640"/>
+                        <file size="221753" dest="homeHandlers.jar" mode="640"/>
+                        <file size="319404" dest="weblogicHandlers.jar" mode="640"/>
+                        <file size="171621" dest="dbHandlers.jar" mode="640"/>
+                        <file size="67735" dest="fileHandlers.jar" mode="640"/>
+                        <file size="26726" dest="ocmHandlers.jar" mode="640"/>
+                        <file size="24475" dest="wlsHandlers.jar" mode="640"/>
+                        <file size="86426" dest="txtHandlers.jar" mode="640"/>
+                     </directory>
+                     <file size="24567" dest="oneclick.jar" mode="640"/>
+                     <file size="12038" dest="message.jar" mode="640"/>
+                     <file size="12646" dest="ConfigLauncher.jar" mode="640"/>
+                  </directory>
+                  <directory dest="bin" mode="750" patchable="true">
+                     <file size="3641" dest="configinternal.sh" mode="750"/>
+                  </directory>
+               </directory>
+            </directory>
+         </directory>
+         <file-perms>
+            <permission mode="750" regex=".*\.sh"/>
+            <permission mode="750" regex=".*\.so"/>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+   <file-map symbol="asinst.framework.symbol" source="filegroup2.jar" expanded="true" compacted="true" bootstrap="true">
+      <platform name="NT_X86"/>
+      <platform name="NT_AMD64"/>
+      <platform name="NT_IA64"/>
+      <directory dest="" patchable="true">
+         <directory dest="mw" mode="750" patchable="true">
+            <directory dest="common" mode="750" patchable="true">
+               <directory dest="framework" mode="750" patchable="true">
+                  <directory dest="bin" mode="750" patchable="true">
+                     <file size="4151" dest="configinternal.cmd" mode="750"/>
+                  </directory>
+                  <directory dest="lib" mode="750" patchable="true">
+                     <directory dest="win64" mode="750" patchable="true">
+                        <file size="65024" dest="StartUtil.dll" mode="750"/>
+                     </directory>
+                     <directory dest="win32" mode="750" patchable="true">
+                        <file size="28672" dest="GetVolumeInfo.dll" mode="750"/>
+                        <file size="49152" dest="StartUtil.dll" mode="750"/>
+                     </directory>
+                  </directory>
+               </directory>
+            </directory>
+         </directory>
+         <file-perms>
+            <permission mode="750" regex=".*\.bat"/>
+            <permission mode="750" regex=".*\.cmd"/>
+            <permission mode="750" regex=".*\.dll"/>
+            <permission mode="750" regex=".*\.exe"/>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+   <stringsubs>
+      <ns2:group id="test">
+         <ns2:file-entry name="$asinst.framework.symbol.path$/mw/common/framework/bin/configinternal.sh"/>
+         <ns2:file-entry name="$asinst.framework.symbol.path$/mw/common/framework/bin/configinternal.cmd"/>
+         <ns2:change-pair-ref name="JRE_LOCATION"/>
+         <ns2:change-pair-ref name="JAVA_HOME_LOCATION"/>
+      </ns2:group>
+      <ns2:change-pair id="JRE_LOCATION" before="@JRE_LOCATION@" after="$JRE_LOCATION$"/>
+      <ns2:change-pair id="JAVA_HOME_LOCATION" before="@JAVA_HOME_LOCATION@" after="$JAVA_HOME_LOCATION$"/>
+   </stringsubs>
+</component-def>

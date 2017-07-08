@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portal:root xmlns:netuix="http://www.bea.com/servers/netuix/xsd/controls/netuix/1.0.0"
+             xmlns:html="http://www.w3.org/1999/xhtml-netuix-modified/1.0.0"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:portal="http://www.bea.com/servers/netuix/xsd/portal/support/1.0.0"
+             xsi:schemaLocation="http://www.bea.com/servers/netuix/xsd/portal/support/1.0.0 portal-support-1_0_0.xsd">
+<!--
+    Definition file for the Concurrent Managed Object templates console pages in the
+    WebLogic Server administration console.
+
+    There are several main stuctures in this book:
+
+     - ServerChannelPages - the network channel pages
+     - ServerExecuteQueuePages - the execute queue pages
+     - CoreServerPages - the server pages
+     - CoreServerServerTablePage - the domain-wide server table
+     - the lifecycle and control assistants related to servers.
+
+ Copyright (c) 2014, Oracle and/or its affiliates. All rights reserved.
+-->
+  <netuix:book hidden="true" definitionLabel="CMOTemplatesBook" title="book.title" markupName="book"
+               presentationClass="invisible">
+    <netuix:content>
+      <!-- Definition for the Concurrent Managed Object Templates table page -->
+      <netuix:book definitionLabel="CMOTemplatesTableBook" markupName="book"
+                   title="cmotemplates.title"
+                   presentationClass="wlsc-frame">
+        <netuix:titlebar/>
+        <netuix:content>
+          <netuix:page markupName="page" definitionLabel="CMOTemplatesTablePage"
+                       title="not.used"
+                       hidden="true"
+                       backingFile="com.bea.console.utils.GeneralBackingFile"
+                       threadsafe="true"
+                       presentationClass="page-table">
+            <netuix:meta name="helpid" content="Core.core.cmotemplate.cmotemplatetable.title;core"/>
+            <netuix:meta name="breadcrumb" content="cmotemplates.title"/>
+            <netuix:content>
+              <netuix:layout type="no" markupName="NoLayout">
+                <netuix:placeholder usingFlow="false" markupName="ph1">
+                  <netuix:portlet definitionLabel="CoreCMOTemplatesTablePortlet">
+                    <netuix:strutsContent module="/core" action="CoreCMOTemplatesTable"
+                                          refreshAction="CoreCMOTemplatesTable"/>
+                  </netuix:portlet>
+                </netuix:placeholder>
+              </netuix:layout>
+            </netuix:content>
+          </netuix:page>
+        </netuix:content>
+      </netuix:book>
+      <!-- Definition for the Managed Executor Service Template creation assistant page -->
+      <netuix:book definitionLabel="CoreMESTemplateCreateBook" markupName="book"
+                   backingFile="com.bea.console.utils.GeneralBackingFile"
+                   threadsafe="true"
+                   title="assistant.create.mestemplate.title"
+                   presentationClass="wlsc-frame">
+        <netuix:titlebar/>
+        <netuix:content>
+          <netuix:page markupName="page" definitionLabel="CoreCMOCreateMESTemplate" title="not.used"
+                       hidden="true"
+                       presentationClass="page-assistant">
+            <netuix:meta name="helpid" content="Core.core.cmotemplate.createmestemplate.page.title;core"/>
+            <netuix:content>
+              <netuix:layout type="no" markupName="NoLayout">
+                <netuix:placeholder usingFlow="false" markupName="ph1">
+                  <netuix:portlet definitionLabel="CoreCMOCreateMESTemplatePortlet">
+                    <netuix:pageflowContent contentUri="/com/bea/console/actions/core/cmotemplate/createmestemplate/CreateMESTemplate.jpf"
+                                            action="begin"
+                                            refreshAction="begin"/>
+                  </netuix:portlet>
+                </netuix:placeholder>
+              </netuix:layout>
+            </netuix:content>
+          </netuix:page>
+        </netuix:content>
+      </netuix:book>
+      <!-- Definition for the Managed Scheduled Exector Service Template creation assistant page -->
+      <netuix:book definitionLabel="CoreMSESTemplateCreateBook" markupName="book"
+                   backingFile="com.bea.console.utils.GeneralBackingFile"
+                   threadsafe="true"
+                   title="assistant.create.msestemplate.title"
+                   presentationClass="wlsc-frame">
+        <netuix:titlebar/>
+        <netuix:content>
+          <netuix:page markupName="page" definitionLabel="CoreCMOCreateMSESTemplate" title="not.used"
+                       hidden="true"
+                       presentationClass="page-assistant">
+            <netuix:meta name="helpid" content="Core.core.cmotemplate.createmsestemplate.page.title;core"/>
+            <netuix:content>
+              <netuix:layout type="no" markupName="NoLayout">
+                <netuix:placeholder usingFlow="false" markupName="ph1">
+                  <netuix:portlet definitionLabel="CoreCMOCreateMSESTemplatePortlet">
+                    <netuix:pageflowContent contentUri="/com/bea/console/actions/core/cmotemplate/createmsestemplate/CreateMSESTemplate.jpf"
+                                            action="begin"
+                                            refreshAction="begin"/>
+                  </netuix:portlet>
+                </netuix:placeholder>
+              </netuix:layout>
+            </netuix:content>
+          </netuix:page>
+        </netuix:content>
+      </netuix:book>
+      <!-- Definition for the Managed Thread Factory Template creation assistant page -->
+      <netuix:book definitionLabel="CoreMTFTemplateCreateBook" markupName="book"
+                   backingFile="com.bea.console.utils.GeneralBackingFile"
+                   threadsafe="true"
+                   title="assistant.create.mtftemplate.title"
+                   presentationClass="wlsc-frame">
+        <netuix:titlebar/>
+        <netuix:content>
+          <netuix:page markupName="page" definitionLabel="CoreCMOCreateMTFTemplate" title="not.used"
+                       hidden="true"
+                       presentationClass="page-assistant">
+            <netuix:meta name="helpid" content="Core.core.cmotemplate.createmtftemplate.page.title;core"/>
+            <netuix:content>
+              <netuix:layout type="no" markupName="NoLayout">
+                <netuix:placeholder usingFlow="false" markupName="ph1">
+                  <netuix:portlet definitionLabel="CoreCMOCreateMTFTemplatePortlet">
+                    <netuix:pageflowContent contentUri="/com/bea/console/actions/core/cmotemplate/createmtftemplate/CreateMTFTemplate.jpf"
+                                            action="begin"
+                                            refreshAction="begin"/>
+                  </netuix:portlet>
+                </netuix:placeholder>
+              </netuix:layout>
+            </netuix:content>
+          </netuix:page>
+        </netuix:content>
+      </netuix:book>
+      <!-- Definition for the managed object template deletion assistant page -->
+      <netuix:book definitionLabel="CMOTemplateDeleteBook" markupName="book"
+                   backingFile="com.bea.console.utils.GeneralBackingFile"
+                   threadsafe="true"
+                   title="assistant.delete.cmotemplate.title"
+                   presentationClass="wlsc-frame">
+        <netuix:titlebar/>
+        <netuix:content>
+          <netuix:page markupName="page" definitionLabel="CoreCMOTemplateDelete" title="not.used"
+                       hidden="true"
+                       presentationClass="page-assistant">
+            <netuix:meta name="helpid" content="Core.core.cmotemplate.deletecmotemplate.title;core"/>
+            <netuix:content>
+              <netuix:layout type="no" markupName="NoLayout">
+                <netuix:placeholder usingFlow="false" markupName="ph1">
+                  <netuix:portlet definitionLabel="CoreCMOTemplateDeletePortlet">
+                    <netuix:pageflowContent contentUri="/com/bea/console/actions/core/cmotemplate/deletemanagedobjecttemplate/DeleteManagedObjectTemplate.jpf"
+                                            action="begin"
+                                            refreshAction="begin"/>
+                  </netuix:portlet>
+                </netuix:placeholder>
+              </netuix:layout>
+            </netuix:content>
+          </netuix:page>
+        </netuix:content>
+      </netuix:book>
+
+      <!-- definition for the managed object templates Dispatcher -->
+      <netuix:book definitionLabel="CMOTemplateDispatcherBook" markupName="book"
+                   backingFile="com.bea.console.utils.GeneralBackingFile"
+                   threadsafe="true"
+                   title="tab.config"
+                   presentationClass="wlsc-frame">
+        <netuix:titlebar/>
+        <netuix:content>
+          <netuix:page markupName="page" definitionLabel="CMOTemplateDispatcherPage"
+                       title="not.used"
+                       presentationClass="page-content">
+             <netuix:content>
+              <netuix:layout type="no" markupName="NoLayout">
+                <netuix:placeholder usingFlow="false" markupName="ph1">
+                  <netuix:portlet definitionLabel="CMOTemplateDispatcherPortlet">
+                    <netuix:strutsContent module="/core" action="CMOTemplateDispatcher"
+                                          refreshAction="CMOTemplateDispatcher"/>
+                  </netuix:portlet>
+                </netuix:placeholder>
+              </netuix:layout>
+            </netuix:content>
+          </netuix:page>
+        </netuix:content>
+      </netuix:book>
+
+
+      <!-- Definition for the managed executor service template edit assistant page -->
+      <netuix:book definitionLabel="MESTemplatesBook" title="book.title" markupName="book"
+                         backingFile="com.bea.console.utils.GeneralBackingFile"
+                         threadsafe="true"
+                   presentationClass="wlsc-frame">
+        <netuix:titlebar/>
+        <netuix:content>
+          <netuix:page markupName="page" definitionLabel="MESTemplatePages" title="not.used" hidden="true">
+            <netuix:content>
+              <netuix:layout type="no" markupName="NoLayout">
+                <netuix:placeholder usingFlow="false" markupName="ph1">
+                  <netuix:book definitionLabel="MESTemplatePagesBook" markupName="book"
+                               title="MESTemplatePagesBook">
+                    <netuix:singleLevelMenu markupType="Menu" markupName="singleLevelMenu"/>
+                    <netuix:content>
+                      <netuix:page markupName="page" definitionLabel="MESTemplateGeneralPage"
+                                   title="tab.config"
+                                   presentationClass="page-content">
+                        <netuix:meta name="helpid" content="Core.core.cmotemplate.mestemplateconfig.title;core"/>
+                        <netuix:meta name="configuration-page" content="ManagedExecutorServiceTemplate"/>
+                        <netuix:meta name="breadcrumb-context" content="handle"/>
+                        <netuix:content>
+                          <netuix:layout type="no" markupName="NoLayout">
+                            <netuix:placeholder usingFlow="false" markupName="ph1">
+                              <netuix:portlet definitionLabel="MESTemplateGeneralPortlet">
+                                <netuix:strutsContent module="/core" action="MESTemplateConfig"
+                                                      refreshAction="MESTemplateConfig"/>
+                              </netuix:portlet>
+                            </netuix:placeholder>
+                          </netuix:layout>
+                        </netuix:content>
+                      </netuix:page>
+                      <!-- Definition for the targetdeploy tab -->
+                      <netuix:page markupName="page" definitionLabel="MESTemplateTargetDeployTabPage"
+                                   presentationClass="page-content"
+                                   title="tab.targets">
+                        <netuix:meta name="helpid" content="Core.core.cmotemplate.mestemplatetargetdeploy.title;core"/>
+                        <netuix:content>
+                          <netuix:layout type="no" markupName="NoLayout">
+                            <netuix:placeholder usingFlow="false" markupName="ph1">
+                              <netuix:portlet definitionLabel="MESTemplateTargetDeployPortlet">
+                                <netuix:strutsContent module="/core" action="MESTemplateTargetdeploy"
+                                                      refreshAction="MESTemplateTargetdeploy"/>
+                              </netuix:portlet>
+                            </netuix:placeholder>
+                          </netuix:layout>
+                        </netuix:content>
+                      </netuix:page>
+                      <!-- Definition for the notes tab -->
+                      <netuix:page markupName="page" definitionLabel="MESTemplateNotesTabPage"
+                                   presentationClass="page-content"
+                                   title="tab.notes">
+                        <netuix:meta name="helpid" content="Core.core.cmotemplate.mestemplatenotes.title;core"/>
+                        <netuix:content>
+                          <netuix:layout type="no" markupName="NoLayout">
+                            <netuix:placeholder usingFlow="false" markupName="ph1">
+                              <netuix:portlet definitionLabel="MESTemplateNotesPortlet">
+                                <netuix:strutsContent module="/core" action="MESTemplateNotes"
+                                                      refreshAction="MESTemplateNotes"/>
+                              </netuix:portlet>
+                            </netuix:placeholder>
+                          </netuix:layout>
+                        </netuix:content>
+                      </netuix:page>
+                    </netuix:content>
+                  </netuix:book>
+                </netuix:placeholder>
+              </netuix:layout>
+            </netuix:content>
+          </netuix:page>
+        </netuix:content>
+      </netuix:book>
+
+      <!-- Definition for the managed scheduled executor service template edit assistant page -->
+      <netuix:book definitionLabel="MSESTemplatesBook" title="book.title" markupName="book"
+                               backingFile="com.bea.console.utils.GeneralBackingFile"
+                               threadsafe="true"
+                               presentationClass="wlsc-frame">
+        <netuix:titlebar/>
+        <netuix:content>
+          <netuix:page markupName="page" definitionLabel="MSESTemplatePages" title="not.used" hidden="true">
+            <netuix:content>
+              <netuix:layout type="no" markupName="NoLayout">
+                <netuix:placeholder usingFlow="false" markupName="ph1">
+                  <netuix:book definitionLabel="MSESTemplatePagesBook" markupName="book"
+                               title="MSESTemplatePagesBook">
+                    <netuix:singleLevelMenu markupType="Menu" markupName="singleLevelMenu"/>
+                    <netuix:content>
+                      <netuix:page markupName="page" definitionLabel="MSESTemplateGeneralPage"
+                                   title="tab.config"
+                                   presentationClass="page-content">
+                        <netuix:meta name="helpid" content="Core.core.cmotemplate.msestemplateconfig.title;core"/>
+                        <netuix:meta name="configuration-page" content="ManagedScheduledExecutorServiceTemplate"/>
+                        <netuix:meta name="breadcrumb-context" content="handle"/>
+                        <netuix:content>
+                          <netuix:layout type="no" markupName="NoLayout">
+                            <netuix:placeholder usingFlow="false" markupName="ph1">
+                              <netuix:portlet definitionLabel="MSESTemplateGeneralPortlet">
+                                <netuix:strutsContent module="/core" action="MSESTemplateConfig"
+                                                      refreshAction="MSESTemplateConfig"/>
+                              </netuix:portlet>
+                            </netuix:placeholder>
+                          </netuix:layout>
+                        </netuix:content>
+                      </netuix:page>
+                      <!-- Definition for the targetdeploy tab -->
+                      <netuix:page markupName="page" definitionLabel="MSESTemplateTargetDeployTabPage"
+                                   presentationClass="page-content"
+                                   title="tab.targets">
+                        <netuix:meta name="helpid" content="Core.core.cmotemplate.msestemplatetargetdeploy.title;core"/>
+                        <netuix:content>
+                          <netuix:layout type="no" markupName="NoLayout">
+                            <netuix:placeholder usingFlow="false" markupName="ph1">
+                              <netuix:portlet definitionLabel="MSESTemplateTargetDeployPortlet">
+                                <netuix:strutsContent module="/core" action="MSESTemplateTargetdeploy"
+                                                      refreshAction="MSESTemplateTargetdeploy"/>
+                              </netuix:portlet>
+                            </netuix:placeholder>
+                          </netuix:layout>
+                        </netuix:content>
+                      </netuix:page>
+                      <!-- Definition for the notes tab -->
+                      <netuix:page markupName="page" definitionLabel="MSESTemplateNotesTabPage"
+                                   presentationClass="page-content"
+                                   title="tab.notes">
+                        <netuix:meta name="helpid" content="Core.core.cmotemplate.msestemplatenotes.title;core"/>
+                        <netuix:content>
+                          <netuix:layout type="no" markupName="NoLayout">
+                            <netuix:placeholder usingFlow="false" markupName="ph1">
+                              <netuix:portlet definitionLabel="MSESTemplateNotesPortlet">
+                                <netuix:strutsContent module="/core" action="MSESTemplateNotes"
+                                                      refreshAction="MSESTemplateNotes"/>
+                              </netuix:portlet>
+                            </netuix:placeholder>
+                          </netuix:layout>
+                        </netuix:content>
+                      </netuix:page>
+                    </netuix:content>
+                  </netuix:book>
+                </netuix:placeholder>
+              </netuix:layout>
+            </netuix:content>
+          </netuix:page>
+        </netuix:content>
+      </netuix:book>
+
+      <!-- Definition for the managed thread factory template edit assistant page -->
+      <netuix:book definitionLabel="MTFTemplatesBook" title="book.title" markupName="book"
+                                     backingFile="com.bea.console.utils.GeneralBackingFile"
+                                     threadsafe="true"
+                                     presentationClass="wlsc-frame">
+        <netuix:titlebar/>
+        <netuix:content>
+          <netuix:page markupName="page" definitionLabel="MTFTemplatePages" title="not.used" hidden="true">
+            <netuix:content>
+              <netuix:layout type="no" markupName="NoLayout">
+                <netuix:placeholder usingFlow="false" markupName="ph1">
+                  <netuix:book definitionLabel="MTFTemplatePagesBook" markupName="book"
+                               title="MTFTemplatePagesBook">
+                    <netuix:singleLevelMenu markupType="Menu" markupName="singleLevelMenu"/>
+                    <netuix:content>
+                      <netuix:page markupName="page" definitionLabel="MTFTemplateGeneralPage"
+                                   title="tab.config"
+                                   presentationClass="page-content">
+                        <netuix:meta name="helpid" content="Core.core.cmotemplate.mtftemplateconfig.title;core"/>
+                        <netuix:meta name="configuration-page" content="ManagedThreadFactoryTemplate"/>
+                        <netuix:meta name="breadcrumb-context" content="handle"/>
+                        <netuix:content>
+                          <netuix:layout type="no" markupName="NoLayout">
+                            <netuix:placeholder usingFlow="false" markupName="ph1">
+                              <netuix:portlet definitionLabel="MTFTemplateGeneralPortlet">
+                                <netuix:strutsContent module="/core" action="MTFTemplateConfig"
+                                                      refreshAction="MTFTemplateConfig"/>
+                              </netuix:portlet>
+                            </netuix:placeholder>
+                          </netuix:layout>
+                        </netuix:content>
+                      </netuix:page>
+                      <!-- Definition for the targetdeploy tab -->
+                      <netuix:page markupName="page" definitionLabel="MTFTemplateTargetDeployTabPage"
+                                   presentationClass="page-content"
+                                   title="tab.targets">
+                        <netuix:meta name="helpid" content="Core.core.cmotemplate.mtftemplatetargetdeploy.title;core"/>
+                        <netuix:content>
+                          <netuix:layout type="no" markupName="NoLayout">
+                            <netuix:placeholder usingFlow="false" markupName="ph1">
+                              <netuix:portlet definitionLabel="MTFTemplateTargetDeployPortlet">
+                                <netuix:strutsContent module="/core" action="MTFTemplateTargetdeploy"
+                                                      refreshAction="MTFTemplateTargetdeploy"/>
+                              </netuix:portlet>
+                            </netuix:placeholder>
+                          </netuix:layout>
+                        </netuix:content>
+                      </netuix:page>
+                      <!-- Definition for the notes tab -->
+                      <netuix:page markupName="page" definitionLabel="MTFTemplateNotesTabPage"
+                                   presentationClass="page-content"
+                                   title="tab.notes">
+                        <netuix:meta name="helpid" content="Core.core.cmotemplate.mtftemplatenotes.title;core"/>
+                        <netuix:content>
+                          <netuix:layout type="no" markupName="NoLayout">
+                            <netuix:placeholder usingFlow="false" markupName="ph1">
+                              <netuix:portlet definitionLabel="MTFTemplateNotesPortlet">
+                                <netuix:strutsContent module="/core" action="MTFTemplateNotes"
+                                                      refreshAction="MTFTemplateNotes"/>
+                              </netuix:portlet>
+                            </netuix:placeholder>
+                          </netuix:layout>
+                        </netuix:content>
+                      </netuix:page>
+                    </netuix:content>
+                  </netuix:book>
+                </netuix:placeholder>
+              </netuix:layout>
+            </netuix:content>
+          </netuix:page>
+        </netuix:content>
+      </netuix:book>
+    </netuix:content>
+  </netuix:book>
+</portal:root>

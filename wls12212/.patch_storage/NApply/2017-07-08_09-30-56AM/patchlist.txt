@@ -1,0 +1,5 @@
+User invokes OPatch via "NApply" to process the following patches:
+
+Patch ID: 19030178
+Patch Location: "C:\Windows\Temp\OraInstall2017-07-08_09-17-34AM\swflib\p19030178_122100_Generic-150819.2212\19030178"
+Patch storage area: "L:/sw/java/servers/wls12212\.patch_storage\19030178_Aug_4_2015_05_40_22"

@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.thirdparty.maven" version="3.2.5.0.0" description="Maven Binary Distribution" gdr-version="1.2.0.0" pom-gen="false" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="jrf.symbol" source="filegroup1.jar" expanded="true" compacted="true">
+      <directory dest="modules" mode="750">
+         <directory dest="org.apache.maven_3.2.5" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false">
+            <directory dest="bin" mode="750">
+               <file size="6211" dest="mvn.bat" mode="640"/>
+               <file size="230" dest="m2.conf" mode="640"/>
+               <file size="6362" dest="mvnDebug.bat" mode="640"/>
+               <file size="6185" dest="mvn" mode="750"/>
+               <file size="6144" dest="mvnyjp" mode="640"/>
+               <file size="6145" dest="mvnDebug" mode="750"/>
+            </directory>
+            <directory dest="lib" mode="750">
+               <file size="276267" pack="true" dest="maven-compat-3.2.5.jar" mode="640"/>
+               <file size="12637" dest="aether-spi.license" mode="640"/>
+               <file jarentry="modules/org.apache.maven_3.2.5/lib/aether-spi.license" size="12637" dest="aether-transport-wagon.license" mode="640"/>
+               <file size="35116" dest="cdi-api.license" mode="640"/>
+               <file size="2305" pack="true" dest="javax.inject-1.jar" mode="640"/>
+               <file size="164453" pack="true" dest="maven-model-builder-3.2.5.jar" mode="640"/>
+               <file size="50915" pack="true" dest="wagon-provider-api-2.8.jar" mode="640"/>
+               <file size="11358" dest="maven-settings-builder.license" mode="640"/>
+               <file size="59507" pack="true" dest="maven-embedder-3.2.5.jar" mode="640"/>
+               <file size="18116" dest="jsr250-api.license" mode="640"/>
+               <file jarentry="modules/org.apache.maven_3.2.5/lib/maven-settings-builder.license" size="11358" dest="maven-embedder.license" mode="640"/>
+               <file size="292679" pack="true" dest="jsoup-1.7.2.jar" mode="640"/>
+               <file jarentry="modules/org.apache.maven_3.2.5/lib/maven-settings-builder.license" size="11358" dest="maven-aether-provider.license" mode="640"/>
+               <file size="10063" pack="true" dest="wagon-file-2.8.jar" mode="640"/>
+               <file size="169493" pack="true" dest="aether-impl-1.0.0.v20140518.jar" mode="640"/>
+               <file size="23772" pack="true" dest="aether-transport-wagon-1.0.0.v20140518.jar" mode="640"/>
+               <file size="588847" pack="true" dest="maven-core-3.2.5.jar" mode="640"/>
+               <file size="40237" pack="true" dest="commons-cli-1.2.jar" mode="640"/>
+               <file size="281434" pack="true" dest="commons-lang-2.6.jar" mode="640"/>
+               <file size="143439" pack="true" dest="aether-util-1.0.0.v20140518.jar" mode="640"/>
+               <file jarentry="modules/org.apache.maven_3.2.5/lib/aether-spi.license" size="12637" dest="org.eclipse.sisu.inject.license" mode="640"/>
+               <file jarentry="modules/org.apache.maven_3.2.5/lib/maven-settings-builder.license" size="11358" dest="wagon-file.license" mode="640"/>
+               <file jarentry="modules/org.apache.maven_3.2.5/lib/aether-spi.license" size="12637" dest="aether-util.license" mode="640"/>
+               <file size="44497" pack="true" dest="cdi-api-1.0.jar" mode="640"/>
+               <directory dest="ext" mode="750">
+                  <file size="152" dest="README.txt" mode="640"/>
+               </directory>
+               <file jarentry="modules/org.apache.maven_3.2.5/lib/maven-settings-builder.license" size="11358" dest="maven-settings.license" mode="640"/>
+               <file size="135255" pack="true" dest="aether-api-1.0.0.v20140518.jar" mode="640"/>
+               <file jarentry="modules/org.apache.maven_3.2.5/lib/maven-settings-builder.license" size="11358" dest="maven-model-builder.license" mode="640"/>
+               <file size="195501" pack="true" dest="org.eclipse.sisu.plexus-0.3.0.M1.jar" mode="640"/>
+               <file jarentry="modules/org.apache.maven_3.2.5/lib/aether-spi.license" size="12637" dest="aether-connector-basic.license" mode="640"/>
+               <file size="35610" pack="true" dest="aether-connector-basic-1.0.0.v20140518.jar" mode="640"/>
+               <file jarentry="modules/org.apache.maven_3.2.5/lib/maven-settings-builder.license" size="11358" dest="maven-core.license" mode="640"/>
+               <file size="29131" pack="true" dest="aether-spi-1.0.0.v20140518.jar" mode="640"/>
+               <file size="11139" dest="slf4j-api.license" mode="640"/>
+               <file size="336236" pack="true" dest="org.eclipse.sisu.inject-0.3.0.M1.jar" mode="640"/>
+               <file jarentry="modules/org.apache.maven_3.2.5/lib/maven-settings-builder.license" size="11358" dest="maven-artifact.license" mode="640"/>
+               <file jarentry="modules/org.apache.maven_3.2.5/lib/maven-settings-builder.license" size="11358" dest="wagon-http-shared.license" mode="640"/>
+               <file jarentry="modules/org.apache.maven_3.2.5/lib/maven-settings-builder.license" size="11358" dest="maven-plugin-api.license" mode="640"/>
+               <file size="41235" pack="true" dest="maven-settings-3.2.5.jar" mode="640"/>
+               <file size="9943" pack="true" dest="slf4j-simple-1.7.5.jar" mode="640"/>
+               <file size="155672" pack="true" dest="maven-model-3.2.5.jar" mode="640"/>
+               <file jarentry="modules/org.apache.maven_3.2.5/lib/maven-settings-builder.license" size="11358" dest="maven-compat.license" mode="640"/>
+               <file jarentry="modules/org.apache.maven_3.2.5/lib/maven-settings-builder.license" size="11358" dest="maven-repository-metadata.license" mode="640"/>
+               <file size="41421" pack="true" dest="maven-settings-builder-3.2.5.jar" mode="640"/>
+               <file size="60869" pack="true" dest="plexus-interpolation-1.21.jar" mode="640"/>
+               <file size="5593" pack="true" dest="jsr250-api-1.0.jar" mode="640"/>
+               <file size="10505" pack="true" dest="wagon-http-shared-2.8.jar" mode="640"/>
+               <file size="26669" pack="true" dest="plexus-sec-dispatcher-1.3.jar" mode="640"/>
+               <file size="25456" pack="true" dest="slf4j-api-1.7.5.jar" mode="640"/>
+               <file size="2225045" pack="true" dest="guava-18.0.jar" mode="640"/>
+               <file size="240303" pack="true" dest="plexus-utils-3.0.20.jar" mode="640"/>
+               <file size="23977" pack="true" dest="maven-repository-metadata-3.2.5.jar" mode="640"/>
+               <file jarentry="modules/org.apache.maven_3.2.5/lib/maven-settings-builder.license" size="11358" dest="wagon-provider-api.license" mode="640"/>
+               <file jarentry="modules/org.apache.maven_3.2.5/lib/aether-spi.license" size="12637" dest="aether-impl.license" mode="640"/>
+               <file jarentry="modules/org.apache.maven_3.2.5/lib/aether-spi.license" size="12637" dest="aether-api.license" mode="640"/>
+               <file jarentry="modules/org.apache.maven_3.2.5/lib/maven-settings-builder.license" size="11358" dest="wagon-http.license" mode="640"/>
+               <file jarentry="modules/org.apache.maven_3.2.5/lib/cdi-api.license" size="35116" dest="plexus-sec-dispatcher.license" mode="640"/>
+               <file jarentry="modules/org.apache.maven_3.2.5/lib/cdi-api.license" size="35116" dest="plexus-cipher.license" mode="640"/>
+               <file size="12134" pack="true" dest="plexus-cipher-1.7.jar" mode="640"/>
+               <file jarentry="modules/org.apache.maven_3.2.5/lib/maven-settings-builder.license" size="11358" dest="maven-model.license" mode="640"/>
+               <file jarentry="modules/org.apache.maven_3.2.5/lib/aether-spi.license" size="12637" dest="org.eclipse.sisu.plexus.license" mode="640"/>
+               <file size="2039840" pack="true" dest="wagon-http-2.8-shaded.jar" mode="640"/>
+               <file size="3934" pack="true" dest="aopalliance-1.0.jar" mode="640"/>
+               <file size="63359" pack="true" dest="maven-aether-provider-3.2.5.jar" mode="640"/>
+               <file size="51897" pack="true" dest="maven-artifact-3.2.5.jar" mode="640"/>
+               <file jarentry="modules/org.apache.maven_3.2.5/lib/slf4j-api.license" size="11139" dest="slf4j-simple.license" mode="640"/>
+               <file size="397053" pack="true" dest="sisu-guice-3.2.3-no_aop.jar" mode="640"/>
+               <file size="43593" pack="true" dest="maven-plugin-api-3.2.5.jar" mode="640"/>
+               <file size="3530" dest="jsoup.license" mode="640"/>
+               <file size="3163" pack="true" dest="plexus-component-annotations-1.5.5.jar" mode="640"/>
+               <file size="172041" pack="true" dest="commons-io-2.2.jar" mode="640"/>
+            </directory>
+            <file size="2508" dest="README.txt" mode="640"/>
+            <directory dest="boot" mode="750">
+               <file size="50204" pack="true" dest="plexus-classworlds-2.5.2.jar" mode="640"/>
+            </directory>
+            <file size="182" dest="NOTICE" mode="640"/>
+            <file size="18842" dest="LICENSE" mode="640"/>
+            <directory dest="conf" mode="750">
+               <file size="10216" dest="settings.xml" mode="640"/>
+               <directory dest="logging" mode="750">
+                  <file size="1126" dest="simplelogger.properties" mode="640"/>
+               </directory>
+            </directory>
+         </directory>
+         <file-perms>
+            <permission mode="750" regex="mvn"/>
+            <permission mode="750" regex="mvnDebug"/>
+            <permission mode="640" regex=".*"/>
+            <permission mode="750" regex=".*" match-dirs="true"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="640" regex=".*"/>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+</component-def>

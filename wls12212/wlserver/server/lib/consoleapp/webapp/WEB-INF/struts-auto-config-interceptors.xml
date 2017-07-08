@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "struts-config_1_1.dtd">
+<struts-config>
+  <form-beans>
+    <form-bean name="overviewTableForm"
+               type="org.apache.struts.validator.DynaValidatorForm">
+      <form-property name="name" type="java.lang.String"/>
+      <form-property name="contents" type="java.util.Collection"/>
+      <form-property name="chosenContents" type="java.util.Collection"/>
+      <form-property name="handle" type="com.bea.console.handles.Handle"/>
+      <form-property name="tablePreferences"
+                     type="com.bea.console.cvo.preferences.TablePreferences"/>
+      <form-property name="metadata"
+                     type="com.bea.console.taglib.html.metadata.CursorTableMetaData"/>
+    </form-bean>
+    <form-bean name="datasourceConfigForm"
+               type="org.apache.struts.validator.DynaValidatorForm">
+      <form-property name="name" type="java.lang.String"/>
+      <form-property name="handle" type="com.bea.console.handles.Handle"/>
+      <form-property name="datasourceConfig"
+                     type="com.bea.console.cvo.interceptors.DatasourceInterceptorConfigBean"/>
+      <form-property name="urls" type="java.util.Collection"/>
+      <form-property name="selectedUrl" type="java.lang.String"/>
+    </form-bean>
+    <form-bean name="scriptConfigForm"
+               type="org.apache.struts.validator.DynaValidatorForm">
+      <form-property name="name" type="java.lang.String"/>
+      <form-property name="handle" type="com.bea.console.handles.Handle"/>
+      <form-property name="scriptConfig"
+                     type="com.bea.console.cvo.interceptors.ScriptInterceptorConfigBean"/>
+    </form-bean>
+    <form-bean name="scriptPreProcessorForm"
+               type="org.apache.struts.validator.DynaValidatorForm">
+      <form-property name="name" type="java.lang.String"/>
+      <form-property name="handle" type="com.bea.console.handles.Handle"/>
+      <form-property name="environment" type="java.lang.String"/>
+      <form-property name="arguments" type="java.lang.String"/>
+      <form-property name="scriptProcessor"
+                     type="com.bea.console.cvo.interceptors.ScriptPreProcessorBean"/>
+    </form-bean>
+    <form-bean name="scriptPostProcessorForm"
+               type="org.apache.struts.validator.DynaValidatorForm">
+      <form-property name="name" type="java.lang.String"/>
+      <form-property name="handle" type="com.bea.console.handles.Handle"/>
+      <form-property name="environment" type="java.lang.String"/>
+      <form-property name="arguments" type="java.lang.String"/>
+      <form-property name="scriptProcessor"
+                     type="com.bea.console.cvo.interceptors.ScriptPostProcessorBean"/>
+    </form-bean>
+    <form-bean name="customizedForm"
+               type="com.bea.console.actionforms.CustomizerForm">
+      <form-property name="handle" type="com.bea.console.handles.Handle"/>
+      <form-property name="name" type="java.lang.String"/>
+      <form-property name="tablePrefererences"
+                     type="com.bea.console.cvo.preferences.TablePreferences"/>
+    </form-bean>
+  </form-beans>
+  <!-- Global Exception Handlers for this module -->
+  <global-exceptions>
+    <exception key="global" type="java.lang.Exception"
+               handler="com.bea.console.utils.UnexpectedExceptionHandler"/>
+  </global-exceptions>
+  <action-mappings>
+    <action path="/TablePreferencesUpdatedAction"
+            type="com.bea.console.actions.preferences.TablePreferencesUpdatedAction"
+            scope="request" validate="false" name="customizedForm">
+    </action>
+    <action path="/DatasourceInterceptorsTable"
+            type="com.bea.console.actions.interceptors.DatasourceOverviewTableAction"
+            name="overviewTableForm" scope="request" validate="false">
+      <forward name="success" contextRelative="true"
+               path="/jsp/interceptors/DatasourceTable.jsp"/>
+    </action>
+    <action path="/ScriptInterceptorsTable"
+            type="com.bea.console.actions.interceptors.ScriptInterceptorsTableAction"
+            name="overviewTableForm" scope="request" validate="false">
+      <forward name="success" contextRelative="true"
+               path="/jsp/interceptors/ScriptTable.jsp"/>
+    </action>
+    <!-- Interceptors tab handlers -->
+    <action path="/DatasourceConfigGeneral"
+            type="com.bea.console.actions.interceptors.DatasourceConfigAction"
+            name="datasourceConfigForm" scope="request" validate="false">
+      <forward name="success" contextRelative="true"
+               path="/jsp/interceptors/DatasourceConfigGeneral.jsp"/>
+    </action>
+    <action path="/DatasourceConfigGeneralUpdated"
+            type="com.bea.console.actions.interceptors.DatasourceConfigUpdatedAction"
+            name="datasourceConfigForm" scope="request" validate="false"
+            input="success">
+      <forward name="success" path="/DatasourceConfigGeneral.do"/>
+    </action>
+    <action path="/ScriptConfigGeneral"
+            type="com.bea.console.actions.interceptors.ScriptConfigAction"
+            name="scriptConfigForm" scope="request" validate="false">
+      <forward name="success" contextRelative="true"
+               path="/jsp/interceptors/ScriptConfigGeneral.jsp"/>
+    </action>
+    <action path="/ScriptConfigGeneralUpdated"
+            type="com.bea.console.actions.interceptors.ScriptConfigUpdatedAction"
+            name="scriptConfigForm" scope="request" validate="false"
+            input="success">
+      <forward name="success" path="/ScriptConfigGeneral.do"/>
+    </action>
+    <action path="/ScriptConfigPreProcessor"
+            type="com.bea.console.actions.interceptors.ScriptProcessorAction"
+            name="scriptPreProcessorForm" scope="request" validate="false">
+      <forward name="success" contextRelative="true"
+               path="/jsp/interceptors/ScriptConfigPreProcessor.jsp"/>
+    </action>
+    <action path="/ScriptConfigPreProcessorUpdated"
+            type="com.bea.console.actions.interceptors.ScriptProcessorUpdatedAction"
+            name="scriptPreProcessorForm" scope="request" validate="false"
+            input="success">
+      <forward name="success" path="/ScriptConfigPreProcessor.do"/>
+    </action>
+    <action path="/ScriptConfigPostProcessor"
+            type="com.bea.console.actions.interceptors.ScriptProcessorAction"
+            name="scriptPostProcessorForm" scope="request" validate="false">
+      <forward name="success" contextRelative="true"
+               path="/jsp/interceptors/ScriptConfigPostProcessor.jsp"/>
+    </action>
+    <action path="/ScriptConfigPostProcessorUpdated"
+            type="com.bea.console.actions.interceptors.ScriptProcessorUpdatedAction"
+            name="scriptPostProcessorForm" scope="request" validate="false"
+            input="success">
+      <forward name="success" path="/ScriptConfigPostProcessor.do"/>
+    </action>
+  </action-mappings>
+  <controller
+      processorClass="com.bea.console.internal.ConsolePageFlowRequestProcessor">
+    <set-property property="nocache" value="true"/>
+    <set-property property="contentType" value="text/html;charset=UTF-8"/>
+  </controller>
+  <message-resources factory="com.bea.console.utils.ConsoleMessageResourcesFactory" null="false" parameter="interceptors"
+                     key="interceptors"/>
+</struts-config>

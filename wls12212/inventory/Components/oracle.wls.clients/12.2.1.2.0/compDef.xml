@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.wls.clients" version="12.2.1.2.0" description="Oracle WebLogic Client" gdr-version="1.8.0.0" groupId="com.oracle.weblogic" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="wls.server.symbol" source="filegroup1.jar" expanded="true" compacted="true">
+      <exclude regex="\.ade_path" match-dirs="true"/>
+      <directory dest="" patchable="true">
+         <directory dest="server" mode="750" patchable="true">
+            <directory dest="include" mode="750" patchable="true">
+               <file size="2932" dest="JmsBrowser.h" mode="640"/>
+               <file size="14392" dest="JmsBytesMessage.h" mode="640"/>
+               <file size="3074" dest="JmsCommon.h" mode="640"/>
+               <file size="2038" dest="JmsConnectionFactory.h" mode="640"/>
+               <file size="10813" dest="JmsConnection.h" mode="640"/>
+               <file size="5013" dest="JmsConsumer.h" mode="640"/>
+               <file size="1780" dest="JmsContext.h" mode="640"/>
+               <file size="1771" dest="JmsDestination.h" mode="640"/>
+               <file size="2694" dest="JmsEnumeration.h" mode="640"/>
+               <file size="6752" dest="JmsException.h" mode="640"/>
+               <file size="1736" dest="Jms.h" mode="640"/>
+               <file size="15399" dest="JmsMapMessage.h" mode="640"/>
+               <file size="30909" dest="JmsMessage.h" mode="640"/>
+               <file size="5052" dest="JmsMetaData.h" mode="640"/>
+               <file size="3604" dest="JmsProducer.h" mode="640"/>
+               <file size="1096" dest="JmsQueue.h" mode="640"/>
+               <file size="10843" dest="JmsSession.h" mode="640"/>
+               <file size="12533" dest="JmsStreamMessage.h" mode="640"/>
+               <file size="2424" dest="JmsTextMessage.h" mode="640"/>
+               <file size="1099" dest="JmsTopic.h" mode="640"/>
+               <directory dest="platform" mode="750" patchable="true">
+                  <directory dest="aixppc32" mode="750" patchable="true">
+                     <file size="896" dest="JmsTypes.h" mode="640"/>
+                  </directory>
+                  <directory dest="hp-ux" mode="750" patchable="true">
+                     <file size="269" dest="JmsTypes.h" mode="640"/>
+                  </directory>
+                  <file jarentry="server/include/platform/lnx_s390x/JmsTypes.h" size="2005" dest="JmsTypes.h" mode="640"/>
+                  <directory dest="lnxi686" mode="750" patchable="true">
+                     <file size="895" dest="JmsTypes.h" mode="640"/>
+                  </directory>
+                  <directory dest="lnxia64" mode="750" patchable="true">
+                     <file size="895" dest="JmsTypes.h" mode="640"/>
+                  </directory>
+                  <directory dest="lnx_s390x" mode="750" patchable="true">
+                     <file size="2005" dest="JmsTypes.h" mode="640"/>
+                  </directory>
+                  <directory dest="lnx_x86_64" mode="750" patchable="true">
+                     <file jarentry="server/include/platform/lnxia64/JmsTypes.h" size="895" dest="JmsTypes.h" mode="640"/>
+                  </directory>
+                  <directory dest="sol" mode="750" patchable="true">
+                     <file jarentry="server/include/platform/hp-ux/JmsTypes.h" size="269" dest="JmsTypes.h" mode="640"/>
+                  </directory>
+                  <directory dest="win32" mode="750" patchable="true">
+                     <file size="555" dest="JmsTypes.h" mode="640"/>
+                  </directory>
+               </directory>
+            </directory>
+         </directory>
+         <directory dest="modules" mode="750" patchable="true">
+            <directory dest="com.bea.weblogic.jms.dotnetclient" mode="750" patchable="true">
+               <directory dest="META-INF" mode="750" patchable="true">
+                  <file size="581" dest="MANIFEST.MF" mode="640"/>
+               </directory>
+               <file size="841189" dest="jms.dotnet.api.zip" mode="640"/>
+               <file size="221184" dest="WebLogic.Messaging.dll" mode="640"/>
+               <file size="781824" dest="WebLogic.Messaging.pdb" mode="640"/>
+            </directory>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+</component-def>

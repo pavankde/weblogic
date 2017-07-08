@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library name="Weblogic JAX-RS Client 2.0" deployed="false" xmlns="http://xmlns.oracle.com/jdeveloper/1013/manifest-libraries">
+  <export-specification>Weblogic_JAX-RS_Client_2.0.exports</export-specification>
+  <classpath export="library">../../../../oracle_common/modules/weblogic.jaxrs.client.jar</classpath>
+  <classpath export="library">../../../../oracle_common/modules/weblogic.jaxrs.internal.common.jar</classpath>
+</library>

@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.fmwplatform.common" version="12.2.1.2.0" description="FMW Platform Common Component" gdr-version="1.7.0.0" pom-gen="false" groupId="com.oracle.fmwprov" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="fmwplatform.common.symbol" source="filegroup1.jar" expanded="true" compacted="true">
+      <directory dest="plugins" include-empty-dirs="true" mode="750" patchable="true">
+         <directory dest="fmwplatform" recurse="true" include-empty-dirs="true" mode="750" preserve-symlinks="false" patchable="true">
+            <directory dest="samples" recurse="true" include-empty-dirs="true" mode="750" preserve-symlinks="false" patchable="true">
+               <file size="89" dest="README.txt" mode="640"/>
+            </directory>
+            <directory dest="actions" mode="750" patchable="true">
+               <file size="222592" pack="true" dest="standardactions-v2.jar" mode="640" patchable="true" group="oracle.fmwplatform.common" artifact="standardactions-v2" version="1.6.0-160827.1219.41713"/>
+            </directory>
+         </directory>
+      </directory>
+      <directory dest="modules" mode="750" patchable="true" group="oracle.fmwplatform.common" artifact="lcmagent-rest" version="1.6.0-160827.1219.41713" type="zip">
+         <directory dest="fmwplatform" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+            <directory dest="common" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+               <directory dest="lcmagent" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+                  <file size="281" dest="run.cmd" os-family="windows" mode="750"/>
+                  <file size="75" dest="keygen.cmd" os-family="windows" mode="750"/>
+                  <file size="348" dest="debug.cmd" os-family="windows" mode="750"/>
+                  <file size="9288" pack="true" dest="lcmagent-rest.war" mode="640" patchable="true" group="oracle.fmwplatform.common" artifact="lcmagent-rest" version="1.6.0-160827.1219.41713" type="war"/>
+                  <file size="5934104" pack="true" dest="jetty-runner.jar" mode="640" patchable="true" group="org.eclipse.jetty" artifact="jetty-runner" version="9.3.2.v20150730"/>
+               </directory>
+               <file size="50078" pack="true" dest="actionframework.jar" mode="640" patchable="true" group="oracle.fmwplatform.common" artifact="actionframework" version="1.6.0-160827.1219.41713"/>
+               <file size="64675" pack="true" dest="actionframework-api-v2.jar" mode="640" patchable="true" group="oracle.fmwplatform.common" artifact="actionframework-api-v2" version="1.6.0-160827.1219.41713"/>
+               <file size="97717" pack="true" dest="actionframework-v2.jar" mode="640" patchable="true" group="oracle.fmwplatform.common" artifact="actionframework-v2" version="1.6.0-160827.1219.41713"/>
+               <file size="78567" pack="true" dest="fmwplatform-wlst-dependencies.jar" mode="640" patchable="true" group="oracle.fmwplatform.common" artifact="standardactions" version="1.6.0-160827.1219.41713"/>
+            </directory>
+         </directory>
+      </directory>
+      <directory dest="modules" mode="750" patchable="true" group="oracle.fmwplatform.common" artifact="lcmagent-rest" version="1.6.0-160827.1219.41713" type="zip">
+         <directory dest="fmwplatform" recurse="true" include-empty-dirs="false" mode="640" preserve-symlinks="false" patchable="true">
+            <directory dest="common" recurse="true" include-empty-dirs="false" mode="640" preserve-symlinks="false" patchable="true">
+               <directory dest="lcmagent" recurse="true" include-empty-dirs="false" mode="640" preserve-symlinks="false" patchable="true">
+                  <file size="15216" dest="jetty.xml" mode="640"/>
+                  <file size="2274" dest="keystore" mode="640"/>
+               </directory>
+            </directory>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex=".*" match-dirs="true"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+         <permission mode="750" regex=".*\.sh"/>
+         <permission mode="750" regex=".*\.cmd"/>
+         <permission mode="640" regex=".*"/>
+      </file-perms>
+   </file-map>
+   <libraries>
+      <library name="oracle.fmwplatform.common" type="none" suppress-version="true" size="6410860">
+         <entry explode="true" include-parent="false" name="modules/fmwplatform/common/actionframework.jar"/>
+         <entry explode="true" include-parent="false" name="modules/fmwplatform/common/actionframework-api-v2.jar"/>
+         <entry explode="true" include-parent="false" name="modules/fmwplatform/common/actionframework-v2.jar"/>
+         <entry explode="true" include-parent="false" name="plugins/fmwplatform/actions/standardactions-v2.jar"/>
+         <entry explode="true" include-parent="false" name="modules/fmwplatform/common/lcmagent/lcmagent-rest.war"/>
+         <entry explode="true" include-parent="false" name="modules/fmwplatform/common/lcmagent/jetty-runner.jar"/>
+      </library>
+      <library name="oracle.fmwplatform.common.standardactions" type="none" suppress-version="true" size="79880">
+         <entry explode="true" include-parent="false" name="modules/fmwplatform/common/fmwplatform-wlst-dependencies.jar"/>
+      </library>
+   </libraries>
+</component-def>

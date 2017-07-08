@@ -1,0 +1,3430 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<lib-exports owner="webservices" xmlns="http://xmlns.oracle.com/ide/export">
+  <package name="weblogic.jws">
+    <class name="AsyncFailure">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="AsyncResponse">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="Binding">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="BufferQueue">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="Callback">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="CallbackMethod">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="Context">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="Conversation">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="Conversational">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="FileStore">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="MessageBuffer">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="Policies">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="Policy">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="ReliabilityBuffer">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="ReliabilityErrorHandler">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="ServiceClient">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="StreamAttachments">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="Transactional">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="Types">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="WLHttpTransport">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="WLHttpsTransport">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="WLJmsTransport">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="WSDL">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="WildcardBinding">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="WildcardBindings">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="WildcardParticle" members="concealed"/>
+  </package>
+  <package name="weblogic.jws.jaxws">
+    <class name="ClientPolicyFeature">
+      <method name="getID()"/>
+      <field name="ID"/>
+      <method name="setEffectivePolicy(weblogic.jws.jaxws.policy.PolicySource policy)"/>
+      <method name="setEffectivePolicyForFaultMessage(javax.xml.namespace.QName faultMessage,weblogic.jws.jaxws.policy.PolicySource policy)"/>
+      <method name="setEffectivePolicyForFaultMessage(javax.xml.namespace.QName operation,javax.xml.namespace.QName faultMessage,weblogic.jws.jaxws.policy.PolicySource policy)"/>
+      <method name="setEffectivePolicyForInputMessage(javax.xml.namespace.QName operation,weblogic.jws.jaxws.policy.PolicySource policy)"/>
+      <method name="setEffectivePolicyForInputMessage(weblogic.jws.jaxws.policy.PolicySource policy)"/>
+      <method name="setEffectivePolicyForOperation(javax.xml.namespace.QName operation,weblogic.jws.jaxws.policy.PolicySource policy)"/>
+      <method name="setEffectivePolicyForOutputMessage(javax.xml.namespace.QName operation,weblogic.jws.jaxws.policy.PolicySource policy)"/>
+      <method name="setEffectivePolicyForOutputMessage(weblogic.jws.jaxws.policy.PolicySource policy)"/>
+      <method name="getEffectivePolicy()"/>
+      <method name="getEffectivePolicyForFaultMessage(javax.xml.namespace.QName faultMessage)"/>
+      <method name="getEffectivePolicyForFaultMessage(javax.xml.namespace.QName operation,javax.xml.namespace.QName faultMessage)"/>
+      <method name="getEffectivePolicyForInputMessage()"/>
+      <method name="getEffectivePolicyForInputMessage(javax.xml.namespace.QName operation)"/>
+      <method name="getEffectivePolicyForOperation(javax.xml.namespace.QName operation)"/>
+      <method name="getEffectivePolicyForOutputMessage()"/>
+      <method name="getEffectivePolicyForOutputMessage(javax.xml.namespace.QName operation)"/>
+    </class>
+    <class name="PoliciesFeature">
+      <method name="PoliciesFeature(boolean enabled,weblogic.jws.Policy[] policies)"/>
+      <method name="PoliciesFeature(java.util.List policies)"/>
+      <method name="PoliciesFeature(weblogic.jws.Policy[] policies)"/>
+      <method name="PoliciesFeature(weblogic.jws.jaxws.PolicyFeature[] policy)"/>
+      <method name="getID()"/>
+      <method name="getPolicies()"/>
+      <field name="ID"/>
+    </class>
+    <class name="PolicyFeature">
+      <method name="PolicyFeature(boolean enabled,java.lang.String uri,weblogic.jws.Policy.Direction direction,boolean attachToWsdl)"/>
+      <method name="PolicyFeature(java.lang.String uri)"/>
+      <method name="PolicyFeature(java.lang.String uri,weblogic.jws.Policy.Direction direction)"/>
+      <method name="PolicyFeature(java.lang.String uri,weblogic.jws.Policy.Direction direction,boolean attachToWsdl)"/>
+      <method name="isAttachToWsdl()"/>
+      <method name="getID()"/>
+      <method name="getUri()"/>
+      <field name="ID"/>
+      <method name="getDirection()"/>
+    </class>
+    <class name="WssConfigurationFeature">
+      <method name="WssConfigurationFeature(boolean enabled,java.lang.String value)"/>
+      <method name="getID()"/>
+      <method name="getValue()"/>
+      <field name="ID"/>
+    </class>
+  </package>
+  <package name="weblogic.jws.jaxws.client">
+    <class name="ClientIdentityFeature">
+      <method name="ClientIdentityFeature()"/>
+      <method name="ClientIdentityFeature(java.lang.String rawClientId)"/>
+      <method name="equals(java.lang.Object other)"/>
+      <method name="isGeneratedRawClientId()"/>
+      <method name="hashCode()"/>
+      <method name="calculateParentId()"/>
+      <method name="getClientId()"/>
+      <method name="getID()"/>
+      <method name="getParentId()"/>
+      <method name="getRawClientId()"/>
+      <method name="toString()"/>
+      <method name="setParentIdCalculator(weblogic.jws.jaxws.client.ClientIdentityFeature.ParentIdCalculator calc)"/>
+      <method name="addPropertyChangeListener(java.beans.PropertyChangeListener listener)"/>
+      <method name="dispose()"/>
+      <method name="removePropertyChangeListener(java.beans.PropertyChangeListener listener)"/>
+      <method name="setClientId(java.lang.String clientId)"/>
+      <method name="setClientId(java.lang.String clientId,boolean prependContext)"/>
+      <method name="setGeneratedRawClientId(java.lang.String rawClientId)"/>
+    </class>
+  </package>
+  <package name="weblogic.jws.jaxws.client.async">
+    <class name="AsyncClientHandlerFeature">
+      <method name="AsyncClientHandlerFeature(java.lang.Object handler)"/>
+      <method name="equals(java.lang.Object other)"/>
+      <method name="hashCode()"/>
+      <method name="getHandler()"/>
+      <method name="getID()"/>
+      <method name="toString()"/>
+      <field name="ID"/>
+    </class>
+  </package>
+  <package name="weblogic.jws.jaxws.policy">
+    <class name="PolicySource">
+      <method name="getPolicy(java.lang.String policyId)"/>
+    </class>
+  </package>
+  <package name="weblogic.jws.security">
+    <class name="CallbackRolesAllowed">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="RolesAllowed">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="RolesReferenced">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="RunAs">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="SecurityIdentity">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="SecurityRole">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="SecurityRoleRef">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="SecurityRoles">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="UserDataConstraint">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="WssConfiguration">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+  </package>
+  <package name="weblogic.jws.soap">
+    <class name="SOAPBinding">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+  </package>
+  <package name="weblogic.jws.wlw">
+    <class name="UseWLW81BindingTypes">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="WLW81CallbackJWS">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="WLWRollbackOnCheckedException">
+      <field name="java.lang.annotation.Annotation"/>
+      <field name="ROLLBACK_ON_CHECKED_EXCEPTION"/>
+    </class>
+    <class name="WLWServiceControlCallbackJWS">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee">
+    <class name="WebServiceType" members="concealed"/>
+  </package>
+  <package name="weblogic.wsee.async">
+    <class name="AsyncCallContextFactory">
+      <method name="getAsyncPreCallContext()"/>
+    </class>
+    <class name="AsyncPostCallContext">
+      <method name="getProperty(java.lang.String name)"/>
+      <method name="getStubName()"/>
+    </class>
+    <class name="AsyncPreCallContext">
+      <method name="setProperty(java.lang.String name,java.lang.Object value)"/>
+      <method name="setTimeout(long numSec)"/>
+    </class>
+    <class name="AsyncSOAPInvokeState">
+      <method name="isSoap12()"/>
+      <method name="getServiceURI()"/>
+      <method name="getMessageContextProperties()"/>
+      <method name="getClonedSOAPMessage()"/>
+      <method name="getSOAPMessage()"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.client">
+    <class name="ClientInterceptor">
+      <method name="hasExtendedRequestContext(javax.xml.namespace.QName portQName)"/>
+      <method name="hasExtendedWebServiceFeatures(javax.xml.namespace.QName portQName)"/>
+      <method name="getExtendedRequestContext(java.util.Map alreadySetRequestContext,javax.xml.namespace.QName portQName)"/>
+      <method name="getTargetService()"/>
+      <method name="getWebServiceFeaturesForPort(javax.xml.namespace.QName portQName,java.util.Collection alreadySetFeatures)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.connection.transport">
+    <class name="TransportInfo" members="concealed"/>
+  </package>
+  <package name="weblogic.wsee.connection.transport.http">
+    <class name="HttpTransportInfo">
+      <method name="getPassword()"/>
+      <method name="getProxyPassword()"/>
+      <method name="getProxyUsername()"/>
+      <method name="getUsername()"/>
+      <method name="getProxy()"/>
+      <method name="setPassword(byte[] password)"/>
+      <method name="setProxy(java.net.Proxy proxy)"/>
+      <method name="setProxyPassword(byte[] proxyPassword)"/>
+      <method name="setProxyUsername(byte[] proxyUsername)"/>
+      <method name="setUsername(byte[] username)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.connection.transport.https">
+    <class name="HttpsTransportInfo">
+      <method name="HttpsTransportInfo()"/>
+      <method name="HttpsTransportInfo(javax.net.ssl.KeyManager[] keyMgrs,javax.net.ssl.TrustManager[] trustMgrs,javax.net.ssl.HostnameVerifier verifier)"/>
+      <method name="HttpsTransportInfo(weblogic.wsee.connection.transport.https.SSLAdapter adapter)"/>
+      <method name="getHostnameVerifier()"/>
+      <method name="getKeyManagers()"/>
+      <method name="getTrustManagers()"/>
+      <field name="RELAXED_CHECKING_DEFAULT"/>
+      <field name="STRICT_CHECKING_DEFAULT"/>
+      <field name="DEFAULT_TRANSPORTINFO"/>
+      <method name="setRelaxedTrustManagerDefault(boolean relaxed)"/>
+      <method name="setStrictHostnameCheckDefault(boolean strict)"/>
+      <method name="setHostnameVerifier(javax.net.ssl.HostnameVerifier verifier)"/>
+      <method name="setKeyManagers(javax.net.ssl.KeyManager[] managers)"/>
+      <method name="setSSLAdapter(weblogic.wsee.connection.transport.https.SSLAdapter adapter)"/>
+      <method name="setTrustManagers(javax.net.ssl.TrustManager[] managers)"/>
+      <method name="getSSLAdapter()"/>
+    </class>
+    <class name="JdkSSLAdapter">
+      <method name="openConnection(java.net.URL url,java.net.Proxy proxy,weblogic.wsee.connection.transport.TransportInfo info)"/>
+    </class>
+    <class name="SSLAdapter">
+      <method name="openConnection(java.net.URL url,java.net.Proxy proxy,weblogic.wsee.connection.transport.TransportInfo info)"/>
+      <method name="setClientCert(java.lang.String alias,char[] password)"/>
+      <method name="setKeystore(java.lang.String location,char[] password,java.lang.String type)"/>
+    </class>
+    <class name="SSLAdapterUtils">
+      <method name="containsPEMdata(byte[] result)"/>
+      <method name="getFileBytes(java.io.InputStream stream)"/>
+      <field name="PEM_PREAMBLE_BYTES"/>
+      <field name="PEM_PREAMBLE_STRING"/>
+      <method name="openKeyStore(java.io.InputStream input)"/>
+    </class>
+    <class name="WlsSSLAdapter">
+      <method name="WlsSSLAdapter()"/>
+      <method name="openConnection(java.net.URL url,java.net.Proxy proxy,weblogic.wsee.connection.transport.TransportInfo info)"/>
+      <method name="setClientCert(java.lang.String alias,char[] password)"/>
+      <method name="setKeystore(java.lang.String location,char[] password,java.lang.String type)"/>
+      <method name="setTrustManager(weblogic.security.SSL.TrustManager tm)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.connection.transport.jms">
+    <class name="JMSServerTransport">
+      <method name="JMSServerTransport(java.lang.String uri)"/>
+      <method name="isReliable()"/>
+      <method name="isUserInRole(java.lang.String role)"/>
+      <method name="receive(javax.xml.soap.MimeHeaders headers)"/>
+      <method name="send(javax.xml.soap.MimeHeaders headers)"/>
+      <method name="sendAuthorizationFault(javax.xml.soap.MimeHeaders headers)"/>
+      <method name="sendAuthorizationRequiredFault(javax.xml.soap.MimeHeaders headers)"/>
+      <method name="sendGeneralFault(javax.xml.soap.MimeHeaders headers)"/>
+      <method name="getEndpointAddress()"/>
+      <method name="getName()"/>
+      <method name="getServiceURI()"/>
+      <field name="uri"/>
+      <method name="getUserPrincipal()"/>
+      <method name="confirmOneway()"/>
+    </class>
+    <class name="JmsQueueConnection">
+      <method name="JmsQueueConnection(weblogic.wsee.connection.transport.jms.JmsTransportInfo info)"/>
+      <method name="isAlive()"/>
+      <method name="getBytesMessage()"/>
+      <method name="getTextMessage()"/>
+      <method name="getSender()"/>
+      <field name="JNDI_FACTORY"/>
+      <method name="close()"/>
+      <method name="closeIgoreException()"/>
+      <method name="setAlive(boolean alive)"/>
+    </class>
+    <class name="JmsQueueConnectionPool">
+      <method name="getInstance()"/>
+      <method name="close()"/>
+      <method name="run()"/>
+    </class>
+    <class name="JmsServerQueueTransport">
+      <method name="JmsServerQueueTransport(java.lang.String wsUrl,javax.jms.Message message,javax.jms.QueueConnectionFactory factory,java.lang.String userName,java.lang.String passwd)"/>
+      <method name="isBytesMessage()"/>
+      <method name="isReliable()"/>
+      <method name="isUserInRole(java.lang.String role)"/>
+      <method name="receive(javax.xml.soap.MimeHeaders headers)"/>
+      <method name="send(javax.xml.soap.MimeHeaders headers)"/>
+      <method name="sendAuthorizationFault(javax.xml.soap.MimeHeaders headers)"/>
+      <method name="sendAuthorizationRequiredFault(javax.xml.soap.MimeHeaders headers)"/>
+      <method name="sendGeneralFault(javax.xml.soap.MimeHeaders headers)"/>
+      <method name="getEndpointAddress()"/>
+      <method name="getName()"/>
+      <method name="getServiceURI()"/>
+      <method name="getUserPrincipal()"/>
+      <method name="completeSend()"/>
+      <method name="confirmOneway()"/>
+    </class>
+    <class name="JmsTransport">
+      <method name="JmsTransport()"/>
+      <method name="isBlocking()"/>
+      <method name="receive(javax.xml.soap.MimeHeaders headers)"/>
+      <method name="send(javax.xml.soap.MimeHeaders headers)"/>
+      <method name="sendFault(javax.xml.soap.MimeHeaders headers)"/>
+      <method name="getEndpointAddress()"/>
+      <method name="getName()"/>
+      <method name="getServiceURI()"/>
+      <method name="confirmOneway()"/>
+      <method name="connect(java.lang.String destination,weblogic.wsee.connection.transport.TransportInfo info)"/>
+      <method name="setConnectionTimeout(int millis)"/>
+      <method name="setReadTimeout(int millis)"/>
+    </class>
+    <class name="JmsTransportInfo">
+      <method name="JmsTransportInfo(java.lang.String uri)"/>
+      <method name="equals(java.lang.Object o)"/>
+      <method name="isDefaultFactory()"/>
+      <method name="isSendTo81()"/>
+      <method name="isTransactional()"/>
+      <method name="getPort()"/>
+      <method name="hashCode()"/>
+      <method name="getFactory()"/>
+      <method name="getHost()"/>
+      <method name="getJndiURL()"/>
+      <method name="getPassword()"/>
+      <method name="getQueue()"/>
+      <method name="getServiceUri()"/>
+      <method name="getUsername()"/>
+      <method name="setFactory(java.lang.String factory)"/>
+      <method name="setHost(java.lang.String host)"/>
+      <method name="setJndiURL(java.lang.String url)"/>
+      <method name="setPassword(java.lang.String pwd)"/>
+      <method name="setPort(int port)"/>
+      <method name="setQueue(java.lang.String queue)"/>
+      <method name="setTransactional(boolean transactional)"/>
+      <method name="setUsername(java.lang.String username)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.connection.transport.servlet">
+    <class name="HttpTransportUtils">
+      <method name="getHttpServletRequest(javax.xml.rpc.handler.MessageContext msgCtx)"/>
+      <method name="getHttpServletResponse(javax.xml.rpc.handler.MessageContext msgCtx)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.conversation">
+    <class name="ConversationIdNotYetAvailableException">
+      <method name="ConversationIdNotYetAvailableException(java.lang.String s)"/>
+      <method name="ConversationIdNotYetAvailableException(java.lang.String s,java.lang.Throwable t)"/>
+    </class>
+    <class name="ConversationUtils">
+      <field name="CONVERSATION_ID"/>
+      <field name="SERVER_NAME"/>
+      <method name="getConversationMethodBlockTimeout(javax.xml.rpc.Stub stub)"/>
+      <method name="getConversationVersion(javax.xml.rpc.Stub stub)"/>
+      <method name="getConversationAppVersion(weblogic.wsee.message.WlMessageContext wlmc)"/>
+      <method name="getConversationId(javax.xml.rpc.Stub stub)"/>
+      <method name="continueConversation(javax.xml.rpc.Stub stub,java.util.Map props)"/>
+      <method name="renewStub(javax.xml.rpc.Stub stub)"/>
+      <method name="setConversationId(javax.xml.rpc.Stub stub,java.lang.String id)"/>
+      <method name="setConversationMethodBlockTimeout(javax.xml.rpc.Stub stub,int numsecs)"/>
+      <method name="setConversationVersionOne(javax.xml.rpc.Stub stub)"/>
+      <method name="setConversationVersionTwo(javax.xml.rpc.Stub stub)"/>
+    </class>
+    <class name="ConversationUtils2">
+      <method name="isConversational(weblogic.wsee.wsdl.WsdlBinding binding)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.deploy">
+    <class name="WsdlAddressInfo">
+      <method name="WsdlAddressInfo()"/>
+      <method name="getHost()"/>
+      <method name="getImportPrefix()"/>
+      <method name="getPolicyURL()"/>
+      <method name="getPort()"/>
+      <method name="getServiceUrl(javax.xml.namespace.QName portName)"/>
+      <method name="getServiceUrl(javax.xml.namespace.QName portName,java.lang.String origUrl)"/>
+      <method name="getWsdlLocation()"/>
+      <method name="getServiceName()"/>
+      <method name="addWsdlPort(javax.xml.namespace.QName portName,weblogic.wsee.deploy.WsdlAddressInfo.PortAddress addr)"/>
+      <method name="setHost(java.lang.String host)"/>
+      <method name="setImportPrefix(java.lang.String importPrefix)"/>
+      <method name="setPolicyURL(java.lang.String policyURL)"/>
+      <method name="setPort(java.lang.String port)"/>
+      <method name="setServiceName(javax.xml.namespace.QName serviceName)"/>
+      <method name="setWsdlFilter(weblogic.wsee.wsdl.WsdlFilter wsdlFilter)"/>
+      <method name="setWsdlLocation(java.lang.String wsdlLocation)"/>
+      <method name="addWsdlPort(javax.xml.namespace.QName portName)"/>
+      <method name="getPortAddress(javax.xml.namespace.QName portName)"/>
+      <method name="removeWsdlPort(javax.xml.namespace.QName portName)"/>
+      <method name="getWsdlFilter()"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.handler">
+    <class name="HandlerException">
+      <method name="HandlerException(java.lang.String message)"/>
+      <method name="HandlerException(java.lang.String message,java.lang.Throwable error)"/>
+    </class>
+    <class name="HandlerList">
+      <method name="contains(java.lang.String name)"/>
+      <method name="remove(java.lang.String name)"/>
+      <method name="insert(java.lang.String name,javax.xml.rpc.handler.HandlerInfo handlerInfo,java.util.List after,java.util.List before)"/>
+      <method name="lenientInsert(java.lang.String name,javax.xml.rpc.handler.HandlerInfo handlerInfo,java.util.List after,java.util.List before)"/>
+      <method name="size()"/>
+      <method name="getName(int index)"/>
+      <method name="getHandlerNames()"/>
+      <method name="getInfo(int index)"/>
+      <method name="add(java.lang.String name,javax.xml.rpc.handler.HandlerInfo handlerInfo)"/>
+      <method name="insert(java.lang.String name,int index,javax.xml.rpc.handler.HandlerInfo handlerInfo)"/>
+      <method name="remove(int index)"/>
+    </class>
+    <class name="InvocationException">
+      <method name="InvocationException(java.lang.String message)"/>
+      <method name="InvocationException(java.lang.String message,java.lang.Throwable error)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.jaxrpc">
+    <class name="WLStub">
+      <field name="CONVERSATION_VERSION_ONE"/>
+      <field name="CONVERSATION_VERSION_TWO"/>
+      <field name="ACTION"/>
+      <field name="CHARACTER_SET_ENCODING"/>
+      <field name="CHECKING_SCT_EXPIRATION"/>
+      <field name="COMPLEX"/>
+      <field name="CONVERSATIONAL_METHOD_BLOCK_TIMEOUT"/>
+      <field name="CONVERSATION_ID"/>
+      <field name="CONVERSATION_VERSION_PROPERTY"/>
+      <field name="ENFORCE_ASYNC_TRUST_EXCHANGE"/>
+      <field name="FORCE_DOTNET_COMPATIBLE_BINDING"/>
+      <field name="HANDLER_REGISTRY"/>
+      <field name="HIGH_PERFORMANCE_SECURE_CONVERSATION"/>
+      <field name="JMS_BYTESMESSAGE"/>
+      <field name="JMS_TEXTMESSAGE"/>
+      <field name="JMS_TRANSPORT_JNDI_URL"/>
+      <field name="JMS_TRANSPORT_MESSAGE_TYPE"/>
+      <field name="LAX_CHECKING_SCT_EXPIRATION"/>
+      <field name="MARSHAL_FORCE_INCLUDE_XSI_TYPE"/>
+      <field name="MARSHAL_FORCE_ORACLE1012_COMPATIBLE"/>
+      <field name="POLICY_COMPATIBILITY_METRO"/>
+      <field name="POLICY_COMPATIBILITY_MSFT"/>
+      <field name="POLICY_COMPATIBILITY_ORDERING_PREFERENCE"/>
+      <field name="POLICY_COMPATIBILITY_PREFERENCE"/>
+      <field name="POLICY_COMPATIBILITY_WSSC13"/>
+      <field name="POLICY_COMPATIBILITY_WSSC14"/>
+      <field name="POLICY_PREFERENCE_COMPATIBILITY"/>
+      <field name="POLICY_PREFERENCE_PERFORMANCE"/>
+      <field name="POLICY_PREFERENCE_SECURITY"/>
+      <field name="POLICY_SELECTION_PREFERENCE"/>
+      <field name="PREFERENCE_COMPATIBILITY_PERFORMANCE_SECURITY"/>
+      <field name="PREFERENCE_COMPATIBILITY_SECURITY_PERFORMANCE"/>
+      <field name="PREFERENCE_DEFAULT"/>
+      <field name="PREFERENCE_INTEROPERABILITY_PERFORMANCE_SECURITY"/>
+      <field name="PREFERENCE_INTEROPERABILITY_SECURITY_PERFORMANCE"/>
+      <field name="PREFERENCE_MSFT_WSSC13_WSSC14"/>
+      <field name="PREFERENCE_MSFT_WSSC14_WSSC13"/>
+      <field name="PREFERENCE_PERFORMANCE_COMPATIBILITY_SECURITY"/>
+      <field name="PREFERENCE_PERFORMANCE_INTEROPERABILITY_SECURITY"/>
+      <field name="PREFERENCE_PERFORMANCE_SECURITY_COMPATIBILITY"/>
+      <field name="PREFERENCE_PERFORMANCE_SECURITY_INTEROPERABILITY"/>
+      <field name="PREFERENCE_SECURITY_COMPATIBILITY_PERFORMANCE"/>
+      <field name="PREFERENCE_SECURITY_INTEROPERABILITY_PERFORMANCE"/>
+      <field name="PREFERENCE_SECURITY_PERFORMANCE_COMPATIBILITY"/>
+      <field name="PREFERENCE_SECURITY_PERFORMANCE_INTEROPERABILITY"/>
+      <field name="PREFERENCE_WSSC13_MSFT_WSSC14"/>
+      <field name="PREFERENCE_WSSC13_WSSC14_MSFT"/>
+      <field name="PREFERENCE_WSSC14_MSFT_WSSC13"/>
+      <field name="PREFERENCE_WSSC14_WSSC13_MSFT"/>
+      <field name="PROACTIVE_SCT_RENEWAL"/>
+      <field name="PROXY_PASSWORD"/>
+      <field name="PROXY_USERNAME"/>
+      <field name="SAML_ATTRIBUTES"/>
+      <field name="SAML_ATTRIBUTE_ONLY"/>
+      <field name="SERVER_ENCRYPT_CERT"/>
+      <field name="SERVER_VERIFY_CERT"/>
+      <field name="SSL_ADAPTER"/>
+      <field name="STRICT_CHECKING_SCT_EXPIRATION"/>
+      <field name="STS_ENCRYPT_CERT"/>
+      <field name="TOLERANT_CHECKING_SCT_EXPIRATION"/>
+      <field name="TRANSPORT_SUBJECT_PROPERTY"/>
+      <field name="USE_WSADDRESSING"/>
+      <field name="VALIDATE_WEBSERVICE_RESPONSE"/>
+      <field name="WSRM_ACKSTO_ANONYMOUS"/>
+      <field name="WSRM_LAST_MESSAGE"/>
+      <field name="WSRM_OFFER_SEQUENCE_EXPIRATION"/>
+      <field name="WSRM_SEQUENCE_EXPIRATION"/>
+      <field name="WSS_SUBJECT_PROPERTY"/>
+      <field name="WST_STS_ENDPOINT_ON_SAML"/>
+      <field name="WST_STS_ENDPOINT_ON_WSSC"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.jaxws.framework.policy">
+    <class name="OverrideProperty">
+      <method name="getName()"/>
+      <method name="getValue()"/>
+    </class>
+    <class name="PolicyReference">
+      <method name="getEnabled()"/>
+      <method name="isEnabled()"/>
+      <method name="getCategory()"/>
+      <method name="getPolicyURI()"/>
+      <method name="getOverrideProperties()"/>
+    </class>
+    <class name="PolicySubjectBinding">
+      <method name="getPolicyReferences()"/>
+      <method name="getPolicySubjectMetadata()"/>
+    </class>
+    <class name="PolicySubjectMetadata">
+      <method name="getApplicationName()"/>
+      <method name="getModuleName()"/>
+      <method name="getResourcePattern()"/>
+      <method name="getSubjectName()"/>
+      <method name="getPortQName()"/>
+      <method name="getModuleType()"/>
+      <method name="getType()"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.jaxws.proxy">
+    <class name="ClientProxyFeature">
+      <method name="isIgnoreSystemNonProxyHosts()"/>
+      <method name="isUseSunHttpHandler()"/>
+      <method name="isUsedInPort()"/>
+      <method name="getProxyPort()"/>
+      <method name="getID()"/>
+      <method name="getProxyHost()"/>
+      <method name="getProxyPassword()"/>
+      <method name="getProxyUserName()"/>
+      <method name="getType()"/>
+      <field name="ID"/>
+      <method name="attachsPort(java.lang.Object port)"/>
+      <method name="setIgnoreSystemNonProxyHosts(boolean ignoreSystemNonProxyHosts)"/>
+      <method name="setProxyHost(java.lang.String proxyHost)"/>
+      <method name="setProxyPassword(java.lang.String proxyPassword)"/>
+      <method name="setProxyPort(int proxyPort)"/>
+      <method name="setProxyUserName(java.lang.String proxyUserName)"/>
+      <method name="setType(java.net.Proxy.Type type)"/>
+      <method name="setUseSunHttpHandler(boolean useSunHttpHandler)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.jws">
+    <class name="CallbackInterface">
+      <method name="getTimeout()"/>
+      <method name="getConversationID()"/>
+      <method name="getEndpointAddress()"/>
+      <method name="getPassword()"/>
+      <method name="getUsername()"/>
+      <method name="getEndPoint()"/>
+      <method name="getInputHeaders()"/>
+      <field name="serialVersionUID"/>
+      <method name="reset()"/>
+      <method name="setClientCert(java.lang.String alias,java.lang.String password)"/>
+      <method name="setEndPoint(java.net.URL url)"/>
+      <method name="setEndpointAddress(java.lang.String url)"/>
+      <method name="setKeystore(java.lang.String location,java.lang.String password)"/>
+      <method name="setKeystore(java.lang.String location,java.lang.String password,java.lang.String type)"/>
+      <method name="setOutputHeaders(org.w3c.dom.Element[] headers)"/>
+      <method name="setPassword(java.lang.String password)"/>
+      <method name="setProtocol(weblogic.wsee.jws.Protocol protocol)"/>
+      <method name="setTimeout(int timeout)"/>
+      <method name="setTruststore(java.lang.String location,java.lang.String password)"/>
+      <method name="setTruststore(java.lang.String location,java.lang.String password,java.lang.String type)"/>
+      <method name="setUsername(java.lang.String username)"/>
+      <method name="useClientKeySSL(boolean b)"/>
+      <method name="getProtocol()"/>
+    </class>
+    <class name="HandlerException">
+      <method name="HandlerException(java.lang.String message)"/>
+      <method name="HandlerException(java.lang.String message,java.lang.Throwable cause)"/>
+      <method name="HandlerException(java.lang.Throwable cause)"/>
+    </class>
+    <class name="JwsContext">
+      <method name="getUnderstoodInputHeaders()"/>
+      <method name="isCallerInRole(java.lang.String roleName)"/>
+      <method name="isFinished()"/>
+      <method name="getCallerPrincipal()"/>
+      <method name="getMessageContext()"/>
+      <method name="getCurrentAge()"/>
+      <method name="getCurrentIdleTime()"/>
+      <method name="getMaxAge()"/>
+      <method name="getMaxIdleTime()"/>
+      <method name="getInputHeaders()"/>
+      <method name="finishConversation()"/>
+      <method name="resetIdleTime()"/>
+      <method name="setMaxAge(java.lang.String duration)"/>
+      <method name="setMaxAge(java.util.Date date)"/>
+      <method name="setMaxIdleTime(java.lang.String duration)"/>
+      <method name="setMaxIdleTime(long seconds)"/>
+      <method name="setOutputHeaders(org.w3c.dom.Element[] headers)"/>
+      <method name="setUnderstoodInputHeaders(boolean understood)"/>
+      <method name="getProtocol()"/>
+      <method name="getService()"/>
+      <method name="getLogger(java.lang.String name)"/>
+    </class>
+    <class name="Protocol">
+      <method name="getID()"/>
+      <method name="getName()"/>
+      <method name="toString()"/>
+      <method name="isSoap(weblogic.wsee.jws.Protocol p)"/>
+      <method name="isSoap11(weblogic.wsee.jws.Protocol p)"/>
+      <method name="isSoap12(weblogic.wsee.jws.Protocol p)"/>
+      <field name="ID_HTTP_GET"/>
+      <field name="ID_HTTP_POST"/>
+      <field name="ID_HTTP_SOAP"/>
+      <field name="ID_HTTP_SOAP12"/>
+      <field name="ID_HTTP_XML"/>
+      <field name="ID_JMS_SOAP"/>
+      <field name="ID_JMS_SOAP12"/>
+      <field name="ID_JMS_XML"/>
+      <field name="SCHEME_HTTP"/>
+      <field name="SCHEME_JAVA"/>
+      <field name="SCHEME_JMS"/>
+      <field name="HTTP_GET"/>
+      <field name="HTTP_POST"/>
+      <field name="HTTP_SOAP"/>
+      <field name="HTTP_SOAP12"/>
+      <field name="HTTP_XML"/>
+      <field name="JAVA"/>
+      <field name="JMS_SOAP"/>
+      <field name="JMS_SOAP12"/>
+      <field name="JMS_XML"/>
+      <method name="getSchemeForProtocol(weblogic.wsee.jws.Protocol p)"/>
+      <method name="getProtocol(boolean soap12,java.lang.String scheme)"/>
+      <method name="getProtocolByID(int id)"/>
+      <method name="getProtocolByName(java.lang.String name)"/>
+    </class>
+    <class name="RetryException">
+      <method name="RetryException(java.lang.String s)"/>
+      <method name="RetryException(java.lang.String s,java.lang.String retryString)"/>
+      <method name="RetryException(java.lang.String s,long retrySeconds)"/>
+      <method name="getRetryDelay()"/>
+      <field name="DEFAULT_DELAY"/>
+    </class>
+    <class name="ServiceHandle">
+      <method name="getScheme()"/>
+      <method name="getContextURI()"/>
+      <method name="getControlID()"/>
+      <method name="getConversationID()"/>
+      <method name="getJNDIBaseName()"/>
+      <method name="getURI()"/>
+      <method name="getURL()"/>
+      <method name="getURL(int scheme)"/>
+      <field name="SCHEME_DEFAULT"/>
+      <field name="SCHEME_FILE"/>
+      <field name="SCHEME_FTP"/>
+      <field name="SCHEME_HTTP"/>
+      <field name="SCHEME_JMS"/>
+      <field name="SCHEME_SMTP"/>
+    </class>
+    <class name="SoapFaultException">
+      <method name="hasDetail()"/>
+      <method name="hasFault()"/>
+      <method name="isCausedBySender()"/>
+      <method name="soapFaultVersion()"/>
+      <field name="FAULT_SOAP11"/>
+      <field name="FAULT_SOAP12"/>
+      <field name="FAULT_UNKNOWN"/>
+      <method name="setCausedBySender(boolean senderIsCause)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.jws.jaxws.owsm">
+    <class name="PolicySubjectBindingFeature">
+      <method name="PolicySubjectBindingFeature(weblogic.wsee.jaxws.framework.policy.PolicySubjectBinding impl)"/>
+      <method name="hasPolicyReferences()"/>
+      <method name="getID()"/>
+      <method name="getPolicyReferences()"/>
+      <method name="create(java.util.List policyURIs,weblogic.wsee.jaxws.framework.policy.PolicySubjectMetadata psm)"/>
+      <method name="create(weblogic.wsee.jaxws.framework.policy.PolicyReference[] policyReference,weblogic.wsee.jaxws.framework.policy.PolicySubjectMetadata psm)"/>
+      <method name="createFeature(java.util.List policyRefs,weblogic.wsee.jaxws.framework.policy.PolicySubjectMetadata psm)"/>
+      <method name="getPolicySubjectBinding()"/>
+    </class>
+    <class name="Property">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="PropertyFeature">
+      <method name="PropertyFeature(java.lang.String name,java.lang.String value)"/>
+      <method name="getID()"/>
+      <method name="getName()"/>
+      <method name="getValue()"/>
+      <field name="ID"/>
+    </class>
+    <class name="SecurityPolicies">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="SecurityPoliciesFeature">
+      <method name="SecurityPoliciesFeature(boolean enabled,weblogic.wsee.jws.jaxws.owsm.SecurityPolicy[] policies)"/>
+      <method name="SecurityPoliciesFeature(java.lang.String[] policyURIs)"/>
+      <method name="getID()"/>
+      <method name="getPolicies()"/>
+      <field name="ID"/>
+    </class>
+    <class name="SecurityPolicy">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="SecurityPolicyFeature">
+      <method name="SecurityPolicyFeature(boolean enabled,java.lang.String uri)"/>
+      <method name="SecurityPolicyFeature(boolean enabled,java.lang.String uri,weblogic.wsee.jws.jaxws.owsm.Property[] properties)"/>
+      <method name="SecurityPolicyFeature(java.lang.String uri)"/>
+      <method name="getID()"/>
+      <method name="getSeedPolicyName()"/>
+      <method name="getUri()"/>
+      <method name="getProperties()"/>
+      <method name="getPropertyMap()"/>
+      <field name="ID"/>
+      <method name="addPropertyFeature(weblogic.wsee.jws.jaxws.owsm.PropertyFeature property)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.jws.util">
+    <class name="Logger">
+      <method name="isDebugEnabled()"/>
+      <method name="isErrorEnabled()"/>
+      <method name="isWarnEnabled()"/>
+      <method name="debug(java.lang.String message)"/>
+      <method name="debug(java.lang.String message,java.lang.Throwable throwable)"/>
+      <method name="error(java.lang.String message)"/>
+      <method name="error(java.lang.String message,java.lang.Throwable throwable)"/>
+      <method name="info(java.lang.String message)"/>
+      <method name="info(java.lang.String message,java.lang.Throwable throwable)"/>
+      <method name="warn(java.lang.String message)"/>
+      <method name="warn(java.lang.String message,java.lang.Throwable throwable)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.jws.wlw">
+    <class name="SoapFaultException">
+      <method name="SoapFaultException(org.apache.xmlbeans.XmlObject detailContent,java.lang.String s)"/>
+      <method name="SoapFaultException(org.apache.xmlbeans.XmlObject xmlObj)"/>
+      <method name="SoapFaultException(org.apache.xmlbeans.XmlObject[] detailContent)"/>
+      <method name="hasDetail()"/>
+      <method name="hasFault()"/>
+      <method name="isCausedBySender()"/>
+      <method name="soapFaultVersion()"/>
+      <method name="getFault()"/>
+      <method name="getDetail()"/>
+      <field name="FAULT_SOAP11"/>
+      <field name="FAULT_SOAP12"/>
+      <field name="FAULT_UNKNOWN"/>
+      <method name="setCausedBySender(boolean senderIsCause)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.message">
+    <class name="MsgHeader">
+      <method name="getCurrentSoapEnvelopeNamespace()"/>
+      <method name="addStandardNamespaces(org.w3c.dom.Element element)"/>
+      <field name="java.io.Serializable"/>
+      <method name="hasDuplicated()"/>
+      <method name="isMultiple()"/>
+      <method name="isMustUnderstand()"/>
+      <method name="isRefParam()"/>
+      <method name="getRole()"/>
+      <method name="toString()"/>
+      <method name="getName()"/>
+      <method name="writeToParent(org.w3c.dom.Element parentElt)"/>
+      <method name="read(org.w3c.dom.Element element)"/>
+      <method name="setDuplicated(boolean duplicated)"/>
+      <method name="setMustUnderstand(boolean mustUnderstand)"/>
+      <method name="setRefParam(boolean refParam)"/>
+      <method name="setRole(java.lang.String role)"/>
+      <method name="toString(weblogic.wsee.util.ToStringWriter writer)"/>
+      <method name="write(org.w3c.dom.Element element)"/>
+      <method name="getType()"/>
+    </class>
+    <class name="MsgHeaderException">
+      <method name="MsgHeaderException(java.lang.String message)"/>
+      <method name="MsgHeaderException(java.lang.String message,java.lang.Throwable error)"/>
+    </class>
+    <class name="MsgHeaderType">
+      <method name="MsgHeaderType()"/>
+      <method name="equals(java.lang.Object obj)"/>
+      <method name="hashCode()"/>
+    </class>
+    <class name="MsgHeaders">
+      <method name="isEmpty()"/>
+      <method name="listHeaders()"/>
+      <method name="addHeader(weblogic.wsee.message.MsgHeader msgHeader)"/>
+      <method name="addHeaders(org.w3c.dom.NodeList headers)"/>
+      <method name="getHeader(weblogic.wsee.message.MsgHeaderType type)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.message.soap">
+    <class name="SoapMsgHeaders">
+      <method name="SoapMsgHeaders(javax.xml.soap.SOAPMessage message)"/>
+      <method name="SoapMsgHeaders(org.w3c.dom.Element headerElt)"/>
+      <method name="getMustUnderstand(org.w3c.dom.Element elem)"/>
+      <method name="isEmpty()"/>
+      <method name="getActor(org.w3c.dom.Element elem)"/>
+      <method name="listHeaders()"/>
+      <method name="addHeader(weblogic.wsee.message.MsgHeader msgHeader)"/>
+      <method name="addHeaders(org.w3c.dom.NodeList headers)"/>
+      <method name="replaceHeader(weblogic.wsee.message.MsgHeader msgHeader)"/>
+      <method name="setActor(org.w3c.dom.Element elem,java.lang.String actor)"/>
+      <method name="setMustUnderstand(org.w3c.dom.Element elem,boolean b)"/>
+      <method name="getHeader(weblogic.wsee.message.MsgHeaderType type)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.policy.deployment">
+    <class name="PolicyURIs">
+      <method name="replaceURIWithId(java.net.URI uri,weblogic.wsee.wsdl.WsdlWriter wsdlWriter)"/>
+      <method name="PolicyURIs(java.lang.String uriVals)"/>
+      <method name="PolicyURIs(java.lang.String[] uriVals)"/>
+      <method name="PolicyURIs(java.net.URI uri)"/>
+      <method name="PolicyURIs(java.net.URI[] uris)"/>
+      <method name="getKey()"/>
+      <method name="toString()"/>
+      <method name="getURIs()"/>
+      <method name="addURI(java.net.URI uri)"/>
+      <method name="removeURI(java.net.URI uri)"/>
+      <method name="write(org.w3c.dom.Element wsdlElt,weblogic.wsee.wsdl.WsdlWriter wsdlWriter)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.policy.framework">
+    <class name="NormalizedExpression">
+      <method name="NormalizedExpression()"/>
+      <method name="NormalizedExpression(java.lang.String policyNamespaceUri)"/>
+      <method name="containsPolicyAssertion(java.lang.Class asst)"/>
+      <method name="equals(java.lang.Object o)"/>
+      <method name="isEmpty()"/>
+      <method name="isUninitialized()"/>
+      <method name="hashCode()"/>
+      <method name="getPolicyNamespaceUri()"/>
+      <field name="policyNamespaceUri"/>
+      <method name="getPolicyAlternatives()"/>
+      <method name="getPolicyAlternatives(java.lang.Class assertionClass)"/>
+      <method name="getPolicyAlternatives(weblogic.wsee.policy.framework.PolicyAssertion a)"/>
+      <method name="createEmptyExpression()"/>
+      <method name="createFromPolicyAlternatives(java.util.Set policyAlts)"/>
+      <method name="createUnitializedExpression()"/>
+      <method name="addAlternative(weblogic.wsee.policy.framework.PolicyAlternative alt)"/>
+      <method name="addAlternatives(java.util.Set addAlts)"/>
+      <method name="readExternal(java.io.ObjectInput in)"/>
+      <method name="setPolicyNamespaceUri(java.lang.String policyNamespaceUri)"/>
+      <method name="writeExternal(java.io.ObjectOutput out)"/>
+      <method name="getPolicyAlternative()"/>
+      <method name="getPolicyAssertion(java.lang.Class assertionClass)"/>
+      <method name="toCompactForm(java.lang.String id)"/>
+    </class>
+    <class name="OperatorType">
+      <method name="OperatorType()"/>
+      <method name="toString()"/>
+      <field name="ALL"/>
+      <field name="EXACTLY_ONE"/>
+      <field name="ONE_OR_MORE"/>
+      <field name="TERMINAL"/>
+      <method name="readExternal(java.io.ObjectInput in)"/>
+      <method name="writeExternal(java.io.ObjectOutput out)"/>
+    </class>
+    <class name="PolicyAlternative">
+      <method name="PolicyAlternative()"/>
+      <method name="equals(java.lang.Object o)"/>
+      <method name="isEmpty()"/>
+      <method name="isTrue(weblogic.wsee.policy.framework.PolicyAssertion a)"/>
+      <method name="hashCode()"/>
+      <method name="toString()"/>
+      <method name="getAssertions()"/>
+      <method name="getAssertions(java.lang.Class assertionClass)"/>
+      <field name="EMPTY_ALTERNATIVE"/>
+      <method name="readExternal(java.io.ObjectInput in)"/>
+      <method name="writeExternal(java.io.ObjectOutput out)"/>
+      <method name="clone()"/>
+    </class>
+    <class name="PolicyAssertion">
+      <method name="write(org.w3c.dom.Element parent,weblogic.wsee.wsdl.WsdlWriter wsdlWriter)"/>
+      <field name="java.io.Externalizable"/>
+      <method name="getOptional()"/>
+      <method name="isOptional()"/>
+      <field name="optional"/>
+      <method name="getPolicyNamespaceUri()"/>
+      <field name="policyNamespaceUri"/>
+      <method name="getName()"/>
+      <method name="serialize(org.w3c.dom.Document doc)"/>
+      <method name="readExternal(java.io.ObjectInput in)"/>
+      <method name="setOptional(boolean optional)"/>
+      <method name="setPolicyNamespaceUri(java.lang.String policyNamespaceUri)"/>
+      <method name="setPolicySubject(weblogic.wsee.policy.framework.PolicyAssertion.PolicySubject subject)"/>
+      <method name="writeExternal(java.io.ObjectOutput out)"/>
+      <method name="getPolicySubject()"/>
+    </class>
+    <class name="PolicyException">
+      <method name="PolicyException()"/>
+      <method name="PolicyException(java.lang.String s)"/>
+      <method name="PolicyException(java.lang.String s,java.lang.Throwable t)"/>
+      <method name="PolicyException(java.lang.Throwable t)"/>
+      <method name="toString()"/>
+    </class>
+    <class name="PolicyExpression">
+      <method name="PolicyExpression(weblogic.wsee.policy.framework.OperatorType operator)"/>
+      <method name="PolicyExpression(weblogic.wsee.policy.framework.OperatorType operator,weblogic.wsee.policy.framework.PolicyAssertion assertion)"/>
+      <method name="toXML(org.w3c.dom.Document doc)"/>
+      <method name="write(org.w3c.dom.Element parent,weblogic.wsee.wsdl.WsdlWriter wsdlWriter)"/>
+      <method name="PolicyExpression()"/>
+      <method name="isTerminal()"/>
+      <method name="getPolicyNamespaceUri()"/>
+      <field name="policyNamespaceUri"/>
+      <method name="toString()"/>
+      <field name="expressions"/>
+      <method name="getExpressions()"/>
+      <method name="createExpression(weblogic.wsee.policy.framework.OperatorType op)"/>
+      <method name="createTerminal(weblogic.wsee.policy.framework.PolicyAssertion assertion)"/>
+      <method name="addExpression(weblogic.wsee.policy.framework.PolicyExpression expression)"/>
+      <method name="addExpressions(java.util.Collection expressions)"/>
+      <method name="readExternal(java.io.ObjectInput in)"/>
+      <method name="resetExpressions()"/>
+      <method name="setAssertion(weblogic.wsee.policy.framework.PolicyAssertion assertion)"/>
+      <method name="setPolicyNamespaceUri(java.lang.String policyNamespaceUri)"/>
+      <method name="writeExternal(java.io.ObjectOutput out)"/>
+      <method name="normalize()"/>
+      <field name="operator"/>
+      <field name="assertion"/>
+      <method name="getAssertion()"/>
+    </class>
+    <class name="PolicyStatement">
+      <method name="PolicyStatement(java.lang.String id)"/>
+      <method name="PolicyStatement()"/>
+      <method name="PolicyStatement(java.lang.String id,java.lang.String policyNamespaceUri)"/>
+      <method name="equals(java.lang.Object anObject)"/>
+      <method name="isHasUnresolvedReferences()"/>
+      <method name="hashCode()"/>
+      <method name="getId()"/>
+      <field name="id"/>
+      <method name="toString()"/>
+      <method name="toXML()"/>
+      <method name="toXML(org.w3c.dom.Document doc)"/>
+      <method name="createPolicyStatement(java.lang.String id)"/>
+      <method name="readExternal(java.io.ObjectInput in)"/>
+      <method name="setHasUnresolvedReferences(boolean hasUnresolvedReferences)"/>
+      <method name="setId(java.lang.String id)"/>
+      <method name="write(org.w3c.dom.Element parent,weblogic.wsee.wsdl.WsdlWriter wsdlWriter)"/>
+      <method name="writeExternal(java.io.ObjectOutput out)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.reliability">
+    <class name="MessageRange">
+      <method name="MessageRange(long lowerBounds,long upperBounds)"/>
+      <field name="lowerBounds"/>
+      <field name="upperBounds"/>
+      <method name="compareTo(java.lang.Object o)"/>
+    </class>
+    <class name="ReliabilityErrorContext">
+      <method name="getFaultSummaryMessage()"/>
+      <method name="getOperationName()"/>
+      <method name="getTargetName()"/>
+      <method name="getFaults()"/>
+      <method name="getSOAPMessage()"/>
+      <method name="getAsyncPostCallContext()"/>
+      <method name="getFault()"/>
+    </class>
+    <class name="ReliabilityErrorListener">
+      <method name="onReliabilityError(weblogic.wsee.reliability.ReliabilityErrorContext context)"/>
+    </class>
+    <class name="ReliabilityErrorListenerRegistry">
+      <method name="getInstance()"/>
+      <method name="registerListener(java.lang.String key,weblogic.wsee.reliability.ReliabilityErrorListener listener)"/>
+      <method name="getListener(java.lang.String key)"/>
+      <method name="unregisterListener(java.lang.String key)"/>
+    </class>
+    <class name="ReliableDeliveryException">
+      <method name="ReliableDeliveryException(java.lang.String message)"/>
+    </class>
+    <class name="WsrmConstants">
+      <field name="ACKNOWLEDGEMENT_INTERVAL"/>
+      <field name="BASE_RETRANSMISSION_INTERVAL"/>
+      <field name="BUFFER_QUEUE_JNDI_NAME"/>
+      <field name="BUFFER_QUEUE_MDB_RUNAS_PRINCIPAL_NAME"/>
+      <field name="FORCE_WSRM_1_0_CLIENT"/>
+      <field name="INACTIVITY_TIMEOUT"/>
+      <field name="NON_BUFFERED_DESTINATION"/>
+      <field name="NON_BUFFERED_SOURCE"/>
+      <field name="ORACLE_RM_PREFIX"/>
+      <field name="RETRANSMISSION_EXPONENTIAL_BACKOFF"/>
+      <field name="RETRY_COUNT"/>
+      <field name="RETRY_DELAY"/>
+      <field name="RM_VERSION"/>
+      <field name="SEQUENCE_EXPIRATION"/>
+      <field name="SEQUENCE_STR"/>
+      <field name="SEQUENCE_TRANSPORT_SECURITY"/>
+      <field name="PROP_NAMES_FOR_RM_DESTINATION"/>
+      <field name="PROP_NAMES_FOR_RM_DESTINATION_ONLY"/>
+      <field name="PROP_NAMES_FOR_RM_SOURCE"/>
+      <field name="PROP_NAMES_FOR_RM_SOURCE_ONLY"/>
+      <field name="PROP_NAMES_FOR_RM_SOURCE_OR_DESTINATION"/>
+    </class>
+    <class name="WsrmHelper">
+      <method name="sendFault(javax.xml.rpc.handler.soap.SOAPMessageContext smc,weblogic.wsee.reliability.faults.WsrmFaultMsg fault)"/>
+    </class>
+    <class name="WsrmUtils">
+      <method name="checkIsPiggyback(javax.xml.rpc.handler.soap.SOAPMessageContext smc,weblogic.wsee.reliability.WsrmConstants.Action action)"/>
+      <method name="isAnonymousAck(javax.xml.rpc.Stub stub)"/>
+      <method name="isFinalMessage(javax.xml.rpc.Stub stub)"/>
+      <method name="isLastMessage(javax.xml.rpc.Stub stub)"/>
+      <method name="isSequenceInitialized(javax.xml.rpc.Stub stub)"/>
+      <method name="getSequenceId(javax.xml.rpc.Stub stub)"/>
+      <method name="waitForSequenceInitialization(javax.xml.rpc.Stub stub,long waitIntervalInMillis,long maxWaitIntervals)"/>
+      <method name="getExpires(javax.xml.rpc.Stub stub)"/>
+      <method name="getOfferExpires(javax.xml.rpc.Stub stub)"/>
+      <method name="closeSequence(javax.xml.rpc.Stub stub)"/>
+      <method name="printSoapMsg(javax.xml.soap.SOAPMessage msg)"/>
+      <method name="reset(javax.xml.rpc.Stub stub)"/>
+      <method name="sendEmptyLastMessage(javax.xml.rpc.Stub stub)"/>
+      <method name="setAnonymousAck(javax.xml.rpc.Stub stub)"/>
+      <method name="setExpires(javax.xml.rpc.Stub stub,javax.xml.datatype.Duration duration)"/>
+      <method name="setFinalMessage(javax.xml.rpc.Stub stub)"/>
+      <method name="setLastMessage(javax.xml.rpc.Stub stub)"/>
+      <method name="setOfferExpires(javax.xml.rpc.Stub stub,javax.xml.datatype.Duration duration)"/>
+      <method name="terminateSequence(javax.xml.rpc.Stub stub)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.reliability.faults">
+    <class name="SequenceFaultException">
+      <method name="SequenceFaultException(java.lang.String message)"/>
+      <method name="SequenceFaultException(java.lang.String message,java.lang.Throwable error)"/>
+      <method name="SequenceFaultException(weblogic.wsee.reliability.faults.SequenceFaultMsg msg)"/>
+      <method name="getSequenceId()"/>
+      <method name="getMsg()"/>
+    </class>
+    <class name="SequenceFaultMsg">
+      <method name="SequenceFaultMsg(weblogic.wsee.reliability.WsrmConstants.RMVersion rmVersion,weblogic.wsee.reliability.WsrmConstants.FaultGeneratedBy generatedBy,weblogic.wsee.reliability.WsrmConstants.FaultCode code,java.lang.String subCode,java.lang.String reason,weblogic.wsee.reliability.faults.SequenceFaultMsgType type)"/>
+      <field name="weblogic.wsee.reliability.faults.WsrmFaultMsg"/>
+      <method name="getSequenceId()"/>
+      <method name="toString()"/>
+      <method name="read(javax.xml.soap.SOAPMessage msg)"/>
+      <method name="readDetail(org.w3c.dom.Element element)"/>
+      <method name="setSequenceId(java.lang.String seqId)"/>
+      <method name="write(javax.xml.soap.SOAPMessage msg)"/>
+      <method name="writeDetail(org.w3c.dom.Element element)"/>
+      <method name="getGeneratedBy()"/>
+    </class>
+    <class name="SequenceFaultMsgType">
+      <method name="SequenceFaultMsgType()"/>
+      <method name="equals(java.lang.Object obj)"/>
+      <method name="hashCode()"/>
+    </class>
+    <class name="WsrmFaultException">
+      <method name="WsrmFaultException(java.lang.String message)"/>
+      <method name="WsrmFaultException(java.lang.String message,java.lang.Throwable error)"/>
+      <method name="WsrmFaultException(weblogic.wsee.reliability.faults.WsrmFaultMsg msg)"/>
+      <method name="toString()"/>
+      <method name="getWsrmFaultMsg()"/>
+    </class>
+    <class name="WsrmFaultMsg">
+      <method name="WsrmFaultMsg(weblogic.wsee.reliability.WsrmConstants.RMVersion rmVersion,weblogic.wsee.reliability.WsrmConstants.FaultCode code,java.lang.String subCode,java.lang.String reason,weblogic.wsee.reliability.faults.SequenceFaultMsgType type)"/>
+      <field name="WsrmFaultMsg"/>
+      <method name="getCodeLocalName(weblogic.wsee.reliability.WsrmConstants.SOAPVersion soapVersion)"/>
+      <method name="getCodeQualifiedName(weblogic.wsee.reliability.WsrmConstants.SOAPVersion soapVersion)"/>
+      <method name="getReason()"/>
+      <method name="getSubCodeLocalName()"/>
+      <method name="getSubCodeQualifiedName()"/>
+      <field name="reason"/>
+      <field name="subCode"/>
+      <method name="toString()"/>
+      <method name="getCodeQName(weblogic.wsee.reliability.WsrmConstants.SOAPVersion soapVersion)"/>
+      <method name="getSubCodeQName()"/>
+      <method name="getSubCodeQNames(java.lang.Class clazz)"/>
+      <method name="getSubCodeQName(java.lang.Class clazz,weblogic.wsee.reliability.WsrmConstants.RMVersion rmVersion)"/>
+      <method name="read(javax.xml.soap.SOAPMessage msg)"/>
+      <method name="readDetail(org.w3c.dom.Element element)"/>
+      <method name="setReason(java.lang.String reason)"/>
+      <method name="write(javax.xml.soap.SOAPMessage msg)"/>
+      <method name="writeDetail(org.w3c.dom.Element element)"/>
+      <field name="code"/>
+      <method name="getCode()"/>
+      <method name="getRmVersion()"/>
+      <method name="getType()"/>
+      <field name="type"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.reliability2">
+    <class name="MessageRange">
+      <method name="MessageRange(long lowerBounds,long upperBounds)"/>
+      <field name="lowerBounds"/>
+      <field name="upperBounds"/>
+      <method name="compareTo(java.lang.Object o)"/>
+    </class>
+    <class name="WsrmConstants">
+      <field name="ACKNOWLEDGEMENT_INTERVAL"/>
+      <field name="BASE_RETRANSMISSION_INTERVAL"/>
+      <field name="BUFFER_QUEUE_JNDI_NAME"/>
+      <field name="BUFFER_QUEUE_MDB_RUNAS_PRINCIPAL_NAME"/>
+      <field name="FORCE_WSRM_1_0_CLIENT"/>
+      <field name="INACTIVITY_TIMEOUT"/>
+      <field name="NON_BUFFERED_DESTINATION"/>
+      <field name="NON_BUFFERED_SOURCE"/>
+      <field name="ORACLE_RM_PREFIX"/>
+      <field name="RETRANSMISSION_EXPONENTIAL_BACKOFF"/>
+      <field name="RETRY_COUNT"/>
+      <field name="RETRY_DELAY"/>
+      <field name="RM_VERSION"/>
+      <field name="SEQUENCE_EXPIRATION"/>
+      <field name="SEQUENCE_STR"/>
+      <field name="SEQUENCE_TRANSPORT_SECURITY"/>
+      <field name="USE_SESSION_MANAGER_PROP"/>
+      <field name="PROP_NAMES_FOR_RM_DESTINATION"/>
+      <field name="PROP_NAMES_FOR_RM_DESTINATION_ONLY"/>
+      <field name="PROP_NAMES_FOR_RM_SOURCE"/>
+      <field name="PROP_NAMES_FOR_RM_SOURCE_ONLY"/>
+      <field name="PROP_NAMES_FOR_RM_SOURCE_OR_DESTINATION"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.reliability2.api">
+    <class name="ReliabilityErrorContext">
+      <method name="getRequest(javax.xml.bind.JAXBContext jaxbContext,java.lang.Class clazz)"/>
+      <method name="isRequestSpecific()"/>
+      <method name="getFaultSummaryMessage()"/>
+      <method name="getOperationName()"/>
+      <method name="getFaults()"/>
+      <method name="getUserRequestContextProperties()"/>
+      <method name="getRequestStreamReader()"/>
+    </class>
+    <class name="ReliabilityErrorListener">
+      <method name="onReliabilityError(weblogic.wsee.reliability2.api.ReliabilityErrorContext context)"/>
+    </class>
+    <class name="SequenceState">
+      <method name="isValidTransition(weblogic.wsee.reliability2.api.SequenceState state)"/>
+      <method name="isClosedState(weblogic.wsee.reliability2.api.SequenceState state)"/>
+      <method name="isTerminalState(weblogic.wsee.reliability2.api.SequenceState state)"/>
+    </class>
+    <class name="WsrmClient">
+      <method name="getId()"/>
+      <method name="getSequenceId()"/>
+      <method name="getAckRanges()"/>
+      <method name="getMostRecentMessageNumber()"/>
+      <method name="closeSequence()"/>
+      <method name="dispose()"/>
+      <method name="requestAcknowledgement()"/>
+      <method name="reset()"/>
+      <method name="sendWsrm10EmptyLastMessage()"/>
+      <method name="setFinalMessage()"/>
+      <method name="setSequenceId(java.lang.String seqId)"/>
+      <method name="terminateSequence()"/>
+      <method name="getSequenceState()"/>
+      <method name="getMessageInfo(long msgNum)"/>
+    </class>
+    <class name="WsrmClientFactory">
+      <method name="isWsrmClientEnabledOnPort(java.lang.Object port)"/>
+      <method name="getWsrmClientFromPort(java.lang.Object port)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.reliability2.exception">
+    <class name="WsrmException">
+      <method name="WsrmException(java.lang.String message)"/>
+      <method name="WsrmException(java.lang.String message,java.lang.Throwable cause)"/>
+      <method name="WsrmException(java.lang.Throwable cause)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.reliability2.faults">
+    <class name="SequenceFaultException">
+      <method name="SequenceFaultException(java.lang.String message)"/>
+      <method name="SequenceFaultException(java.lang.String message,java.lang.Throwable error)"/>
+      <method name="SequenceFaultException(weblogic.wsee.reliability2.faults.SequenceFaultMsg msg)"/>
+      <method name="getSequenceId()"/>
+      <method name="getMsg()"/>
+    </class>
+    <class name="SequenceFaultMsg">
+      <method name="SequenceFaultMsg(weblogic.wsee.reliability2.WsrmConstants.RMVersion rmVersion,weblogic.wsee.reliability2.WsrmConstants.FaultGeneratedBy generatedBy,weblogic.wsee.reliability2.WsrmConstants.FaultCode code,java.lang.String subCode,java.lang.String reason,weblogic.wsee.reliability2.faults.SequenceFaultMsgType type)"/>
+      <field name="weblogic.wsee.reliability2.faults.WsrmFaultMsg"/>
+      <method name="getSequenceId()"/>
+      <method name="toString()"/>
+      <method name="read(javax.xml.soap.SOAPMessage msg)"/>
+      <method name="readDetail(org.w3c.dom.Element element)"/>
+      <method name="setSequenceId(java.lang.String seqId)"/>
+      <method name="write(javax.xml.soap.SOAPMessage msg)"/>
+      <method name="writeDetail(org.w3c.dom.Element element)"/>
+      <method name="getGeneratedBy()"/>
+    </class>
+    <class name="SequenceFaultMsgType">
+      <method name="SequenceFaultMsgType()"/>
+      <method name="equals(java.lang.Object obj)"/>
+      <method name="hashCode()"/>
+    </class>
+    <class name="WsrmFaultException">
+      <method name="WsrmFaultException(java.lang.String message)"/>
+      <method name="WsrmFaultException(java.lang.String message,java.lang.Throwable error)"/>
+      <method name="WsrmFaultException(weblogic.wsee.reliability2.faults.WsrmFaultMsg msg)"/>
+      <method name="toString()"/>
+      <method name="getWsrmFaultMsg()"/>
+    </class>
+    <class name="WsrmFaultMsg">
+      <method name="WsrmFaultMsg(weblogic.wsee.reliability2.WsrmConstants.RMVersion rmVersion,weblogic.wsee.reliability2.WsrmConstants.FaultCode code,java.lang.String subCode,java.lang.String reason,weblogic.wsee.reliability2.faults.SequenceFaultMsgType type)"/>
+      <field name="WsrmFaultMsg"/>
+      <method name="getCodeLocalName(weblogic.wsee.reliability2.WsrmConstants.SOAPVersion soapVersion)"/>
+      <method name="getCodeQualifiedName(weblogic.wsee.reliability2.WsrmConstants.SOAPVersion soapVersion)"/>
+      <method name="getReason()"/>
+      <method name="getSubCodeLocalName()"/>
+      <method name="getSubCodeQualifiedName()"/>
+      <field name="reason"/>
+      <field name="subCode"/>
+      <method name="toString()"/>
+      <method name="getCodeQName(weblogic.wsee.reliability2.WsrmConstants.SOAPVersion soapVersion)"/>
+      <method name="getSubCodeQName()"/>
+      <method name="getSubCodeQNames(java.lang.Class clazz)"/>
+      <method name="getSubCodeQName(java.lang.Class clazz,weblogic.wsee.reliability2.WsrmConstants.RMVersion rmVersion)"/>
+      <method name="read(javax.xml.soap.SOAPMessage msg)"/>
+      <method name="readDetail(org.w3c.dom.Element element)"/>
+      <method name="setReason(java.lang.String reason)"/>
+      <method name="write(javax.xml.soap.SOAPMessage msg)"/>
+      <method name="writeDetail(org.w3c.dom.Element element)"/>
+      <field name="code"/>
+      <method name="getCode()"/>
+      <method name="getRmVersion()"/>
+      <method name="getType()"/>
+      <field name="type"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.reliability2.sequence">
+    <class name="CreateSequencePostSecurityTokenCallback">
+      <field name="PROPERTY_NAME"/>
+      <method name="processCallback(javax.xml.rpc.handler.MessageContext mc)"/>
+      <method name="execute(javax.xml.rpc.handler.MessageContext mc)"/>
+    </class>
+    <class name="MessageInfo">
+      <method name="MessageInfo(java.lang.String seqId,java.lang.String msgId,long msgNum,java.lang.String action)"/>
+      <method name="MessageInfo(weblogic.wsee.reliability2.sequence.MessageInfo info)"/>
+      <method name="getLock()"/>
+      <method name="fireEvent(java.beans.PropertyChangeEvent event)"/>
+      <field name="java.lang.Cloneable"/>
+      <method name="equals(java.lang.Object other)"/>
+      <method name="isAck()"/>
+      <method name="isEmptyLastMessage()"/>
+      <method name="isLastMessage()"/>
+      <method name="removePropertyChangeListener(java.beans.PropertyChangeListener listener)"/>
+      <method name="getRequestPacket()"/>
+      <method name="hashCode()"/>
+      <method name="clone()"/>
+      <method name="getMessageId()"/>
+      <method name="getSOAPAction()"/>
+      <method name="getSequenceId()"/>
+      <method name="toString()"/>
+      <method name="getMessageNum()"/>
+      <method name="getTimestamp()"/>
+      <field name="PROPERTY_ACK"/>
+      <field name="PROPERTY_EMPTY_LAST_MESSAGE"/>
+      <field name="PROPERTY_LAST_MESSAGE"/>
+      <field name="PROPERTY_TIMESTAMP"/>
+      <method name="addPropertyChangeListener(java.beans.PropertyChangeListener listener)"/>
+      <method name="setAck(boolean ack)"/>
+      <method name="setEmptyLastMessage(boolean emptyLastMessage)"/>
+      <method name="setLastMessage(boolean lastMessage)"/>
+      <method name="setRequestPacket(com.sun.xml.ws.api.message.Packet requestPacket)"/>
+      <method name="setTimestamp(long timestamp)"/>
+    </class>
+    <class name="OfferSequence">
+      <method name="getId()"/>
+      <method name="getMainSequenceId()"/>
+    </class>
+    <class name="SourceMessageInfo">
+      <method name="SourceMessageInfo(java.lang.String seqId,java.lang.String msgId,long msgNum,java.lang.String action)"/>
+      <method name="SourceMessageInfo(weblogic.wsee.reliability2.sequence.SourceMessageInfo info)"/>
+      <method name="equals(java.lang.Object other)"/>
+      <method name="hashCode()"/>
+      <method name="toString()"/>
+      <method name="getResponseMessageNum()"/>
+      <method name="setClientInvokeInfo(weblogic.wsee.reliability2.sequence.SourceMessageInfo.ClientInvokeInfo clientInvokeInfo)"/>
+      <method name="setResponseMessageNum(long responseMsgNum)"/>
+      <method name="getClientInvokeInfo()"/>
+    </class>
+    <class name="UnknownSequenceException">
+      <method name="UnknownSequenceException(java.lang.String message,weblogic.wsee.reliability2.WsrmConstants.RMVersion rmVersion,boolean sourceSide,java.lang.String seqId)"/>
+      <method name="isSourceSide()"/>
+      <method name="getSequenceId()"/>
+      <method name="getRmVersion()"/>
+    </class>
+    <class name="UnknownSourceSequenceException">
+      <method name="UnknownSourceSequenceException(java.lang.String message,weblogic.wsee.reliability2.WsrmConstants.RMVersion rmVersion,java.lang.String seqId)"/>
+      <method name="UnknownSourceSequenceException(weblogic.wsee.reliability2.sequence.UnknownSequenceException e)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.security.bst">
+    <class name="BST11CredentialProvider">
+      <field name="weblogic.wsee.security.bst.BSTCredentialProvider"/>
+    </class>
+    <class name="BSTCredentialProvider">
+      <method name="isForDecryption(weblogic.xml.crypto.wss.provider.Purpose p)"/>
+      <method name="isForEncryption(weblogic.xml.crypto.wss.provider.Purpose p)"/>
+      <method name="isForIdentity(weblogic.xml.crypto.wss.provider.Purpose p)"/>
+      <method name="isForResponseEncryption(weblogic.xml.crypto.wss.provider.Purpose p)"/>
+      <method name="isForSigning(weblogic.xml.crypto.wss.provider.Purpose p)"/>
+      <method name="isForVerification(weblogic.xml.crypto.wss.provider.Purpose p)"/>
+      <field name="weblogic.xml.crypto.wss.provider.CredentialProvider"/>
+      <method name="getValueTypes()"/>
+    </class>
+    <class name="ClientBSTCredentialProvider">
+      <method name="ClientBSTCredentialProvider(java.lang.String clientCertPath,java.lang.String clientPrivateKeyPath)"/>
+      <method name="ClientBSTCredentialProvider(java.lang.String clientCertPath,java.lang.String clientPrivateKeyPath,java.lang.String serverCertPath)"/>
+      <method name="ClientBSTCredentialProvider(java.lang.String keyStoreFileName,java.lang.String keyStorePasswd,java.lang.String certAlias,java.lang.String keyPasswd)"/>
+      <method name="ClientBSTCredentialProvider(java.lang.String keyStoreFileName,java.lang.String keyStorePasswd,java.lang.String certAlias,java.lang.String keyPasswd,java.lang.String keyStoreType)"/>
+      <method name="ClientBSTCredentialProvider(java.lang.String keyStoreFileName,java.lang.String keyStorePasswd,java.lang.String certAlias,java.lang.String keyPasswd,java.lang.String keyStoreType,java.security.cert.X509Certificate serverCert)"/>
+      <method name="ClientBSTCredentialProvider(java.security.cert.CertPath certPath,java.security.PrivateKey pk)"/>
+      <method name="ClientBSTCredentialProvider(java.security.cert.X509Certificate clientCert,java.security.PrivateKey clientPrivateKey,java.security.cert.X509Certificate serverCert)"/>
+      <method name="ClientBSTCredentialProvider(java.security.cert.X509Certificate serverCert,java.security.cert.CertPath certPath,java.security.PrivateKey pk)"/>
+      <method name="getCredential(java.lang.String tokenType,java.lang.String issuerName,weblogic.security.service.ContextHandler ctxHandler,weblogic.xml.crypto.wss.provider.Purpose p)"/>
+      <method name="toString()"/>
+      <method name="setServerCertificate(java.security.cert.X509Certificate serverCert)"/>
+      <method name="cloneAndReplaceServerCert(java.security.cert.X509Certificate serverCert)"/>
+    </class>
+    <class name="ServerBSTCredentialProvider">
+      <method name="getCredential(java.lang.String tokenType,java.lang.String issuerName,weblogic.security.service.ContextHandler ctxHandler,weblogic.xml.crypto.wss.provider.Purpose p)"/>
+      <method name="isSSLUsingKeyStores()"/>
+    </class>
+    <class name="StubPropertyBSTCredProv">
+      <method name="StubPropertyBSTCredProv(java.security.cert.X509Certificate encryptCert,java.security.cert.X509Certificate verifyCert)"/>
+      <method name="getCredential(java.lang.String tokenType,java.lang.String issuerName,weblogic.security.service.ContextHandler ctxHandler,weblogic.xml.crypto.wss.provider.Purpose p)"/>
+      <field name="SERVER_ENCRYPT_CERT"/>
+      <field name="SERVER_VERIFY_CERT"/>
+      <method name="cloneAndReplaceServerCert(java.security.cert.X509Certificate serverCert)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.security.policy">
+    <class name="SecurityToken">
+      <method name="SecurityToken()"/>
+      <method name="SecurityToken(org.w3c.dom.Node claims,java.lang.String tokenIssuer,java.lang.String tokenTypeUri,boolean includeInMessage)"/>
+      <method name="isIncludeDerivedFromInMessage()"/>
+      <method name="isIncludeInMessage()"/>
+      <method name="isOptional()"/>
+      <method name="getDerivedFromTokenType()"/>
+      <method name="getIssuerName()"/>
+      <method name="getTokenIssuer()"/>
+      <method name="getTokenTypeUri()"/>
+      <method name="toString()"/>
+      <method name="getStrTypes()"/>
+      <method name="getStrTypesForDKBaseToken()"/>
+      <method name="getClaims()"/>
+      <method name="setBootstrapPolicy(weblogic.wsee.policy.framework.NormalizedExpression bootstrapPolicy)"/>
+      <method name="setClaims(org.w3c.dom.Node claims)"/>
+      <method name="setDerivedFromTokenType(java.lang.String derivedFromTokenType)"/>
+      <method name="setEncryptionMethod(weblogic.xml.crypto.encrypt.api.EncryptionMethod encMethod)"/>
+      <method name="setIncludeDerivedFromInMessage(boolean b)"/>
+      <method name="setIncludeInMessage(boolean includeInMessage)"/>
+      <method name="setIssuerName(java.lang.String issuerName)"/>
+      <method name="setKeyWrapMethod(weblogic.xml.crypto.encrypt.api.EncryptionMethod keyWrapMethod)"/>
+      <method name="setOptional(boolean optional)"/>
+      <method name="setStrTypes(java.util.List strTypes)"/>
+      <method name="setStrTypesForDKBaseToken(java.util.List strTypesForDKBaseToken)"/>
+      <method name="setTokenIssuer(java.lang.String tokenIssuer)"/>
+      <method name="setTokenTypeUri(java.lang.String tokenTypeUri)"/>
+      <method name="getBootstrapPolicy()"/>
+      <method name="getEncryptionMethod()"/>
+      <method name="getKeyWrapMethod()"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.security.saml">
+    <class name="AbstractSAMLCredentialProvider">
+      <method name="AbstractSAMLCredentialProvider()"/>
+      <field name="weblogic.xml.crypto.wss.provider.CredentialProvider"/>
+      <method name="getCredential(java.lang.String tokenType,java.lang.String issuerName,weblogic.security.service.ContextHandler ctxHandler,weblogic.xml.crypto.wss.provider.Purpose p)"/>
+      <method name="getKeyInfoCredential(java.lang.String tokenType,java.lang.String issuerName,weblogic.xml.crypto.wss.SecurityTokenContextHandler ctxHandler,weblogic.xml.crypto.wss.provider.Purpose p)"/>
+      <method name="getKeyInfoCredential(java.lang.String tokenType,java.lang.String issuerName,weblogic.xml.crypto.wss.SecurityTokenContextHandler ctxHandler,weblogic.xml.crypto.wss.provider.Purpose p,org.w3c.dom.Node claims)"/>
+      <method name="getValueTypes()"/>
+      <method name="getSAMLAttributeData(javax.security.auth.Subject authenticatedSubject)"/>
+    </class>
+    <class name="AbstractSAMLTokenHandler">
+      <method name="AbstractSAMLTokenHandler()"/>
+      <field name="weblogic.xml.crypto.wss.provider.SecurityTokenHandler"/>
+      <method name="isSaml2()"/>
+      <method name="isSupportedTokenType(java.lang.String tokenType)"/>
+      <method name="isSupportedValueType(java.lang.String valueType)"/>
+      <method name="matches(weblogic.xml.crypto.wss.provider.SecurityToken token,java.lang.String tokenType,java.lang.String issuerName,weblogic.security.service.ContextHandler ctxHandler,weblogic.xml.crypto.wss.provider.Purpose p)"/>
+      <method name="getValueTypes()"/>
+      <method name="getSubject(weblogic.xml.crypto.wss.provider.SecurityToken token,javax.xml.rpc.handler.MessageContext msgCtx)"/>
+      <method name="getQNames()"/>
+      <method name="getKeyProvider(weblogic.xml.crypto.wss.provider.SecurityToken token,javax.xml.rpc.handler.MessageContext ctx)"/>
+      <method name="getSecurityToken(java.lang.String valueType,java.lang.Object credentials,weblogic.security.service.ContextHandler ctxHandler)"/>
+      <method name="getSecurityToken(java.lang.String valueType,java.lang.String issuer,weblogic.xml.crypto.wss.provider.Purpose p,weblogic.security.service.ContextHandler ctxHandler)"/>
+      <method name="getSecurityToken(weblogic.xml.crypto.wss.provider.SecurityTokenReference str,javax.xml.rpc.handler.MessageContext ctx)"/>
+      <method name="newSecurityToken(org.w3c.dom.Node node)"/>
+      <method name="getSTR(javax.xml.namespace.QName STRType,java.lang.String valueType,weblogic.xml.crypto.wss.provider.SecurityToken token)"/>
+      <method name="newSecurityTokenReference(org.w3c.dom.Node node)"/>
+    </class>
+    <class name="CSSUtils">
+      <method name="getEndpointPath(boolean isSaml2,java.lang.String url)"/>
+      <method name="mapSAML2ConfMethod(java.lang.String method)"/>
+      <method name="mapSAMLConfMethod(java.lang.String method)"/>
+      <method name="getParser()"/>
+      <method name="returnParser(javax.xml.parsers.DocumentBuilder builder)"/>
+      <method name="isHolderOfKey(boolean isSAML2,weblogic.xml.crypto.wss.SecurityTokenContextHandler samlCtxHandler)"/>
+      <method name="isHolderOfKey(java.lang.String subjConfirmation)"/>
+      <field name="SAML2_ATTRIBUTES"/>
+      <field name="SAML_ATTRIBUTES"/>
+      <field name="SAML_ATTRIBUTE_ONLY"/>
+      <field name="SAML_ATTRIBUTE_PRINCIPALS"/>
+      <method name="getSAMLCredential(boolean isSAML2,java.lang.String tokenType,weblogic.xml.crypto.wss.SecurityTokenContextHandler samlCtxHandler,java.lang.Object keyInfoCredential)"/>
+      <method name="getSAMLAssertionFromCredMapper(weblogic.xml.crypto.wss.SecurityTokenContextHandler samlCtxHandler,java.lang.String assertionType)"/>
+      <method name="getCurrentAuthenticatedSubject()"/>
+      <method name="setupSAMLAttributesContextElements(boolean isSAML2,weblogic.xml.crypto.wss.SecurityTokenContextHandler samlCtxHandler,boolean attributesOnly,weblogic.wsee.security.saml.SAMLAttributeStatementData samlAttributes)"/>
+      <method name="setupSAMLContextElements(boolean isSAML2,weblogic.xml.crypto.wss.SecurityTokenContextHandler samlCtxHandler,weblogic.security.service.ContextHandler ctxHandler)"/>
+    </class>
+    <class name="PKISAMLCredentialProvider" members="concealed"/>
+    <class name="SAML2Constants">
+      <field name="BEARER"/>
+      <field name="CONFIRMATION_METHOD"/>
+      <field name="DISABLE_REMOTE_WS_TRUST_CALL_FOR_SAML_TOKEN"/>
+      <field name="HOLDER_OF_KEY"/>
+      <field name="SAML10CM"/>
+      <field name="SAML10_BEARER"/>
+      <field name="SAML10_HOLDER_OF_KEY"/>
+      <field name="SAML10_SENDER_VOUCHES"/>
+      <field name="SAML10_TOKEN_TYPE"/>
+      <field name="SAML10_VALUE_TYPE"/>
+      <field name="SAML11"/>
+      <field name="SAML11_TOKEN_TYPE"/>
+      <field name="SAML11_VALUE_TYPE"/>
+      <field name="SAML20"/>
+      <field name="SAML20CM"/>
+      <field name="SAML20_BEARER"/>
+      <field name="SAML20_HOLDER_OF_KEY"/>
+      <field name="SAML20_SENDER_VOUCHES"/>
+      <field name="SAML20_TOKEN_TYPE"/>
+      <field name="SAML2_NS"/>
+      <field name="SAML2_PREFIX"/>
+      <field name="SAML_TOKEN10_URI"/>
+      <field name="SAML_TOKEN11_URI"/>
+      <field name="SAML_VERSION_11"/>
+      <field name="SAML_VERSION_20"/>
+      <field name="SENDER_VOUCHES"/>
+      <field name="WSS_SAML11_TOKEN10"/>
+      <field name="WSS_SAML11_TOKEN11"/>
+      <field name="WSS_SAML20_TOKEN11"/>
+      <field name="SAML_TOKEN_TYPES"/>
+      <field name="SAML_VALUE_TYPES"/>
+      <field name="SAML2_ASST_QNAME"/>
+      <field name="SAML2_ASST_QNAMES"/>
+    </class>
+    <class name="SAML2CredentialProvider">
+      <method name="getValueTypes()"/>
+    </class>
+    <class name="SAML2TokenHandler">
+      <method name="isSaml2()"/>
+      <method name="isSupportedTokenType(java.lang.String tokenType)"/>
+      <method name="isSupportedValueType(java.lang.String valueType)"/>
+      <method name="getValueTypes()"/>
+      <method name="getQNames()"/>
+    </class>
+    <class name="SAMLAttributeData">
+      <method name="isEmpty()"/>
+      <method name="isSAML20()"/>
+      <method name="getSAML2AttributeInfo()"/>
+      <method name="getAttributeFriendlyName()"/>
+      <method name="getAttributeName()"/>
+      <method name="getAttributeNameFormat()"/>
+      <method name="getAttributeNameSpace()"/>
+      <method name="getAttributeValues()"/>
+      <method name="addAttributeValue(java.lang.String attributeValue)"/>
+      <method name="addAttributeValues(java.util.Collection newAttributeValues)"/>
+      <method name="setAttributeFriendlyName(java.lang.String attributeFriendlyName)"/>
+      <method name="setAttributeName(java.lang.String attributeName)"/>
+      <method name="setAttributeNameFormat(java.lang.String attributeNameFormat)"/>
+      <method name="setAttributeNameSpace(java.lang.String attributeNameSpace)"/>
+      <method name="setAttributeValues(java.util.Collection attributeValues)"/>
+      <method name="getSAMLAttributeInfo()"/>
+    </class>
+    <class name="SAMLAttributeDataImpl">
+      <method name="SAMLAttributeDataImpl()"/>
+      <method name="SAMLAttributeDataImpl(com.bea.security.saml2.providers.SAML2AttributeInfo saml2AttributeInfo)"/>
+      <method name="SAMLAttributeDataImpl(java.lang.String attributeName,java.lang.String attributeNameFormat,java.lang.String attributeFriendlyName,java.lang.String namespace,java.util.Collection attributeValues)"/>
+      <method name="SAMLAttributeDataImpl(java.lang.String attributeName,java.util.Collection attributeValues)"/>
+      <method name="SAMLAttributeDataImpl(weblogic.security.providers.saml.SAMLAttributeInfo samlAttributeInfo)"/>
+      <method name="isEmpty()"/>
+      <method name="isSAML20()"/>
+      <method name="getSAML2AttributeInfo()"/>
+      <method name="getAttributeFriendlyName()"/>
+      <method name="getAttributeName()"/>
+      <method name="getAttributeNameFormat()"/>
+      <method name="getAttributeNameSpace()"/>
+      <method name="toString()"/>
+      <method name="valuesToString(java.lang.String existing)"/>
+      <method name="getAttributeValues()"/>
+      <field name="SAML_2_0_ATTRNAME_FORMAT_BASIC"/>
+      <method name="consolation(java.util.List attributeList)"/>
+      <method name="addAttributeValue(java.lang.String attributeValue)"/>
+      <method name="addAttributeValues(java.util.Collection newAttributeValues)"/>
+      <method name="setAttributeFriendlyName(java.lang.String attributeFriendlyName)"/>
+      <method name="setAttributeName(java.lang.String attributeName)"/>
+      <method name="setAttributeNameFormat(java.lang.String attributeNameFormat)"/>
+      <method name="setAttributeNameSpace(java.lang.String attributeNameSpace)"/>
+      <method name="setAttributeValues(java.util.Collection attributeValues)"/>
+      <method name="setSAML20(boolean saml20)"/>
+      <method name="getSAMLAttributeInfo()"/>
+    </class>
+    <class name="SAMLAttributeStatementData">
+      <method name="hasAttributeInfo(java.lang.String attributeName)"/>
+      <method name="hasAttributeValue(java.lang.String attributeName,java.lang.String attributeValue)"/>
+      <method name="isAttributeOnlyRequest()"/>
+      <method name="isEmpty()"/>
+      <method name="size()"/>
+      <method name="getCollectionsForSAML2AttributeStatementInfo()"/>
+      <method name="getCollectionsForSAMLAttributeStatementInfo()"/>
+      <method name="getAttributeInfo()"/>
+      <method name="addAttributeInfo(java.util.Collection attrs)"/>
+      <method name="addAttributeInfo(weblogic.wsee.security.saml.SAMLAttributeData attr)"/>
+      <method name="setAttributeOnlyRequest(boolean attributeOnlyRequest)"/>
+      <method name="getAttributeInfo(java.lang.String AttributeName)"/>
+    </class>
+    <class name="SAMLAttributeStatementDataFactory">
+      <method name="makeSAMLAttributeStatementData(java.lang.Object attributes)"/>
+      <method name="makeSAMLAttributeStatementDataFromSAML2AttributeStatementInfo(java.util.Collection attributes)"/>
+      <method name="makeSAMLAttributeStatementDataFromSAMLAttributeStatementInfo(java.util.Collection attributes)"/>
+    </class>
+    <class name="SAMLAttributeStatementDataHelper">
+      <method name="getSAMLAttributeStatementData(javax.xml.ws.WebServiceContext context)"/>
+      <method name="getSAMLAssertion(javax.xml.ws.WebServiceContext context)"/>
+      <method name="getSAMLToken(javax.xml.ws.WebServiceContext context)"/>
+    </class>
+    <class name="SAMLAttributeStatementDataImpl">
+      <method name="SAMLAttributeStatementDataImpl()"/>
+      <method name="SAMLAttributeStatementDataImpl(java.util.Collection attrs)"/>
+      <method name="hasAttributeInfo(java.lang.String attributeName)"/>
+      <method name="hasAttributeValue(java.lang.String attributeName,java.lang.String attributeValue)"/>
+      <method name="isAttributeOnlyRequest()"/>
+      <method name="isEmpty()"/>
+      <method name="size()"/>
+      <method name="toString()"/>
+      <method name="getCollectionsForSAML2AttributeStatementInfo()"/>
+      <method name="getCollectionsForSAMLAttributeStatementInfo()"/>
+      <method name="getAttributeInfo()"/>
+      <method name="getNameValuePair()"/>
+      <method name="addAttributeInfo(java.util.Collection attrs)"/>
+      <method name="addAttributeInfo(weblogic.wsee.security.saml.SAMLAttributeData attr)"/>
+      <method name="setAttributeOnlyRequest(boolean attributeOnlyRequest)"/>
+      <method name="getAttributeInfo(java.lang.String attributeName)"/>
+    </class>
+    <class name="SAMLConstants">
+      <field name="BEARER"/>
+      <field name="CONFIRMATION_METHOD"/>
+      <field name="HOLDER_OF_KEY"/>
+      <field name="POLICY_URI"/>
+      <field name="SAML_TOKEN_URI"/>
+      <field name="SAML_TOKEN_URI_2004_01"/>
+      <field name="SAML_VALUE_TYPE"/>
+      <field name="SAML_VALUE_TYPE_2004_01"/>
+      <field name="SENDER_VOUCHES"/>
+      <field name="SAML_VALUE_TYPES"/>
+      <field name="CONFIRMATION_METHOD_QNAME"/>
+      <field name="SAML_ASST_QNAME"/>
+      <field name="SAML_ASST_QNAMES"/>
+    </class>
+    <class name="SAMLCredential">
+      <method name="isHolderOfKey()"/>
+      <method name="isSaml2()"/>
+      <method name="getCredential()"/>
+      <method name="getAssertionID()"/>
+      <method name="getTokenType()"/>
+      <method name="getVersion()"/>
+      <method name="getHolderOfKey()"/>
+      <method name="getSymmetircKey()"/>
+      <method name="getPrivateKey()"/>
+      <method name="getX509Cert()"/>
+      <method name="getEncryptedKey()"/>
+      <method name="setAttributes(weblogic.wsee.security.saml.SAMLAttributeStatementData attributes)"/>
+      <method name="setCredential(java.lang.Object credential)"/>
+      <method name="setEncryptedKeyProvider(weblogic.xml.crypto.common.keyinfo.EncryptedKeyProvider encryptedKeyProvider)"/>
+      <method name="setPrivateKey(java.security.PrivateKey privateKey)"/>
+      <method name="setSymmetircKey(java.security.Key symmetircKey)"/>
+      <method name="getAttributes()"/>
+      <method name="getEncryptedKeyProvider()"/>
+    </class>
+    <class name="SAMLCredentialImpl">
+      <method name="SAMLCredentialImpl()"/>
+      <method name="SAMLCredentialImpl(java.lang.String tokenType,java.lang.Object cred)"/>
+      <method name="SAMLCredentialImpl(java.lang.String tokenType,java.lang.Object cred,java.security.PrivateKey privateKey)"/>
+      <method name="SAMLCredentialImpl(org.w3c.dom.Node node)"/>
+      <method name="isHolderOfKey()"/>
+      <method name="isSaml2()"/>
+      <method name="getCredential()"/>
+      <method name="getAssertionID()"/>
+      <method name="getTokenType()"/>
+      <method name="getVersion()"/>
+      <method name="getHolderOfKey()"/>
+      <method name="getSymmetircKey()"/>
+      <method name="getPrivateKey()"/>
+      <method name="getX509Cert()"/>
+      <method name="getEncryptedKey()"/>
+      <method name="setAttributes(weblogic.wsee.security.saml.SAMLAttributeStatementData attributes)"/>
+      <method name="setCredential(java.lang.Object credential)"/>
+      <method name="setEncryptedKeyProvider(weblogic.xml.crypto.common.keyinfo.EncryptedKeyProvider encryptedKeyProvider)"/>
+      <method name="setPrivateKey(java.security.PrivateKey privateKey)"/>
+      <method name="setSymmetircKey(java.security.Key symmetircKey)"/>
+      <method name="setTokenType(java.lang.String tokenType)"/>
+      <method name="verbose()"/>
+      <method name="getAttributes()"/>
+      <method name="getEncryptedKeyProvider()"/>
+      <method name="getSecurityTokenReference()"/>
+    </class>
+    <class name="SAMLCredentialProvider">
+      <method name="getValueTypes()"/>
+    </class>
+    <class name="SAMLIssuedTokenHelper">
+      <method name="SAMLIssuedTokenHelper(org.w3c.dom.Element issuedTokenNode)"/>
+      <method name="isRequireExternalReference()"/>
+      <method name="isRequireInternalReference()"/>
+      <method name="getKeySize()"/>
+      <method name="getIssuerAddressUri()"/>
+      <method name="getKeyType()"/>
+      <method name="getRequestSecurityTokenTemplateVale(javax.xml.namespace.QName qName)"/>
+      <method name="getTokenType()"/>
+      <method name="getTrustVersion()"/>
+      <method name="isSymmetricKeyTypeFromIssuedTokenClaim(org.w3c.dom.Node claims)"/>
+      <field name="ISSUED_TOKEN_POLICY"/>
+      <field name="ISSUER_URI"/>
+      <field name="REQ_EXTERNAL_REFERENCE"/>
+      <field name="REQ_INTERNAL_REFERENCE"/>
+      <field name="TRUST_VERSION"/>
+      <field name="TRUST_VERSOIN_10"/>
+      <field name="TRUST_VERSOIN_13"/>
+      <field name="ISSUED_TK_POLICY_QNAME"/>
+      <field name="TRUST10_TOKEN_TYPE"/>
+      <field name="TRUST13_C14N_ALGO"/>
+      <field name="TRUST13_ENC_ALGO"/>
+      <field name="TRUST13_ENC_WITH"/>
+      <field name="TRUST13_KEY_SIZE"/>
+      <field name="TRUST13_KEY_TYPE"/>
+      <field name="TRUST13_SIGN_WITH"/>
+      <field name="TRUST13_TOKEN_TYPE"/>
+      <method name="getClaimFromChildElt(org.w3c.dom.Node claims,java.lang.String tagName)"/>
+      <method name="getKeyTypeFromClaims(org.w3c.dom.Node claims)"/>
+      <method name="getTrustKeyTypeFromIssuedTokenClaims(org.w3c.dom.Node claims)"/>
+    </class>
+    <class name="SAMLKeyProvider">
+      <method name="getResult(java.security.Key key)"/>
+      <method name="SAMLKeyProvider(java.security.PublicKey key,java.security.PrivateKey privateKey,java.lang.String assertionID,weblogic.xml.crypto.wss.provider.SecurityToken token)"/>
+      <method name="getKey(java.lang.String desiredAlg,weblogic.xml.crypto.api.KeySelector.Purpose purpose)"/>
+    </class>
+    <class name="SAMLTokenHandler">
+      <method name="isSaml2()"/>
+      <method name="isSupportedTokenType(java.lang.String tokenType)"/>
+      <method name="isSupportedValueType(java.lang.String valueType)"/>
+      <method name="getValueTypes()"/>
+      <method name="getQNames()"/>
+    </class>
+    <class name="SAMLTrustCredential">
+      <method name="SAMLTrustCredential(weblogic.wsee.security.saml.SAMLCredential cred)"/>
+      <method name="hasAttachedSecurityTokenReference()"/>
+      <method name="hasUnattachedSecurityTokenReference()"/>
+      <method name="getAppliesTo()"/>
+      <method name="getIdentifier()"/>
+      <method name="getCreated()"/>
+      <method name="getExpires()"/>
+      <method name="getAppliesToElement()"/>
+      <method name="setAppliesTo(java.lang.String appliesTo)"/>
+      <method name="setAppliesToElement(org.w3c.dom.Element appliesToElement)"/>
+      <method name="setCreated(java.util.Calendar created)"/>
+      <method name="setExpires(java.util.Calendar expires)"/>
+      <method name="getCredential()"/>
+    </class>
+    <class name="SAMLTrustCredentialProvider">
+      <method name="getMessageContext(weblogic.xml.crypto.wss.SecurityTokenContextHandler securityCtxHandler)"/>
+      <method name="getSecurityCtxHandler(weblogic.security.service.ContextHandler ctxHandler)"/>
+      <method name="getCredential(java.lang.String tokenType,java.lang.String issuerName,weblogic.security.service.ContextHandler ctxHandler,weblogic.xml.crypto.wss.provider.Purpose p)"/>
+      <method name="getValueTypes()"/>
+      <field name="SAML_VALUE_TYPES"/>
+      <field name="EMPTY_CONTEXT"/>
+    </class>
+    <class name="SAMLTrustTokenProvider">
+      <method name="getConfirmationMethod(java.lang.String tokenType,java.lang.String keyType)"/>
+      <field name="weblogic.wsee.security.wst.framework.TrustTokenProvider"/>
+    </class>
+    <class name="SAMLUtils">
+      <method name="hasAttributeNoAuthenticateStmt(org.w3c.dom.Element saml)"/>
+      <method name="hasX509SubjectName(org.w3c.dom.Element nameIdentifierElm)"/>
+      <method name="isEquivalentSamlTokenType(java.lang.String type1,java.lang.String type2)"/>
+      <method name="isSamlTokenType(java.lang.String tokenType)"/>
+      <method name="isSymmetricKeyType(java.lang.String keyType)"/>
+      <field name="SAML_ATN_STATEMENT_TAG"/>
+      <field name="SAML_ATTRIBUTE_STATEMENT_TAG"/>
+      <field name="SAML_SUBJCONF_TAG"/>
+      <field name="SAML_SUBJECT_TAG"/>
+      <method name="getTokenTypeFromAssertionElement(org.w3c.dom.Element token)"/>
+      <method name="getJavaSubjectFromSamlElement(org.w3c.dom.Node samlNode)"/>
+      <method name="getFirstMatchingChildElement(org.w3c.dom.Element parent,java.lang.String childName)"/>
+      <method name="getNameIdentifierElm(org.w3c.dom.Element subjectElm)"/>
+      <method name="getSubjectElementFromSamlAssertion(org.w3c.dom.Element saml)"/>
+      <method name="getReplaceAttributeStmtToAuthenticateStmtSAMLNode(org.w3c.dom.Element saml)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.security.unt">
+    <class name="ClientUNTCredentialProvider">
+      <method name="ClientUNTCredentialProvider(byte[] username,byte[] password)"/>
+      <method name="ClientUNTCredentialProvider(java.lang.String username,java.lang.String password)"/>
+      <method name="getCredential(java.lang.String tokenType,java.lang.String issuerName,weblogic.security.service.ContextHandler ctxHandler,weblogic.xml.crypto.wss.provider.Purpose p)"/>
+      <method name="toString()"/>
+      <method name="getValueTypes()"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.security.wss">
+    <class name="SecurityPolicyException">
+      <method name="SecurityPolicyException()"/>
+      <method name="SecurityPolicyException(java.lang.String s)"/>
+      <method name="SecurityPolicyException(java.lang.String s,java.lang.Throwable t)"/>
+      <method name="SecurityPolicyException(java.lang.Throwable t)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.security.wssc.utils">
+    <class name="WSSCClientUtil">
+      <method name="terminateWssc(javax.xml.rpc.Stub stub)"/>
+      <method name="terminateWssc(javax.xml.ws.BindingProvider port)"/>
+    </class>
+    <class name="WSSCCompatibilityUtil">
+      <method name="isHeuristicCompatibility()"/>
+      <method name="isHeuristicStrategyRequired(javax.xml.rpc.handler.MessageContext smc)"/>
+      <field name="MSFT"/>
+      <field name="WSSC13"/>
+      <field name="WSSC14"/>
+      <field name="WST_HEURISTIC_FLAG"/>
+      <method name="getWSSCVersion(java.lang.String compatibilityPreference)"/>
+      <method name="getWSSCVersion(javax.xml.rpc.handler.MessageContext msgCtx)"/>
+      <method name="getCompatibilityOrdering(weblogic.wsee.security.wssc.utils.WSSCCompatibilityUtil.OrderingIterator it)"/>
+      <method name="adjustOrderingPreference(javax.xml.rpc.handler.MessageContext mc)"/>
+      <method name="getCompatibilityOrdering(java.lang.String compatOrderingPref)"/>
+      <method name="resetCompatibilityOrdering(weblogic.wsee.security.wssc.utils.WSSCCompatibilityUtil.OrderingIterator it,java.lang.String first)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.security.wst.faults">
+    <class name="WSTFaultException">
+      <method name="WSTFaultException(java.lang.String errorMsg)"/>
+      <field name="faultCode"/>
+      <field name="faultString"/>
+      <method name="getFaultCode()"/>
+      <method name="getFaultString()"/>
+      <method name="getFault()"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.security.wst.framework">
+    <class name="TrustCredential">
+      <method name="hasAttachedSecurityTokenReference()"/>
+      <method name="hasUnattachedSecurityTokenReference()"/>
+      <method name="getAppliesTo()"/>
+      <method name="getIdentifier()"/>
+      <method name="getCreated()"/>
+      <method name="getExpires()"/>
+      <method name="getAppliesToElement()"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.tools">
+    <class name="WsBuildException">
+      <method name="WsBuildException()"/>
+      <method name="WsBuildException(java.lang.String msg)"/>
+      <method name="WsBuildException(java.lang.String msg,java.lang.Throwable t)"/>
+      <method name="WsBuildException(java.lang.Throwable t)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.util">
+    <class name="DefaultHashFunction">
+      <method name="hash(java.lang.Object obj)"/>
+    </class>
+    <class name="HashCodeUtil">
+      <field name="SEED"/>
+      <method name="hash(int aSeed,boolean aBoolean)"/>
+      <method name="hash(int aSeed,char aChar)"/>
+      <method name="hash(int aSeed,double aDouble)"/>
+      <method name="hash(int aSeed,float aFloat)"/>
+      <method name="hash(int aSeed,int aInt)"/>
+      <method name="hash(int aSeed,java.lang.Object aObject)"/>
+      <method name="hash(int aSeed,java.util.Collection aCollection)"/>
+      <method name="hash(int aSeed,long aLong)"/>
+    </class>
+    <class name="SecurityUtil">
+      <method name="flagSecurityContextAsPersistable(com.sun.xml.ws.api.message.Packet packet)"/>
+      <method name="invokeCheck(java.lang.reflect.Method method)"/>
+    </class>
+    <class name="StableHash">
+      <method name="get(java.lang.Object key)"/>
+      <method name="StableHash(weblogic.wsee.util.StableHash.HashFunction hashFunction,int numberOfReplicas,java.util.Collection nodes)"/>
+      <method name="add(T node)"/>
+      <method name="remove(T node)"/>
+    </class>
+    <class name="ToStringWriter">
+      <method name="toString()"/>
+      <method name="end()"/>
+      <method name="start(java.lang.Object object)"/>
+      <method name="writeArray(java.lang.String name,java.util.Iterator iterator)"/>
+      <method name="writeField(java.lang.String name,int value)"/>
+      <method name="writeField(java.lang.String name,java.lang.Object object)"/>
+      <method name="writeMap(java.lang.String name,java.util.Map map)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.wsdl">
+    <class name="WsdlBinding">
+      <method name="getBindingType()"/>
+      <method name="getTransportProtocol()"/>
+      <method name="getTransportURI()"/>
+      <method name="getOperations()"/>
+      <method name="getName()"/>
+      <method name="setPolicyUris(weblogic.wsee.policy.deployment.PolicyURIs policyUris)"/>
+      <method name="getPolicyUris()"/>
+      <method name="getPortType()"/>
+    </class>
+    <class name="WsdlDefinitions">
+      <method name="getEncoding()"/>
+      <method name="getName()"/>
+      <method name="getTargetNamespace()"/>
+      <method name="getWsdlLocation()"/>
+      <method name="getImportedWsdlDefinitions()"/>
+      <method name="getImports()"/>
+      <method name="getBindings()"/>
+      <method name="getMessages()"/>
+      <method name="getPorts()"/>
+      <method name="getPortTypes()"/>
+      <method name="getServices()"/>
+      <method name="getKnownImportedWsdlLocations()"/>
+      <method name="getTheOnlySchema()"/>
+      <method name="getTypes()"/>
+    </class>
+    <class name="WsdlDocumentation">
+      <method name="getDocumentation()"/>
+    </class>
+    <class name="WsdlElement">
+      <method name="getDocumentation()"/>
+    </class>
+    <class name="WsdlExtensible">
+      <method name="getExtensionList(java.lang.String name)"/>
+      <method name="getExtensions()"/>
+      <method name="putExtension(weblogic.wsee.wsdl.WsdlExtension extension)"/>
+      <method name="getExtension(java.lang.String name)"/>
+    </class>
+    <class name="WsdlExtension">
+      <method name="getKey()"/>
+      <method name="write(org.w3c.dom.Element parent,weblogic.wsee.wsdl.WsdlWriter wsdlWriter)"/>
+    </class>
+    <class name="WsdlFilter">
+      <method name="isMessagePartSupported(javax.xml.namespace.QName messageName,java.lang.String partName)"/>
+      <method name="isPortSupported(javax.xml.namespace.QName portName)"/>
+      <method name="rewritePortUrl(javax.xml.namespace.QName portName,java.lang.String protocol,java.lang.String host,java.lang.String listenPort,java.lang.String serviceUri,java.lang.String origUrl)"/>
+    </class>
+    <class name="WsdlMessage">
+      <method name="getParts()"/>
+      <method name="getName()"/>
+      <method name="setPolicyUris(weblogic.wsee.policy.deployment.PolicyURIs policyUris)"/>
+      <method name="getPolicyUris()"/>
+    </class>
+    <class name="WsdlMethod">
+      <method name="getParameters()"/>
+      <method name="getResultPart()"/>
+    </class>
+    <class name="WsdlOperation">
+      <method name="isWrapped()"/>
+      <method name="getType()"/>
+      <method name="getInputAction()"/>
+      <method name="getInputName()"/>
+      <method name="getOutputAction()"/>
+      <method name="getOutputName()"/>
+      <method name="getFaults()"/>
+      <method name="getName()"/>
+      <field name="NOTIFICATION"/>
+      <field name="ONE_WAY"/>
+      <field name="REQUEST_RESPONSE"/>
+      <field name="SOLICIT_RESPONSE"/>
+      <method name="setFaultPolicyUris(java.lang.String faultName,weblogic.wsee.policy.deployment.PolicyURIs policyUris)"/>
+      <method name="setInputPolicyUris(weblogic.wsee.policy.deployment.PolicyURIs policyUris)"/>
+      <method name="setOutputPolicyUris(weblogic.wsee.policy.deployment.PolicyURIs policyUris)"/>
+      <method name="setPolicyUris(weblogic.wsee.policy.deployment.PolicyURIs policyUris)"/>
+      <method name="getFaultPolicyUris(java.lang.String faultName)"/>
+      <method name="getInputPolicyUris()"/>
+      <method name="getOutputPolicyUris()"/>
+      <method name="getPolicyUris()"/>
+      <method name="getInput()"/>
+      <method name="getOutput()"/>
+      <method name="getWsdlMethod()"/>
+      <method name="getWsdlMethod(boolean fillIncompleteParameterOrderList)"/>
+    </class>
+    <class name="WsdlPart">
+      <method name="getName()"/>
+      <method name="getElement()"/>
+      <method name="getType()"/>
+    </class>
+    <class name="WsdlPort">
+      <method name="getTransport()"/>
+      <method name="getName()"/>
+      <method name="setPolicyUris(weblogic.wsee.policy.deployment.PolicyURIs policyUris)"/>
+      <method name="setPortAddress(weblogic.wsee.deploy.WsdlAddressInfo.PortAddress portAddress)"/>
+      <method name="getPortAddress()"/>
+      <method name="getPolicyUris()"/>
+      <method name="getBinding()"/>
+      <method name="getDefinitions()"/>
+      <method name="getPortType()"/>
+      <method name="getService()"/>
+    </class>
+    <class name="WsdlPortType">
+      <method name="getOperations()"/>
+      <method name="getName()"/>
+      <method name="setPolicyUris(weblogic.wsee.policy.deployment.PolicyURIs policyUris)"/>
+      <method name="getPolicyUris()"/>
+    </class>
+    <class name="WsdlSchema">
+      <method name="getLocationUrl()"/>
+      <method name="getImports()"/>
+      <method name="getWsdlDefinitions()"/>
+    </class>
+    <class name="WsdlSchemaImport">
+      <method name="isRelative()"/>
+      <method name="getNamespace()"/>
+      <method name="getSchemaLocation()"/>
+      <method name="getSchema()"/>
+    </class>
+    <class name="WsdlService">
+      <method name="getPortTypes()"/>
+      <method name="getPorts()"/>
+      <method name="getName()"/>
+      <method name="setPolicyUris(weblogic.wsee.policy.deployment.PolicyURIs policyUris)"/>
+      <method name="getPolicyUris()"/>
+      <method name="getDefinitions()"/>
+      <method name="getWsdlFilter()"/>
+    </class>
+    <class name="WsdlTypes">
+      <method name="getNodeList()"/>
+      <method name="getNodeListWithoutImport()"/>
+      <method name="getImportedWsdlSchemas()"/>
+      <method name="getSchemaListWithoutImport()"/>
+      <method name="getNameSpaceDefs()"/>
+    </class>
+    <class name="WsdlWriter">
+      <method name="WsdlWriter()"/>
+      <method name="WsdlWriter(org.w3c.dom.Document document,org.w3c.dom.Element root,java.lang.String defaultNamespace)"/>
+      <method name="isSameNS(java.lang.String namespace)"/>
+      <method name="createPrefix(java.lang.String namespace)"/>
+      <method name="getEndpointURL(java.lang.String origUrl)"/>
+      <method name="getImportPrefix()"/>
+      <method name="getRelativeToRootFile()"/>
+      <method name="getTargetNS()"/>
+      <method name="toString()"/>
+      <method name="getAttachedPolices()"/>
+      <method name="addChild(org.w3c.dom.Element element,java.lang.String name,java.lang.String namespace)"/>
+      <method name="addPrefix(java.lang.String prefix,java.lang.String namespace)"/>
+      <method name="addText(org.w3c.dom.Element element,java.lang.String text)"/>
+      <method name="setAttachedPolices(java.util.Map attachedPolices)"/>
+      <method name="setAttribute(org.w3c.dom.Element element,java.lang.String name,java.lang.String namespace,java.lang.String value)"/>
+      <method name="setAttribute(org.w3c.dom.Element element,java.lang.String name,java.lang.String namespace,javax.xml.namespace.QName value)"/>
+      <method name="setCurrentWsdlPort(weblogic.wsee.wsdl.WsdlPort currentWsdlPort)"/>
+      <method name="setRelativeToRootFile(java.lang.String relativeToRootFile)"/>
+      <method name="setTargetNS(java.lang.String targetNS)"/>
+      <method name="setWsdlAddressInfo(weblogic.wsee.deploy.WsdlAddressInfo wsdlAddressInfo)"/>
+      <method name="toString(weblogic.wsee.util.ToStringWriter writer)"/>
+      <method name="getWsdlAddressInfo()"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.wstx">
+    <class name="TransactionServices">
+      <method name="enlistResource(javax.transaction.xa.XAResource resource,javax.transaction.xa.Xid xid)"/>
+      <method name="getGlobalTransactionId()"/>
+      <method name="getExpires()"/>
+      <method name="prepare(byte[] tId)"/>
+      <method name="importTransaction(int timeout,byte[] tId)"/>
+      <method name="getParentReference(javax.transaction.xa.Xid xid)"/>
+      <method name="commit(byte[] tId)"/>
+      <method name="registerSynchronization(javax.transaction.Synchronization synchronization,javax.transaction.xa.Xid xid)"/>
+      <method name="replayCompletion(java.lang.String tId,javax.transaction.xa.XAResource xaResource)"/>
+      <method name="rollback(byte[] tId)"/>
+    </class>
+  </package>
+  <package name="weblogic.wsee.wstx.wsat">
+    <class name="Transactional">
+      <field name="java.lang.annotation.Annotation"/>
+    </class>
+    <class name="TransactionalFeature">
+      <method name="TransactionalFeature()"/>
+      <method name="TransactionalFeature(boolean enabled)"/>
+      <method name="TransactionalFeature(boolean enabled,weblogic.wsee.wstx.wsat.Transactional.TransactionFlowType value,weblogic.wsee.wstx.wsat.Transactional.Version version)"/>
+      <method name="isEnabled(java.lang.String operationName)"/>
+      <method name="isExplicitMode()"/>
+      <method name="getID()"/>
+      <method name="getEnabledMap()"/>
+      <method name="getFlowTypeMap()"/>
+      <field name="ID"/>
+      <method name="setEnabled(boolean enabled)"/>
+      <method name="setEnabled(java.lang.String operationName,boolean enabled)"/>
+      <method name="setExplicitMode(boolean explicitMode)"/>
+      <method name="setFlowType(java.lang.String operationName,weblogic.wsee.wstx.wsat.Transactional.TransactionFlowType flowType)"/>
+      <method name="setFlowType(weblogic.wsee.wstx.wsat.Transactional.TransactionFlowType flowType)"/>
+      <method name="setVersion(weblogic.wsee.wstx.wsat.Transactional.Version version)"/>
+      <method name="getFlowType()"/>
+      <method name="getFlowType(java.lang.String operationName)"/>
+      <method name="getVersion()"/>
+    </class>
+    <class name="WSATClientHandler">
+      <method name="doHandleMessage(javax.xml.soap.SOAPHeader soapHeader,boolean outboundProperty)"/>
+      <method name="handleFault(javax.xml.ws.handler.soap.SOAPMessageContext soapMessageContext)"/>
+      <method name="handleMessage(javax.xml.ws.handler.soap.SOAPMessageContext soapMessageContext)"/>
+      <method name="getHeaders()"/>
+      <method name="close(javax.xml.ws.handler.MessageContext messageContext)"/>
+      <method name="createMustUnderstandName(javax.xml.soap.SOAPMessage message)"/>
+      <method name="getTransaction()"/>
+    </class>
+    <class name="WSATConstants">
+      <field name="ABORTED"/>
+      <field name="ACTION"/>
+      <field name="ADDRESS"/>
+      <field name="BRANCHQUAL"/>
+      <field name="COMMIT"/>
+      <field name="COMMITTED"/>
+      <field name="COORDINATION_CONTEXT"/>
+      <field name="COORDINATION_TYPE"/>
+      <field name="COORDINATOR_PROTOCOL_SERVICE"/>
+      <field name="CURRENT_WSCOOR"/>
+      <field name="DEBUG_WSAT"/>
+      <field name="DURABLE_2PC"/>
+      <field name="EXPIRES"/>
+      <field name="FAULT_TO"/>
+      <field name="FROM"/>
+      <field name="HTTP_SCHEMAS_XMLSOAP_ORG_WS_2004_10_WSAT"/>
+      <field name="HTTP_SCHEMAS_XMLSOAP_ORG_WS_2004_10_WSAT_DURABLE_2PC"/>
+      <field name="HTTP_SCHEMAS_XMLSOAP_ORG_WS_2004_10_WSAT_VOLATILE_2PC"/>
+      <field name="IDENTIFIER"/>
+      <field name="MESSAGE_ID"/>
+      <field name="MUST_UNDERSTAND"/>
+      <field name="PARTICIPANT_PROTOCOL_SERVICE"/>
+      <field name="PREPARE"/>
+      <field name="PREPARED"/>
+      <field name="PROTOCOL_IDENTIFIER"/>
+      <field name="READONLY"/>
+      <field name="REFERENCE_PARAMETERS"/>
+      <field name="REGISTER"/>
+      <field name="REGISTER_RESPONSE"/>
+      <field name="REGISTRATION_SERVICE"/>
+      <field name="REPLAY"/>
+      <field name="REPLY_TO"/>
+      <field name="ROLLBACK"/>
+      <field name="ROUTING"/>
+      <field name="SOAP_ENVELOPE"/>
+      <field name="TO"/>
+      <field name="TXID"/>
+      <field name="TXPROP_WSAT_FOREIGN_RECOVERY_CONTEXT"/>
+      <field name="VOLATILE_2PC"/>
+      <field name="WLA_WSAT_NS_URI"/>
+      <field name="WLS_WSAT"/>
+      <field name="WSA"/>
+      <field name="WSADDRESSING_NS_URI"/>
+      <field name="WSAT"/>
+      <field name="WSAT10_NS_URI"/>
+      <field name="WSAT11_COORDINATORPORTTYPEPORT"/>
+      <field name="WSAT11_DURABLE_2PC"/>
+      <field name="WSAT11_NS_URI"/>
+      <field name="WSAT11_PARTICIPANTPORTTYPEPORT"/>
+      <field name="WSAT11_REGISTRATIONCOORDINATORPORTTYPEPORT"/>
+      <field name="WSAT11_REGISTRATIONREQUESTERPORTTYPEPORT"/>
+      <field name="WSAT11_VOLATILE_2PC"/>
+      <field name="WSAT_COORDINATORPORTTYPEPORT"/>
+      <field name="WSAT_PARTICIPANTPORTTYPEPORT"/>
+      <field name="WSAT_REGISTRATIONCOORDINATORPORTTYPEPORT"/>
+      <field name="WSAT_REGISTRATIONREQUESTERPORTTYPEPORT"/>
+      <field name="WSCOOR"/>
+      <field name="WSCOOR10_NS_URI"/>
+      <field name="WSCOOR11_NS_URI"/>
+      <field name="BRANCHQUAL_QNAME"/>
+      <field name="ROUTING_QNAME"/>
+      <field name="TXID_QNAME"/>
+      <field name="WSCOOR11_CONTEXT_QNAME"/>
+      <field name="WSCOOR11_REGISTER_QNAME"/>
+      <field name="WSCOOR_CONTEXT_QNAME"/>
+      <field name="WSCOOR_REGISTER_QNAME"/>
+    </class>
+    <class name="WSATException">
+      <method name="WSATException(java.lang.Exception ex)"/>
+      <method name="WSATException(java.lang.String s)"/>
+      <method name="WSATException(java.lang.String s,javax.transaction.xa.XAException xae)"/>
+      <field name="errorCode"/>
+    </class>
+    <class name="WSATFaultFactory">
+      <method name="throwAlreadyRegisteredFault()"/>
+      <method name="throwContextRefusedFault()"/>
+      <method name="throwInconsistentInternalStateFault()"/>
+      <method name="throwInvalidParametersFault()"/>
+      <method name="throwInvalidProtocolFault()"/>
+      <method name="throwInvalidStateFault()"/>
+      <method name="throwNoActivityFault()"/>
+    </class>
+    <class name="WSATHelper">
+      <method name="WSATHelper()"/>
+      <method name="setDurableParticipantStatus(javax.transaction.xa.Xid xid,java.lang.String status)"/>
+      <method name="getWaitForReplyTimeout()"/>
+      <method name="getBQualFromWebServiceContextHeaderList(javax.xml.ws.WebServiceContext context)"/>
+      <method name="getCoordinatorAddress()"/>
+      <method name="getParticipantAddress()"/>
+      <method name="getRegistrationCoordinatorAddress()"/>
+      <method name="getRegistrationRequesterAddress()"/>
+      <method name="getRoutingAddress()"/>
+      <method name="getWSATTidFromWebServiceContextHeaderList(javax.xml.ws.WebServiceContext context)"/>
+      <method name="getVolatileParticipantSynchronizationMap()"/>
+      <method name="getVolatileParticipantPortMap()"/>
+      <method name="getDurableParticipantPortMap()"/>
+      <method name="isDebugEnabled()"/>
+      <field name="V10"/>
+      <field name="V11"/>
+      <method name="assignUUID()"/>
+      <method name="getTransactionServices()"/>
+      <method name="getInstance()"/>
+      <method name="getInstance(weblogic.wsee.wstx.wsat.Transactional.Version version)"/>
+      <method name="beforeCompletion(javax.xml.ws.EndpointReference epr,javax.transaction.xa.Xid xid,weblogic.wsee.wstx.wsat.WSATSynchronization wsatSynchronization)"/>
+      <method name="commit(javax.xml.ws.EndpointReference epr,javax.transaction.xa.Xid xid,weblogic.wsee.wstx.wsat.WSATXAResource wsatXAResource)"/>
+      <method name="debug(java.lang.String msg)"/>
+      <method name="prepare(javax.xml.ws.EndpointReference epr,javax.transaction.xa.Xid xid,weblogic.wsee.wstx.wsat.WSATXAResource wsatXAResource)"/>
+      <method name="rollback(javax.xml.ws.EndpointReference epr,javax.transaction.xa.Xid xid,weblogic.wsee.wstx.wsat.WSATXAResource wsatXAResource)"/>
+      <method name="getXidFromWebServiceContextHeaderList(javax.xml.ws.WebServiceContext context)"/>
+    </class>
+    <class name="WSATXAResource">
+      <method name="WSATXAResource(javax.xml.ws.EndpointReference epr,javax.transaction.xa.Xid xid)"/>
+      <method name="WSATXAResource(weblogic.wsee.wstx.wsat.Transactional.Version version,javax.xml.ws.EndpointReference epr,javax.transaction.xa.Xid xid)"/>
+      <method name="WSATXAResource(weblogic.wsee.wstx.wsat.Transactional.Version version,javax.xml.ws.EndpointReference epr,javax.transaction.xa.Xid xid,boolean isRecovery)"/>
+      <method name="equals(java.lang.Object obj)"/>
+      <method name="isSameRM(javax.transaction.xa.XAResource xaResource)"/>
+      <method name="setTransactionTimeout(int i)"/>
+      <method name="getTransactionTimeout()"/>
+      <method name="hashCode()"/>
+      <method name="prepare(javax.transaction.xa.Xid xid)"/>
+      <method name="toString()"/>
+      <method name="getXid()"/>
+      <method name="recover(int i)"/>
+      <method name="commit(javax.transaction.xa.Xid xid,boolean onePhase)"/>
+      <method name="end(javax.transaction.xa.Xid xid,int i)"/>
+      <method name="forget(javax.transaction.xa.Xid xid)"/>
+      <method name="rollback(javax.transaction.xa.Xid xid)"/>
+      <method name="setBranchQualifier(byte[] bqual)"/>
+      <method name="setStatus(java.lang.String status)"/>
+      <method name="start(javax.transaction.xa.Xid xid,int i)"/>
+    </class>
+  </package>
+  <package name="weblogic.xml.crypto.api">
+    <class name="AlgorithmMethod">
+      <method name="getAlgorithm()"/>
+      <method name="getParameterSpec()"/>
+    </class>
+    <class name="Data" members="concealed"/>
+    <class name="KeySelector">
+      <field name="KeySelector"/>
+      <method name="singletonKeySelector(java.security.Key key)"/>
+      <method name="select(weblogic.xml.crypto.dsig.api.keyinfo.KeyInfo keyInfo,weblogic.xml.crypto.api.KeySelector.Purpose purpose,weblogic.xml.crypto.api.AlgorithmMethod method,weblogic.xml.crypto.api.XMLCryptoContext context)"/>
+    </class>
+    <class name="KeySelectorException" members="concealed"/>
+    <class name="KeySelectorResult">
+      <method name="getKey()"/>
+    </class>
+    <class name="MarshalException">
+      <method name="getCause()"/>
+      <method name="printStackTrace()"/>
+      <method name="printStackTrace(java.io.PrintStream s)"/>
+      <method name="printStackTrace(java.io.PrintWriter s)"/>
+    </class>
+    <class name="URIDereferencer">
+      <method name="dereference(weblogic.xml.crypto.api.URIReference uriReference,weblogic.xml.crypto.api.XMLCryptoContext context)"/>
+    </class>
+    <class name="URIReference">
+      <method name="getType()"/>
+      <method name="getURI()"/>
+    </class>
+    <class name="URIReferenceException">
+      <method name="getCause()"/>
+      <method name="printStackTrace()"/>
+      <method name="printStackTrace(java.io.PrintStream s)"/>
+      <method name="printStackTrace(java.io.PrintWriter s)"/>
+      <method name="getURIReference()"/>
+    </class>
+    <class name="XMLCryptoContext">
+      <method name="getProperty(java.lang.String name)"/>
+      <method name="setProperty(java.lang.String name,java.lang.Object value)"/>
+      <method name="getBaseURI()"/>
+      <method name="setBaseURI(java.lang.String baseURI)"/>
+      <method name="setKeySelector(weblogic.xml.crypto.api.KeySelector ks)"/>
+      <method name="setURIDereferencer(weblogic.xml.crypto.api.URIDereferencer dereferencer)"/>
+      <method name="getKeySelector()"/>
+      <method name="getURIDereferencer()"/>
+    </class>
+    <class name="XMLStructure">
+      <method name="isFeatureSupported(java.lang.String feature)"/>
+    </class>
+  </package>
+  <package name="weblogic.xml.crypto.common.keyinfo">
+    <class name="BaseKeyProvider">
+      <field name="weblogic.xml.crypto.common.keyinfo.KeyProvider"/>
+      <method name="getIdentifier()"/>
+      <method name="getName()"/>
+      <method name="getUri()"/>
+      <method name="toString()"/>
+      <method name="getKeyByIdentifier(byte[] keyIdentifier,java.lang.String alg,weblogic.xml.crypto.api.KeySelector.Purpose purpose)"/>
+      <method name="getKeyByIssuerSerial(java.lang.String issuerName,java.math.BigInteger serial,java.lang.String alg,weblogic.xml.crypto.api.KeySelector.Purpose purpose)"/>
+      <method name="getKeyByName(java.lang.String keyName,java.lang.String alg,weblogic.xml.crypto.api.KeySelector.Purpose purpose)"/>
+      <method name="getKeyBySTR(weblogic.xml.crypto.wss.provider.SecurityTokenReference str,java.lang.String alg,weblogic.xml.crypto.api.KeySelector.Purpose purpose)"/>
+      <method name="getKeyBySubjectName(java.lang.String subjectName,java.lang.String alg,weblogic.xml.crypto.api.KeySelector.Purpose purpose)"/>
+      <method name="getKeyByURI(java.lang.String uri,java.lang.String alg,weblogic.xml.crypto.api.KeySelector.Purpose purpose)"/>
+      <method name="getSecurityToken()"/>
+    </class>
+    <class name="EncryptedKeyProvider">
+      <method name="getKeyIdentifier(weblogic.xml.crypto.encrypt.api.keyinfo.EncryptedKey encryptedKey)"/>
+      <field name="DEFAULT_GENKEY_ALG"/>
+      <method name="getKeyIdentifiers(weblogic.xml.crypto.encrypt.api.keyinfo.EncryptedKey encryptedKey)"/>
+      <method name="getKey(java.lang.String alg,weblogic.xml.crypto.api.KeySelector.Purpose purpose)"/>
+      <method name="getKeyByIdentifier(byte[] keyIdentifier,java.lang.String alg,weblogic.xml.crypto.api.KeySelector.Purpose purpose)"/>
+    </class>
+    <class name="KeyProvider">
+      <field name="AES_ALGORITHMS"/>
+      <field name="DSA_ALGORITHMS"/>
+      <field name="RSA_ALGORITHMS"/>
+      <field name="TRIPLEDES_ALGORITHMS"/>
+      <method name="getKey(java.lang.String alg,weblogic.xml.crypto.api.KeySelector.Purpose purpose)"/>
+      <method name="getKeyByIdentifier(byte[] identifier,java.lang.String alg,weblogic.xml.crypto.api.KeySelector.Purpose purpose)"/>
+      <method name="getKeyByIssuerSerial(java.lang.String issuerName,java.math.BigInteger serial,java.lang.String alg,weblogic.xml.crypto.api.KeySelector.Purpose purpose)"/>
+      <method name="getKeyByName(java.lang.String keyName,java.lang.String alg,weblogic.xml.crypto.api.KeySelector.Purpose purpose)"/>
+      <method name="getKeyBySTR(weblogic.xml.crypto.wss.provider.SecurityTokenReference str,java.lang.String alg,weblogic.xml.crypto.api.KeySelector.Purpose purpose)"/>
+      <method name="getKeyBySubjectName(java.lang.String subjectDN,java.lang.String alg,weblogic.xml.crypto.api.KeySelector.Purpose purpose)"/>
+      <method name="getKeyByURI(java.lang.String uri,java.lang.String alg,weblogic.xml.crypto.api.KeySelector.Purpose purpose)"/>
+    </class>
+    <class name="KeyResolver">
+      <method name="getContextHandler(weblogic.xml.crypto.wss.WSSecurityInfo securityInfo,java.lang.String name,java.lang.Object element)"/>
+      <method name="removeKeyProvider(weblogic.xml.crypto.common.keyinfo.KeyProvider provider)"/>
+      <field name="VERBOSE"/>
+      <field name="VERBOSE_PROPERTY"/>
+      <field name="BY_ALG_AND_PURPOSE"/>
+      <field name="BY_KEY_NAME"/>
+      <field name="BY_TOKEN_REFERENCE"/>
+      <method name="addKeyProvider(weblogic.xml.crypto.common.keyinfo.KeyProvider provider)"/>
+      <method name="select(weblogic.xml.crypto.dsig.api.keyinfo.KeyInfo keyInfo,weblogic.xml.crypto.api.KeySelector.Purpose purpose,weblogic.xml.crypto.api.AlgorithmMethod algorithmMethod,weblogic.xml.crypto.api.XMLCryptoContext context)"/>
+      <method name="getKeyProviders()"/>
+      <method name="copy()"/>
+    </class>
+  </package>
+  <package name="weblogic.xml.crypto.dsig">
+    <class name="KeyInfoObjectFactory">
+      <method name="newKeyInfoObject(javax.xml.stream.XMLStreamReader reader)"/>
+      <method name="getQName()"/>
+    </class>
+  </package>
+  <package name="weblogic.xml.crypto.dsig.api.keyinfo">
+    <class name="KeyInfo">
+      <method name="getId()"/>
+      <method name="getContent()"/>
+    </class>
+    <class name="X509IssuerSerial">
+      <method name="getIssuerName()"/>
+      <method name="getSerialNumber()"/>
+    </class>
+  </package>
+  <package name="weblogic.xml.crypto.encrypt.api">
+    <class name="CipherData" members="concealed"/>
+    <class name="EncryptedType">
+      <method name="decrypt(weblogic.xml.crypto.encrypt.api.XMLDecryptContext context)"/>
+      <method name="getCipherText()"/>
+      <method name="getEncoding()"/>
+      <method name="getId()"/>
+      <method name="getMimeType()"/>
+      <method name="getType()"/>
+      <field name="CONTENT"/>
+      <field name="ELEMENT"/>
+      <method name="encrypt(weblogic.xml.crypto.encrypt.api.XMLEncryptContext context)"/>
+      <method name="getKeyInfo()"/>
+      <method name="getCipherData()"/>
+      <method name="getEncryptionMethod()"/>
+      <method name="getEncryptionProperties()"/>
+      <method name="getTBE()"/>
+    </class>
+    <class name="EncryptionMethod">
+      <method name="getKeySize()"/>
+      <field name="AES128_CBC"/>
+      <field name="AES192_CBC"/>
+      <field name="AES256_CBC"/>
+      <field name="KW_AES128"/>
+      <field name="KW_AES192"/>
+      <field name="KW_AES256"/>
+      <field name="KW_TRIPLEDES"/>
+      <field name="RSA_1_5"/>
+      <field name="RSA_OAEP_MGFLP"/>
+      <field name="TRIPLEDES_CBC"/>
+    </class>
+    <class name="EncryptionProperties">
+      <method name="getId()"/>
+      <method name="getProperties()"/>
+      <field name="TYPE"/>
+    </class>
+    <class name="TBE">
+      <method name="getEncoding()"/>
+      <method name="getMimeType()"/>
+      <method name="getType()"/>
+    </class>
+    <class name="XMLDecryptContext" members="concealed"/>
+    <class name="XMLEncryptContext" members="concealed"/>
+    <class name="XMLEncryptionException" members="concealed"/>
+  </package>
+  <package name="weblogic.xml.crypto.encrypt.api.keyinfo">
+    <class name="EncryptedKey">
+      <method name="getCarriedKeyName()"/>
+      <method name="getRecipient()"/>
+      <method name="decryptKey(weblogic.xml.crypto.encrypt.api.XMLDecryptContext context)"/>
+      <method name="decryptKey(weblogic.xml.crypto.encrypt.api.XMLDecryptContext context,weblogic.xml.crypto.api.AlgorithmMethod alg)"/>
+      <method name="getReferenceList()"/>
+      <field name="TYPE"/>
+    </class>
+  </package>
+  <package name="weblogic.xml.crypto.wss">
+    <class name="EncryptionInfo">
+      <method name="getKey()"/>
+      <method name="getNodes()"/>
+    </class>
+    <class name="SecurityTokenValidateResult">
+      <method name="isDefferedValidation()"/>
+      <method name="status()"/>
+      <method name="getMsg()"/>
+      <method name="toString()"/>
+      <method name="setDefferedValidation(boolean defferedValidation)"/>
+    </class>
+    <class name="SignatureInfo">
+      <method name="containsNode(org.w3c.dom.Node n)"/>
+      <method name="getC14NMethod()"/>
+      <method name="getSignatureMethod()"/>
+      <method name="getKey()"/>
+      <method name="getReferences()"/>
+    </class>
+    <class name="WSSecurityException">
+      <method name="getFaultCode()"/>
+    </class>
+    <class name="WSSecurityInfo">
+      <method name="getEncryptions()"/>
+      <method name="getEncryptions(weblogic.xml.crypto.wss.provider.SecurityToken token)"/>
+      <method name="getSecurityTokens()"/>
+      <method name="getSecurityTokens(java.lang.String tokenType)"/>
+      <method name="getSignatures()"/>
+      <method name="getSignatures(weblogic.xml.crypto.wss.provider.SecurityToken token)"/>
+      <method name="getTimestamp()"/>
+    </class>
+  </package>
+  <package name="weblogic.xml.crypto.wss.api">
+    <class name="KeyIdentifier">
+      <method name="getIdentifier()"/>
+      <method name="getEncodingType()"/>
+    </class>
+  </package>
+  <package name="weblogic.xml.crypto.wss.provider">
+    <class name="CredentialProvider">
+      <method name="getCredential(java.lang.String tokenType,java.lang.String issuerName,weblogic.security.service.ContextHandler ctxHandler,weblogic.xml.crypto.wss.provider.Purpose p)"/>
+      <method name="getValueTypes()"/>
+    </class>
+    <class name="Purpose">
+      <method name="toString()"/>
+      <field name="DECRYPT"/>
+      <field name="ENCRYPT"/>
+      <field name="ENCRYPT_RESPONSE"/>
+      <field name="IDENTITY"/>
+      <field name="SIGN"/>
+      <field name="VERIFY"/>
+      <method name="convert(weblogic.xml.crypto.api.KeySelector.Purpose p)"/>
+    </class>
+    <class name="SecurityTokenHandler">
+      <method name="matches(weblogic.xml.crypto.wss.provider.SecurityToken token,java.lang.String tokenType,java.lang.String issuerName,weblogic.security.service.ContextHandler ctxHandler,weblogic.xml.crypto.wss.provider.Purpose p)"/>
+      <method name="getValueTypes()"/>
+      <method name="getSubject(weblogic.xml.crypto.wss.provider.SecurityToken token,javax.xml.rpc.handler.MessageContext msgCtx)"/>
+      <method name="getQNames()"/>
+      <method name="getKeyProvider(weblogic.xml.crypto.wss.provider.SecurityToken token,javax.xml.rpc.handler.MessageContext ctx)"/>
+      <method name="validateProcessed(weblogic.xml.crypto.wss.provider.SecurityToken token,javax.xml.rpc.handler.MessageContext ctx)"/>
+      <method name="validateUnmarshalled(weblogic.xml.crypto.wss.provider.SecurityToken token,javax.xml.rpc.handler.MessageContext ctx)"/>
+      <method name="getSecurityToken(java.lang.String valueType,java.lang.Object credentials,weblogic.security.service.ContextHandler ctxHandler)"/>
+      <method name="getSecurityToken(java.lang.String valueType,java.lang.String issuer,weblogic.xml.crypto.wss.provider.Purpose p,weblogic.security.service.ContextHandler ctxHandler)"/>
+      <method name="getSecurityToken(weblogic.xml.crypto.wss.provider.SecurityTokenReference str,javax.xml.rpc.handler.MessageContext ctx)"/>
+      <method name="newSecurityToken(org.w3c.dom.Node node)"/>
+      <method name="getSTR(javax.xml.namespace.QName STRType,java.lang.String valueType,weblogic.xml.crypto.wss.provider.SecurityToken token)"/>
+      <method name="newSecurityTokenReference(org.w3c.dom.Node node)"/>
+    </class>
+  </package>
+  <package name="weblogic.xml.schema.binding">
+    <class name="ClassContext">
+      <method name="equals(java.lang.Object obj)"/>
+      <method name="hashCode()"/>
+      <method name="setSchemaType(weblogic.xml.stream.XMLName v)"/>
+      <method name="getSchemaType()"/>
+    </class>
+    <class name="CustomSchema">
+      <method name="getSchema(javax.xml.namespace.QName xmlType,java.lang.String javatype)"/>
+    </class>
+    <class name="DeserializationContext">
+      <method name="isStrictValidation()"/>
+      <method name="isValidateLocalNameOnly()"/>
+      <method name="isValidateNames()"/>
+      <method name="getObjectFromReference(java.lang.String ref)"/>
+      <method name="resolveNullObject(java.lang.Object obj)"/>
+      <method name="getCurrentPrefixToNamespaceMap()"/>
+      <method name="getSOAPElement()"/>
+      <method name="getSOAPMessage()"/>
+      <method name="clearReferenceMap()"/>
+      <method name="setCurrentPrefixToNamespaceMap(java.util.Map v)"/>
+      <method name="setEncodingStyle(weblogic.xml.schema.binding.EncodingStyle v)"/>
+      <method name="setMapping(weblogic.xml.schema.binding.TypeMapping v)"/>
+      <method name="setSOAPElement(javax.xml.soap.SOAPElement element)"/>
+      <method name="setSOAPMessage(javax.xml.soap.SOAPMessage message)"/>
+      <method name="setStrictValidation(boolean v)"/>
+      <method name="setValidateLocalNameOnly(boolean v)"/>
+      <method name="setValidateNames(boolean v)"/>
+      <method name="storeObjectWithReference(java.lang.String ref,java.lang.Object obj)"/>
+      <method name="getEncodingStyle()"/>
+      <method name="getMapping()"/>
+    </class>
+    <class name="EncodingStyle">
+      <method name="getEncodingName()"/>
+      <method name="toString()"/>
+      <field name="LITERAL"/>
+      <field name="SOAP"/>
+    </class>
+    <class name="SchemaContext">
+      <method name="equals(java.lang.Object obj)"/>
+      <method name="hashCode()"/>
+      <method name="getJavaType()"/>
+      <method name="setJavaType(java.lang.String v)"/>
+    </class>
+    <class name="SerializationContext">
+      <method name="isInAttribute()"/>
+      <method name="isInTopLevelElement()"/>
+      <method name="isIncludeXsiType()"/>
+      <method name="isMultiRefEmpty()"/>
+      <method name="isQualifyElements()"/>
+      <method name="isStrictValidation()"/>
+      <method name="getNextRandomPrefix()"/>
+      <method name="getPrefixForUri(java.lang.String uri)"/>
+      <method name="getNamespacePrefixMap()"/>
+      <method name="getSOAPElement()"/>
+      <method name="getSOAPMessage()"/>
+      <method name="setEncodingStyle(weblogic.xml.schema.binding.EncodingStyle v)"/>
+      <method name="setInAttribute(boolean v)"/>
+      <method name="setInTopLevelElement(boolean v)"/>
+      <method name="setIncludeXsiType(boolean v)"/>
+      <method name="setMapping(weblogic.xml.schema.binding.TypeMapping v)"/>
+      <method name="setNamespacePrefixMap(java.util.Map v)"/>
+      <method name="setPhase(weblogic.xml.schema.binding.SerializationPhase v)"/>
+      <method name="setQualifyElements(boolean v)"/>
+      <method name="setSOAPElement(javax.xml.soap.SOAPElement element)"/>
+      <method name="setSOAPMessage(javax.xml.soap.SOAPMessage message)"/>
+      <method name="setStrictValidation(boolean v)"/>
+      <method name="getEncodingStyle()"/>
+      <method name="getPhase()"/>
+      <method name="getMapping()"/>
+      <method name="getObjectRefTable()"/>
+    </class>
+    <class name="SerializationPhase">
+      <method name="toString()"/>
+      <field name="FILL"/>
+      <field name="FINAL_WRITE"/>
+      <field name="INITIAL_WRITE"/>
+    </class>
+    <class name="TypeMapping">
+      <method name="add(java.lang.Class clazz,weblogic.xml.stream.XMLName xml_type,javax.xml.rpc.encoding.SerializerFactory serializer,javax.xml.rpc.encoding.DeserializerFactory deserializer)"/>
+      <method name="add(java.lang.Class clazz,weblogic.xml.stream.XMLName xml_type,weblogic.xml.schema.binding.Serializer serializer,weblogic.xml.schema.binding.Deserializer deserializer)"/>
+      <method name="add(weblogic.xml.schema.binding.TypeMappingEntry e)"/>
+      <method name="getClassFromXMLName(weblogic.xml.stream.XMLName xml_name)"/>
+      <method name="getHolderClass(java.lang.Class clazz,javax.xml.namespace.QName xmlType)"/>
+      <method name="readXML(weblogic.xml.stream.XMLInputStream stream)"/>
+      <method name="remove(weblogic.xml.schema.binding.TypeMappingEntry e)"/>
+      <method name="replace(weblogic.xml.schema.binding.TypeMappingEntry e)"/>
+      <method name="setParent(weblogic.xml.schema.binding.TypeMapping v)"/>
+      <method name="writeXML(weblogic.xml.stream.XMLOutputStream xout)"/>
+      <method name="getParent()"/>
+      <method name="get(java.lang.Class c,weblogic.xml.schema.binding.ClassContext ctx)"/>
+      <method name="get(weblogic.xml.stream.XMLName schema_type,weblogic.xml.schema.binding.SchemaContext ctx)"/>
+      <method name="getEntries()"/>
+      <method name="getXMLNameFromClass(java.lang.Class clazz)"/>
+    </class>
+    <class name="TypeMappingEntry">
+      <method name="getJavaType()"/>
+      <method name="getDeserializer()"/>
+      <method name="getSerializer()"/>
+      <method name="setClassContext(weblogic.xml.schema.binding.ClassContext v)"/>
+      <method name="setDeserializer(javax.xml.rpc.encoding.DeserializerFactory v)"/>
+      <method name="setJavaType(java.lang.Class v)"/>
+      <method name="setSchemaContext(weblogic.xml.schema.binding.SchemaContext v)"/>
+      <method name="setSchemaType(weblogic.xml.stream.XMLName v)"/>
+      <method name="setSerializer(javax.xml.rpc.encoding.SerializerFactory v)"/>
+      <method name="getClassContext()"/>
+      <method name="getSchemaContext()"/>
+      <method name="getSchemaType()"/>
+    </class>
+  </package>
+  <package name="weblogic.xml.schema.binding.util.runtime">
+    <class name="ObjectRefTable">
+      <method name="containsKey(java.lang.Object obj)"/>
+      <method name="size()"/>
+      <method name="getMultiRefObjects()"/>
+      <method name="main(java.lang.String[] args)"/>
+      <method name="clear()"/>
+      <method name="dump(java.io.PrintStream out)"/>
+      <method name="put(java.lang.Object obj,weblogic.xml.schema.binding.util.runtime.ObjectRefTable.Entry entry)"/>
+      <method name="get(java.lang.Object obj)"/>
+      <method name="remove(java.lang.Object obj)"/>
+    </class>
+  </package>
+  <package name="weblogic.xml.security">
+    <class name="NamedKey">
+      <method name="getIdentifier()"/>
+      <method name="getName()"/>
+      <method name="getKey()"/>
+      <method name="setReferenceList(weblogic.xml.security.encryption.ReferenceList referenceList)"/>
+      <method name="getReferenceList()"/>
+    </class>
+    <class name="SecurityAssertion">
+      <method name="isAssertionType(java.lang.String assertionType)"/>
+      <method name="repudiable()"/>
+      <method name="getAssertionTypeCode()"/>
+      <method name="getAssertionType()"/>
+      <field name="CONFIDENTIALITY_CODE"/>
+      <field name="IDENTITY_CODE"/>
+      <field name="INTEGRITY_CODE"/>
+      <field name="TYPE_CONFIDENTIALITY_CODE"/>
+      <field name="TYPE_INTEGRITY_CODE"/>
+      <field name="CONFIDENTIALITY_ASSERTION"/>
+      <field name="IDENTITY_ASSERTION"/>
+      <field name="INTEGRITY_ASSERTION"/>
+      <field name="TYPE_CONFIDENTIALITY_ASSERTION"/>
+      <field name="TYPE_INTEGRITY_ASSERTION"/>
+    </class>
+    <class name="UserInfo">
+      <method name="verifyPassword(java.lang.String password)"/>
+      <method name="getPasswordDigest()"/>
+      <method name="getPassword()"/>
+      <method name="getUsername()"/>
+    </class>
+  </package>
+  <package name="weblogic.xml.security.assertion">
+    <class name="ConfidentialityAssertion">
+      <method name="isAssertionType(java.lang.String assertionType)"/>
+      <method name="repudiable()"/>
+      <method name="getAssertionTypeCode()"/>
+      <method name="getAssertionType()"/>
+      <method name="getId()"/>
+      <field name="id"/>
+    </class>
+    <class name="ElementAssertion">
+      <method name="satisfies(weblogic.xml.security.specs.ElementIdentifier element)"/>
+      <method name="getElementLocalName()"/>
+      <method name="getElementNamespace()"/>
+      <method name="getRestriction()"/>
+      <method name="getElementName()"/>
+      <field name="BODY"/>
+      <field name="HEADER"/>
+    </class>
+    <class name="ElementAssertionUtils" members="concealed"/>
+    <class name="ElementConfidentialityAssertion">
+      <method name="isAssertionType(java.lang.String assertionType)"/>
+      <method name="satisfies(weblogic.xml.security.specs.ElementIdentifier spec)"/>
+      <method name="getAssertionTypeCode()"/>
+      <method name="getAssertionType()"/>
+      <method name="getElementLocalName()"/>
+      <method name="getElementNamespace()"/>
+      <method name="getRestriction()"/>
+      <method name="toString()"/>
+      <method name="getElementName()"/>
+    </class>
+    <class name="ElementIntegrityAssertion">
+      <method name="isAssertionType(java.lang.String assertionType)"/>
+      <method name="satisfies(weblogic.xml.security.specs.ElementIdentifier spec)"/>
+      <method name="getAssertionTypeCode()"/>
+      <method name="getAssertionType()"/>
+      <method name="getElementLocalName()"/>
+      <method name="getElementNamespace()"/>
+      <method name="getId()"/>
+      <method name="getPolicyString()"/>
+      <method name="getRestriction()"/>
+      <method name="toString()"/>
+      <method name="getElementName()"/>
+    </class>
+    <class name="IdentityAssertion">
+      <method name="isAssertionType(java.lang.String assertionType)"/>
+      <method name="repudiable()"/>
+      <method name="getAssertionTypeCode()"/>
+      <method name="getProofType()"/>
+      <method name="getAssertionType()"/>
+      <method name="proofAsString()"/>
+      <method name="toString()"/>
+      <method name="getX509Certificate()"/>
+      <field name="NO_PROOF"/>
+      <field name="POSSESSION_PROOF"/>
+      <field name="SHARED_SECRET_PROOF"/>
+      <field name="STRING_NO_PROOF"/>
+      <field name="STRING_POSSESSION_PROOF"/>
+      <field name="STRING_SHARED_SECRET_PROOF"/>
+      <method name="getUserInfo()"/>
+    </class>
+    <class name="IntegrityAssertion">
+      <method name="isAssertionType(java.lang.String assertionType)"/>
+      <method name="repudiable()"/>
+      <field name="id"/>
+      <method name="getAssertionTypeCode()"/>
+      <method name="getAssertionType()"/>
+      <method name="getId()"/>
+      <method name="getPolicyString()"/>
+      <method name="getSignatureMethod()"/>
+      <method name="toString()"/>
+      <method name="getCertificate()"/>
+      <method name="getType()"/>
+    </class>
+    <class name="ServerHelper">
+      <method name="getSubject(weblogic.xml.security.assertion.IntegrityAssertion assertion)"/>
+      <method name="setSubject(weblogic.xml.security.assertion.IntegrityAssertion assertion,javax.security.auth.Subject subject)"/>
+    </class>
+  </package>
+  <package name="weblogic.xml.security.encryption">
+    <class name="CipherData">
+      <field name="weblogic.xml.security.encryption.XMLEncConstants"/>
+      <method name="getCipherBytes()"/>
+      <method name="getInputStream()"/>
+      <method name="getOutputStream()"/>
+      <method name="clear()"/>
+      <method name="setCipherBytes(byte[] bytes)"/>
+      <method name="toXML(weblogic.xml.stream.XMLOutputStream out,java.lang.String ns,int indent)"/>
+    </class>
+    <class name="DataReference">
+      <method name="getURI()"/>
+      <method name="toString()"/>
+    </class>
+    <class name="EncryptedKey">
+      <method name="getWrappedKeyBytes()"/>
+      <method name="getCarriedKeyName()"/>
+      <method name="getRecipient()"/>
+      <method name="toString()"/>
+      <method name="getWrappedKey()"/>
+      <method name="getWrappedKey(weblogic.xml.security.encryption.EncryptionMethod keyType)"/>
+      <method name="getWrappedKey(weblogic.xml.security.encryption.EncryptionMethod keyType,byte[] keyBytes)"/>
+      <method name="main(java.lang.String[] args)"/>
+      <method name="setCarriedKeyName(java.lang.String carriedKeyName)"/>
+      <method name="setEncryptionMethod(weblogic.xml.security.encryption.EncryptionMethod em)"/>
+      <method name="setRecipient(java.lang.String recipient)"/>
+      <method name="setReferenceList(weblogic.xml.security.encryption.ReferenceList referenceList)"/>
+      <method name="setWrappedKey(java.security.Key key)"/>
+      <method name="toXML(weblogic.xml.stream.XMLOutputStream xos,int indent)"/>
+      <method name="toXML(weblogic.xml.stream.XMLOutputStream xos,java.lang.String ns,int indent)"/>
+      <method name="getReferenceList()"/>
+    </class>
+    <class name="EncryptedType">
+      <field name="weblogic.xml.security.encryption.XMLEncConstants"/>
+      <method name="getType()"/>
+      <method name="getEncryptionMethod()"/>
+      <method name="getId()"/>
+      <method name="getTypeURI()"/>
+      <method name="toString()"/>
+      <method name="getKey()"/>
+      <field name="nsMap"/>
+      <field name="TYPE_CONTENT"/>
+      <field name="TYPE_ELEMENT"/>
+      <field name="TYPE_OTHER"/>
+      <field name="TYPE_CONTENT_URI"/>
+      <field name="TYPE_ELEMENT_URI"/>
+      <method name="clear()"/>
+      <method name="setCipherData(weblogic.xml.security.encryption.CipherData cipherData)"/>
+      <method name="setEncryptionMethod(java.lang.String encryptionMethodURI)"/>
+      <method name="setEncryptionMethod(weblogic.xml.security.encryption.EncryptionMethod encryptionMethod)"/>
+      <method name="setId(java.lang.String id)"/>
+      <method name="setKey(java.security.Key key)"/>
+      <method name="setKey(weblogic.xml.security.encryption.EncryptedKey ek)"/>
+      <method name="setKeyInfo(weblogic.xml.security.keyinfo.KeyInfo keyInfo)"/>
+      <method name="setKeyResolver(weblogic.xml.security.keyinfo.KeyResolver keyResolver)"/>
+      <method name="setType(int type)"/>
+      <method name="setType(java.lang.String typeURI)"/>
+      <method name="getCipherData()"/>
+      <method name="getKeyInfo()"/>
+      <method name="getKeyResolver()"/>
+    </class>
+    <class name="EncryptionMethod">
+      <method name="fromXMLInternal(weblogic.xml.stream.XMLInputStream in,java.lang.String ns)"/>
+      <method name="toXMLInternal(weblogic.xml.stream.XMLOutputStream out,java.lang.String ns,int indent)"/>
+      <field name="weblogic.xml.security.encryption.XMLEncConstants"/>
+      <method name="getURI()"/>
+      <method name="toString()"/>
+      <field name="AES128_CBC"/>
+      <field name="AES192_CBC"/>
+      <field name="AES256_CBC"/>
+      <field name="KW_AES128"/>
+      <field name="KW_AES192"/>
+      <field name="KW_AES256"/>
+      <field name="KW_RSA_1_5"/>
+      <field name="KW_RSA_OAEP"/>
+      <field name="KW_TRIPLEDES"/>
+      <field name="TRIPLEDES_CBC"/>
+      <method name="main(java.lang.String[] args)"/>
+      <method name="register(weblogic.xml.security.encryption.EncryptionMethodFactory factory)"/>
+      <method name="get(java.lang.String algorithmURI)"/>
+      <method name="toXML(weblogic.xml.stream.XMLOutputStream out,java.lang.String ns,int indent)"/>
+    </class>
+    <class name="EncryptionMethodFactory">
+      <method name="getURI()"/>
+      <method name="newEncryptionMethod()"/>
+    </class>
+    <class name="KeyReference">
+      <method name="getURI()"/>
+      <method name="toString()"/>
+    </class>
+    <class name="ReferenceList">
+      <method name="toString()"/>
+      <method name="getReferences()"/>
+      <method name="main(java.lang.String[] args)"/>
+      <method name="addReference(weblogic.xml.security.encryption.DataReference ref)"/>
+      <method name="addReference(weblogic.xml.security.encryption.KeyReference ref)"/>
+      <method name="toXML(weblogic.xml.stream.XMLOutputStream out,java.lang.String ns,int indent)"/>
+    </class>
+    <class name="XMLEncConstants">
+      <field name="CONTENT_ONLY"/>
+      <field name="VERBOSE"/>
+      <field name="TC_ENCRYPTED_DATA"/>
+      <field name="TC_ENCRYPTED_KEY"/>
+      <field name="TC_ENCRYPTION_METHOD"/>
+      <field name="TC_REFERENCE_LIST"/>
+      <field name="ATTR_ALGORITHM"/>
+      <field name="ATTR_ENCODING"/>
+      <field name="ATTR_ID"/>
+      <field name="ATTR_MIME_TYPE"/>
+      <field name="ATTR_RECIPIENT"/>
+      <field name="ATTR_TYPE"/>
+      <field name="ATTR_URI"/>
+      <field name="CONTENT_ONLY_PROPERTY"/>
+      <field name="DEFAULT_ENC_ENCODING"/>
+      <field name="TAG_CARRIED_KEY_NAME"/>
+      <field name="TAG_CIPHER_DATA"/>
+      <field name="TAG_CIPHER_VALUE"/>
+      <field name="TAG_DATA_REFERENCE"/>
+      <field name="TAG_ENCRYPTED_DATA"/>
+      <field name="TAG_ENCRYPTED_KEY"/>
+      <field name="TAG_ENCRYPTED_TYPE"/>
+      <field name="TAG_ENCRYPTION_METHOD"/>
+      <field name="TAG_KEY_REFERENCE"/>
+      <field name="TAG_KEY_SIZE"/>
+      <field name="TAG_OAEP_PARAMS"/>
+      <field name="TAG_REFERENCE_LIST"/>
+      <field name="VERBOSE_PROPERTY"/>
+      <field name="VERBOSE_PROPERTY_ALT"/>
+      <field name="XMLENC_PREFIX"/>
+      <field name="XMLENC_URI"/>
+    </class>
+  </package>
+  <package name="weblogic.xml.security.keyinfo">
+    <class name="KeyInfo">
+      <method name="getKeyName()"/>
+      <method name="toString()"/>
+      <method name="getCertificates()"/>
+      <method name="getEncryptedKeys()"/>
+      <method name="getKeyNames()"/>
+      <method name="getKeyValues()"/>
+      <method name="getPublicKeys()"/>
+      <method name="getSecurityTokenReferences()"/>
+      <method name="getSubjectNames()"/>
+      <method name="getX509Data()"/>
+      <method name="main(java.lang.String[] args)"/>
+      <method name="addEncryptedKey(weblogic.xml.security.encryption.EncryptedKey encryptedKey)"/>
+      <method name="addKeyName(java.lang.String keyName)"/>
+      <method name="addKeyValue(weblogic.xml.security.keyinfo.KeyValue keyValue)"/>
+      <method name="addSecurityTokenReference(weblogic.xml.security.wsse.SecurityTokenReference ref)"/>
+      <method name="addSecurityTokenReference(weblogic.xml.security.wsse.Token token)"/>
+      <method name="addX509Data(weblogic.xml.security.keyinfo.X509Data x509Data)"/>
+      <method name="removeEncryptedKey(weblogic.xml.security.encryption.EncryptedKey encryptedKey)"/>
+      <method name="removeKeyName(java.lang.String keyName)"/>
+      <method name="removeKeyValue(weblogic.xml.security.keyinfo.KeyValue keyValue)"/>
+      <method name="removeSecurityTokenReference(weblogic.xml.security.wsse.SecurityTokenReference ref)"/>
+      <method name="removeX509Data(weblogic.xml.security.keyinfo.X509Data x509Data)"/>
+      <method name="toXML(weblogic.xml.stream.XMLOutputStream os,int indent)"/>
+      <method name="toXML(weblogic.xml.stream.XMLOutputStream os,java.lang.String ns,int indent)"/>
+      <method name="validate()"/>
+    </class>
+    <class name="KeyInfoException" members="concealed"/>
+    <class name="KeyInfoValidationException" members="concealed"/>
+    <class name="KeyProvider">
+      <field name="AES_ALGORITHMS"/>
+      <field name="DSA_ALGORITHMS"/>
+      <field name="RSA_ALGORITHMS"/>
+      <field name="TRIPLEDES_ALGORITHMS"/>
+      <method name="getKey(java.lang.String alg,weblogic.xml.security.keyinfo.KeyPurpose purpose)"/>
+      <method name="getKeyByIdentifier(byte[] identifier,java.lang.String alg,weblogic.xml.security.keyinfo.KeyPurpose purpose)"/>
+      <method name="getKeyByIssuerSerial(java.lang.String issuerName,java.math.BigInteger serial,java.lang.String alg,weblogic.xml.security.keyinfo.KeyPurpose purpose)"/>
+      <method name="getKeyByName(java.lang.String keyName,java.lang.String alg,weblogic.xml.security.keyinfo.KeyPurpose purpose)"/>
+      <method name="getKeyBySubjectName(java.lang.String subjectDN,java.lang.String alg,weblogic.xml.security.keyinfo.KeyPurpose purpose)"/>
+      <method name="getKeyByURI(java.lang.String uri,java.lang.String alg,weblogic.xml.security.keyinfo.KeyPurpose purpose)"/>
+    </class>
+    <class name="KeyPurpose">
+      <method name="serves(weblogic.xml.security.keyinfo.KeyPurpose[] purposes,weblogic.xml.security.keyinfo.KeyPurpose purpose)"/>
+      <method name="served(weblogic.xml.security.keyinfo.KeyPurpose[] purposes)"/>
+      <method name="toString()"/>
+      <field name="DECRYPT"/>
+      <field name="ENCRYPT"/>
+      <field name="SIGN"/>
+      <field name="VERIFY"/>
+      <field name="ALL_PURPOSES"/>
+      <field name="DSA_PRIVATE_KEY_PURPOSES"/>
+      <field name="DSA_PUBLIC_KEY_PURPOSES"/>
+      <field name="PRIVATE_KEY_PURPOSES"/>
+      <field name="PUBLIC_KEY_PURPOSES"/>
+      <method name="getPurposes(java.security.Key key)"/>
+    </class>
+    <class name="KeyResolver">
+      <method name="removeKeyProvider(weblogic.xml.security.keyinfo.KeyProvider provider)"/>
+      <field name="BY_ALG_AND_PURPOSE"/>
+      <field name="BY_KEY_NAME"/>
+      <field name="BY_TOKEN_REFERENCE"/>
+      <field name="BY_X509_DATA"/>
+      <method name="addKeyProvider(weblogic.xml.security.keyinfo.KeyProvider provider)"/>
+      <method name="getKeyProviders()"/>
+      <method name="copy()"/>
+      <method name="resolveKey(weblogic.xml.security.keyinfo.KeyPurpose purpose,java.lang.String algorithm,weblogic.xml.security.keyinfo.KeyInfo keyInfo)"/>
+    </class>
+    <class name="KeyResult">
+      <method name="getKey()"/>
+    </class>
+    <class name="KeyValue">
+      <method name="createFromKeySpec(java.lang.String algorithm,java.security.spec.KeySpec spec)"/>
+      <field name="weblogic.xml.security.signature.DSIGConstants"/>
+      <method name="getPublicKey()"/>
+      <method name="fromXML(weblogic.xml.stream.XMLInputStream in,java.lang.String ns)"/>
+      <method name="getKeyValue(java.security.PublicKey publicKey)"/>
+      <method name="toXML(weblogic.xml.stream.XMLOutputStream xos,java.lang.String ns,int indent)"/>
+      <method name="validate()"/>
+    </class>
+    <class name="X509Data">
+      <method name="getCertificates()"/>
+      <method name="getIssuerSerials()"/>
+      <method name="getSubjectNames()"/>
+      <method name="main(java.lang.String[] args)"/>
+      <method name="addCertificate(java.security.cert.X509Certificate certificate)"/>
+      <method name="addIssuerSerial(weblogic.xml.security.keyinfo.X509IssuerSerial issuerSerial)"/>
+      <method name="addSubjectName(java.lang.String subjectName)"/>
+      <method name="removeCertificate(java.security.cert.X509Certificate certificate)"/>
+      <method name="removeIssuerSerial(weblogic.xml.security.keyinfo.X509IssuerSerial issuerSerial)"/>
+      <method name="removeSubjectName(java.lang.String subjectName)"/>
+      <method name="toXML(weblogic.xml.stream.XMLOutputStream xos,java.lang.String ns,int indent)"/>
+      <method name="validate()"/>
+    </class>
+    <class name="X509IssuerSerial">
+      <method name="getIssuerName()"/>
+      <method name="toString()"/>
+      <method name="getIssuerSerialNumber()"/>
+      <method name="fromXML(weblogic.xml.stream.XMLInputStream in,java.lang.String ns)"/>
+      <method name="toXML(weblogic.xml.stream.XMLOutputStream xos,java.lang.String ns,int indent)"/>
+    </class>
+  </package>
+  <package name="weblogic.xml.security.signature">
+    <class name="CanonicalizationMethod">
+      <method name="getInclusiveNamesspacesPrefixList()"/>
+      <method name="getInclusiveNamesSpacesFromXml(weblogic.xml.stream.XMLInputStream in,java.lang.String ns)"/>
+      <field name="weblogic.xml.security.signature.DSIGConstants"/>
+      <method name="getURI()"/>
+      <method name="toString()"/>
+      <field name="EXC"/>
+      <field name="W3C"/>
+      <field name="W3C_WC"/>
+      <method name="main(java.lang.String[] args)"/>
+      <method name="register(weblogic.xml.security.signature.CanonicalizationMethodFactory factory)"/>
+      <method name="get(java.lang.String algorithmURI)"/>
+      <method name="toXML(weblogic.xml.stream.XMLOutputStream out,java.lang.String ns,int indent)"/>
+      <method name="canonicalize(java.io.OutputStream dest,java.util.Map namespaces)"/>
+    </class>
+    <class name="CanonicalizationMethodFactory">
+      <method name="getURI()"/>
+      <method name="newCanonicalizationMethod()"/>
+    </class>
+    <class name="DSIGConstants">
+      <field name="VERBOSE"/>
+      <field name="TC_C14N_METHOD"/>
+      <field name="TC_DIGEST_METHOD"/>
+      <field name="TC_DSA_KEY_VALUE"/>
+      <field name="TC_KEY_INFO"/>
+      <field name="TC_KEY_VALUE"/>
+      <field name="TC_REFERENCE"/>
+      <field name="TC_RSA_KEY_VALUE"/>
+      <field name="TC_SIGNATURE"/>
+      <field name="TC_SIGNATURE_METHOD"/>
+      <field name="TC_SIGNED_INFO"/>
+      <field name="TC_TRANSFORMS"/>
+      <field name="TC_X509_DATA"/>
+      <field name="ATTR_ALGORITHM"/>
+      <field name="ATTR_ID"/>
+      <field name="ATTR_PREFIX_LIST"/>
+      <field name="ATTR_URI"/>
+      <field name="ATTR_XMLNS"/>
+      <field name="DSIG_PREFIX"/>
+      <field name="DSIG_URI"/>
+      <field name="DSIG_URI2"/>
+      <field name="EXC_C14N_DEFAULT_PREFIX"/>
+      <field name="TAG_C14N_METHOD"/>
+      <field name="TAG_DIGEST_METHOD"/>
+      <field name="TAG_DIGEST_VALUE"/>
+      <field name="TAG_DSA_G"/>
+      <field name="TAG_DSA_KEY_VALUE"/>
+      <field name="TAG_DSA_P"/>
+      <field name="TAG_DSA_Q"/>
+      <field name="TAG_DSA_Y"/>
+      <field name="TAG_HMAC_OUTPUT_LENGTH"/>
+      <field name="TAG_INCLUSIVE_NAMESPACES"/>
+      <field name="TAG_KEY_INFO"/>
+      <field name="TAG_KEY_NAME"/>
+      <field name="TAG_KEY_VALUE"/>
+      <field name="TAG_OBJECT"/>
+      <field name="TAG_REFERENCE"/>
+      <field name="TAG_RSA_EXPONENT"/>
+      <field name="TAG_RSA_KEY_VALUE"/>
+      <field name="TAG_RSA_MODULUS"/>
+      <field name="TAG_SIGNATURE"/>
+      <field name="TAG_SIGNATURE_METHOD"/>
+      <field name="TAG_SIGNATURE_VALUE"/>
+      <field name="TAG_SIGNED_INFO"/>
+      <field name="TAG_TRANSFORM"/>
+      <field name="TAG_TRANSFORMS"/>
+      <field name="TAG_X509_CERTIFICATE"/>
+      <field name="TAG_X509_DATA"/>
+      <field name="TAG_X509_ISSUER_NAME"/>
+      <field name="TAG_X509_ISSUER_SERIAL"/>
+      <field name="TAG_X509_SERIAL_NUMBER"/>
+      <field name="TAG_X509_SUBJECT_NAME"/>
+      <field name="TAG_XPATH"/>
+      <field name="VERBOSE_PROPERTY"/>
+      <field name="VERBOSE_PROPERTY_ALT"/>
+    </class>
+    <class name="DigestMethod">
+      <field name="weblogic.xml.security.signature.DSIGConstants"/>
+      <method name="getURI()"/>
+      <method name="toString()"/>
+      <method name="getMessageDigest()"/>
+      <field name="SHA1"/>
+      <field name="SHA256"/>
+      <field name="SHA512"/>
+      <method name="main(java.lang.String[] args)"/>
+      <method name="register(weblogic.xml.security.signature.DigestMethodFactory factory)"/>
+      <method name="get(java.lang.String algorithmURI)"/>
+      <method name="fromXMLInternal(weblogic.xml.stream.XMLInputStream in,java.lang.String ns)"/>
+      <method name="toXML(weblogic.xml.stream.XMLOutputStream out,java.lang.String ns,int indent)"/>
+    </class>
+    <class name="DigestMethodFactory">
+      <method name="getURI()"/>
+      <method name="newDigestMethod()"/>
+    </class>
+    <class name="Reference">
+      <field name="weblogic.xml.security.signature.DSIGConstants"/>
+      <method name="getURI()"/>
+      <method name="toString()"/>
+      <method name="main(java.lang.String[] args)"/>
+      <method name="addTransform(weblogic.xml.security.transforms.Transform transform)"/>
+      <method name="print(java.lang.String prefixMsg,byte[] sig)"/>
+      <method name="toXML(weblogic.xml.stream.XMLOutputStream xos,java.lang.String ns,int indent)"/>
+    </class>
+    <class name="Signature">
+      <method name="getSignatureMethod()"/>
+      <method name="getReferences()"/>
+      <method name="main(java.lang.String[] args)"/>
+      <method name="addReference(weblogic.xml.security.signature.Reference reference)"/>
+      <method name="setCanonicalizationMethod(java.lang.String c14Method)"/>
+      <method name="setCanonicalizationMethod(weblogic.xml.security.signature.CanonicalizationMethod c14nMethod)"/>
+      <method name="setKeyInfo(weblogic.xml.security.keyinfo.KeyInfo keyInfo)"/>
+      <method name="setSignatureMethod(java.lang.String algorithmURI)"/>
+      <method name="sign(java.security.Key key)"/>
+      <method name="toXML(weblogic.xml.stream.XMLOutputStream xos,java.lang.String ns,int indent)"/>
+      <method name="validate(java.security.Key validatingKey)"/>
+      <method name="validateReferences()"/>
+      <method name="validateSignature(weblogic.xml.security.keyinfo.KeyResolver resolver)"/>
+      <method name="getKeyInfo()"/>
+      <method name="getValidatingKey()"/>
+    </class>
+  </package>
+  <package name="weblogic.xml.security.specs">
+    <class name="BinarySecurityTokenSpec">
+      <method name="fromXMLInternal(weblogic.xml.stream.XMLInputStream in,java.lang.String ns)"/>
+      <method name="getEncoding()"/>
+      <method name="getValueType()"/>
+      <method name="toString()"/>
+      <field name="DEFAULT_SPEC"/>
+      <method name="getDefaultSpec()"/>
+      <method name="toXML(weblogic.xml.stream.XMLOutputStream out,java.lang.String ns,int indent)"/>
+    </class>
+    <class name="ElementIdentifier">
+      <method name="fromXMLInternal(weblogic.xml.stream.XMLInputStream in,java.lang.String ns)"/>
+      <method name="equals(java.lang.Object o)"/>
+      <method name="hashCode()"/>
+      <method name="getLocalName()"/>
+      <method name="getNamespace()"/>
+      <method name="getRestriction()"/>
+      <method name="toString()"/>
+      <method name="validRestriction(java.lang.String restriction)"/>
+      <method name="main(java.lang.String[] args)"/>
+      <method name="toXML(weblogic.xml.stream.XMLOutputStream out,java.lang.String ns,int indent)"/>
+      <method name="getXMLName()"/>
+    </class>
+    <class name="EncryptionKey">
+      <method name="elementTagName()"/>
+    </class>
+    <class name="EncryptionSpec">
+      <method name="getEncryptionMethod()"/>
+      <method name="getKeyWrappingMethod()"/>
+      <method name="toString()"/>
+      <method name="getDefaultSpec()"/>
+      <method name="setKeyWrappingMethod(java.lang.String keyWrappingAlg)"/>
+    </class>
+    <class name="EntityDescriptor">
+      <field name="weblogic.xml.security.specs.SpecConstants"/>
+      <method name="elementTagName()"/>
+      <method name="getName()"/>
+      <method name="getPassword()"/>
+      <method name="getValue(weblogic.xml.stream.XMLInputStream in,java.lang.String tag)"/>
+      <method name="fromXMLInternal(weblogic.xml.stream.XMLInputStream in)"/>
+      <method name="setName(java.lang.String name)"/>
+      <method name="setPassword(java.lang.String password)"/>
+      <method name="toXML(weblogic.xml.stream.XMLOutputStream out)"/>
+    </class>
+    <class name="OperationSpec">
+      <field name="weblogic.xml.security.specs.SpecBase"/>
+      <method name="entireBody()"/>
+      <field name="bodyList"/>
+      <field name="headerList"/>
+      <field name="unrestrictedList"/>
+      <method name="addElement(java.lang.String namespace,java.lang.String localName,java.lang.String restriction)"/>
+      <method name="addElement(javax.xml.namespace.QName name,java.lang.String restriction)"/>
+    </class>
+    <class name="SecurityDD">
+      <method name="toString()"/>
+      <method name="getSecuritySpecs()"/>
+      <method name="main(java.lang.String[] args)"/>
+      <method name="getDefaultSecurityDD()"/>
+      <method name="addSecuritySpec(weblogic.xml.security.specs.SecuritySpec spec)"/>
+      <method name="setEncryptionKey(weblogic.xml.security.specs.EncryptionKey encryptionKey)"/>
+      <method name="setSigningKey(weblogic.xml.security.specs.SignatureKey signingKey)"/>
+      <method name="setUser(weblogic.xml.security.specs.User user)"/>
+      <method name="toXML(weblogic.xml.stream.XMLOutputStream out)"/>
+      <method name="getEncryptionKey()"/>
+      <method name="getSecuritySpec()"/>
+      <method name="getSecuritySpec(java.lang.String id)"/>
+      <method name="getSpec()"/>
+      <method name="removeSecuritySpec(java.lang.String id)"/>
+      <method name="getSigningKey()"/>
+      <method name="getUser()"/>
+    </class>
+    <class name="SecuritySpec">
+      <method name="getEnablePasswordAuth()"/>
+      <method name="getId()"/>
+      <method name="getRole()"/>
+      <field name="DEFAULT_SPEC_ID"/>
+      <method name="setEnablePasswordAuth(boolean enable)"/>
+      <method name="setId(java.lang.String id)"/>
+      <method name="setNamespace(java.lang.String namespace)"/>
+      <method name="setRole(java.lang.String role)"/>
+      <method name="setBinarySecurityTokenSpec(java.lang.String type)"/>
+      <method name="setBinarySecurityTokenSpec(weblogic.xml.security.specs.BinarySecurityTokenSpec spec)"/>
+      <method name="getEncryptionSpec()"/>
+      <method name="setEncryptionSpec(java.lang.String encryptionURI,java.security.cert.X509Certificate cert)"/>
+      <method name="setEncryptionSpec(java.lang.String encryptionURI,java.security.cert.X509Certificate cert,boolean encryptBody)"/>
+      <method name="setEncryptionSpec(weblogic.xml.security.specs.EncryptionSpec spec)"/>
+      <method name="getSignatureSpec()"/>
+      <method name="setSignatureSpec(java.lang.String canonicalizationURI,java.lang.String signatureURI)"/>
+      <method name="setSignatureSpec(java.lang.String canonicalizationURI,java.lang.String signatureURI,boolean signedBody)"/>
+      <method name="setSignatureSpec(weblogic.xml.security.specs.SignatureSpec spec)"/>
+    </class>
+    <class name="SignatureKey">
+      <method name="elementTagName()"/>
+    </class>
+    <class name="SignatureSpec">
+      <method name="getCanonicalizationMethod()"/>
+      <method name="getSignatureMethod()"/>
+      <method name="getDefaultSpec()"/>
+    </class>
+    <class name="SpecBase">
+      <method name="fromXMLInternal(weblogic.xml.stream.XMLInputStream in,java.lang.String namespace)"/>
+      <field name="weblogic.xml.security.specs.SpecConstants"/>
+      <method name="toXML(weblogic.xml.stream.XMLOutputStream out)"/>
+      <method name="toXML(weblogic.xml.stream.XMLOutputStream out,java.lang.String namespace,int indent)"/>
+    </class>
+    <class name="SpecConstants">
+      <field name="ATTR_CANONICALIZATION_METHOD"/>
+      <field name="ATTR_ENCODING"/>
+      <field name="ATTR_ENCRYPTION_METHOD"/>
+      <field name="ATTR_ENCRYPT_BODY"/>
+      <field name="ATTR_ID"/>
+      <field name="ATTR_KEYWRAPPING_METHOD"/>
+      <field name="ATTR_KEY_ALIAS"/>
+      <field name="ATTR_KEY_PASSWORD"/>
+      <field name="ATTR_LOCALPART"/>
+      <field name="ATTR_NAMESPACE"/>
+      <field name="ATTR_PASSWORDTYPE"/>
+      <field name="ATTR_REALM"/>
+      <field name="ATTR_REF_ID"/>
+      <field name="ATTR_RESTRICTION"/>
+      <field name="ATTR_SIGNATURE_METHOD"/>
+      <field name="ATTR_SIGN_BODY"/>
+      <field name="ATTR_VALUETYPE"/>
+      <field name="DEFAULT_PREFIX"/>
+      <field name="RESTRICTION_BODY"/>
+      <field name="RESTRICTION_HEADER"/>
+      <field name="SOAP_ATTR_ROLE"/>
+      <field name="SOAP_ENV_PREFIX"/>
+      <field name="SPEC_URI"/>
+      <field name="TAG_BINARY_SECURITY_TOKEN_SPEC"/>
+      <field name="TAG_CLOCKS_SYNCHRONIZED"/>
+      <field name="TAG_CLOCK_PRECISION"/>
+      <field name="TAG_DD_SECURITY"/>
+      <field name="TAG_ENCRYPTION_KEY"/>
+      <field name="TAG_ENCRYPTION_SPEC"/>
+      <field name="TAG_ENFORCE_PRECISION"/>
+      <field name="TAG_ENTITY_NAME"/>
+      <field name="TAG_ENTITY_PASSWORD"/>
+      <field name="TAG_FRESHNESS"/>
+      <field name="TAG_GENERATE_TS"/>
+      <field name="TAG_REQUIRE_TS"/>
+      <field name="TAG_SECURITY_SPEC"/>
+      <field name="TAG_SECURITY_SPEC_REF"/>
+      <field name="TAG_SIGNATURE_KEY"/>
+      <field name="TAG_SIGNATURE_SPEC"/>
+      <field name="TAG_TS_CONFIG"/>
+      <field name="TAG_TYPE_IDENTIFIER"/>
+      <field name="TAG_USER"/>
+      <field name="TAG_USERNAME_TOKEN_SPEC"/>
+      <field name="TAG_VALIDITY"/>
+      <field name="XSD_FALSE"/>
+      <field name="XSD_TRUE"/>
+    </class>
+    <class name="User">
+      <method name="elementTagName()"/>
+    </class>
+  </package>
+  <package name="weblogic.xml.security.transforms">
+    <class name="Transform">
+      <method name="fromXMLInternal(weblogic.xml.stream.XMLInputStream xin,java.lang.String ns)"/>
+      <method name="toXMLInternal(weblogic.xml.stream.XMLOutputStream xos,java.lang.String ns,int indent)"/>
+      <field name="weblogic.xml.security.signature.DSIGConstants"/>
+      <method name="getURI()"/>
+      <field name="ENVELOPED"/>
+      <field name="W3C_C14N"/>
+      <field name="W3C_C14N_WC"/>
+      <field name="W3C_EXC_C14N"/>
+      <field name="W3C_EXC_C14N_WC"/>
+      <field name="XPATH"/>
+      <field name="xfactory"/>
+      <method name="main(java.lang.String[] args)"/>
+      <method name="getTransform(java.lang.String uri)"/>
+      <method name="setDest(weblogic.xml.security.transforms.Transform dest)"/>
+      <method name="setNamespaces(java.util.Map namespaceMap)"/>
+      <method name="setParameter(java.lang.String name,java.lang.String value)"/>
+      <method name="toXML(weblogic.xml.stream.XMLOutputStream xos,java.lang.String ns,int indent)"/>
+      <method name="getXMLOutputStream()"/>
+    </class>
+  </package>
+  <package name="weblogic.xml.security.utils">
+    <class name="XMLObjectReader">
+      <method name="register(java.lang.String namespace,java.lang.String localName,int tc)"/>
+      <field name="XMLObjectReader"/>
+      <method name="readObject(weblogic.xml.stream.XMLInputStream xin)"/>
+      <method name="readObject(weblogic.xml.stream.XMLInputStream xin,int expectedTC)"/>
+      <method name="readObjectInternal(int tc,java.lang.String namespace,weblogic.xml.stream.XMLInputStream xin)"/>
+    </class>
+    <class name="XMLWriter">
+      <method name="getNamespaceMap()"/>
+      <method name="close()"/>
+      <method name="flush()"/>
+      <method name="setDefaultNamespace(java.lang.String namespaceURI)"/>
+      <method name="setDefaultPrefixes(java.util.Map prefixMap)"/>
+      <method name="setNamespaceMap(java.util.Map namespaces)"/>
+      <method name="setPrefix(java.lang.String prefix,java.lang.String namespaceURI)"/>
+      <method name="writeAttribute(java.lang.String namespaceURI,java.lang.String localName,java.lang.String value)"/>
+      <method name="writeAttribute(java.lang.String namespaceURI,java.lang.String localName,javax.xml.namespace.QName value)"/>
+      <method name="writeCharacters(java.lang.String value)"/>
+      <method name="writeCharacters(javax.xml.namespace.QName value)"/>
+      <method name="writeEndElement()"/>
+      <method name="writeStartElement(java.lang.String namespaceURI,java.lang.String localName)"/>
+    </class>
+  </package>
+  <package name="weblogic.xml.security.wsse">
+    <class name="BinarySecurityToken">
+      <method name="setId(java.lang.String id)"/>
+    </class>
+    <class name="KeyIdentifier">
+      <method name="getIdentifier()"/>
+      <method name="getIdentifierString()"/>
+      <method name="getValueType()"/>
+    </class>
+    <class name="Security">
+      <method name="expired()"/>
+      <method name="expired(long maxAge)"/>
+      <method name="getRole()"/>
+      <field name="WSSE_VERBOSE"/>
+      <field name="WSSE_VERBOSE_PROP"/>
+      <method name="addEncryption(java.security.cert.X509Certificate cert,weblogic.xml.security.specs.EncryptionSpec spec)"/>
+      <method name="addEncryption(weblogic.xml.security.wsse.Token token,weblogic.xml.security.specs.EncryptionSpec spec)"/>
+      <method name="addSignature(weblogic.xml.security.wsse.Token token,weblogic.xml.security.specs.SignatureSpec spec)"/>
+      <method name="addToken(java.security.cert.X509Certificate cert,java.security.PrivateKey key)"/>
+      <method name="addToken(weblogic.xml.security.UserInfo user)"/>
+      <method name="addToken(weblogic.xml.security.wsse.Token token)"/>
+      <method name="getTokenById(java.lang.String id)"/>
+      <method name="addTimestamp()"/>
+      <method name="addTimestamp(java.util.Calendar created)"/>
+      <method name="addTimestamp(java.util.Calendar created,java.util.Calendar expires)"/>
+      <method name="addTimestamp(long expires)"/>
+    </class>
+    <class name="SecurityElementFactory">
+      <field name="SecurityElementFactory"/>
+      <method name="setDefaultFactory(weblogic.xml.security.wsse.SecurityElementFactory factory)"/>
+      <method name="getDefaultFactory()"/>
+      <method name="newInstance(java.lang.String namespace)"/>
+      <method name="createSecurity(java.lang.String role)"/>
+      <method name="createToken(java.lang.String username,java.lang.String password)"/>
+      <method name="createToken(java.lang.String username,java.lang.String password,java.lang.String type)"/>
+      <method name="createToken(java.security.cert.X509Certificate cert,java.security.PrivateKey key)"/>
+      <method name="createToken(weblogic.xml.security.UserInfo userInfo)"/>
+    </class>
+    <class name="SecurityTokenReference">
+      <method name="references(weblogic.xml.security.wsse.Token token)"/>
+      <method name="getId()"/>
+      <method name="getReference()"/>
+      <method name="getSecretKey()"/>
+      <method name="getPrivateKey()"/>
+      <method name="setId(java.lang.String id)"/>
+      <method name="setReference(java.lang.String reference)"/>
+      <method name="setToken(weblogic.xml.security.wsse.Token token)"/>
+      <method name="toXML(weblogic.xml.stream.XMLOutputStream os)"/>
+      <method name="getX509IssuerSerial()"/>
+      <method name="getKeyIdentifier()"/>
+      <method name="getToken()"/>
+    </class>
+    <class name="Token">
+      <method name="getId()"/>
+      <method name="getSecretKey()"/>
+      <method name="getPrivateKey()"/>
+      <method name="getPublicKey()"/>
+      <method name="getCertificate()"/>
+      <method name="getCertificateChain()"/>
+    </class>
+    <class name="UsernameToken">
+      <method name="verifyDigest(java.lang.String password)"/>
+      <method name="getNonce()"/>
+      <method name="getPassword()"/>
+      <method name="getPasswordDigest()"/>
+      <method name="getPasswordType()"/>
+      <method name="getUsername()"/>
+      <method name="getCreatedTimeInMillis()"/>
+      <method name="setGenerateNonce(boolean nonce)"/>
+      <method name="setId(java.lang.String id)"/>
+      <method name="getUserInfo()"/>
+    </class>
+    <class name="WSSEConstants">
+      <field name="TC_BINARY_SECURITY_TOKEN"/>
+      <field name="TC_KEY_IDENTIFIER"/>
+      <field name="TC_PASSWORD"/>
+      <field name="TC_REFERENCE"/>
+      <field name="TC_SECURITY"/>
+      <field name="TC_SECURITY_TOKEN_REFERNCE"/>
+      <field name="TC_USERNAME"/>
+      <field name="TC_USERNAME_TOKEN"/>
+      <field name="ATTR_ENCODING"/>
+      <field name="ATTR_MUST_UNDERSTAND"/>
+      <field name="ATTR_ROLE"/>
+      <field name="ATTR_TYPE"/>
+      <field name="ATTR_URI"/>
+      <field name="ATTR_VALUETYPE"/>
+      <field name="DEFAULT_ENCODING"/>
+      <field name="DEFAULT_PREFIX"/>
+      <field name="ENCODING_BASE64"/>
+      <field name="FAULT_FAILEDAUTHENTICATION"/>
+      <field name="FAULT_FAILEDCHECK"/>
+      <field name="FAULT_INVALIDSECURITY"/>
+      <field name="FAULT_INVALIDSECURITYTOKEN"/>
+      <field name="FAULT_SECURITYTOKENUNAVAILBLE"/>
+      <field name="FAULT_UNSUPPORTEDALGORITHM"/>
+      <field name="FAULT_UNSUPPORTEDSECURITYTOKEN"/>
+      <field name="PASSWORDTYPE_PASSWORDDIGEST"/>
+      <field name="PASSWORDTYPE_PASSWORDTEXT"/>
+      <field name="TAG_BINARY_SECURITY_TOKEN"/>
+      <field name="TAG_KEY_IDENTIFIER"/>
+      <field name="TAG_NONCE"/>
+      <field name="TAG_PASSWORD"/>
+      <field name="TAG_REFERENCE"/>
+      <field name="TAG_SECURITY"/>
+      <field name="TAG_SECURITY_TOKEN_REFERENCE"/>
+      <field name="TAG_USERNAME"/>
+      <field name="TAG_USERNAME_TOKEN"/>
+      <field name="USERNAME_TOKEN_URI"/>
+      <field name="VALUETYPE_PKCS7"/>
+      <field name="VALUETYPE_PKIPATH"/>
+      <field name="VALUETYPE_X509SKID"/>
+      <field name="VALUETYPE_X509V3"/>
+      <field name="WSSE_PREFIX_URI"/>
+      <field name="WSSE_URI"/>
+      <field name="X509_URI"/>
+      <field name="QNAME_ATTR_VALUETYPE"/>
+      <field name="QNAME_FAULT_FAILEDAUTHENTICATION"/>
+      <field name="QNAME_FAULT_FAILEDCHECK"/>
+      <field name="QNAME_FAULT_INVALIDSECURITY"/>
+      <field name="QNAME_FAULT_INVALIDSECURITYTOKEN"/>
+      <field name="QNAME_FAULT_SECURITYTOKENUNAVAILBLE"/>
+      <field name="QNAME_FAULT_UNSUPPORTEDALGORITHM"/>
+      <field name="QNAME_FAULT_UNSUPPORTEDSECURITYTOKEN"/>
+    </class>
+    <class name="WSSEReader">
+      <method name="readObjectInternal(int tc,java.lang.String ns,weblogic.xml.stream.XMLInputStream xin)"/>
+      <method name="read(weblogic.xml.stream.XMLInputStream in)"/>
+      <method name="read(weblogic.xml.stream.XMLInputStream in,int tc)"/>
+    </class>
+  </package>
+  <package name="weblogic.xml.security.wsse.v200207">
+    <class name="WSSEConstants">
+      <field name="C14N_INCLUSIVE_NAMESPACES"/>
+      <field name="SIGN_BST"/>
+      <field name="TC_BINARY_SECURITY_TOKEN"/>
+      <field name="TC_KEY_IDENTIFIER"/>
+      <field name="TC_PASSWORD"/>
+      <field name="TC_REFERENCE"/>
+      <field name="TC_SECURITY"/>
+      <field name="TC_SECURITY_TOKEN_REFERNCE"/>
+      <field name="TC_USERNAME"/>
+      <field name="TC_USERNAME_TOKEN"/>
+      <field name="ATTR_ENCODING"/>
+      <field name="ATTR_MUST_UNDERSTAND"/>
+      <field name="ATTR_ROLE"/>
+      <field name="ATTR_TYPE"/>
+      <field name="ATTR_URI"/>
+      <field name="ATTR_VALUETYPE"/>
+      <field name="C14N_INCLUSIVE_PROPERTY"/>
+      <field name="DEFAULT_ENCODING"/>
+      <field name="DEFAULT_PREFIX"/>
+      <field name="DEFAULT_URI"/>
+      <field name="DEFAULT_USERNAME_TOKEN_URI"/>
+      <field name="DEFAULT_WSSE_PREFIX_URI"/>
+      <field name="DEFAULT_X509_URI"/>
+      <field name="ENCODING_BASE64"/>
+      <field name="FAULT_FAILEDAUTHENTICATION"/>
+      <field name="FAULT_FAILEDCHECK"/>
+      <field name="FAULT_INVALIDSECURITY"/>
+      <field name="FAULT_INVALIDSECURITYTOKEN"/>
+      <field name="FAULT_SECURITYTOKENUNAVAILBLE"/>
+      <field name="FAULT_UNSUPPORTEDALGORITHM"/>
+      <field name="FAULT_UNSUPPORTEDSECURITYTOKEN"/>
+      <field name="OASIS_INTEROP_URI"/>
+      <field name="PASSWORDTYPE_PASSWORDDIGEST"/>
+      <field name="PASSWORDTYPE_PASSWORDTEXT"/>
+      <field name="PROVIDED_URI"/>
+      <field name="SIGN_BST_PROPERTY"/>
+      <field name="TAG_BINARY_SECURITY_TOKEN"/>
+      <field name="TAG_KEY_IDENTIFIER"/>
+      <field name="TAG_NONCE"/>
+      <field name="TAG_PASSWORD"/>
+      <field name="TAG_REFERENCE"/>
+      <field name="TAG_SECURITY"/>
+      <field name="TAG_SECURITY_TOKEN_REFERENCE"/>
+      <field name="TAG_USERNAME"/>
+      <field name="TAG_USERNAME_TOKEN"/>
+      <field name="USERNAME_TOKEN_URI"/>
+      <field name="USERNAME_TOKEN_URI_PROP"/>
+      <field name="VALUETYPE_PKCS7"/>
+      <field name="VALUETYPE_PKIPATH"/>
+      <field name="VALUETYPE_X509SKID"/>
+      <field name="VALUETYPE_X509V3"/>
+      <field name="WSSE_PREFIX_URI"/>
+      <field name="WSSE_PREFIX_URI_PROP"/>
+      <field name="WSSE_URI"/>
+      <field name="WSSE_URI_PROPERTY"/>
+      <field name="X509_URI"/>
+      <field name="X509_URI_PROP"/>
+      <field name="ID_NAMESPACES"/>
+      <field name="QNAME_ATTR_VALUETYPE"/>
+      <field name="QNAME_FAULT_FAILEDAUTHENTICATION"/>
+      <field name="QNAME_FAULT_FAILEDCHECK"/>
+      <field name="QNAME_FAULT_INVALIDSECURITY"/>
+      <field name="QNAME_FAULT_INVALIDSECURITYTOKEN"/>
+      <field name="QNAME_FAULT_SECURITYTOKENUNAVAILBLE"/>
+      <field name="QNAME_FAULT_UNSUPPORTEDALGORITHM"/>
+      <field name="QNAME_FAULT_UNSUPPORTEDSECURITYTOKEN"/>
+      <field name="QNAME_PASSWORDTYPE_PASSWORDTEXT"/>
+    </class>
+  </package>
+  <package name="weblogic.xml.security.wsu">
+    <class name="AttributedDateTime">
+      <method name="getId()"/>
+      <method name="getTimeString()"/>
+      <method name="getTime()"/>
+      <method name="getValueType()"/>
+      <method name="setId(java.lang.String id)"/>
+      <method name="toXML(javax.xml.soap.SOAPElement parent)"/>
+      <method name="toXML(weblogic.xml.security.utils.XMLWriter writer)"/>
+      <method name="toXML(weblogic.xml.stream.XMLOutputStream os)"/>
+    </class>
+    <class name="Created" members="concealed"/>
+    <class name="Expires" members="concealed"/>
+    <class name="Received">
+      <method name="getDelay()"/>
+    </class>
+    <class name="Timestamp">
+      <method name="getMustUnderstand()"/>
+      <method name="getId()"/>
+      <method name="setExpires(java.util.Calendar expiry)"/>
+      <method name="setExpires(long millis)"/>
+      <method name="setId(java.lang.String id)"/>
+      <method name="setMustUnderstand(boolean b)"/>
+      <method name="toXML(javax.xml.soap.SOAPElement parent)"/>
+      <method name="toXML(weblogic.xml.security.utils.XMLWriter writer)"/>
+      <method name="toXML(weblogic.xml.stream.XMLOutputStream os)"/>
+      <method name="getCreated()"/>
+      <method name="getExpires()"/>
+      <method name="getReceived()"/>
+    </class>
+  </package>
+</lib-exports>

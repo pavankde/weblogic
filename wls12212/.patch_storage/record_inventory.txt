@@ -1,0 +1,8 @@
+# napply: list of patches installed in Oracle Home.
+21663638:recorded:21663638
+19795066:recorded:19795066
+19632480:recorded:19632480
+19154304:recorded:19154304
+19030178:recorded:19030178
+19002423:recorded:19002423
+18905788:recorded:18905788

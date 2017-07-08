@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.fmwplatform.envspec" version="12.2.1.2.0" description="FMW Platform Envspec Component" gdr-version="1.7.0.0" pom-gen="false" groupId="com.oracle.fmwprov" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="fmwplatform.envspec.symbol" source="filegroup1.jar" expanded="true" compacted="true">
+      <directory dest="modules" mode="750" patchable="true">
+         <directory dest="fmwplatform" mode="750" patchable="true">
+            <directory dest="common" mode="750" patchable="true">
+               <file size="50081" pack="true" dest="util.jar" mode="640" patchable="true" group="oracle.fmwplatform.common" artifact="util" version="1.6.0-160827.1219.41713"/>
+               <file size="71232" pack="true" dest="credentials.jar" mode="640" patchable="true" group="oracle.fmwplatform.common" artifact="credentials" version="1.6.0-160827.1219.41713"/>
+               <file size="69200" pack="true" dest="wlst-api.jar" mode="640" patchable="true" group="oracle.fmwplatform.common" artifact="wlst-api" version="1.6.0-160827.1219.41713"/>
+               <file size="6794" pack="true" dest="wlst-impl.jar" mode="640" patchable="true" group="oracle.fmwplatform.common" artifact="wlst-impl" version="1.6.0-160827.1219.41713"/>
+               <file size="494210" pack="true" dest="envspec.jar" mode="640" patchable="true" group="oracle.fmwplatform.common" artifact="envspec" version="1.6.0-160827.1219.41713"/>
+               <file size="930386" pack="true" dest="topeditor.jar" mode="640" patchable="true" group="oracle.fmwplatform.common" artifact="topeditor" version="1.6.0-160827.1219.41713"/>
+            </directory>
+         </directory>
+      </directory>
+      <directory dest="bin" mode="750" patchable="true" group="oracle.fmwplatform.common" artifact="credentials" version="1.6.0-160827.1219.41713" type="zip">
+         <file size="1443" dest="wallet-manager.cmd" os-family="windows" mode="750"/>
+      </directory>
+      <directory dest="bin" mode="750" patchable="true" group="oracle.fmwplatform.common" artifact="topeditor" version="1.6.0-160827.1219.41713" type="zip">
+         <file size="1424" dest="fmw-composer.cmd" os-family="windows" mode="750"/>
+      </directory>
+      <directory dest="plugins" mode="750" patchable="true">
+         <directory dest="jdeveloper" mode="750" patchable="true">
+            <directory dest="libraries" mode="750" patchable="true">
+               <file size="873" dest="fmwplatform.library" mode="640"/>
+            </directory>
+         </directory>
+         <directory dest="fmwplatform" mode="750" patchable="true">
+            <directory dest="models" mode="750" patchable="true">
+               <file size="13172" pack="true" dest="envspec-models.jar" mode="640" patchable="true" group="oracle.fmwplatform.common" artifact="envspec-models" version="1.6.0-160827.1219.41713"/>
+            </directory>
+         </directory>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+         <permission mode="750" regex=".*\.sh"/>
+         <permission mode="750" regex=".*\.cmd"/>
+         <permission mode="640" regex=".*"/>
+      </file-perms>
+   </file-map>
+   <libraries>
+      <library name="oracle.fmwplatform.envspec" type="none" suppress-version="false" size="1650294">
+         <entry explode="true" include-parent="false" name="modules/fmwplatform/common/util.jar"/>
+         <entry explode="true" include-parent="false" name="modules/fmwplatform/common/credentials.jar"/>
+         <entry explode="true" include-parent="false" name="modules/fmwplatform/common/wlst-api.jar"/>
+         <entry explode="true" include-parent="false" name="modules/fmwplatform/common/envspec.jar"/>
+         <entry explode="true" include-parent="false" name="modules/fmwplatform/common/topeditor.jar"/>
+      </library>
+   </libraries>
+</component-def>

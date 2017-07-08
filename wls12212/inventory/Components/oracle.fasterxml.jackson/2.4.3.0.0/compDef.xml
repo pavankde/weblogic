@@ -1,0 +1,34 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.fasterxml.jackson" version="2.4.3.0.0" description="FasterXML Jackson" gdr-version="1.8.0.0" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="thirdparty.symbol" source="filegroup1.jar" expanded="true" compacted="true">
+      <directory dest="modules" mode="750" patchable="true">
+         <file size="37157" pack="true" dest="com.fasterxml.jackson.core.jackson-annotations_2.4.3.jar" mode="640" patchable="true" group="com.fasterxml.jackson.core" artifact="jackson-annotations" version="2.4.3"/>
+         <file size="220064" pack="true" dest="com.fasterxml.jackson.core.jackson-core_2.4.3.jar" mode="640" patchable="true" group="com.fasterxml.jackson.core" artifact="jackson-core" version="2.4.3"/>
+         <file size="1056376" pack="true" dest="com.fasterxml.jackson.core.jackson-databind_2.4.3.jar" mode="640" patchable="true" group="com.fasterxml.jackson.core" artifact="jackson-databind" version="2.4.3"/>
+         <file size="29674" pack="true" dest="com.fasterxml.jackson.module.jackson-module-jaxb-annotations_2.4.3.jar" mode="640" patchable="true" group="com.fasterxml.jackson.module" artifact="jackson-module-jaxb-annotations" version="2.4.3"/>
+         <file size="64668" pack="true" dest="jackson-module-jsonSchema-2.4.3.jar" mode="640" patchable="true" group="com.fasterxml.jackson.module" artifact="jackson-module-jsonSchema" version="2.4.3"/>
+         <file size="87205" pack="true" dest="jackson-dataformat-xml-2.4.3.jar" mode="640" patchable="true" group="com.fasterxml.jackson.dataformat" artifact="jackson-dataformat-xml" version="2.4.3"/>
+         <file size="26563" pack="true" dest="jackson-jaxrs-base-2.4.3.jar" mode="640" patchable="true" group="com.fasterxml.jackson.jaxrs" artifact="jackson-jaxrs-base" version="2.4.3"/>
+         <file size="14879" pack="true" dest="jackson-jaxrs-json-provider-2.4.3.jar" mode="640" patchable="true" group="com.fasterxml.jackson.jaxrs" artifact="jackson-jaxrs-json-provider" version="2.4.3"/>
+      </directory>
+      <file-perms>
+         <permission mode="640" regex=".*" match-dirs="false"/>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+         <permission mode="750" regex=".*\.sh" match-dirs="false"/>
+         <permission mode="750" regex=".*\.cmd" match-dirs="false"/>
+         <permission mode="750" regex=".*\.bat" match-dirs="false"/>
+      </file-perms>
+   </file-map>
+   <libraries>
+      <library name="fasterxml_jackson" type="none" suppress-version="true" size="1574604">
+         <entry explode="true" include-parent="false" name="modules/com.fasterxml.jackson.core.jackson-annotations_2.4.3.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.fasterxml.jackson.core.jackson-core_2.4.3.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.fasterxml.jackson.core.jackson-databind_2.4.3.jar"/>
+         <entry explode="true" include-parent="false" name="modules/com.fasterxml.jackson.module.jackson-module-jaxb-annotations_2.4.3.jar"/>
+         <entry explode="true" include-parent="false" name="modules/jackson-module-jsonSchema-2.4.3.jar"/>
+         <entry explode="true" include-parent="false" name="modules/jackson-dataformat-xml-2.4.3.jar"/>
+         <entry explode="true" include-parent="false" name="modules/jackson-jaxrs-base-2.4.3.jar"/>
+         <entry explode="true" include-parent="false" name="modules/jackson-jaxrs-json-provider-2.4.3.jar"/>
+      </library>
+   </libraries>
+</component-def>

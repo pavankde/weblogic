@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<feature-set-def name="wls_sharedLibraries" version="12.2.1.2.0" display-name="All WebLogic Server Libraries Shared With Other Products" display-name-key="featureset.display.name" description-key="featureset.description" xmlns:ns2="http://xmlns.oracle.com/cie/gdr/dei" xmlns:ns3="http://xmlns.oracle.com/cie/gdr/nfo" xmlns:ns4="http://xmlns.oracle.com/cie/gdr/rgy" xmlns="http://xmlns.oracle.com/cie/gdr/ftr">
+   <dependencies>
+      <and>
+         <requires name="wls_sharedClientComps" version="12.2.1.2.0"/>
+         <requires name="wls_sharedLibrariesWithoutPOM" version="12.2.1.2.0" pom-gen="false"/>
+         <requires name="wls_ws" version="12.2.1.2.0"/>
+         <requires name="httpclient" version="12.2.1.2.0"/>
+         <requires name="wls_commonServices" version="12.2.1.2.0"/>
+         <requires name="thirdParty_oracleJaxbRI" version="2.2.10.0.0"/>
+         <requires name="toplink" version="12.2.1.2.0"/>
+         <requires name="db_xdkNoJaxp" version="12.2.1.2.0"/>
+         <requires name="wls_mtCommon_sharedLib" version="12.2.1.2.0"/>
+         <requires name="wls_sharedWithInst_sharedLib" version="12.2.1.2.0"/>
+         <requires name="wls_mtEEOnly_sharedLib" version="12.2.1.2.0"/>
+         <requires name="wls_securityCore_sharedLib" version="12.2.1.2.0"/>
+      </and>
+   </dependencies>
+   <libraries>
+      <library name="com.oracle.webservices.wls.jaxws-wlswss-client" type="client" visibility="public" suppress-version="true" symbol="wls.server.symbol" hk2-gen="true">
+         <include name="org.codehaus.woodstox" version="4.2.0"/>
+         <include name="oracle.jaxb.core" version="2.2.10"/>
+         <include name="oracle.jaxb.impl" version="2.2.10"/>
+         <include name="oracle.jaxb.tools" version="2.2.10"/>
+         <include name="com.oracle.webservices.wls.jaxws-wlswss-client"/>
+         <include name="oracle.webservices.base.client"/>
+         <include name="oracle.http_client"/>
+         <include name="wls.jaxws-wlswss-client.css.mod"/>
+         <include name="oracle.webservices.orawsdl"/>
+         <include name="oracle.jrf.toplink.library"/>
+         <include name="oracle.jrf.thirdparty.toplink.library"/>
+         <include name="javax.json.library"/>
+         <include name="oracle.xdk.xmlparserv2_sans_jaxp_service"/>
+      </library>
+      <library name="com.oracle.webservices.wls.jaxrpc-client" type="client" visibility="public" suppress-version="true" symbol="wls.server.symbol" hk2-gen="true">
+         <include name="com.oracle.webservices.wls.jaxrpc-client"/>
+         <include name="oracle.jaxb.core" version="2.2.10"/>
+         <include name="oracle.jaxb.impl" version="2.2.10"/>
+      </library>
+      <library name="wlclient" type="mergedJar" location="server/lib" visibility="public" suppress-version="true" symbol="wls.server.symbol" hk2-gen="true">
+         <resolvers>
+            <resolver type="FirstEntryWins" wildcard="*"/>
+            <manifest-resolver type="WLS"/>
+         </resolvers>
+         <manifest>
+            <attribute name="sealed" value=""/>
+            <attribute name="Class-Path" value=""/>
+            <attribute name="Export-Service" value=""/>
+            <attribute name="Archiver-Version" value=""/>
+            <attribute name="Require-Bundle" value=""/>
+            <attribute name="Bundle-ActivationPolicy" value=""/>
+            <attribute name="Bundle-ManifestVersion" value=""/>
+            <attribute name="Ant-Version" value=""/>
+            <attribute name="Private-Package" value=""/>
+         </manifest>
+         <include name="wlclient"/>
+      </library>
+      <library name="wljmsclient" type="mergedJar" location="server/lib" visibility="public" suppress-version="true" symbol="wls.server.symbol" hk2-gen="true">
+         <resolvers>
+            <resolver type="FirstEntryWins" wildcard="*"/>
+            <manifest-resolver type="WLS"/>
+         </resolvers>
+         <manifest>
+            <attribute name="sealed" value="false"/>
+            <attribute name="Built-By" value=""/>
+            <attribute name="Build-Jdk" value=""/>
+            <attribute name="Tool" value=""/>
+            <attribute name="Services-Description" value=""/>
+            <attribute name="Source-Repository-URI" value=""/>
+            <attribute name="Bundle-NativeCode" value=""/>
+            <attribute name="Bnd-LastModified" value=""/>
+            <attribute name="Bundle-ManifestVersion" value=""/>
+            <attribute name="Bundle-Description" value=""/>
+            <attribute name="Bundle-License" value=""/>
+            <attribute name="Main-Class" value=""/>
+         </manifest>
+         <merged-jar-classpath>
+            <include name="server/lib/wlclient.jar"/>
+         </merged-jar-classpath>
+         <include name="wlclient" feature="true" explode="false"/>
+         <include name="wljmsclient"/>
+      </library>
+      <library name="wljmxclient" type="mergedJar" location="server/lib" visibility="public" suppress-version="true" symbol="wls.server.symbol" hk2-gen="true">
+         <resolvers>
+            <resolver type="FirstEntryWins" wildcard="*"/>
+            <manifest-resolver type="WLS"/>
+         </resolvers>
+         <manifest>
+            <attribute name="sealed" value="false"/>
+         </manifest>
+         <merged-jar-classpath>
+            <include name="server/lib/wlclient.jar"/>
+         </merged-jar-classpath>
+         <include name="wlclient" feature="true" explode="false"/>
+         <include name="wljmxclient"/>
+      </library>
+      <library name="wlsafclient" type="client" location="server/lib" visibility="public" suppress-version="true" symbol="wls.server.symbol" hk2-gen="true">
+         <include name="wlsafclient"/>
+      </library>
+      <library name="jrmpclient" type="client" location="server/lib" visibility="public" suppress-version="true" symbol="wls.server.symbol" hk2-gen="true">
+         <include name="jrmpclient"/>
+      </library>
+      <library name="wl-j2ee-client" type="client" location="server/lib" visibility="public" suppress-version="true" symbol="wls.server.symbol" hk2-gen="true">
+         <include name="wl-j2ee-client"/>
+      </library>
+      <library name="wlnmclient" type="client" location="server/lib" visibility="public" suppress-version="true" symbol="wls.server.symbol" hk2-gen="true">
+         <include name="wlnmclient"/>
+      </library>
+      <library name="wlsaft3client" type="client" location="server/lib" visibility="public" suppress-version="true" symbol="wls.server.symbol" hk2-gen="true">
+         <include name="wlsaft3client"/>
+      </library>
+      <library name="wlconnector" type="client" location="server/lib" visibility="public" suppress-version="true" symbol="wls.server.symbol">
+         <include name="wlconnector"/>
+      </library>
+      <library name="wls-api" type="client" location="server/lib" visibility="public" suppress-version="true" symbol="wls.server.symbol">
+         <include name="wls-api"/>
+      </library>
+   </libraries>
+</feature-set-def>

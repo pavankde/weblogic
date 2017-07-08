@@ -1,0 +1,195 @@
+#!/bin/sh
+
+#######################################################################
+## Copyright (c) 2014, 2024, Oracle and/or its affiliates. All rights reserved. 
+##
+## opatch 08/30/13  set wls environment settings needed for middleware based OH
+## opatch 04/15/15  use getVariable.sh to get JVM_64
+## 
+######################################################################
+
+
+# Use ORACLE_HOME to set Java CLASS_PATH
+if [ "$JAVA" = "" ]; then
+  JAVA= # Default location
+  SET_JAVA_HOME=${JAVA_HOME}
+
+#use getVariable.sh for JAVA_HOME if executable
+  if [ "$JAVA" = "" ] && [ -x $FINAL_OUI_LOCATION/bin/getVariable.sh ]; then
+    if [ "$DEBUGVAL" = "true" ]; then
+       echo "Looking for java using $FINAL_OUI_LOCATION/bin/getVariable.sh"
+    fi
+    JAVA_HOME=`$FINAL_OUI_LOCATION/bin/getVariable.sh JAVA_HOME`
+    JAVA=$JAVA_HOME/bin/java
+    if [ ! -x $JAVA ]; then
+       JAVA_HOME=""
+       JAVA=""
+    else
+      if [ "$DEBUGVAL" = "true" ]; then
+         echo "Setting java to $JAVA"
+      fi
+    fi
+  fi
+  
+  #use setHomeDirs.sh to set JAVA
+  if [ "$JAVA" = "" ] ; then
+     if [ -x "${C_ORACLE_HOME}/common/bin/setHomeDirs.sh" ]; then
+        . "${C_ORACLE_HOME}/common/bin/setHomeDirs.sh"
+     else
+       if [ -x "${C_ORACLE_HOME}/oracle_common/common/bin/setHomeDirs.sh" ]; then
+          . "${C_ORACLE_HOME}/oracle_common/common/bin/setHomeDirs.sh"
+       fi
+     fi
+     if [ "$WL_HOME" != "" ] ; then
+        JAVA=$JAVA_HOME/bin/java
+        if [ ! -x $JAVA ]; then
+           JAVA_HOME=""
+           JAVA=""
+        else
+           if [ "$DEBUGVAL" = "true" ]; then
+               echo "Setting java to $JAVA"
+           fi
+        fi
+     fi
+  fi
+
+# use OH/jre/*, it should be 1.6 or above
+  if [ "$JAVA" = "" ] ; then
+    JRE_HIGH=
+    if [ -d $OH/jre ]; then
+      for i in `ls -1 $OH/jre | sort` ;
+      do
+        JRE_HIGH=$i ;
+      done
+      if [ "$JRE_HIGH" != "" ]; then
+        JRE_HIGH_FINAL=`echo $JRE_HIGH | awk '
+                              BEGIN {FS="."}
+                              {
+                                  if (($1 >= 1) && ($2 >= 6))
+                                      print $0
+                              }'`
+        if [ "$JRE_HIGH_FINAL" != "" ] && [ -x $OH/jre/$JRE_HIGH_FINAL/bin/java ]; then
+            JAVA=$OH/jre/$JRE_HIGH_FINAL/bin/java
+            JAVA_HOME=$OH/jre/$JRE_HIGH_FINAL
+        fi
+      fi
+    fi
+  fi
+
+  # Now Check for jdk location inside OH
+  if [ "$JAVA" = "" ] && [ -d $OH/jdk ]; then  # Now look for jdk in OH
+    JAVA=$OH/jdk/bin/java
+    JAVA_HOME=$OH/jdk
+  fi
+
+  if [ "$JAVA_HOME" = "" ]; then
+    if [ -d $OH/../jdk6 ]; then
+	if [ "$DEBUGVAL" = "true" ]; then
+	   echo "Looking for java in $OH/../jdk6"
+	fi
+	  JAVA_HOME=$OH/../jdk6
+	  JAVA=$JAVA_HOME/bin/java
+	if [ ! -x $JAVA ]; then
+	  JAVA_HOME=""
+	  JAVA=""
+	else
+	   if [ "$DEBUGVAL" = "true" ]; then
+	     echo "Setting java to $JAVA"
+	   fi
+	fi
+     fi
+  fi
+
+# look inside oraparam.ini for JRE_LOCATION
+  if [ ! -f "$JAVA" ] && [ -r $FINAL_OUI_LOCATION/oraparam.ini ]; then
+    if [ "$DEBUGVAL" = "true" ]; then
+        echo "Looking for java in $FINAL_OUI_LOCATION/oraparam.ini"
+    fi
+    JRE_LOCATION=`grep "JRE_LOCATION=" $FINAL_OUI_LOCATION/oraparam.ini | sed 's/JRE_LOCATION=//'`
+    ABS_PATH=`echo $JRE_LOCATION | grep "^\/"`
+    if [ "$ABS_PATH" = "" ] && [ "$JRE_LOCATION" != "" ] && [ -d $FINAL_OUI_LOCATION/bin/$JRE_LOCATION ]; then # not absolute path
+      JAVA=$FINAL_OUI_LOCATION/bin/$JRE_LOCATION/bin/java
+      JAVA_HOME=$FINAL_OUI_LOCATION/bin/$JRE_LOCATION
+    else
+      if [ "$JRE_LOCATION" != "" ] && [ -d $JRE_LOCATION ]; then
+         JAVA=$JRE_LOCATION/bin/java
+         JAVA_HOME=$JRE_LOCATION
+      fi
+    fi
+  fi
+
+# If java could not be found, check one level up (for jre & jdk)
+  if [ "$JAVA" = "" ] ; then
+     SCRIPTNAME=$0
+     case ${SCRIPTNAME} in
+     /*)  SCRIPTPATH=`dirname ${SCRIPTNAME}` ;;
+      *)  SCRIPTPATH=`dirname ${PWD}/${SCRIPTNAME}` ;;
+     esac
+
+     JRE_LOCATION=""  
+     JDK_LOCATION=""
+     if [ -d "${SCRIPTPATH}/../jre" ]; then
+       JRE_LOCATION=`cd ${SCRIPTPATH}/../jre ; pwd`
+     fi
+
+     if [ -d "${SCRIPTPATH}/../jdk" ]; then
+       JDK_LOCATION=`cd ${SCRIPTPATH}/../jdk ; pwd`  
+     fi
+ 
+    JRE_HIGH=
+    if [ -d $JRE_LOCATION/jre ]; then
+      for i in `ls -1 $JRE_LOCATION/jre | sort` ;
+      do
+        JRE_HIGH=$i ;
+      done
+      if [ "$JRE_HIGH" != "" ]; then
+        JRE_HIGH_FINAL=`echo $JRE_HIGH | awk '
+                            BEGIN {FS="."}
+                            {
+                                if (($1 >= 1) && ($2 >= 6))
+                                    print $0
+                            }'`
+        if [ "$JRE_HIGH_FINAL" != "" ] && [ -x $OH/jre/$JRE_HIGH_FINAL/bin/java ]; then
+            JAVA=$JRE_LOCATION/$JRE_HIGH_FINAL/bin/java
+            JAVA_HOME=$JRE_LOCATION/$JRE_HIGH_FINAL
+        fi
+      fi
+    fi
+
+    if [ "$JAVA" = "" ] ; then  # Now look for jdk in OH
+      JAVA=$JDK_LOCATION/bin/java
+      JAVA_HOME=$JDK_LOCATION
+    fi
+  fi
+
+# Parse Java Home from $OH/wlserver/.product.properties as the last option
+  if [ -z "$JDK" -a -z "$JRE" -a ! -x "$JAVA" ]; then
+      if [ -d "$WL_HOME" -a -r "$WL_HOME/.product.properties" ]; then
+          JAVA_HOME=`grep "^JAVA_HOME=" $WL_HOME/.product.properties | sed 's/JAVA_HOME=//'`
+          JAVA=$JAVA_HOME/bin/java
+      elif [ -r "$OH/wlserver/.product.properties" ]; then
+        JAVA_HOME=`grep "^JAVA_HOME=" $OH/wlserver/.product.properties | sed 's/JAVA_HOME=//'`
+        JAVA=$JAVA_HOME/bin/java
+      fi
+      if [ ! -x "$JAVA" ]; then
+         JAVA_HOME=""
+         JAVA=""
+      fi
+  fi
+
+
+  export JAVA
+  export JAVA_HOME
+fi
+
+# use getVariable.sh to get JVM_64
+JVM_64=
+if [ -x $FINAL_OUI_LOCATION/bin/getVariable.sh ]; then
+  if [ "$DEBUGVAL" = "true" ]; then
+    echo "Looking for -d64 option using $FINAL_OUI_LOCATION/bin/getVariable.sh"
+  fi
+  JVM_64=`$FINAL_OUI_LOCATION/bin/getVariable.sh JVM_64`
+  if [ "$DEBUGVAL" = "true" ]; then
+     echo "Setting JVM_64 to $JVM_64"
+  fi
+fi

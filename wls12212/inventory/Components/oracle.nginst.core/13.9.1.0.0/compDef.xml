@@ -1,0 +1,329 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.nginst.core" version="13.9.1.0.0" description="Next Generation Installation Core" description-key="component.description" gdr-version="1.8.0.0" singleton="true" pom-gen="false" groupId="com.oracle.oui" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="oracle.nginst.core.symbol" source="filegroup1.jar" expanded="true" compacted="true" bootstrap="true">
+      <directory dest="modules" mode="750" patchable="true">
+         <file size="596602" dest="xml.jar" mode="640"/>
+         <file size="346931" dest="com.oracle.cie.ora-launcher_12.8.0.0.jar" mode="640"/>
+         <file size="713" dest="gdr-external.jar" mode="640"/>
+         <file size="82862" dest="orai18n-mapping.jar" mode="640"/>
+         <file size="190402" dest="srvmasm.jar" mode="640"/>
+         <file size="277952" dest="com.oracle.cie.oui-remote-interfaces_12.8.0.0.jar" mode="640"/>
+         <file size="1029" dest="OraInstaller.jar" mode="640"/>
+         <file size="166290" dest="emocmcommon.jar" mode="640"/>
+         <file size="40727" dest="com.oracle.cie.oui-fixup_12.8.0.0.jar" mode="640"/>
+         <file size="11621" dest="jcert.jar" mode="640"/>
+         <file size="489884" dest="log4j-core.jar" mode="640"/>
+         <file size="566" dest="opatchauto-classpath.jar" mode="640"/>
+         <file size="252795" dest="emocmclnt.jar" mode="640"/>
+         <file size="3916088" dest="srvm.jar" mode="640"/>
+         <file size="547372" dest="http_client.jar" mode="640"/>
+         <file size="25429" dest="regexp.jar" mode="640"/>
+         <file size="1029" dest="installer-launch.jar" mode="640"/>
+         <file size="92537" dest="com.oracle.cie.oui-ssh_12.8.0.0.jar" mode="640"/>
+         <file size="5036" dest="com.oracle.cie.ora-installer-net_12.8.0.0.jar" mode="640"/>
+         <file size="732" dest="ora-launcher.jar" mode="640"/>
+         <file size="6489" dest="emocmclnt-14.jar" mode="640"/>
+         <file size="6208" dest="jnet.jar" mode="640"/>
+         <file size="46349" dest="com.oracle.cie.ora-suite-installer_12.8.0.0.jar" mode="640"/>
+         <file size="508856" dest="jsse.jar" mode="640"/>
+         <file-perms>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <modifier type="delayed-deinstall" regex=".*" match-dirs="true"/>
+      <modifier type="text" regex=".*\.sh"/>
+      <modifier type="text" regex=".*\.cmd"/>
+      <modifier type="text" regex="oraparam.ini"/>
+      <directory dest="bin" mode="750" patchable="true">
+         <file size="3591" dest="launch.sh" mode="750"/>
+         <file size="1553" dest="launch.cmd" os-family="windows" mode="750"/>
+         <file size="1067" dest="deinstall.sh" mode="750"/>
+         <file size="1277" dest="deinstall.cmd" os-family="windows" mode="750"/>
+         <file size="22486" dest="deinstall.ico" os-family="windows" mode="750"/>
+         <file size="3050" dest="viewInventory.sh" mode="750"/>
+         <file size="3053" dest="viewInventory.cmd" os-family="windows" mode="750"/>
+         <file size="3174" dest="compareInventory.sh" mode="750"/>
+         <file size="3180" dest="compareInventory.cmd" os-family="windows" mode="750"/>
+         <file size="1307" dest="attachHome.sh" mode="750"/>
+         <file size="1367" dest="attachHome.cmd" os-family="windows" mode="750"/>
+         <file size="1063" dest="detachHome.sh" mode="750"/>
+         <file size="1057" dest="detachHome.cmd" os-family="windows" mode="750"/>
+         <file size="620" dest="getVariable.sh" mode="750"/>
+         <file size="1258" dest="getVariable.cmd" os-family="windows" mode="750"/>
+         <file size="620" dest="getProperty.sh" mode="750"/>
+         <file size="1258" dest="getProperty.cmd" os-family="windows" mode="750"/>
+         <file size="3205" dest="setProperty.sh" mode="750"/>
+         <file size="2923" dest="setProperty.cmd" os-family="windows" mode="750"/>
+         <directory dest="internal" mode="750" patchable="true">
+            <file size="59392" dest="ilaunch.exe" os-family="windows" mode="750"/>
+            <file size="4821" dest="ilaunch.cmd" os-family="windows" mode="750"/>
+         </directory>
+      </directory>
+      <file size="1817" dest="oraparam.ini"/>
+   </file-map>
+   <file-map symbol="oracle.nginst.core.symbol" source="filegroup2.jar" expanded="true" compacted="true" bootstrap="true">
+      <platform name="NT_X86"/>
+      <directory dest="lib" mode="750" patchable="true">
+         <directory dest="win32" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+            <file size="147456" dest="oraInstaller.dll" mode="750"/>
+            <file size="53248" dest="ntServicesActions17013.dll" mode="750"/>
+            <file size="65536" dest="Win32RgsQueries.dll" mode="750"/>
+            <file size="49152" dest="ocxReg.dll" mode="750"/>
+            <file size="57344" dest="w32RegQueries152.dll" mode="750"/>
+            <file size="53248" dest="ntServicesQueries.dll" mode="750"/>
+            <file size="348160" dest="msvcr71.dll" mode="750"/>
+            <file size="57344" dest="Win32FileAction221.dll" mode="750"/>
+            <file size="57344" dest="WindowsGeneralQ.dll" mode="750"/>
+            <file size="126976" dest="NtEnv221.dll" mode="750"/>
+            <file size="49152" dest="Win32EnvQ221.dll" mode="750"/>
+            <file size="77824" dest="WindowsFolders21041.dll" mode="750"/>
+            <file size="69632" dest="w32RegActions170.dll" mode="750"/>
+         </directory>
+         <file-perms>
+            <permission mode="750" regex=".*"/>
+         </file-perms>
+      </directory>
+      <modifier type="delayed-deinstall" regex=".*" match-dirs="true"/>
+      <directory dest="bin" mode="750" patchable="true">
+         <file size="197632" dest="jni.dll" mode="750"/>
+      </directory>
+   </file-map>
+   <file-map symbol="oracle.nginst.core.symbol" source="filegroup3.jar" expanded="true" packaged="false" bootstrap="true">
+      <platform name="NT_AMD64"/>
+      <directory dest="lib" mode="750" patchable="true">
+         <directory dest="win64" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+            <file size="177664" dest="oraInstaller.dll" mode="750"/>
+            <file size="61440" dest="w32RegQueries152.dll" mode="750"/>
+            <file size="362496" dest="msvcrt.dll" mode="750"/>
+            <file size="65024" dest="Win64GeneralQ.dll" mode="750"/>
+            <file size="54272" dest="win64ServicesActions17013.dll" mode="750"/>
+            <file size="162304" dest="Win64Env221.dll" mode="750"/>
+            <file size="79872" dest="Win64Folders21041.dll" mode="750"/>
+            <file size="65024" dest="Win64FileAction221.dll" mode="750"/>
+            <file size="78848" dest="w32RegActions170.dll" mode="750"/>
+            <file size="52224" dest="win64ocxReg.dll" mode="750"/>
+            <file size="52736" dest="win64ServicesQueries.dll" mode="750"/>
+            <file size="49152" dest="Win64EnvQ221.dll" mode="750"/>
+         </directory>
+         <file-perms>
+            <permission mode="750" regex=".*"/>
+         </file-perms>
+      </directory>
+      <modifier type="delayed-deinstall" regex=".*" match-dirs="true"/>
+      <directory dest="bin" mode="750" patchable="true">
+         <file size="206336" dest="jni.dll" mode="750"/>
+      </directory>
+   </file-map>
+   <file-map symbol="oracle.nginst.core.symbol" source="filegroup4.jar" expanded="true" packaged="false" bootstrap="true">
+      <platform name="Linux"/>
+      <directory dest="lib" mode="750" patchable="true">
+         <directory dest="linux" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+            <file size="72495" dest="liboraInstaller.so" mode="640"/>
+            <file size="4832" dest="libqueryDB.so" mode="640"/>
+            <file size="7429" dest="libactionDB221.so" mode="640"/>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <modifier type="delayed-deinstall" regex=".*" match-dirs="true"/>
+      <directory dest="bin" mode="750" patchable="true">
+         <file size="83790" dest="libjni.so" mode="640"/>
+      </directory>
+   </file-map>
+   <file-map symbol="oracle.nginst.core.symbol" source="filegroup5.jar" expanded="true" packaged="false" bootstrap="true">
+      <platform name="Linux_AMD64"/>
+      <directory dest="lib" mode="750" patchable="true">
+         <directory dest="linux64" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+            <file size="38219" dest="liboraInstaller.so" mode="640"/>
+            <file size="6867" dest="libqueryDB.so" mode="640"/>
+            <file size="9997" dest="libactionDB221.so" mode="640"/>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <modifier type="delayed-deinstall" regex=".*" match-dirs="true"/>
+      <directory dest="bin" mode="750" patchable="true">
+         <file size="93200" dest="libjni.so" mode="640"/>
+      </directory>
+   </file-map>
+   <file-map symbol="oracle.nginst.core.symbol" source="filegroup6.jar" expanded="true" compacted="true" bootstrap="true">
+      <directory dest="prov" mode="750" patchable="true">
+         <directory dest="resources" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+            <file size="1662" dest="logging_conf.xml" mode="640"/>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <directory dest="prov" mode="750" patchable="true">
+         <directory dest="resources" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+            <file size="571" dest="ssPaths_solx86.properties" mode="640"/>
+            <file size="752" dest="ssPaths_hpi.properties" mode="640"/>
+            <file size="0" dest="remoteinterfaces_config.properties" mode="640"/>
+            <file size="3010" dest="platformInfo.properties" mode="640"/>
+            <file size="4011" dest="sPaths.properties" mode="640"/>
+            <file size="2512" dest="ssPaths_msplats.properties" mode="640"/>
+            <file size="552" dest="system.properties" mode="640"/>
+            <file size="2266" dest="ignoreMessages.txt" mode="640"/>
+            <file size="571" dest="ssPaths_solx64.properties" mode="640"/>
+            <file size="3370" dest="ssPaths_linux_ia64.properties" mode="640"/>
+            <file size="689" dest="ssPaths_aix.properties" mode="640"/>
+            <file size="3370" dest="ssPaths_linuxx64.properties" mode="640"/>
+            <file size="3370" dest="ssPaths_linux_ppc64.properties" mode="640"/>
+            <file size="727" dest="Paths.properties" mode="640"/>
+            <file size="665" dest="ssPaths_sol.properties" mode="640"/>
+            <file size="710" dest="ssPaths_decunix.properties" mode="640"/>
+            <file size="355" dest="userPaths.properties" mode="640"/>
+            <file size="764" dest="ssPaths_hpuix.properties" mode="640"/>
+            <file size="3365" dest="ssPaths_linux_zseries64.properties" mode="640"/>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <modifier type="text" regex=".*" match-dirs="true"/>
+   </file-map>
+   <file-map symbol="oracle.nginst.core.symbol" source="filegroup7.jar" expanded="true" packaged="false" bootstrap="true">
+      <platform name="Linux_S390"/>
+      <directory dest="lib" mode="750" patchable="true">
+         <directory dest="linuxS390" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+            <file size="37526" dest="liboraInstaller.so" mode="640"/>
+            <file size="6166" dest="libqueryDB.so" mode="640"/>
+            <file size="8820" dest="libactionDB221.so" mode="640"/>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <modifier type="delayed-deinstall" regex=".*" match-dirs="true"/>
+   </file-map>
+   <file-map symbol="oracle.nginst.core.symbol" source="filegroup8.jar" expanded="true" packaged="false" bootstrap="true">
+      <platform name="Solaris_SPARC64"/>
+      <directory dest="lib" mode="750" patchable="true">
+         <directory dest="solaris_sparc64" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+            <file size="85632" dest="liboraInstaller.so" mode="640"/>
+            <file size="6616" dest="libqueryDB.so" mode="640"/>
+            <file size="14952" dest="libactionDB221.so" mode="640"/>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <modifier type="delayed-deinstall" regex=".*" match-dirs="true"/>
+   </file-map>
+   <file-map symbol="oracle.nginst.core.symbol" source="filegroup9.jar" expanded="true" packaged="false" bootstrap="true">
+      <platform name="Intel_Solaris"/>
+      <directory dest="lib" mode="750" patchable="true">
+         <directory dest="intelsolaris" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+            <file size="94672" dest="liboraInstaller.so" mode="640"/>
+            <file size="7536" dest="libqueryDB.so" mode="640"/>
+            <file size="16280" dest="libactionDB221.so" mode="640"/>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <modifier type="delayed-deinstall" regex=".*" match-dirs="true"/>
+   </file-map>
+   <file-map symbol="oracle.nginst.core.symbol" source="filegroup10.jar" expanded="true" packaged="false" bootstrap="true">
+      <platform name="IBM_AIXPPC64"/>
+      <directory dest="lib" mode="750" patchable="true">
+         <directory dest="aix_ppc64" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+            <file size="63064" dest="liboraInstaller.so" mode="640"/>
+            <file size="512" dest="libqueryDB.so" mode="640"/>
+            <file size="2180" dest="libactionDB221.so" mode="640"/>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <modifier type="delayed-deinstall" regex=".*" match-dirs="true"/>
+   </file-map>
+   <file-map symbol="oracle.nginst.core.symbol" source="filegroup11.jar" expanded="true" packaged="false" bootstrap="true">
+      <platform name="HP_IA64"/>
+      <directory dest="lib" mode="750" patchable="true">
+         <directory dest="hpia64" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+            <file size="67592" dest="libqueryDB.sl" mode="750"/>
+            <file size="70168" dest="liboraInstaller.sl" mode="750"/>
+            <file size="68248" dest="libactionDB221.sl" mode="750"/>
+         </directory>
+         <file-perms>
+            <permission mode="750" regex=".*"/>
+         </file-perms>
+      </directory>
+      <modifier type="delayed-deinstall" regex=".*" match-dirs="true"/>
+   </file-map>
+   <file-map symbol="oracle.nginst.core.symbol" source="filegroup12.jar" expanded="true" packaged="false" bootstrap="true">
+      <platform name="Linux_SPARC64"/>
+      <directory dest="lib" mode="750" patchable="true">
+         <directory dest="linuxS64" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+            <file size="48818" dest="liboraInstaller.so" mode="640"/>
+            <file size="7175" dest="libqueryDB.so" mode="640"/>
+            <file size="11217" dest="libactionDB221.so" mode="640"/>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <modifier type="delayed-deinstall" regex=".*" match-dirs="true"/>
+   </file-map>
+   <stringsubs>
+      <ns2:group id="test">
+         <ns2:file-entry name="$oracle.nginst.core.symbol.path$/oraparam.ini"/>
+         <ns2:file-entry name="$oracle.nginst.core.symbol.path$/bin/launch.sh"/>
+         <ns2:file-entry name="$oracle.nginst.core.symbol.path$/bin/compareInventory.cmd"/>
+         <ns2:file-entry name="$oracle.nginst.core.symbol.path$/bin/compareInventory.sh"/>
+         <ns2:file-entry name="$oracle.nginst.core.symbol.path$/bin/viewInventory.cmd"/>
+         <ns2:file-entry name="$oracle.nginst.core.symbol.path$/bin/viewInventory.sh"/>
+         <ns2:file-entry name="$oracle.nginst.core.symbol.path$/bin/attachHome.cmd"/>
+         <ns2:file-entry name="$oracle.nginst.core.symbol.path$/bin/attachHome.sh"/>
+         <ns2:file-entry name="$oracle.nginst.core.symbol.path$/bin/detachHome.cmd"/>
+         <ns2:file-entry name="$oracle.nginst.core.symbol.path$/bin/detachHome.sh"/>
+         <ns2:file-entry name="$oracle.nginst.core.symbol.path$/bin/deinstall.cmd"/>
+         <ns2:file-entry name="$oracle.nginst.core.symbol.path$/bin/deinstall.sh"/>
+         <ns2:file-entry name="$oracle.nginst.core.symbol.path$/bin/internal/ilaunch.cmd"/>
+         <ns2:file-entry name="$oracle.nginst.core.symbol.path$/bin/setProperty.cmd"/>
+         <ns2:file-entry name="$oracle.nginst.core.symbol.path$/bin/setProperty.sh"/>
+         <ns2:change-pair-ref name="JRE_LOCATION"/>
+         <ns2:change-pair-ref name="JAVA_HOME_LOCATION"/>
+         <ns2:change-pair-ref name="JRE_MEMORY_OPTIONS"/>
+         <ns2:change-pair-ref name="JAVA_OPTIONS"/>
+         <ns2:change-pair-ref name="HOTSPOT_JAVA_OPTIONS"/>
+         <ns2:change-pair-ref name="IBM_JAVA_OPTIONS"/>
+         <ns2:change-pair-ref name="JROCKIT_JAVA_OPTIONS"/>
+         <ns2:change-pair-ref name="VM_TYPES"/>
+         <ns2:change-pair-ref name="JAVA_VERSION"/>
+         <ns2:change-pair-ref name="InstVer"/>
+         <ns2:change-pair-ref name="EXT_CLASSPATH"/>
+         <ns2:change-pair-ref name="BOOT_CLASSPATH"/>
+         <ns2:change-pair-ref name="JAVA_USE_64BIT"/>
+         <ns2:change-pair-ref name="PLATFORM_NAME"/>
+         <ns2:change-pair-ref name="INSTALL_CLASS"/>
+         <ns2:change-pair-ref name="PREREQ_CONFIG_LOCATION"/>
+         <ns2:change-pair-ref name="ORACLE_HOME"/>
+         <ns2:change-pair-ref name="ORACLE_HOME_NAME"/>
+         <ns2:change-pair-ref name="DEFAULT_HOME_NAME"/>
+      </ns2:group>
+      <ns2:change-pair id="JRE_LOCATION" before="@JRE_LOCATION@" after="$JRE_LOCATION$"/>
+      <ns2:change-pair id="JAVA_HOME_LOCATION" before="@JAVA_HOME_LOCATION@" after="$JAVA_HOME_LOCATION$"/>
+      <ns2:change-pair id="JRE_MEMORY_OPTIONS" before="@JRE_MEMORY_OPTIONS@" after="$JRE_MEMORY_OPTIONS$"/>
+      <ns2:change-pair id="JAVA_OPTIONS" before="@JAVA_OPTIONS@" after="$JAVA_OPTIONS$"/>
+      <ns2:change-pair id="HOTSPOT_JAVA_OPTIONS" before="@HOTSPOT_JAVA_OPTIONS@" after="$HOTSPOT_JAVA_OPTIONS$"/>
+      <ns2:change-pair id="IBM_JAVA_OPTIONS" before="@IBM_JAVA_OPTIONS@" after="$IBM_JAVA_OPTIONS$"/>
+      <ns2:change-pair id="JROCKIT_JAVA_OPTIONS" before="@JROCKIT_JAVA_OPTIONS@" after="$JROCKIT_JAVA_OPTIONS$"/>
+      <ns2:change-pair id="VM_TYPES" before="@VM_TYPES@" after="$VM_TYPES$"/>
+      <ns2:change-pair id="JAVA_VERSION" before="@JAVA_VERSION@" after="$JAVA_VERSION$"/>
+      <ns2:change-pair id="InstVer" before="@InstVer@" after="$InstVer$"/>
+      <ns2:change-pair id="EXT_CLASSPATH" before="@EXT_CLASSPATH@" after="$EXT_CLASSPATH$"/>
+      <ns2:change-pair id="BOOT_CLASSPATH" before="@BOOT_CLASSPATH@" after="$BOOT_CLASSPATH$"/>
+      <ns2:change-pair id="JAVA_USE_64BIT" before="@JAVA_USE_64BIT@" after="$JAVA_USE_64BIT$"/>
+      <ns2:change-pair id="PLATFORM_NAME" before="@PLATFORM_NAME@" after="$PLATFORM_NAME$"/>
+      <ns2:change-pair id="INSTALL_CLASS" before="@INSTALL_CLASS@" after="$InstallClassVal$"/>
+      <ns2:change-pair id="PREREQ_CONFIG_LOCATION" before="@PREREQ_CONFIG_LOCATION@" after="$PrereqConfigLocationVal$"/>
+      <ns2:change-pair id="ORACLE_HOME" before="@ORACLE_HOME@" after="$ORACLE_HOME$"/>
+      <ns2:change-pair id="ORACLE_HOME_NAME" before="@ORACLE_HOME_NAME@" after="$ORACLE_HOME_NAME$"/>
+      <ns2:change-pair id="DEFAULT_HOME_NAME" before="@DEFAULT_HOME_NAME@" after="$DEFAULT_HOME_NAME$"/>
+   </stringsubs>
+</component-def>

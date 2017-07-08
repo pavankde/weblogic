@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portal:root xmlns:netuix="http://www.bea.com/servers/netuix/xsd/controls/netuix/1.0.0"
+             xmlns:html="http://www.w3.org/1999/xhtml-netuix-modified/1.0.0"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:portal="http://www.bea.com/servers/netuix/xsd/portal/support/1.0.0"
+             xsi:schemaLocation="http://www.bea.com/servers/netuix/xsd/portal/support/1.0.0 portal-support-1_0_0.xsd">
+<!--
+    Definition file for the pages for interacting with virtual target
+    configurations in WebLogic Server.
+
+    Copyright (c) 2014, Oracle and/or its affiliates. All rights reserved.
+-->
+<netuix:book definitionLabel="VirtualTargetBook" title="book.title" markupName="book"
+             backingFile="com.bea.console.utils.GeneralBackingFile"
+             threadsafe="true"
+             presentationClass="invisible">
+<netuix:content>
+<netuix:book definitionLabel="CoreVirtualTargetBook" title="book.title" markupName="book"
+             backingFile="com.bea.console.utils.GeneralBackingFile"
+             threadsafe="true"
+             presentationClass="wlsc-frame">
+  <netuix:titlebar>
+  </netuix:titlebar>
+  <netuix:content>
+    <netuix:page markupName="page" definitionLabel="CoreVirtualTargetPages" title="not.used"
+                 hidden="true">
+      <netuix:content>
+        <netuix:layout type="no" markupName="NoLayout">
+          <netuix:placeholder usingFlow="false" markupName="ph1">
+            <netuix:book markupName="book" definitionLabel="CoreVirtualTargetTabsBook"
+                         title="CoreVirtualtargetTabsBook">
+              <netuix:singleLevelMenu markupType="Menu" markupName="singleLevelMenu"/>
+              <netuix:content>
+                <!-- Definition for the config tab -->
+                <netuix:book markupName="book" definitionLabel="VirtualTargetConfigTabPage"
+                             title="tab.config">
+                  <netuix:singleLevelMenu markupType="Menu" markupName="singleLevelMenu" presentationClass="menu-level1"/>
+                  <netuix:content>
+                    <!-- Definition for the general tab -->
+                    <netuix:page markupName="page" definitionLabel="VirtualTargetConfigGeneralTabPage"
+                                 presentationClass="page-content"
+                                 title="tab.general">
+                      <netuix:meta name="helpid"
+                                   content="Core.core.virtualtarget.virtualtargetconfiggeneral.title;core"/>
+                      <netuix:meta name="configuration-page" content="VirtualTarget"/>
+                      <netuix:meta name="breadcrumb-context" content="handle"/>
+                      <netuix:content>
+                        <netuix:layout type="no" markupName="NoLayout">
+                          <netuix:placeholder usingFlow="false" markupName="ph1">
+                            <netuix:portlet definitionLabel="CoreVirtualTargetVirtualTargetConfigGeneralPortlet">
+                              <netuix:strutsContent module="/core" action="CoreVirtualtargetConfigGeneral"
+                                                    refreshAction="CoreVirtualtargetConfigGeneral"/>
+                            </netuix:portlet>
+                          </netuix:placeholder>
+                        </netuix:layout>
+                      </netuix:content>
+                    </netuix:page>
+                    <!-- Definition for the logging tab -->
+                    <netuix:page markupName="page" definitionLabel="VirtualTargetConfigLoggingTabPage"
+                                 presentationClass="page-content"
+                                 title="tab.logging">
+                      <netuix:meta name="helpid"
+                                   content="Core.core.virtualtarget.virtualtargetconfiglogging.title;core"/>
+                      <netuix:content>
+                        <netuix:layout type="no" markupName="NoLayout">
+                          <netuix:placeholder usingFlow="false" markupName="ph1">
+                            <netuix:portlet definitionLabel="CoreVirtualTargetVirtualTargetConfigLoggingPortlet">
+                              <netuix:strutsContent module="/core" action="CoreVirtualtargetVirtualTargetConfigLogging"
+                                                    refreshAction="CoreVirtualtargetVirtualTargetConfigLogging"/>
+                            </netuix:portlet>
+                          </netuix:placeholder>
+                        </netuix:layout>
+                      </netuix:content>
+                    </netuix:page>
+                    <!-- Definition for the http tab -->
+                    <netuix:page markupName="page" definitionLabel="VirtualTargetConfigHttpTabPage"
+                                 presentationClass="page-content"
+                                 title="tab.http">
+                      <netuix:meta name="helpid" content="Core.core.virtualtarget.virtualtargetconfighttp.title;core"/>
+                      <netuix:content>
+                        <netuix:layout type="no" markupName="NoLayout">
+                          <netuix:placeholder usingFlow="false" markupName="ph1">
+                            <netuix:portlet definitionLabel="CoreVirtualTargetVirtualTargetConfigHttpPortlet">
+                              <netuix:strutsContent module="/core" action="CoreVirtualtargetVirtualTargetConfigHttp"
+                                                    refreshAction="CoreVirtualtargetVirtualTargetConfigHttp"/>
+                            </netuix:portlet>
+                          </netuix:placeholder>
+                        </netuix:layout>
+                      </netuix:content>
+                    </netuix:page>
+                  </netuix:content>
+                </netuix:book>
+                <!-- Definition for the targetdeploy tab -->
+                <netuix:page markupName="page" definitionLabel="VirtualTargetTargetDeployTabPage"
+                             presentationClass="page-content"
+                             title="tab.targets">
+                  <netuix:meta name="helpid"
+                               content="Core.core.virtualtarget.virtualtargettargetdeploy.title;core"/>
+                  <netuix:content>
+                    <netuix:layout type="no" markupName="NoLayout">
+                      <netuix:placeholder usingFlow="false" markupName="ph1">
+                        <netuix:portlet definitionLabel="CoreVirtualTargetVirtualTargetTargetDeployPortlet">
+                          <netuix:strutsContent module="/core" action="CoreVirtualtargetTarget"
+                                                refreshAction="CoreVirtualtargetTarget"/>
+                        </netuix:portlet>
+                      </netuix:placeholder>
+                    </netuix:layout>
+                  </netuix:content>
+                </netuix:page>
+                <!-- Definition for the notes tab -->
+                <netuix:page markupName="page" definitionLabel="VirtualTargetNotesPage"
+                             presentationClass="page-content"
+                             title="tab.notes">
+                  <netuix:meta name="helpid" content="Core.core.virtualtarget.virtualtargetnotes.title;core"/>
+                  <netuix:content>
+                    <netuix:layout type="no" markupName="NoLayout">
+                      <netuix:placeholder usingFlow="false" markupName="ph1">
+                        <netuix:portletInstance markupType="Portlet" instanceLabel="VirtualTargetNotesPortlet"
+                                                contentUri="/PortalConfig/core/CoreNotes.portlet"/>
+                      </netuix:placeholder>
+                    </netuix:layout>
+                  </netuix:content>
+                </netuix:page>
+              </netuix:content>
+            </netuix:book>
+          </netuix:placeholder>
+        </netuix:layout>
+      </netuix:content>
+    </netuix:page>
+  </netuix:content>
+</netuix:book>
+<!-- Definition for the VirtualTarget table page -->
+<netuix:book definitionLabel="CoreVirtualTargetVirtualTargetTableBook" markupName="book"
+             backingFile="com.bea.console.utils.GeneralBackingFile"
+             threadsafe="true"
+             title="virtualtargets.title"
+             presentationClass="wlsc-frame">
+  <netuix:titlebar/>
+  <netuix:content>
+    <netuix:page markupName="page" definitionLabel="CoreVirtualTargetVirtualTargetTablePage"
+                 title="not.used"
+                 hidden="true"
+                 presentationClass="page-table">
+      <netuix:meta name="helpid" content="Core.core.virtualtargettable.title;core"/>
+      <netuix:meta name="breadcrumb" content="virtualtargets.title"/>
+      <netuix:content>
+        <netuix:layout type="no" markupName="NoLayout">
+          <netuix:placeholder usingFlow="false" markupName="ph1">
+            <netuix:portlet definitionLabel="CoreVirtualTargetVirtualTargetTablePortlet">
+              <netuix:strutsContent module="/core" action="CoreVirtualtargetVirtualTargetTable"
+                                    refreshAction="CoreVirtualtargetVirtualTargetTable"/>
+            </netuix:portlet>
+          </netuix:placeholder>
+        </netuix:layout>
+      </netuix:content>
+    </netuix:page>
+  </netuix:content>
+</netuix:book>
+<!-- Definition for the VirtualTarget creation assistant page -->
+<netuix:book definitionLabel="CoreVirtualTargetCreateVirtualTargetBook" markupName="book"
+             backingFile="com.bea.console.utils.GeneralBackingFile"
+             threadsafe="true"
+             title="assistant.create.virtualtarget.title"
+             presentationClass="wlsc-frame">
+  <netuix:titlebar/>
+  <netuix:content>
+    <netuix:page markupName="page" definitionLabel="CoreVirtualTargetCreateVirtualTarget"
+                 title="not.used"
+                 hidden="true"
+                 presentationClass="page-assistant">
+      <netuix:meta name="helpid" content="Core.core.virtualtarget.createvirtualtarget.title;core"/>
+      <netuix:content>
+        <netuix:layout type="no" markupName="NoLayout">
+          <netuix:placeholder usingFlow="false" markupName="ph1">
+            <netuix:portlet definitionLabel="CoreVirtualTargetCreateVirtualTargetPortlet">
+              <netuix:pageflowContent contentUri="/com/bea/console/actions/core/virtualtarget/createvirtualtarget/CreateVirtualTarget.jpf"
+                                      action="begin"
+                                      refreshAction="begin"/>
+            </netuix:portlet>
+          </netuix:placeholder>
+        </netuix:layout>
+      </netuix:content>
+    </netuix:page>
+  </netuix:content>
+</netuix:book>
+<!-- Definition for the VirtualTarget clone assistant page -->
+<netuix:book definitionLabel="CoreVirtualTargetCloneVirtualTargetBook" markupName="book"
+             backingFile="com.bea.console.utils.GeneralBackingFile"
+             threadsafe="true"
+             title="assistant.clone.virtualtarget.title"
+             presentationClass="wlsc-frame">
+  <netuix:titlebar/>
+  <netuix:content>
+    <netuix:page markupName="page" definitionLabel="CoreVirtualTargetCloneVirtualTarget"
+                 title="not.used"
+                 hidden="true"
+                 presentationClass="page-assistant">
+      <netuix:meta name="helpid" content="Core.core.virtualtarget.createvirtualtarget.title;core"/>
+      <netuix:content>
+        <netuix:layout type="no" markupName="NoLayout">
+          <netuix:placeholder usingFlow="false" markupName="ph1">
+            <netuix:portlet definitionLabel="CoreVirtualTargetCloneVirtualTargetPortlet">
+              <netuix:pageflowContent contentUri="/com/bea/console/actions/core/virtualtarget/createvirtualtarget/CreateVirtualTarget.jpf"
+                                      action="clone"
+                                      refreshAction="clone"/>
+            </netuix:portlet>
+          </netuix:placeholder>
+        </netuix:layout>
+      </netuix:content>
+    </netuix:page>
+  </netuix:content>
+</netuix:book>
+<!-- Definition for the VirtualTarget deletion assistant page -->
+<netuix:book definitionLabel="CoreVirtualTargetDeleteVirtualTargetBook" markupName="book"
+             backingFile="com.bea.console.utils.GeneralBackingFile"
+             threadsafe="true"
+             title="assistant.delete.virtualtarget.title"
+             presentationClass="wlsc-frame">
+  <netuix:titlebar/>
+  <netuix:content>
+    <netuix:page markupName="page" definitionLabel="CoreVirtualTargetDeleteVirtualTarget"
+                 title="not.used"
+                 hidden="true"
+                 presentationClass="page-assistant">
+      <netuix:meta name="helpid" content="Core.core.virtualtarget.deletevirtualtarget.title;core"/>
+      <netuix:content>
+        <netuix:layout type="no" markupName="NoLayout">
+          <netuix:placeholder usingFlow="false" markupName="ph1">
+            <netuix:portlet definitionLabel="CoreVirtualTargetDeleteVirtualTargetPortlet">
+              <netuix:pageflowContent contentUri="/com/bea/console/actions/core/virtualtarget/deletevirtualtarget/DeleteVirtualTarget.jpf"
+                                      action="begin"
+                                      refreshAction="begin"/>
+            </netuix:portlet>
+          </netuix:placeholder>
+        </netuix:layout>
+      </netuix:content>
+    </netuix:page>
+  </netuix:content>
+</netuix:book>
+
+</netuix:content>
+</netuix:book>
+</portal:root>

@@ -1,0 +1,34 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.nlsrtl.jrf" version="12.1.0.2.1" description="Oracle JRF Globalization Support Files" gdr-version="1.1.0.0" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="rdbms.jrf.common.symbol" source="filegroup1.jar" expanded="true" compacted="true">
+      <directory dest="modules" mode="750" patchable="true">
+         <directory dest="oracle.nlsrtl" recurse="true" include-empty-dirs="false" mode="750" preserve-symlinks="false" patchable="true">
+            <file size="86664" pack="true" dest="orai18n-servlet.jar" mode="640"/>
+            <file size="9991" pack="true" dest="orai18n-net-ee.jar" mode="640"/>
+            <file size="1658348" pack="true" dest="orai18n.jar" mode="640"/>
+            <file size="1422460" pack="true" dest="orai18n-translation.jar" mode="640"/>
+            <file size="1071630" pack="true" dest="orai18n-collation.jar" mode="640"/>
+            <file size="1794652" pack="true" dest="orai18n-lcsd.jar" mode="640"/>
+            <file size="46175" pack="true" dest="orai18n-net.jar" mode="640"/>
+            <file size="99704" pack="true" dest="orai18n-tools.jar" mode="640"/>
+            <file size="457464" pack="true" dest="orai18n-utility.jar" mode="640"/>
+            <file size="86361" pack="true" dest="orai18n-mapping.jar" mode="640"/>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex=".*\.jar"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+   <libraries>
+      <library name="jrf.wls.classpath" type="manifest" suppress-version="true">
+         <entry name="modules/oracle.nlsrtl/orai18n.jar"/>
+      </library>
+      <library name="oracle.jrf.thirdparty.jee.client" type="none" suppress-version="true">
+         <entry name="modules/oracle.nlsrtl/orai18n.jar"/>
+         <entry name="modules/oracle.nlsrtl/orai18n-mapping.jar"/>
+      </library>
+   </libraries>
+</component-def>

@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<variables-info name="Clone" version="1.0" xmlns="http://xmlns.oracle.com/oui/variables">
+   <variables type="installer" resource="resources/Clone_1.0">
+      <variable name="INSTALL_TYPE" value="Distribution" type="string" helpid="VARIABLE_INSTALL_TYPE_DESC"/>
+      <variable name="METALINK_USERNAME" value="" type="string" helpid="VARIABLE_METALINK_USERNAME_DESC" publish="true" generate="true"/>
+      <variable name="MYORACLESUPPORT_USERNAME" value="" type="string" helpid="VARIABLE_METALINK_USERNAME_DESC" publish="true" generate="true"/>
+      <variable name="DECLINE_SECURITY_UPDATES" value="true" type="boolean" advise="true" helpid="VARIABLE_DECLINE_SECURITY_UPDATES_DESC" publish="true" generate="true"/>
+   </variables>
+</variables-info>

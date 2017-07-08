@@ -1,0 +1,5 @@
+User invokes OPatch via "NApply" to process the following patches:
+
+Patch ID: 22754279
+Patch Location: "C:\Windows\Temp\OraInstall2017-07-08_09-17-34AM\swflib\p22754279_121020_Generic-160722.0213\22754279"
+Patch storage area: "L:/sw/java/servers/wls12212\.patch_storage\22754279_Jul_9_2016_00_36_58"

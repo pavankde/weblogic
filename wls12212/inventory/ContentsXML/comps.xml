@@ -1,0 +1,2237 @@
+<?xml version="1.0" standalone="yes" ?>
+<!-- Copyright (c) 1999, 2017, Oracle. All rights reserved. -->
+<!-- Do not modify the contents of this file by hand. -->
+<PRD_LIST>
+<TL_LIST>
+<COMP NAME="oracle.apache.ant.mod" VER="1.9.2.1.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.apache.ant.mod/1.9.2.1.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.apache.ant.mod</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.wls.shared.with.owasp" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.wls.shared.with.owasp/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.wls.shared.with.owasp</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.bali.share" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.bali.share/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.bali.share</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.wls.rcu" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.wls.rcu/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.wls.rcu</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.jaxb.core" VER="2.2.10.0.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.jaxb.core/2.2.10.0.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.jaxb.core</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.javavm.jrf" VER="12.1.0.2.1" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.javavm.jrf/12.1.0.2.1/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.javavm.jrf</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.jcraft.jsch" VER="0.1.53.0.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.jcraft.jsch/0.1.53.0.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.jcraft.jsch</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.swd.opatch" VER="13.9.1.0.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.swd.opatch/13.9.1.0.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.swd.opatch</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.fmwconfig.common.config.shared" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.fmwconfig.common.config.shared/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.fmwconfig.common.config.shared</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.fmwconfig.wls" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.fmwconfig.wls/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.fmwconfig.wls</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.rdbms.jrf" VER="12.1.0.2.1" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.rdbms.jrf/12.1.0.2.1/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.rdbms.jrf</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.help.share" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.help.share/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.help.share</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.jrf.toplink" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.jrf.toplink/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.jrf.toplink</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.rsa.crypto" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.rsa.crypto/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.rsa.crypto</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.wls.jrf.tenancy.ee.only.sharedlib" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.wls.jrf.tenancy.ee.only.sharedlib/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.wls.jrf.tenancy.ee.only.sharedlib</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.wls.jrf.tenancy.common.sharedlib" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.wls.jrf.tenancy.common.sharedlib/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.wls.jrf.tenancy.common.sharedlib</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.wls.admin.console.en" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.wls.admin.console.en/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.wls.admin.console.en</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.nginst.common" VER="13.9.1.0.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.nginst.common/13.9.1.0.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.nginst.common</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.fmwplatform.fmwprov" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.fmwplatform.fmwprov/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.fmwplatform.fmwprov</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.toplink.coherence" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.toplink.coherence/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.toplink.coherence</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.nginst.core" VER="13.9.1.0.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.nginst.core/13.9.1.0.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.nginst.core</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO>
+      <INFO NAME="resourceClass" VAL="Components.oracle.nginst.core.v13_9_1_0_0.resources.CompRes"/>
+      <INFO NAME="actionsClass" VAL="Components.oracle.nginst.core.v13_9_1_0_0.CompActions"/>
+   </CMP_JAR_INFO>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME="Scripts/install1.jar"/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.wls.shared.with.cam" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.wls.shared.with.cam/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.wls.shared.with.cam</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.jse.dms" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.jse.dms/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.jse.dms</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.wls.clients" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.wls.clients/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.wls.clients</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.glcm.logging" VER="1.6.0.0.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.glcm.logging/1.6.0.0.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.glcm.logging</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.wls.shared.with.inst" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.wls.shared.with.inst/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.wls.shared.with.inst</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.wls.thirdparty.javax.json" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.wls.thirdparty.javax.json/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.wls.thirdparty.javax.json</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.pki" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.pki/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.pki</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.jaxb.tools" VER="2.2.10.0.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.jaxb.tools/2.2.10.0.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.jaxb.tools</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.glcm.opatch.common.api" VER="13.9.1.0.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.glcm.opatch.common.api/13.9.1.0.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.glcm.opatch.common.api</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.as.install.common.prerequisite.files" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.as.install.common.prerequisite.files/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.as.install.common.prerequisite.files</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.wls.shared.with.coh.standalone" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.wls.shared.with.coh.standalone/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.wls.shared.with.coh.standalone</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO>
+      <INFO NAME="resourceClass" VAL="Components.oracle.wls.shared.with.coh.standalone.v12_2_1_2_0.resources.CompRes"/>
+      <INFO NAME="identifiersXML" VAL="Components/oracle/wls/shared/with/coh/standalone/v12_2_1_2_0/identifiers.xml"/>
+      <INFO NAME="contextClass" VAL="Components.oracle.wls.shared.with.coh.standalone.v12_2_1_2_0.CompContext"/>
+   </CMP_JAR_INFO>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME="Scripts/install1.jar"/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.fmwconfig.common.shared" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.fmwconfig.common.shared/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.fmwconfig.common.shared</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.jrf.thirdparty.toplink" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.jrf.thirdparty.toplink/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.jrf.thirdparty.toplink</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.glcm.encryption" VER="2.7.0.0.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.glcm.encryption/2.7.0.0.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.glcm.encryption</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.rcu.ciestb" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.rcu.ciestb/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.rcu.ciestb</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.wls.evaluation.database" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.wls.evaluation.database/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.wls.evaluation.database</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.ons.generic" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.ons.generic/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.ons.generic</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.fmwconfig.common.wls.help" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.fmwconfig.common.wls.help/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.fmwconfig.common.wls.help</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.xdk.jrf.jaxp" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.xdk.jrf.jaxp/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.xdk.jrf.jaxp</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.nginst.thirdparty" VER="13.9.1.0.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.nginst.thirdparty/13.9.1.0.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.nginst.thirdparty</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.apache.commons.lang.mod" VER="2.6.0.0.2" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.apache.commons.lang.mod/2.6.0.0.2/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.apache.commons.lang.mod</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.glcm.dependency" VER="1.8.0.0.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.glcm.dependency/1.8.0.0.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.glcm.dependency</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.glcm.opatchauto.fmw" VER="13.9.1.0.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.glcm.opatchauto.fmw/13.9.1.0.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.glcm.opatchauto.fmw</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.fmwplatform.ocp" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.fmwplatform.ocp/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.fmwplatform.ocp</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.coherence.discovery" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.coherence.discovery/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.coherence.discovery</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.wls.jrf.tenancy.common" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.wls.jrf.tenancy.common/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.wls.jrf.tenancy.common</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.owasp.jrf" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.owasp.jrf/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.owasp.jrf</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.wls.core.app.server.tier1nativelib" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.wls.core.app.server.tier1nativelib/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.wls.core.app.server.tier1nativelib</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.fmwconfig.common.wls.shared" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.fmwconfig.common.wls.shared/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.fmwconfig.common.wls.shared</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO>
+      <INFO NAME="resourceClass" VAL="Components.oracle.fmwconfig.common.wls.shared.v12_2_1_2_0.resources.CompRes"/>
+      <INFO NAME="actionsClass" VAL="Components.oracle.fmwconfig.common.wls.shared.v12_2_1_2_0.CompActions"/>
+   </CMP_JAR_INFO>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME="Scripts/install1.jar"/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.bali.jewt" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.bali.jewt/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.bali.jewt</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.fmwplatform.envspec" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.fmwplatform.envspec/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.fmwplatform.envspec</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.http_client" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.http_client/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.http_client</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.webservices.orawsdl" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.webservices.orawsdl/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.webservices.orawsdl</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.apache.commons.collections.mod" VER="3.2.0.0.2" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.apache.commons.collections.mod/3.2.0.0.2/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.apache.commons.collections.mod</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.glcm.wizard" VER="7.8.0.0.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.glcm.wizard/7.8.0.0.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.glcm.wizard</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.as.install.wls" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.as.install.wls/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.as.install.wls</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.fmwconfig.common.wls" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.fmwconfig.common.wls/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.fmwconfig.common.wls</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO>
+      <INFO NAME="resourceClass" VAL="Components.oracle.fmwconfig.common.wls.v12_2_1_2_0.resources.CompRes"/>
+      <INFO NAME="actionsClass" VAL="Components.oracle.fmwconfig.common.wls.v12_2_1_2_0.CompActions"/>
+   </CMP_JAR_INFO>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME="Scripts/install1.jar"/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.fmwconfig.wls.shared" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.fmwconfig.wls.shared/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.fmwconfig.wls.shared</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.wls.inst.only" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.wls.inst.only/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.wls.inst.only</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.org.bouncycastle" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.org.bouncycastle/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.org.bouncycastle</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.webservices.wls" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.webservices.wls/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.webservices.wls</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.as.install.common.help" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.as.install.common.help/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.as.install.common.help</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.jaxb.impl" VER="2.2.10.0.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.jaxb.impl/2.2.10.0.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.jaxb.impl</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.glcm.opatchauto.core" VER="13.9.1.0.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.glcm.opatchauto.core/13.9.1.0.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.glcm.opatchauto.core</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="org.codehaus.woodstox" VER="4.2.0.0.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/org.codehaus.woodstox/4.2.0.0.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>org.codehaus.woodstox</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.wls.common.nodemanager" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.wls.common.nodemanager/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.wls.common.nodemanager</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.wls.wlsportable.mod" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.wls.wlsportable.mod/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.wls.wlsportable.mod</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.wls.common.cam" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.wls.common.cam/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.wls.common.cam</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.wls.workshop.code.completion.support" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.wls.workshop.code.completion.support/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.wls.workshop.code.completion.support</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.as.customqna.jdkqna" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.as.customqna.jdkqna/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.as.customqna.jdkqna</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.coherence" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.coherence/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.coherence</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.as.install.wls.prerequisite" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.as.install.wls.prerequisite/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.as.install.wls.prerequisite</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.webservices.base" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.webservices.base/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.webservices.base</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.wls.core.app.server" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.wls.core.app.server/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.wls.core.app.server</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO>
+      <INFO NAME="resourceClass" VAL="Components.oracle.wls.core.app.server.v12_2_1_2_0.resources.CompRes"/>
+      <INFO NAME="actionsClass" VAL="Components.oracle.wls.core.app.server.v12_2_1_2_0.CompActions"/>
+   </CMP_JAR_INFO>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME="Scripts/install1.jar"/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.nlsrtl.jrf" VER="12.1.0.2.1" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.nlsrtl.jrf/12.1.0.2.1/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.nlsrtl.jrf</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.wls.security.core" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.wls.security.core/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.wls.security.core</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.glcm.xmldh" VER="3.4.0.0.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.glcm.xmldh/3.4.0.0.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.glcm.xmldh</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.fasterxml.jackson" VER="2.4.3.0.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.fasterxml.jackson/2.4.3.0.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.fasterxml.jackson</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.fmwplatform.common" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.fmwplatform.common/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.fmwplatform.common</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.wls.common.cam.wlst" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.wls.common.cam.wlst/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.wls.common.cam.wlst</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.fmw.upgrade.fmwconfig" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.fmw.upgrade.fmwconfig/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.fmw.upgrade.fmwconfig</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.thirdparty.maven" VER="3.2.5.0.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.thirdparty.maven/3.2.5.0.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.thirdparty.maven</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.mysqlconn" VER="5.1.22.0.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.mysqlconn/5.1.22.0.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.mysqlconn</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.bali.ice" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.bali.ice/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.bali.ice</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO>
+      <INFO NAME="resourceClass" VAL="Components.oracle.bali.ice.v12_2_1_2_0.resources.CompRes"/>
+      <INFO NAME="identifiersXML" VAL="Components/oracle/bali/ice/v12_2_1_2_0/identifiers.xml"/>
+      <INFO NAME="contextClass" VAL="Components.oracle.bali.ice.v12_2_1_2_0.CompContext"/>
+   </CMP_JAR_INFO>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME="Scripts/install1.jar"/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.help.ohj" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.help.ohj/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.help.ohj</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.as.install.ui.framework" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.as.install.ui.framework/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.as.install.ui.framework</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.jrf.maven.plugins.sync" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.jrf.maven.plugins.sync/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.jrf.maven.plugins.sync</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.glcm.comdev" VER="7.8.0.0.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.glcm.comdev/7.8.0.0.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.glcm.comdev</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.wls.shared.with.inst.sharedlib" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.wls.shared.with.inst.sharedlib/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.wls.shared.with.inst.sharedlib</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.fmw.common.wizard.resources" VER="12.2.1.0.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.fmw.common.wizard.resources/12.2.1.0.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.fmw.common.wizard.resources</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.wls.shared.with.owasp.sharedlib" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.wls.shared.with.owasp.sharedlib/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.wls.shared.with.owasp.sharedlib</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.osdt.core" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.osdt.core/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.osdt.core</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="com.bea.core.xml.xmlbeans" VER="2.6.1.0.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/com.bea.core.xml.xmlbeans/2.6.1.0.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>com.bea.core.xml.xmlbeans</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.wls.security.core.sharedlib" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.wls.security.core.sharedlib/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.wls.security.core.sharedlib</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+<COMP NAME="oracle.wls.libraries" VER="12.2.1.2.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="L:\sw\java\servers\wls12212\inventory" LANGS="en" XML_INV_LOC="Components/oracle.wls.libraries/12.2.1.2.0/" ACT_INST_VER="1.7.0.0.0" DEINST_VER="1.7.0.0.0" INST_LOC="" SOH="T">
+   <EXT_NAME>oracle.wls.libraries</EXT_NAME>
+   <DESC></DESC>
+   <DESCID>Description</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO/>
+   <LOC_INFO INST_DFN_LOC="L:\sw\java\servers\wls12212\inventory" JAR_NAME=""/>
+   <BOOK NAME=""/>
+   <PRE_REQ DEF="T"/>
+   <PROD_HOME DEF="T"/>
+   <LANG_IDX_MAP>
+      <LANG LIST=""/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST=""/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST=""/>
+   </DST_IDX_MAP>
+   <DEP_LIST/>
+   <REF_LIST/>
+   <FILESIZEINFO/>
+</COMP>
+</TL_LIST>
+<COMP_LIST>
+</COMP_LIST>
+</PRD_LIST>

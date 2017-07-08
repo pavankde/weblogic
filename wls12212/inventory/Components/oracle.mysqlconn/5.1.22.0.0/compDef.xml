@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.mysqlconn" version="5.1.22.0.0" description="Oracle MySQL Connector" gdr-version="1.6.0.0" groupId="com.oracle.dbclient" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="asutl.symbol" source="filegroup1.jar" expanded="true" compacted="true">
+      <directory dest="" patchable="true">
+         <directory dest="modules" mode="750" patchable="true">
+            <directory dest="mysql-connector-java-commercial-5.1.22" mode="750" patchable="true">
+               <file size="821154" pack="true" dest="mysql-connector-java-commercial-5.1.22-bin.jar" mode="640"/>
+               <file size="2738" dest="LICENSE.mysql" mode="640"/>
+               <file size="64999" dest="README.txt" mode="640"/>
+               <file size="44941" dest="build.xml" mode="640"/>
+               <directory dest="docs" mode="750" patchable="true">
+                  <file size="792095" dest="connector-j.pdf" mode="640"/>
+                  <file size="491028" dest="README.txt" mode="640"/>
+                  <file size="841093" dest="connector-j.html" mode="640"/>
+               </directory>
+               <file size="210569" dest="CHANGES" mode="640"/>
+               <file size="62720" dest="README" mode="640"/>
+            </directory>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+   <libraries>
+      <library name="mysqlconn_comp_lib" type="none" size="832692">
+         <entry explode="true" include-parent="false" name="modules/mysql-connector-java-commercial-5.1.22/mysql-connector-java-commercial-5.1.22-bin.jar"/>
+      </library>
+   </libraries>
+</component-def>

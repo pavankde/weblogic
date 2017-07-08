@@ -1,0 +1,358 @@
+#!/bin/sh
+
+######################################################################
+# Copyright (c) 2004, 2015, Oracle and/or its affiliates. All rights reserved.
+# 
+#  opatch  09/03/15  Update the year of copyright
+#  opatch  03/03/11  Fix find JAVA HOME relative to FA home
+#  opatch  12/08/10  Create and support
+####################################################################
+
+BASE=`dirname $0`;
+PWD=`pwd`;
+
+# Look for OPATCH_DEBUG env variable
+DEBUG=${OPATCH_DEBUG}
+
+# Check for OPATCH_DEBUG
+DEBUGVAL=false
+if [ "$DEBUG" = "TRUE" ]; then
+    DEBUGVAL=true;
+fi
+if [ "$DEBUG" = "true" ]; then
+    DEBUGVAL=true
+fi
+
+# Get ORACLE_HOME from environment variable "ORACLE_HOME"
+OH=${ORACLE_HOME}
+
+# Look for OPATCH_PLATFORM_ID
+PLATFORM=${OPATCH_PLATFORM_ID}
+
+# need implicit Oracle Home?
+NO_IMPLICIT_ORACLE_HOME=${OPATCH_NO_IMPLICIT_OH}
+
+
+# Preserve the PATH environment variable
+PATHENV=${PATH}
+
+# BugFix for 4745222
+PLATFORMNAME=`uname`;
+if [ "$PLATFORMNAME" = "AIX" ] ; then
+   OBJECT_MODE="32_64"
+   export OBJECT_MODE
+fi
+
+# If -oh is specified, use it to over-ride env. var. ORACLE_HOME
+getOH=0
+
+# If -jre or -jdk are specified, use it to launch opatch,
+#   with -jdk > -jre.  And we expect there is a "bin/java" underneath
+#   the value supplied
+getJRE=0
+getJDK=0
+getINV=0
+
+JDK=""
+JRE=""
+INV=""
+
+for arg in "$@"; do
+  OPTION=`echo $arg | grep ^-`
+  if [ ! -z ${OPTION} ]; then
+     arg=`echo $arg | tr [A-Z] [a-z]`
+  fi
+  if [ $getOH = 1 ]; then
+     OH=$arg
+     getOH=0
+  fi
+  if [ $getJRE = 1 ]; then
+     JRE=$arg
+     getJRE=0
+  fi
+  if [ $getJDK = 1 ]; then
+     JDK=$arg
+     getJDK=0
+  fi
+  if [ $getINV = 1 ]; then
+     INV=$arg
+     getINV=0
+  fi
+  if [ "$arg" = "-oh" ]; then
+     getOH=1;
+  fi
+  if [ "$arg" = "-jre" ]; then
+     getJRE=1;
+  fi
+  if [ "$arg" = "-jdk" ]; then
+     getJDK=1;
+  fi
+  if [ "$arg" = "-invptrloc" ]; then
+     getINV=1;
+  fi
+done
+
+# check inventory pointer location
+if [ ! -z ${INV} ]; then
+   VALIDLOC=`echo $INV | grep oraInst.loc$`
+   if [ ! -f "${INV}" -o -z "${VALIDLOC}" ]; then
+      echo The inventory pointer location $INV is not valid file. Please give proper inventory pointer location.
+      echo "opatchdiag returns with error code = 1"
+      exit 1;
+   fi
+fi
+
+# Error out if OH is not set and env var OPATCH_NO_IMPLICIT_OH is set to 'true'
+if [ "$OH" = "" ] && [ "$NO_IMPLICIT_ORACLE_HOME" = "true" ]; then
+    echo Oracle Home is not set. opatchdiag cannot proceed!
+    echo "opatchdiag returns with error code = 1"
+    exit 1
+fi
+
+
+# Calculate the ORACLE_HOME/MW_HOME relative to this script...
+# User set Oracle Home, check later if MW home is consistently set too
+if [ -z "$OH" ]; then
+
+   # Note: this will not work if the script is sourced (. ./wlst.sh)
+   SCRIPTNAME=$0
+   case ${SCRIPTNAME} in
+   /*)  SCRIPTPATH=`dirname ${SCRIPTNAME}` ;;
+    *)  SCRIPTPATH=`dirname ${PWD}/${SCRIPTNAME}` ;;
+   esac
+
+   C_ORACLE_HOME=`cd ${SCRIPTPATH}/.. ; pwd`
+   C_MW_HOME=`cd ${C_ORACLE_HOME}/.. ; pwd`
+   if [ "$DEBUGVAL" = "true" ]; then
+      echo ORACLE_HOME is NOT set at opatchdiag invocation
+   fi
+else 
+   if [ ! -d "${OH}" ]; then
+      echo The Oracle Home $OH is not valid directory. Please give proper Oracle Home.
+      echo "opatchdiag returns with error code = 1"
+      exit 1;
+   fi
+   if [ ! -z "${FMW_COMPONENT_HOME}" ]; then
+      C_ORACLE_HOME=${FMW_COMPONENT_HOME}
+   else
+      C_ORACLE_HOME=${OH}
+   fi
+   C_MW_HOME=`cd ${C_ORACLE_HOME}/.. ; pwd`
+   if [ "$DEBUGVAL" = "true" ]; then
+      echo ORACLE_HOME is set at opatchdiag invocation
+   fi
+fi
+
+# check whether detected MW home is a true Middleware Home
+FMW_ERROR=0
+if [ -f "${C_MW_HOME}/registry.dat" ]; then
+
+   # MW_HOME is used by setHomeDirs.sh script
+   MW_HOME=${C_MW_HOME}
+   if [ -x "${C_ORACLE_HOME}/common/bin/setHomeDirs.sh" ]; then
+      . "${C_ORACLE_HOME}/common/bin/setHomeDirs.sh"
+   fi
+
+   if [ "$DEBUGVAL" = "true" ]; then
+      echo WL_HOME is set by setHomeDirs.sh script to $WL_HOME
+   fi
+
+   if [ "$WL_HOME" = "" ] || [ ! -d "$WL_HOME" ]; then
+      FMW_ERROR=-1
+      if [ "$DEBUGVAL" = "true" ]; then
+         echo "Fusion Middleware Home maybe corrupted (WebLogic Home is not found)!"
+         echo "opatchdiag will proceed only if JVM launcher found"
+      fi
+   elif [ -x "${WL_HOME}/common/bin/commEnv.sh" ]; then
+      . "${WL_HOME}/common/bin/commEnv.sh"
+   else
+      FMW_ERROR=-2
+      if [ "$DEBUGVAL" = "true" ]; then
+         echo "Fusion Middleware Home maybe corrupted (Common Env Script missing or Not executable)!"
+        echo "opatchdiag will proceed only if JVM launcher found"
+      fi
+   fi
+
+   if [ -x "${C_ORACLE_HOME}/common/bin/setWlstEnv.sh" ]; then
+      . "${C_ORACLE_HOME}/common/bin/setWlstEnv.sh" > /dev/null
+   fi
+
+   if [ -x "${COMMON_COMPONENTS_HOME}/common/bin/setWlstEnvExtns.sh" ]; then
+      . "${COMMON_COMPONENTS_HOME}/common/bin/setWlstEnvExtns.sh"
+   fi
+
+   if [ "$OH" = "" ]; then
+      OH=${C_ORACLE_HOME}
+   fi
+
+   if [ $FMW_ERROR -eq 0 ] && [ "$JDK" = "" ] && [ "$JRE" = "" ]; then # no -jdk/jre specified
+      JDK=${JAVA_HOME}
+   fi
+
+   JRE_MEMORY_OPTIONS="${MEM_ARGS} ${JVM_D64}"
+   export JRE_MEMORY_OPTIONS
+   case $JAVA_VENDOR in
+     Oracle)
+       JAVA_VM_OPTION=-client
+     ;;
+     HP)
+       JAVA_VM_OPTION=-client
+     ;;
+     IBM)
+       JAVA_VM_OPTION=
+     ;;
+     Sun)
+       JAVA_VM_OPTION=-client
+     ;;
+     *)
+       JAVA_VM_OPTION=
+     ;;
+   esac
+else
+   # Regular Oracle Home
+   if [ "$OH" = "" ]; then
+      if [ ! -d "${C_ORACLE_HOME}/oui" ]  ; then
+         echo The Oracle Home $C_ORACLE_HOME is not OUI based home. Please give proper Oracle Home.
+         exit 1;
+      fi
+      OH=${C_ORACLE_HOME}
+   fi
+fi
+
+if [ ! -d "${OH}/oui" ]  ; then
+   echo The Oracle Home $OH is not OUI based home. Please give proper Oracle Home.
+   exit 1;
+fi
+
+if [ ! -z "${OH}" ]; then
+   OH=`echo $OH | sed -e 's|/$||g'`
+fi
+
+# Use ORACLE_HOME to set Java CLASS_PATH
+JAVA= # Default location
+
+# Use JRE if supplied
+if [ "$JAVA" = "" ] && [ "$JRE" != "" ]; then # from -jre
+  JAVA=$JRE/bin/java
+  JAVA_HOME=$JRE
+fi
+
+
+# Use JDK if supplied
+if [ "$JAVA" = "" ] && [ "$JDK" != "" ]; then # now from -jdk
+  JAVA=$JDK/bin/java
+  JAVA_HOME=$JDK
+fi
+
+
+# use OH/jre/*, it should be 1.5 or above
+if [ "$JAVA" = "" ] ; then
+  JRE_HIGH=
+  if [ -d $OH/jre ]; then
+    for i in `ls -1 $OH/jre | sort` ;
+    do
+      JRE_HIGH=$i ;
+    done
+    if [ "$JRE_HIGH" != "" ]; then
+      JRE_HIGH_FINAL=`echo $JRE_HIGH | awk '
+                            BEGIN {FS="."}
+                            {
+                                if (($1 >= 1) && ($2 >= 5))
+                                    print $0
+                            }'`
+      if [ "$JRE_HIGH_FINAL" != "" ] && [ -x $OH/jre/$JRE_HIGH_FINAL/bin/java ]; then
+          JAVA=$OH/jre/$JRE_HIGH_FINAL/bin/java
+          JAVA_HOME=$OH/jre/$JRE_HIGH_FINAL
+      fi
+    fi
+  fi
+fi
+
+# Now Check for jdk location inside OH
+if [ "$JAVA" = "" ] ; then  # Now look for jdk in OH
+  JAVA=$OH/jdk/bin/java
+  JAVA_HOME=$OH/jdk
+fi
+
+
+# Last option is to look inside oraparam.ini for JRE_LOCATION
+if [ "$JAVA" = "" ] && [ -r $OH/oui/oraparam.ini ]; then
+  JRE_LOCATION=`grep "JRE_LOCATION=" $OH/oui/oraparam.ini | sed 's/JRE_LOCATION=//'`
+  ABS_PATH=`echo $JRE_LOCATION | grep "^\/"`
+  if [ "$ABS_PATH" = "" ]; then # not absolute path
+    JAVA=$OH/oui/bin/$JRE_LOCATION/bin/java
+    JAVA_HOME=$OH/oui/bin/$JRE_LOCATION
+  else
+    JAVA=$JRE_LOCATION/bin/java
+    JAVA_HOME=$JRE_LOCATION
+  fi
+fi
+
+
+# Now check if Java executable exists and has execute permission, exit otherwise
+# Because from this point on we cannot proceed without Java 
+if [ "$JAVA" = "" -o ! -x "$JAVA" ]; then
+   if [ $FMW_ERROR -eq -1 ]; then
+      echo "Fusion Middleware Home is corrupted (WebLogic Home is not found)!"
+   fi
+   if [ $FMW_ERROR -eq -2 ]; then
+      echo "Fusion Middleware Home is corrupted (Common Env Script missing or Not executable)!"
+   fi
+   if [ "$JAVA" = "" ]; then
+      echo Java could not be located. opatchdiag cannot proceed!
+      echo "opatchdiag returns with error code = 1"
+      exit 1
+   fi
+   if [ ! -x "$JAVA" ]; then
+      echo $JAVA is not a valid executable for this platform. opatchdiag cannot proceed!
+      echo "opatchdiag returns with error code = 1"
+      exit 1
+   fi
+fi
+
+
+# JRE_MEMORY_OPTIONS 
+
+if [ -z "${JRE_MEMORY_OPTIONS}" ]; then
+   JRE_MEMORY_OPTIONS=""
+   if [ -r $OH/oui/oraparam.ini ]; then
+      JRE_MEMORY_OPTIONS=`grep -v "^#" $OH/oui/oraparam.ini | grep "^JRE_MEMORY_OPTIONS=" | sed 's/JRE_MEMORY_OPTIONS=\"//' | sed 's/\"//' | head -1`
+   fi
+fi
+
+# Remove double quotes globally - whatever u get
+JRE_MEMORY_OPTIONS=`echo $JRE_MEMORY_OPTIONS | sed 's/\"//g'`
+
+CP=$OH/oui/jlib
+
+if [ -z "${CP}" -o ! -d "${CP}" ]; then
+   echo $CP is not a valid OUI location. opatchdiag cannot proceed!
+   echo "opatchdiag returns with error code = 1"
+   exit 1
+fi
+if [ "$DEBUGVAL" = "true" ]; then
+   echo "$JAVA $JAVA_VM_OPTION $JRE_MEMORY_OPTIONS -cp $BASE/ocm/lib/emocmutl.jar:$BASE/ocm/lib/emocmclnt.jar:$CP/OraInstaller.jar:$CP/OraPrereq.jar:$CP/share.jar:$CP/srvm.jar:$CP/orai18n-mapping.jar:$CP/xmlparserv2.jar:$CP/emCfg.jar:$CP/ojmisc.jar:$BASE/jlib/opatch.jar:$BASE/jlib/opatchsdk.jar:$BASE/jlib/oracle.opatch.classpath.jar:${CLASSPATH} -DOPatchDiag.ORACLE_HOME=$OH -DOPatchDiag.INVPTRLOC=$INV oracle/opatch/diagtool/OPatchDiag $@"
+fi
+
+$JAVA $JAVA_VM_OPTION $JRE_MEMORY_OPTIONS -cp $BASE/ocm/lib/emocmutl.jar:$BASE/ocm/lib/emocmclnt.jar:$CP/OraInstaller.jar:$CP/OraPrereq.jar:$CP/share.jar:$CP/srvm.jar:$CP/orai18n-mapping.jar:$CP/xmlparserv2.jar:$CP/emCfg.jar:$CP/ojmisc.jar:$BASE/jlib/opatch.jar:$BASE/jlib/opatchsdk.jar:$BASE/jlib/oracle.opatch.classpath.jar:${CLASSPATH}: -DOPatchDiag.ORACLE_HOME=$OH -DOPatchDiag.INVPTRLOC=$INV oracle/opatch/diagtool/OPatchDiag $@
+
+
+RESULT=$?
+
+if [ $RESULT -ge  201 ] && [ $RESULT -le 203 ]; then
+  echo
+  echo "opatchdiag stopped on request."
+  RESULT=0
+elif [ $RESULT -ge 204 ] && [ $RESULT -le 210 ];then
+  echo
+  echo "opatchdiag completed with warnings.";
+  RESULT=0
+elif [ $RESULT != 0 ]; then
+  echo
+  echo "opatchdiag failed with error code $RESULT";
+else
+  echo 
+  echo "opatchdiag succeeded."
+fi
+
+exit ${RESULT}

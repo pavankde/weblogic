@@ -1,0 +1,823 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.wls.core.app.server" version="12.2.1.2.0" description="Oracle WebLogic Core Application Server" gdr-version="1.8.0.0" groupId="com.oracle.weblogic" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="wls.server.symbol" source="filegroup1.jar" expanded="true" compacted="true">
+      <exclude regex="\.ade_path" match-dirs="true"/>
+      <directory dest="" patchable="true">
+         <directory dest="" patchable="true">
+            <directory dest="plugins" mode="750" patchable="true">
+               <directory dest="maven" mode="750" patchable="true">
+                  <directory dest="com" mode="750" patchable="true">
+                     <directory dest="oracle" mode="750" patchable="true">
+                        <directory dest="weblogic" mode="750" patchable="true">
+                           <directory dest="archetype" mode="750" patchable="true">
+                              <directory dest="wls-common" mode="750" patchable="true">
+                                 <directory dest="12.2.1" mode="750" patchable="true">
+                                    <file size="5865" dest="wls-common-12.2.1.pom" mode="640"/>
+                                 </directory>
+                              </directory>
+                              <directory dest="basic-webservice" mode="750" patchable="true">
+                                 <directory dest="12.2.1" mode="750" patchable="true">
+                                    <file size="4597" pack="true" dest="basic-webservice-12.2.1.jar" mode="640"/>
+                                    <file size="5565" dest="basic-webservice-12.2.1.pom" mode="640"/>
+                                 </directory>
+                              </directory>
+                              <directory dest="basic-webapp" mode="750" patchable="true">
+                                 <directory dest="12.2.1" mode="750" patchable="true">
+                                    <file size="5558" dest="basic-webapp-12.2.1.pom" mode="640"/>
+                                    <file size="21709" pack="true" dest="basic-webapp-12.2.1.jar" mode="640"/>
+                                 </directory>
+                              </directory>
+                              <directory dest="basic-mdb" mode="750" patchable="true">
+                                 <directory dest="12.2.1" mode="750" patchable="true">
+                                    <file size="23682" pack="true" dest="basic-mdb-12.2.1.jar" mode="640"/>
+                                    <file size="5551" dest="basic-mdb-12.2.1.pom" mode="640"/>
+                                 </directory>
+                              </directory>
+                              <directory dest="basic-serversentevent" mode="750" patchable="true">
+                                 <directory dest="12.2.1" mode="750" patchable="true">
+                                    <file size="13721" pack="true" dest="basic-serversentevent-12.2.1.jar" mode="640"/>
+                                    <file size="7829" dest="basic-serversentevent-12.2.1.pom" mode="640"/>
+                                 </directory>
+                              </directory>
+                              <directory dest="basic-websocket" mode="750" patchable="true">
+                                 <directory dest="12.2.1" mode="750" patchable="true">
+                                    <file size="5044" pack="true" dest="basic-websocket-12.2.1.jar" mode="640"/>
+                                    <file size="7817" dest="basic-websocket-12.2.1.pom" mode="640"/>
+                                 </directory>
+                              </directory>
+                              <directory dest="basic-websocket-emulation" mode="750" patchable="true">
+                                 <directory dest="12.2.1" mode="750" patchable="true">
+                                    <file size="7836" dest="basic-websocket-emulation-12.2.1.pom" mode="640"/>
+                                    <file size="65851" pack="true" dest="basic-websocket-emulation-12.2.1.jar" mode="640"/>
+                                 </directory>
+                              </directory>
+                              <directory dest="basic-webapp-ejb" mode="750" patchable="true">
+                                 <directory dest="12.2.1" mode="750" patchable="true">
+                                    <file size="5564" dest="basic-webapp-ejb-12.2.1.pom" mode="640"/>
+                                    <file size="25628" pack="true" dest="basic-webapp-ejb-12.2.1.jar" mode="640"/>
+                                 </directory>
+                              </directory>
+                           </directory>
+                           <directory dest="weblogic-maven-plugin" mode="750" patchable="true">
+                              <directory dest="12.2.1" mode="750" patchable="true">
+                                 <file size="8689" dest="weblogic-maven-plugin-12.2.1.pom" mode="640"/>
+                                 <file size="198026" pack="true" dest="weblogic-maven-plugin-12.2.1.jar" mode="640"/>
+                              </directory>
+                           </directory>
+                        </directory>
+                     </directory>
+                  </directory>
+               </directory>
+               <directory dest="jdeveloper" mode="750" patchable="true">
+                  <directory dest="libraries" mode="750" patchable="true">
+                     <file size="134" dest="TopLink_from_wls.exports" mode="640"/>
+                     <file size="249" dest="AQJMS.exports" mode="640"/>
+                     <file size="699" dest="AQJMS.library" mode="640"/>
+                     <file size="530" dest="Contexts_and_Dependency_Injection.exports" mode="640"/>
+                     <file size="655" dest="Contexts_and_Dependency_Injection.library" mode="640"/>
+                     <file size="289" dest="EJB.exports" mode="640"/>
+                     <file size="378" dest="EJB.library" mode="640"/>
+                     <file size="16527" dest="JAX-RS_Jersey_2.x_Client.exports" mode="640"/>
+                     <file size="6420" dest="JAX-RS_Jersey_2.x_Client.library" mode="640"/>
+                     <file jarentry="plugins/jdeveloper/libraries/TopLink_from_wls.exports" size="134" dest="JAX-RS_Jersey_2.x_Jackson.exports" mode="640"/>
+                     <file size="1279" dest="JAX-RS_Jersey_2.x_Jackson.library" mode="640"/>
+                     <file size="330" dest="JAX-RS_Jersey_2.x_Jettison.exports" mode="640"/>
+                     <file size="613" dest="JAX-RS_Jersey_2.x_Jettison.library" mode="640"/>
+                     <file size="1054405" dest="JAX-RS_Jersey_2.x.exports" mode="640"/>
+                     <file size="13673" dest="JAX-RS_Jersey_2.x.library" mode="640"/>
+                     <file jarentry="plugins/jdeveloper/libraries/TopLink_from_wls.exports" size="134" dest="JAX-RS_Jersey_Jackson_Bundled.exports" mode="640"/>
+                     <file size="846" dest="JAX-RS_Jersey_Jackson_Bundled.library" mode="640"/>
+                     <file jarentry="plugins/jdeveloper/libraries/TopLink_from_wls.exports" size="134" dest="JAX-RS_Jersey_Jettison_Bundled.exports" mode="640"/>
+                     <file size="381" dest="JAX-RS_Jersey_Jettison_Bundled.library" mode="640"/>
+                     <file size="1097412" dest="JAX-WS_Client.exports" mode="640"/>
+                     <file size="13087" dest="JAX-WS_Client.library" mode="640"/>
+                     <file jarentry="plugins/jdeveloper/libraries/JAX-WS_Client.exports" size="1097412" dest="JAX-WS_Web_Services.exports" mode="640"/>
+                     <file size="10633" dest="JAX-WS_Web_Services.library" mode="640"/>
+                     <file size="466" dest="JSP_Runtime.exports" mode="640"/>
+                     <file size="627" dest="JSP_Runtime.library" mode="640"/>
+                     <file size="3146" dest="Java_EE.exports" mode="640"/>
+                     <file size="2642" dest="Java_EE.library" mode="640"/>
+                     <file jarentry="plugins/jdeveloper/libraries/JSP_Runtime.exports" size="466" dest="Servlet_Runtime.exports" mode="640"/>
+                     <file size="633" dest="Servlet_Runtime.library" mode="640"/>
+                     <file jarentry="plugins/jdeveloper/libraries/JAX-WS_Client.exports" size="1097412" dest="WebLogic_12.1_Remote_Client.exports" mode="640"/>
+                     <file size="10587" dest="WebLogic_12.1_Remote_Client.library" mode="640"/>
+                     <file jarentry="plugins/jdeveloper/libraries/TopLink_from_wls.exports" size="134" dest="Weblogic_JAX-RS_Client_2.0.exports" mode="640"/>
+                     <file size="473" dest="Weblogic_JAX-RS_Client_2.0.library" mode="640"/>
+                     <file jarentry="plugins/jdeveloper/libraries/TopLink_from_wls.exports" size="134" dest="Weblogic_JAX-RS_Server_2.0.exports" mode="640"/>
+                     <file size="462" dest="Weblogic_JAX-RS_Server_2.0.library" mode="640"/>
+                  </directory>
+               </directory>
+            </directory>
+         </directory>
+         <directory dest="server" mode="750" patchable="true">
+            <directory dest="bin" mode="750" patchable="true">
+               <directory dest="international" mode="750" patchable="true">
+                  <file size="24576" dest="CheckConfigEnglishResourceDll.dll" os-family="windows" mode="750"/>
+                  <file size="28672" dest="com2javacmdEnglishResourceDll.dll" os-family="windows" mode="750"/>
+                  <file size="36864" dest="com2javaEnglishResourceDll.dll" os-family="windows" mode="750"/>
+                  <file size="24576" dest="ntvauthEnglishResourceDll.dll" os-family="windows" mode="750"/>
+                  <file size="24576" dest="ntvinvEnglishResourceDll.dll" os-family="windows" mode="750"/>
+                  <file size="24576" dest="ocxhostEnglishResourceDll.dll" os-family="windows" mode="750"/>
+                  <file size="28672" dest="regjvmcmdEnglishResourceDll.dll" os-family="windows" mode="750"/>
+                  <file size="36864" dest="regjvmEnglishResourceDll.dll" os-family="windows" mode="750"/>
+                  <file size="24576" dest="regprogidEnglishResourceDll.dll" os-family="windows" mode="750"/>
+                  <file size="24576" dest="regtlbEnglishResourceDll.dll" os-family="windows" mode="750"/>
+                  <file size="24576" dest="setdllhostEnglishResourceDll.dll" os-family="windows" mode="750"/>
+               </directory>
+               <file size="69632" dest="CheckConfig.exe" os-family="windows" mode="750"/>
+               <file size="45056" dest="com2javacmd.exe" os-family="windows" mode="750"/>
+               <file size="258048" dest="com2java.exe" os-family="windows" mode="750"/>
+               <file size="7114" dest="installSvc.cmd" os-family="windows" mode="750"/>
+               <file size="32" dest="java2com.bat" os-family="windows" mode="750"/>
+               <file size="139264" dest="jintmk.dll" os-family="windows" mode="750"/>
+               <file size="24576" dest="ntvauth.dll" os-family="windows" mode="750"/>
+               <file size="253952" dest="ntvinv.dll" os-family="windows" mode="750"/>
+               <file size="57344" dest="ntvocx.dll" os-family="windows" mode="750"/>
+               <file size="57344" dest="ocxhost.exe" os-family="windows" mode="750"/>
+               <file size="32768" dest="regjvmcmd.exe" os-family="windows" mode="750"/>
+               <file size="290816" dest="regjvm.exe" os-family="windows" mode="750"/>
+               <file size="24576" dest="regprogid.exe" os-family="windows" mode="750"/>
+               <file size="28672" dest="regtlb.exe" os-family="windows" mode="750"/>
+               <file size="28672" dest="setdllhost.exe" os-family="windows" mode="750"/>
+               <file size="3863" dest="setWLSEnv.cmd" os-family="windows" mode="750"/>
+               <file size="133" dest="saveMemory.sh" mode="750"/>
+               <file size="3978" dest="setWLSEnv.sh" mode="750"/>
+               <file size="10916" dest="startRSDaemon.sh" mode="750"/>
+               <file size="7740" dest="stopRSDaemon.sh" mode="750"/>
+               <file size="905" dest="uninstallSvc.cmd" os-family="windows" mode="750"/>
+            </directory>
+            <file size="129" dest="Admin Console.url" mode="640"/>
+            <file size="199" dest="Online Documentation.url" mode="640"/>
+            <file size="169" dest="WebLogic.web" mode="640"/>
+            <directory dest="db" mode="750" patchable="true">
+               <directory dest="db2" mode="750" patchable="true">
+                  <file size="364" dest="leasing.ddl" mode="640"/>
+                  <file size="723" dest="scheduler.ddl" mode="640"/>
+               </directory>
+               <directory dest="informix" mode="750" patchable="true">
+                  <file size="388" dest="leasing.ddl" mode="640"/>
+                  <file size="535" dest="scheduler.ddl" mode="640"/>
+               </directory>
+               <directory dest="mssql" mode="750" patchable="true">
+                  <file size="372" dest="leasing.ddl" mode="640"/>
+                  <file size="668" dest="scheduler.ddl" mode="640"/>
+               </directory>
+               <directory dest="mysql" mode="750" patchable="true">
+                  <file size="365" dest="leasing.ddl" mode="640"/>
+                  <file size="974" dest="scheduler.ddl" mode="640"/>
+               </directory>
+               <directory dest="oracle" mode="750" patchable="true">
+                  <directory dest="817" mode="750" patchable="true">
+                     <file size="391" dest="leasing.ddl" mode="640"/>
+                     <file size="523" dest="scheduler.ddl" mode="640"/>
+                  </directory>
+                  <directory dest="920" mode="750" patchable="true">
+                     <file jarentry="server/db/oracle/817/leasing.ddl" size="391" dest="leasing.ddl" mode="640"/>
+                     <file jarentry="server/db/oracle/817/scheduler.ddl" size="523" dest="scheduler.ddl" mode="640"/>
+                  </directory>
+               </directory>
+               <directory dest="sybase" mode="750" patchable="true">
+                  <file size="366" dest="leasing.ddl" mode="640"/>
+                  <file size="533" dest="scheduler.ddl" mode="640"/>
+               </directory>
+            </directory>
+            <directory dest="lib" mode="750" patchable="true">
+               <directory dest="persistence" mode="750" patchable="true">
+                  <file size="26" dest="persistence.install" mode="640"/>
+               </directory>
+               <directory dest="unix" mode="750" patchable="true">
+                  <file size="997" dest="nodemanager.sh" mode="750"/>
+               </directory>
+               <directory dest="mbeantypes" mode="750" patchable="true">
+                  <file size="9054" dest="commo.dtd" mode="640"/>
+                  <file size="396265" pack="true" dest="wlManagementImplSource.jar" mode="640"/>
+                  <file size="82836" pack="true" dest="wlManagementMBean.jar" mode="640"/>
+                  <file size="49491" pack="true" dest="system-password-validator-provider.jar" mode="640"/>
+                  <file size="1420953" pack="true" dest="wls-security-providers.jar" mode="640"/>
+                  <file size="232339" pack="true" dest="xacml-security-providers.jar" mode="640"/>
+               </directory>
+               <directory dest="compatibility" mode="750" patchable="true">
+                  <file size="13126" pack="true" dest="wlUserConfigCompatibility.jar" mode="640"/>
+               </directory>
+               <directory dest="schema" mode="750" patchable="true">
+                  <file size="721808" pack="true" dest="weblogic-domain-binding-compatibility.jar" mode="640"/>
+                  <file size="58695" pack="true" dest="diagnostics-binding.jar" mode="640"/>
+                  <file size="50265" pack="true" dest="diagnostics-image-binding.jar" mode="640"/>
+               </directory>
+               <directory dest="management-services-ext" mode="750" patchable="true">
+                  <file size="28501" pack="true" dest="lifecycle-jrf-rest-extension.war" mode="640"/>
+                  <file size="27835" pack="true" dest="lifecycle-provisioning-driver.war" mode="640"/>
+                  <file size="131905" pack="true" dest="lifecycle-rest-extension.war" mode="640"/>
+               </directory>
+               <file size="1232" dest="acls.prop" mode="640"/>
+               <file size="6331" dest="adapters.prop" mode="640"/>
+               <file size="234" dest="adaptertypes.prop" mode="640"/>
+               <file size="3307" dest="AuthenticatorBase.ldift" mode="640"/>
+               <file size="2749306" dest="BEA-WEBLOGIC-MIB.asn1" mode="640"/>
+               <file size="1085" pack="true" dest="bea_wls_cluster_internal.war" mode="640"/>
+               <file size="579" pack="true" dest="bea_wls_deployment_internal.war" mode="640"/>
+               <file size="1006" pack="true" dest="bea_wls_internal.war" mode="640"/>
+               <file size="595" pack="true" dest="bea_wls_management_internal2.war" mode="640"/>
+               <file size="218266" dest="build-versions.properties" mode="640"/>
+               <file size="1445" dest="CosNamingExt.idl" mode="640"/>
+               <file size="2951" dest="CosNaming.idl" mode="640"/>
+               <file size="7911" dest="CSI.idl" mode="640"/>
+               <file size="4895" dest="CSIIOP.idl" mode="640"/>
+               <file size="1602" dest="GSSUP.idl" mode="640"/>
+               <file size="522" dest="IOP.idl" mode="640"/>
+               <file size="73012" dest="jdbcdrivers.xml" mode="640"/>
+               <file size="7759712" pack="true" dest="wljmsra.rar" mode="640"/>
+               <file size="157536" dest="schema.core.xml" mode="640"/>
+               <file size="224" dest="service-config.properties" mode="640"/>
+               <file size="5511" pack="true" dest="weblogic.jar" mode="640"/>
+               <file size="1785" pack="true" dest="weblogic.war" mode="640"/>
+               <file size="319" pack="true" dest="wldeploy.jar" mode="640"/>
+               <file size="316" pack="true" dest="wljarbuilder.jar" mode="640"/>
+               <file size="163574" pack="true" dest="wls-cat.war" mode="640"/>
+               <file size="505538" pack="true" dest="wls-management-services.war" mode="640"/>
+               <file size="512" dest="wls.modwl.conf.xml" mode="640"/>
+               <file size="271" dest="wls.oam.conf" mode="640"/>
+               <file size="910" dest="trusted.crt" mode="640"/>
+               <file size="4623" dest="cacerts" mode="640"/>
+               <file size="963" dest="CertGenCA.der" mode="640"/>
+               <file size="1260" dest="CertGenCAKey.der" mode="640"/>
+               <file size="540" dest="CertGenInteropCA.der" mode="640"/>
+               <file size="388" dest="CertGenInteropCAKey.der" mode="640"/>
+               <file jarentry="server/lib/mbeantypes/commo.dtd" size="9054" dest="commo.dtd" mode="640"/>
+               <file size="350" dest="DefaultAuthenticatorUpdate_20.ldift" mode="640"/>
+               <file size="386" dest="DefaultAuthenticatorUpdate_40.ldift" mode="640"/>
+               <file size="358" dest="DefaultAuthenticatorUpdate_41.ldift" mode="640"/>
+               <file size="11473" dest="DefaultAuthorizerInit.ldift" mode="640"/>
+               <file size="1085" dest="DefaultAuthorizerUpdate_1.ldift" mode="640"/>
+               <file size="960" dest="DefaultAuthorizerUpdate_20.ldift" mode="640"/>
+               <file size="1515" dest="DefaultAuthorizerUpdate_22.ldift" mode="640"/>
+               <file size="1428" dest="DefaultAuthorizerUpdate_2.ldift" mode="640"/>
+               <file size="7975" dest="DefaultAuthorizerUpdate_40.ldift" mode="640"/>
+               <file size="1022" dest="DefaultAuthorizerUpdate_60.ldift" mode="640"/>
+               <file size="1072" dest="DefaultAuthorizerUpdate_61.ldift" mode="640"/>
+               <file size="946" dest="DefaultAuthorizerUpdate_80.ldift" mode="640"/>
+               <file size="0" dest="DefaultCredentialMapperInit.ldift" mode="640"/>
+               <file size="7529" dest="DefaultRoleMapperInit.ldift" mode="640"/>
+               <file size="6146" dest="DefaultRoleMapperUpdate_20.ldift" mode="640"/>
+               <file size="970" dest="DefaultRoleMapperUpdate_40.ldift" mode="640"/>
+               <file size="958" dest="DefaultRoleMapperUpdate_41.ldift" mode="640"/>
+               <file size="3376" dest="DefaultRoleMapperUpdate_50.ldift" mode="640"/>
+               <file size="72801" dest="XACMLAuthorizerInit.ldift" mode="640"/>
+               <file size="5606" dest="XACMLAuthorizerUpdate_61.ldift" mode="640"/>
+               <file size="2837" dest="XACMLAuthorizerUpdate_80.ldift" mode="640"/>
+               <file size="30097" dest="XACMLRoleMapperInit.ldift" mode="640"/>
+               <file size="3426" dest="XACMLRoleMapperUpdate_41.ldift" mode="640"/>
+               <file size="27603" dest="XACMLRoleMapperUpdate_50.ldift" mode="640"/>
+               <file size="1315" pack="true" dest="saml2.war" mode="640"/>
+               <file size="852" pack="true" dest="samlacs_v1.war" mode="640"/>
+               <file size="853" pack="true" dest="samlacs_v2.war" mode="640"/>
+               <file jarentry="server/lib/samlacs_v2.war" size="984" dest="samlacs.war" mode="640"/>
+               <file size="1085" pack="true" dest="samlars_v1.war" mode="640"/>
+               <file size="1043" pack="true" dest="samlars_v2.war" mode="640"/>
+               <file size="1093" pack="true" dest="samlits_ba_v1.war" mode="640"/>
+               <file size="1049" pack="true" dest="samlits_ba_v2.war" mode="640"/>
+               <file size="1097" pack="true" dest="samlits_cc_v1.war" mode="640"/>
+               <file size="1057" pack="true" dest="samlits_cc_v2.war" mode="640"/>
+               <file size="505220" pack="true" dest="jcmFIPS.jar" mode="640"/>
+               <file size="411397" pack="true" dest="sslj.jar" mode="640"/>
+               <file size="130483" pack="true" dest="osgi.jar" mode="640"/>
+               <file size="599344" pack="true" dest="jcom.jar" mode="640"/>
+               <file size="19098" pack="true" dest="bea_wls_remote_deployer.jar" mode="640"/>
+               <file size="33723" pack="true" dest="wllog4j.jar" mode="640"/>
+               <file size="1433" pack="true" dest="debugpatch-agent.jar" mode="640"/>
+               <file size="5453" pack="true" dest="diagnostics-agent.jar" mode="640"/>
+               <file size="67580" pack="true" dest="jms-local-adp.rar" mode="640"/>
+               <file size="67578" pack="true" dest="jms-notran-adp.rar" mode="640"/>
+               <file size="67573" pack="true" dest="jms-xa-adp.rar" mode="640"/>
+               <file size="20119" pack="true" dest="mejb.jar" mode="640"/>
+               <file size="41084" pack="true" dest="weblogic-spring.jar" mode="640"/>
+               <file size="1384157" pack="true" dest="wlw-langx.jar" mode="640"/>
+            </directory>
+            <directory dest="locale" mode="750" patchable="true">
+               <directory dest="C" mode="750" patchable="true">
+                  <directory dest="aix-ppc32" mode="750" patchable="true">
+                     <file size="6972" dest="LIBJMSC_CAT" mode="640"/>
+                  </directory>
+                  <directory dest="aix-ppc64" mode="750" patchable="true">
+                     <file size="7119" dest="LIBJMSC_CAT" mode="640"/>
+                  </directory>
+                  <directory dest="hpux-ipf64" mode="750" patchable="true">
+                     <file size="7408" dest="LIBJMSC_CAT" mode="640"/>
+                  </directory>
+                  <file size="6883" dest="LIBJMSC.text" mode="640"/>
+                  <directory dest="linux-i686" mode="750" patchable="true">
+                     <file size="8552" dest="LIBJMSC_CAT" mode="640"/>
+                  </directory>
+                  <directory dest="linux-ia64" mode="750" patchable="true">
+                     <file jarentry="server/locale/C/linux-i686/LIBJMSC_CAT" size="8552" dest="LIBJMSC_CAT" mode="640"/>
+                  </directory>
+                  <directory dest="linux-s390_31" mode="750" patchable="true">
+                     <file size="8552" dest="LIBJMSC_CAT" mode="640"/>
+                  </directory>
+                  <directory dest="linux-s390x" mode="750" patchable="true">
+                     <file size="8747" dest="LIBJMSC_CAT" mode="640"/>
+                  </directory>
+                  <directory dest="linux-x86_64" mode="750" patchable="true">
+                     <file size="8747" dest="LIBJMSC_CAT" mode="640"/>
+                  </directory>
+                  <directory dest="solaris-sparc64" mode="750" patchable="true">
+                     <file size="7531" dest="LIBJMSC_CAT" mode="640"/>
+                  </directory>
+                  <directory dest="solaris-sparc" mode="750" patchable="true">
+                     <file size="7372" dest="LIBJMSC_CAT" mode="640"/>
+                  </directory>
+                  <directory dest="solaris-x64" mode="750" patchable="true">
+                     <file size="7531" dest="LIBJMSC_CAT" mode="640"/>
+                  </directory>
+                  <directory dest="solaris-x86" mode="750" patchable="true">
+                     <file size="7372" dest="LIBJMSC_CAT" mode="640"/>
+                  </directory>
+                  <directory dest="win32" mode="750" patchable="true">
+                     <file jarentry="server/locale/C/solaris-x86/LIBJMSC_CAT" size="7372" dest="LIBJMSC_CAT" mode="640"/>
+                  </directory>
+                  <directory dest="win64" mode="750" patchable="true">
+                     <file size="7287" dest="LIBJMSC_CAT" mode="640"/>
+                  </directory>
+                  <directory dest="winx64" mode="750" patchable="true">
+                     <file jarentry="server/locale/C/solaris-x86/LIBJMSC_CAT" size="7372" dest="LIBJMSC_CAT" mode="640"/>
+                  </directory>
+               </directory>
+            </directory>
+            <directory dest="osgi-lib" mode="750" patchable="true">
+               <file size="5703" pack="true" dest="com.oracle.weblogic.osgi.logger.jar" mode="640"/>
+               <file size="20736" pack="true" dest="org.apache.felix.org.apache.felix.log.jar" mode="640"/>
+            </directory>
+            <directory dest="ext" mode="750" patchable="true">
+               <file size="23190" pack="true" dest="weblogic-vtags.jar" mode="640"/>
+            </directory>
+         </directory>
+         <directory dest="common" mode="750" patchable="true">
+            <directory dest="bin" mode="750" patchable="true">
+               <file size="35172" dest="wlscontrol.sh" mode="750"/>
+               <file size="8047" dest="wlsifconfig.cmd" os-family="windows" mode="750"/>
+               <file size="16286" dest="wlsifconfig.sh" mode="750"/>
+            </directory>
+            <directory dest="templates" mode="750" patchable="true">
+               <directory dest="scripts" mode="750" patchable="true">
+                  <directory dest="wlst" mode="750" patchable="true">
+                     <file size="5873" dest="basicWLSDomain.py" mode="750"/>
+                  </directory>
+               </directory>
+               <directory dest="wls" mode="750" patchable="true">
+                  <file size="66495" pack="true" dest="wls.jar" mode="640"/>
+                  <file size="4770" pack="true" dest="wls_coherence_template.jar" mode="640"/>
+                  <file size="8328" pack="true" dest="wls_jrf.jar" mode="640"/>
+                  <file size="13917" pack="true" dest="wls_reconfig_12.2.1.jar" mode="640"/>
+                  <file size="7517" pack="true" dest="wls_reconfig_jrf_12.2.1.jar" mode="640"/>
+                  <file size="128016" pack="true" dest="wls_starter.jar" mode="640"/>
+                  <file size="1017" pack="true" dest="wls_starter_reconfig_12.2.1.jar" mode="640"/>
+               </directory>
+            </directory>
+            <directory dest="images" mode="750" patchable="true">
+               <file size="1150" dest="online_documentation_16.ico" os-family="windows" mode="640"/>
+               <file size="1150" dest="node_manager_16.ico" mode="640"/>
+               <file size="292878" dest="eclipse.ico" os-family="windows" mode="640"/>
+            </directory>
+            <directory dest="deployable-libraries" mode="750" patchable="true">
+               <file size="350" pack="true" dest="active-cache_1.0.jar" mode="640"/>
+               <file size="34236" pack="true" dest="jsf-1.2.war" mode="640"/>
+               <file size="833" pack="true" dest="jsf-2.0.war" mode="640"/>
+               <file size="37225" pack="true" dest="jstl-1.2.war" mode="640"/>
+               <file size="167457" pack="true" dest="weblogic-sca-1.2.war" mode="640"/>
+               <file size="18017" pack="true" dest="jax-rs-2.0.war" mode="640"/>
+               <file size="303" pack="true" dest="jsr311-api-1.1.1.war" mode="640"/>
+            </directory>
+            <directory dest="dpct" mode="750" patchable="true">
+               <file size="54088" pack="true" dest="D-PCT-12.2.1.2.0.zip" mode="640"/>
+            </directory>
+            <directory dest="lifecycle" mode="750" patchable="true">
+               <directory dest="plugins" mode="750" patchable="true">
+                  <file size="11437" pack="true" dest="com.oracle.weblogic.lifecycle.plugin.db.jar" mode="640"/>
+                  <file size="16856" pack="true" dest="otd-lifecycle-plugin.jar" mode="640"/>
+                  <file size="6159" pack="true" dest="com.oracle.weblogic.lifecycle.plugin.template.jar" mode="640"/>
+                  <file size="60994" pack="true" dest="com.oracle.weblogic.lifecycle.plugin.wls.jar" mode="640"/>
+               </directory>
+            </directory>
+         </directory>
+         <directory dest="orasocket" mode="750" patchable="true">
+            <directory dest="scripts" mode="750" patchable="true">
+               <file size="34256" dest="orasocket.min.js" mode="640"/>
+               <directory dest="transports" mode="750" patchable="true">
+                  <directory dest="native" mode="750" patchable="true">
+                     <file size="1755" dest="NativeWebSocket.js" mode="640"/>
+                  </directory>
+                  <directory dest="http" mode="750" patchable="true">
+                     <directory dest="xhr" mode="750" patchable="true">
+                        <file size="19071" dest="LongPoll.js" mode="640"/>
+                     </directory>
+                  </directory>
+               </directory>
+            </directory>
+         </directory>
+         <directory dest="modules" mode="750" patchable="true">
+            <directory dest="internal" mode="750" patchable="true">
+               <file size="73255" pack="true" dest="jmsadapter.jar" mode="640"/>
+               <file size="67599" pack="true" dest="jms-internal-notran-adp.rar" mode="640"/>
+               <file size="67596" pack="true" dest="jms-internal-xa-adp.rar" mode="640"/>
+            </directory>
+            <directory dest="features" mode="750" patchable="true">
+               <file size="465" pack="true" dest="weblogic.saml2.modules.jar" mode="640"/>
+               <file size="352" pack="true" dest="weblogic.server.modules.coherence.integration.jar" mode="640"/>
+               <file size="345" pack="true" dest="weblogic.server.modules.jsf.jar" mode="640"/>
+            </directory>
+            <file size="56522" pack="true" dest="com.oracle.buzzmessagebus.buzzmessagebus.jar" mode="640"/>
+            <file size="182775" pack="true" dest="commons-io.commons-io.jar" mode="640"/>
+            <file size="193966" pack="true" dest="commons-net.commons-net.jar" mode="640"/>
+            <file size="512187" pack="true" dest="velocity.velocity-dep.jar" mode="640"/>
+            <file size="320116" pack="true" dest="cglib.cglib-nodep.jar" mode="640"/>
+            <file size="2225045" pack="true" dest="com.google.guava.guava.jar" mode="640"/>
+            <file size="32779" pack="true" dest="org.hibernate.hibernate-validator-cdi.jar" mode="640"/>
+            <file size="23818" pack="true" dest="org.glassfish.hk2.hk2-configuration-hub.jar" mode="640"/>
+            <file size="41265" pack="true" dest="org.glassfish.hk2.hk2-configuration-integration.jar" mode="640"/>
+            <file size="38538" pack="true" dest="org.glassfish.hk2.hk2-config-hub-integration.jar" mode="640"/>
+            <file size="17694" pack="true" dest="org.glassfish.hk2.hk2-property-file.jar" mode="640"/>
+            <file size="53830" pack="true" dest="org.glassfish.hk2.hk2-extras.jar" mode="640"/>
+            <file size="379521" pack="true" dest="com.ibm.jbatch.com.ibm.jbatch.container.jar" mode="640"/>
+            <file size="11676" pack="true" dest="com.ibm.jbatch.com.ibm.jbatch.spi.jar" mode="640"/>
+            <file size="27978" pack="true" dest="jakarta-regexp.jakarta-regexp.jar" mode="640"/>
+            <file size="34168" pack="true" dest="javax.batch.javax.batch-api.jar" mode="640"/>
+            <file size="13597" pack="true" dest="javax.enterprise.concurrent.javax.enterprise.concurrent-api.jar" mode="640"/>
+            <file size="358128" pack="true" dest="javax.faces.jsf-api.jar" mode="640"/>
+            <file size="35639" pack="true" dest="javax.websocket.javax.websocket-api.jar" mode="640"/>
+            <file size="57053" pack="true" dest="org.jboss.interceptor.jboss-interceptor-core.jar" mode="640"/>
+            <file size="6318" pack="true" dest="org.jboss.interceptor.jboss-interceptor-spi.jar" mode="640"/>
+            <file size="253591" pack="true" dest="org.glassfish.main.external.trilead-ssh2-repackaged.jar" mode="640"/>
+            <file size="18940" pack="true" dest="com.bea.core.apache.dom.jar" mode="640"/>
+            <file size="478003" pack="true" dest="com.bea.javascript.jar" mode="640"/>
+            <file size="36228" pack="true" dest="com.netscape.ldapjava.ldapfilt.jar" mode="640"/>
+            <file size="19914" pack="true" dest="org.jboss.weld.weld-api.jar" mode="640"/>
+            <file size="1549950" pack="true" dest="org.jboss.weld.weld-core.jar" mode="640"/>
+            <file size="79117" pack="true" dest="org.jboss.weld.weld-spi.jar" mode="640"/>
+            <file size="111359" pack="true" dest="org.jboss.classfilewriter.jboss-classfilewriter.jar" mode="640"/>
+            <file size="63344" pack="true" dest="oro.oro.jar" mode="640"/>
+            <file size="1912087" pack="true" dest="com.bea.core.antlr.jar" mode="640"/>
+            <file size="200166" pack="true" dest="com.oracle.jfr.jar" mode="640"/>
+            <file size="50949" pack="true" dest="javax.security.auth.message.jar" mode="640"/>
+            <file size="10243" pack="true" dest="com.oracle.cmm.agent.jar" mode="640"/>
+            <file size="184328" pack="true" dest="asn.jar" mode="640"/>
+            <file size="787634" pack="true" dest="com.oracle.weblogic.security.opensaml2.jar" mode="640"/>
+            <file size="957217" pack="true" dest="com.bea.core.certj.jar" mode="640"/>
+            <file size="13006" pack="true" dest="org.glassfish.tyrus.tyrus-spi.jar" mode="640"/>
+            <file size="374476" pack="true" dest="org.glassfish.tyrus.tyrus-core.jar" mode="640"/>
+            <file size="68403" pack="true" dest="org.glassfish.tyrus.tyrus-client.jar" mode="640"/>
+            <file size="12117" pack="true" dest="org.glassfish.tyrus.tyrus-server.jar" mode="640"/>
+            <file size="5697" pack="true" dest="org.glassfish.tyrus.tyrus-container-glassfish-ejb.jar" mode="640"/>
+            <file size="5934" pack="true" dest="org.glassfish.tyrus.tyrus-container-glassfish-cdi.jar" mode="640"/>
+            <file size="78740" pack="true" dest="org.glassfish.tyrus.tyrus-container-jdk-client.jar" mode="640"/>
+            <file size="13885" pack="true" dest="com.oracle.tyrus.cluster.tyrus-cluster-common.jar" mode="640"/>
+            <file size="36629" pack="true" dest="com.oracle.tyrus.cluster.tyrus-cluster-coherence.jar" mode="640"/>
+            <file size="31175" pack="true" dest="javax.servlet.jsp.jstl.javax.servlet.jsp.jstl-api.jar" mode="640"/>
+            <file size="402420" pack="true" dest="org.glassfish.web.javax.servlet.jsp.jstl.jar" mode="640"/>
+            <file size="44086" pack="true" dest="commons-logging.commons-logging-api.jar" mode="640"/>
+            <file size="110083" pack="true" dest="com.bea.core.apache.commons.pool.jar" mode="640"/>
+            <file size="81198" pack="true" dest="javax.jdo.jdo2-api.jar" mode="640"/>
+            <file size="7759" pack="true" dest="com.oracle.weblogic.javaee.jar" mode="640"/>
+            <file size="18893" pack="true" dest="com.oracle.batch.connector.jar" mode="640"/>
+            <file size="8795" pack="true" dest="com.bea.core.descriptor.settable.binding.jar" mode="640"/>
+            <file size="66983" pack="true" dest="com.bea.core.appdescriptor.jar" mode="640"/>
+            <file size="5299" pack="true" dest="com.oracle.weblogic.console.runtime.jar" mode="640"/>
+            <file size="13170" pack="true" dest="com.oracle.core.coherence.descriptor.jar" mode="640"/>
+            <file size="732016" pack="true" dest="com.oracle.core.coherence.descriptor.binding.jar" mode="640"/>
+            <file size="69202" pack="true" dest="com.oracle.weblogic.cacheprovider.jar" mode="640"/>
+            <file size="25021" pack="true" dest="com.oracle.weblogic.t3-server.jar" mode="640"/>
+            <file size="160761" pack="true" dest="com.oracle.weblogic.cluster.messaging.jar" mode="640"/>
+            <file size="741191" pack="true" dest="com.oracle.weblogic.cluster.jar" mode="640"/>
+            <file size="40256" pack="true" dest="com.oracle.weblogic.cluster.singleton.jar" mode="640"/>
+            <file size="1450" pack="true" dest="com.oracle.core.coherence.api.jar" mode="640"/>
+            <file size="51780" pack="true" dest="com.oracle.core.coherence.coherence-web.jar" mode="640"/>
+            <file size="22544" pack="true" dest="com.oracle.core.coherence.app.descriptor.jar" mode="640"/>
+            <file size="131089" pack="true" dest="com.oracle.core.coherence.app.descriptor.binding.jar" mode="640"/>
+            <file size="53224" pack="true" dest="com.oracle.core.coherence.integration.jar" mode="640"/>
+            <file size="3129" pack="true" dest="com.oracle.core.coherence.server.jar" mode="640"/>
+            <file size="11122" pack="true" dest="com.oracle.weblogic.aspects.jar" mode="640"/>
+            <file size="22918" pack="true" dest="com.oracle.core.interceptor.jar" mode="640"/>
+            <file size="80016" pack="true" dest="com.oracle.weblogic.scheduler.jar" mode="640"/>
+            <file size="20613" pack="true" dest="com.oracle.weblogic.server.profile.jar" mode="640"/>
+            <file size="47189" pack="true" dest="com.oracle.weblogic.buzzmessagebus.jar" mode="640"/>
+            <file size="69955" pack="true" dest="com.oracle.weblogic.nodemanager.jar" mode="640"/>
+            <file size="27615" pack="true" dest="com.oracle.weblogic.corba.jar" mode="640"/>
+            <file size="772658" pack="true" dest="com.oracle.weblogic.iiop.jar" mode="640"/>
+            <file size="4000" pack="true" dest="com.bea.core.weblogic.scheduler.api.jar" mode="640"/>
+            <file size="1794" pack="true" dest="com.oracle.weblogic.protocol.api.jar" mode="640"/>
+            <file size="26939" pack="true" dest="com.oracle.weblogic.old-utils-general.jar" mode="640"/>
+            <file size="57089" pack="true" dest="com.oracle.weblogic.old-utils-weblogic.jar" mode="640"/>
+            <file size="28243" pack="true" dest="com.oracle.weblogic.utils.jar" mode="640"/>
+            <file size="29115" pack="true" dest="com.oracle.weblogic.time.jar" mode="640"/>
+            <file size="1124" pack="true" dest="com.oracle.weblogic.time.api.jar" mode="640"/>
+            <file size="988" pack="true" dest="com.oracle.weblogic.work.api.jar" mode="640"/>
+            <file size="205974" pack="true" dest="com.oracle.weblogic.concurrent.jar" mode="640"/>
+            <file size="35745" pack="true" dest="com.oracle.weblogic.concurrentservice.jar" mode="640"/>
+            <file size="223496" pack="true" dest="com.bea.core.datasource6.binding.jar" mode="640"/>
+            <file size="53570" pack="true" dest="com.oracle.weblogic.rac.ucp.jar" mode="640"/>
+            <file size="395304" pack="true" dest="com.oracle.weblogic.deploy.service.jar" mode="640"/>
+            <file size="32235" pack="true" dest="com.bea.core.diagnostics.accessor.binding.jar" mode="640"/>
+            <file size="48854" pack="true" dest="com.oracle.weblogic.diagnostics.accessor.runtime.jar" mode="640"/>
+            <file size="149222" pack="true" dest="com.oracle.diagnostics.framework.jar" mode="640"/>
+            <file size="32295" pack="true" dest="com.bea.core.monitoring.harvester.api.jar" mode="640"/>
+            <file size="98187" pack="true" dest="com.bea.core.monitoring.harvester.jmx.jar" mode="640"/>
+            <file size="42863" pack="true" dest="com.bea.mbean.typing.util.jar" mode="640"/>
+            <file size="23836" pack="true" dest="com.bea.adaptive.harvester.utils.jar" mode="640"/>
+            <file size="83546" pack="true" dest="com.bea.core.i18n.generator.jar" mode="640"/>
+            <file size="132774" pack="true" dest="com.bea.core.i18n.tools.jar" mode="640"/>
+            <file size="149562" pack="true" dest="com.bea.core.diagnostics.instrumentor.config.jar" mode="640"/>
+            <file size="167164" pack="true" dest="com.bea.core.diagnostics.instrumentor.jar" mode="640"/>
+            <file size="62293" pack="true" dest="com.bea.core.repackaged.apache.commons.logging.jar" mode="640"/>
+            <file size="9982" pack="true" dest="com.bea.core.diagnostics.logging.jar" mode="640"/>
+            <file size="24882" pack="true" dest="org.slf4j.api.jar" mode="640"/>
+            <file size="41019" pack="true" dest="org.slf4j.ext.jar" mode="640"/>
+            <file size="8209" pack="true" dest="org.slf4j.jdk14.jar" mode="640"/>
+            <file size="5446" pack="true" dest="com.bea.core.weblogic.commons.logging.jar" mode="640"/>
+            <file size="2173" pack="true" dest="com.oracle.weblogic.management.diagnostics.jar" mode="640"/>
+            <file size="44269" pack="true" dest="com.oracle.weblogic.management.logging.jar" mode="640"/>
+            <file size="73408" pack="true" dest="com.bea.core.diagnostics.query.jar" mode="640"/>
+            <file size="512886" pack="true" dest="com.oracle.weblogic.diagnostics.partition.jar" mode="640"/>
+            <file size="5587" pack="true" dest="com.oracle.core.diagnostics.resources.jar" mode="640"/>
+            <file size="1500865" pack="true" dest="monfox.dsnmp.agent.jar" mode="640"/>
+            <file size="71199" pack="true" dest="com.bea.core.diagnostics.snmp.jar" mode="640"/>
+            <file size="32856" pack="true" dest="com.bea.core.diagnostics.notifications.jar" mode="640"/>
+            <file size="621676" pack="true" dest="com.bea.core.ejbgen.jar" mode="640"/>
+            <file size="238741" pack="true" dest="com.bea.core.cache.jar" mode="640"/>
+            <file size="47208" pack="true" dest="com.oracle.weblogic.marathon.jar" mode="640"/>
+            <file size="14283" pack="true" dest="com.oracle.weblogic.metadata.jar" mode="640"/>
+            <file size="186709" pack="true" dest="com.oracle.weblogic.tools.ui.jar" mode="640"/>
+            <file size="118534" pack="true" dest="com.bea.core.redef.jar" mode="640"/>
+            <file size="4754" pack="true" dest="com.bea.core.redefagent.jar" mode="640"/>
+            <file size="9156" pack="true" dest="com.bea.core.redef.binding.jar" mode="640"/>
+            <file size="141094" pack="true" dest="com.oracle.weblogic.jolt.jar" mode="640"/>
+            <file size="21243" pack="true" dest="com.bea.core.jms.integration.injection.jar" mode="640"/>
+            <file size="7628" pack="true" dest="com.oracle.weblogic.management.admin.jar" mode="640"/>
+            <file size="33632" pack="true" dest="com.bea.core.management.core.binding.jar" mode="640"/>
+            <file size="18857" pack="true" dest="com.bea.core.management.eventbus.jar" mode="640"/>
+            <file size="106411" pack="true" dest="com.oracle.weblogic.management.orchestration.jar" mode="640"/>
+            <file size="6044" pack="true" dest="com.oracle.weblogic.management.orchestration-mbean.jar" mode="640"/>
+            <file size="364911" pack="true" dest="com.oracle.weblogic.management.patching.jar" mode="640"/>
+            <file size="360485" pack="true" dest="com.oracle.weblogic.management.provider.internal.jar" mode="640"/>
+            <file size="17129" pack="true" dest="com.oracle.weblogic.management.servlet.jar" mode="640"/>
+            <file size="9836" pack="true" dest="com.oracle.weblogic.management.timer.jar" mode="640"/>
+            <file size="66914" pack="true" dest="com.oracle.weblogic.management.tools.jar" mode="640"/>
+            <file size="58406" pack="true" dest="com.oracle.weblogic.zdt.agent.jar" mode="640"/>
+            <file size="353131" pack="true" dest="com.oracle.weblogic.management.descriptors.jar" mode="640"/>
+            <file size="67200" pack="true" dest="com.oracle.weblogic.management.descriptors.webservice.jar" mode="640"/>
+            <file size="141554" pack="true" dest="com.oracle.weblogic.management.j2ee.jar" mode="640"/>
+            <file size="1837" pack="true" dest="mejb-deployer.jar" mode="640"/>
+            <file size="41133" pack="true" dest="com.oracle.weblogic.lifecycle.orchestration.jar" mode="640"/>
+            <file size="222400" pack="true" dest="com.oracle.weblogic.lifecycle.provisioning.core.jar" mode="640"/>
+            <file size="118876" pack="true" dest="com.oracle.weblogic.rest.framework.jar" mode="640"/>
+            <file size="31033" pack="true" dest="com.oracle.weblogic.management.security.beanimpls.jar" mode="640"/>
+            <file size="287239" pack="true" dest="com.oracle.weblogic.management-services.jar" mode="640"/>
+            <file size="38305" pack="true" dest="com.oracle.weblogic.management.tools.migration.jar" mode="640"/>
+            <file size="91247" pack="true" dest="com.oracle.injection.integration.weblogic.jar" mode="640"/>
+            <file size="51168" pack="true" dest="com.oracle.injection.provider.weld.jar" mode="640"/>
+            <file size="53411" pack="true" dest="com.oracle.weblogic.osgi.jar" mode="640"/>
+            <file size="21616" pack="true" dest="com.bea.core.jarbuilder.jar" mode="640"/>
+            <file size="278" pack="true" dest="weblogic-L10N_de.jar" mode="640"/>
+            <file size="14814" pack="true" dest="weblogic-L10N_es.jar" mode="640"/>
+            <file size="15421" pack="true" dest="weblogic-L10N_fr.jar" mode="640"/>
+            <file size="14326" pack="true" dest="weblogic-L10N_it.jar" mode="640"/>
+            <file size="1552806" dest="weblogic-L10N_ja.jar" mode="640"/>
+            <file size="49177" pack="true" dest="weblogic-L10N_ko.jar" mode="640"/>
+            <file size="15213" pack="true" dest="weblogic-L10N_pt_BR.jar" mode="640"/>
+            <file size="46581" pack="true" dest="weblogic-L10N_zh_CN.jar" mode="640"/>
+            <file size="47279" pack="true" dest="weblogic-L10N_zh_TW.jar" mode="640"/>
+            <file size="32019" pack="true" dest="com.oracle.weblogic.server.embed.jar" mode="640"/>
+            <file size="54066" pack="true" dest="com.oracle.cmm.lowertier.jar" mode="640"/>
+            <file size="6305" pack="true" dest="com.oracle.core.eclipselink.integration.jar" mode="640"/>
+            <file size="1146427" pack="true" dest="com.bea.core.kodo.jar" mode="640"/>
+            <file size="3637737" pack="true" dest="com.bea.core.kodo.integration.binding.jar" mode="640"/>
+            <file size="2970105" pack="true" dest="org.apache.openjpa.jar" mode="640"/>
+            <file size="26284" pack="true" dest="com.oracle.weblogic.rcm.framework.base.jar" mode="640"/>
+            <file size="142990" pack="true" dest="com.oracle.weblogic.rcm.framework.core.jar" mode="640"/>
+            <file size="5291" pack="true" dest="com.oracle.weblogic.rcm.framework.init.jar" mode="640"/>
+            <file size="29654" pack="true" dest="com.oracle.weblogic.rcm.framework.jdkinteg.jar" mode="640"/>
+            <file size="6506" pack="true" dest="com.oracle.weblogic.rcm.framework.spi.jar" mode="640"/>
+            <file size="8511" pack="true" dest="com.oracle.weblogic.rcm.framework.spiimpl.jar" mode="640"/>
+            <file size="72126" pack="true" dest="com.oracle.weblogic.rcm.resourcemanagement.impl.jar" mode="640"/>
+            <file size="3916" pack="true" dest="com.oracle.weblogic.sca.client.jar" mode="640"/>
+            <file size="11654" pack="true" dest="com.bea.core.weblogic.security.psm.jar" mode="640"/>
+            <file size="39452" pack="true" dest="com.oracle.weblogic.security.providers.env.jar" mode="640"/>
+            <file size="137884" pack="true" dest="com.oracle.weblogic.security.service.utils.providers.jar" mode="640"/>
+            <file size="1046604" pack="true" dest="com.oracle.weblogic.security.service.utils.providers.xacml.jar" mode="640"/>
+            <file size="11203" pack="true" dest="com.oracle.weblogic.security.service.api.saml.jar" mode="640"/>
+            <file size="124483" pack="true" dest="com.oracle.weblogic.security.service.utils.saml.jar" mode="640"/>
+            <file size="24228" pack="true" dest="com.oracle.weblogic.security.service.api.saml2.jar" mode="640"/>
+            <file size="14316" pack="true" dest="com.oracle.weblogic.security.service.utils.saml2.jar" mode="640"/>
+            <file size="294189" pack="true" dest="com.oracle.weblogic.security.service.api.xacml.jar" mode="640"/>
+            <file size="17460" pack="true" dest="com.oracle.weblogic.security.service.audit.jar" mode="640"/>
+            <file size="177200" pack="true" dest="com.oracle.weblogic.security.service.authentication.jar" mode="640"/>
+            <file size="199283" pack="true" dest="com.oracle.weblogic.security.service.authorization.jar" mode="640"/>
+            <file size="32469" pack="true" dest="com.oracle.weblogic.security.service.certificate.jar" mode="640"/>
+            <file size="20880" pack="true" dest="com.oracle.weblogic.security.service.credential.jar" mode="640"/>
+            <file size="160149" pack="true" dest="com.oracle.weblogic.security.service.cssimpl.jar" mode="640"/>
+            <file size="15129" pack="true" dest="com.oracle.weblogic.security.service.cssimpl.config.jar" mode="640"/>
+            <file size="23347" pack="true" dest="com.oracle.weblogic.security.service.engimpl.jar" mode="640"/>
+            <file size="34134" pack="true" dest="com.oracle.weblogic.security.service.saml.jar" mode="640"/>
+            <file size="239903" pack="true" dest="com.oracle.weblogic.security.service.saml2.jar" mode="640"/>
+            <file size="155710" pack="true" dest="com.oracle.weblogic.security.service.store.jar" mode="640"/>
+            <file size="279" pack="true" dest="com.oracle.core.certicom.sslplus.wls.jar" mode="640"/>
+            <file size="488612" pack="true" dest="com.oracle.core.octetstring.vde.jar" mode="640"/>
+            <file size="39343" pack="true" dest="com.oracle.weblogic.spring.jar" mode="640"/>
+            <file size="1796645" pack="true" dest="com.bea.core.repackaged.aspectj.aspectjweaver.jar" mode="640"/>
+            <file size="85189" pack="true" dest="com.bea.core.repackaged.springframework.pitchfork.jar" mode="640"/>
+            <file size="1801803" pack="true" dest="com.bea.core.repackaged.springframework.spring.jar" mode="640"/>
+            <file size="38230" pack="true" dest="com.bea.core.weblogic.spring.instrument.jar" mode="640"/>
+            <file size="10252" pack="true" dest="com.oracle.weblogic.store.admin.util.jar" mode="640"/>
+            <file size="43238" pack="true" dest="com.oracle.weblogic.store.jar" mode="640"/>
+            <file size="7275" pack="true" dest="com.oracle.weblogic.store.admintool-core.jar" mode="640"/>
+            <file size="91583" pack="true" dest="com.bea.core.store.jdbc.jar" mode="640"/>
+            <file size="41931" pack="true" dest="com.bea.core.repackaged.asm.commons.jar" mode="640"/>
+            <file size="29609" pack="true" dest="com.bea.core.repackaged.asm.tree.jar" mode="640"/>
+            <file size="43360" pack="true" dest="com.bea.core.repackaged.asm.util.jar" mode="640"/>
+            <file size="2278697" pack="true" dest="com.bea.core.repackaged.jdt.jar" mode="640"/>
+            <file size="109111" pack="true" dest="com.oracle.weblogic.cache.jar" mode="640"/>
+            <file size="845393" pack="true" dest="glassfish.jsf1.jar" mode="640"/>
+            <file size="3122158" pack="true" dest="glassfish.jsf.jar" mode="640"/>
+            <file size="150673" pack="true" dest="com.oracle.weblogic.servlet.ejb2jsp.jar" mode="640"/>
+            <file size="49851" pack="true" dest="com.oracle.partof.weblogic.tags.jar" mode="640"/>
+            <file size="265321" pack="true" dest="com.bea.core.http.pubsub.jar" mode="640"/>
+            <file size="5312" pack="true" dest="pubsub-mbean.jar" mode="640"/>
+            <file size="5667" pack="true" dest="com.oracle.weblogic.websocket.coherence.jar" mode="640"/>
+            <file size="59329" pack="true" dest="glassfish.tyrus.fallback.jar" mode="640"/>
+            <file size="109934" pack="true" dest="com.oracle.weblogic.websocket.jar" mode="640"/>
+            <file size="41040" pack="true" dest="weblogic.dtdc.jar" mode="640"/>
+            <file size="103064" pack="true" dest="weblogic.jaxrs.integration.jar" mode="640"/>
+            <file size="758" pack="true" dest="databinding.override.jar" mode="640"/>
+            <file size="530356" pack="true" dest="com.bea.core.jatmi.jar" mode="640"/>
+            <file size="496881" pack="true" dest="com.oracle.weblogic.wtc.jar" mode="640"/>
+         </directory>
+         <file-perms>
+            <permission mode="750" regex=".*\.bat"/>
+            <permission mode="750" regex=".*\.cmd"/>
+            <permission mode="750" regex=".*\.dll"/>
+            <permission mode="750" regex=".*\.exe"/>
+            <permission mode="750" regex=".*\.py"/>
+            <permission mode="750" regex=".*\.sh"/>
+            <permission mode="750" regex=".*\.so"/>
+            <permission mode="750" regex=".*wlkeytool"/>
+            <permission mode="750" regex=".*\.pl"/>
+            <permission mode="750" regex=".*ant"/>
+            <permission mode="750" regex=".*antRun"/>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+   <file-map symbol="wls.server.symbol" source="filegroup2.jar" expanded="true" packaged="false">
+      <platform name="Linux_AMD64"/>
+      <exclude regex="\.ade_path" match-dirs="true"/>
+      <directory dest="" patchable="true">
+         <directory dest="server" mode="750" patchable="true">
+            <directory dest="bin" mode="750" patchable="true">
+               <file size="571" dest="eclipse.sh" mode="750"/>
+            </directory>
+         </directory>
+         <file-perms>
+            <permission mode="750" regex=".*\.sh"/>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+   <file-map symbol="wls.server.symbol" source="filegroup3.jar" expanded="true" packaged="false">
+      <platform name="MAC-OS-IN64"/>
+      <exclude regex="\.ade_path" match-dirs="true"/>
+      <directory dest="" patchable="true">
+         <directory dest="server" mode="750" patchable="true">
+            <directory dest="bin" mode="750" patchable="true">
+               <file size="571" dest="eclipse.sh" mode="750"/>
+            </directory>
+         </directory>
+         <file-perms>
+            <permission mode="750" regex=".*\.sh"/>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+   <file-map symbol="wls.server.symbol" source="filegroup4.jar" expanded="true" packaged="false">
+      <platform name="IBM_AIX"/>
+      <exclude regex="\.ade_path" match-dirs="true"/>
+      <directory dest="" patchable="true">
+         <directory dest="server" mode="750" patchable="true">
+            <directory dest="bin" mode="750" patchable="true">
+               <file size="571" dest="eclipse.sh" mode="750"/>
+            </directory>
+         </directory>
+         <file-perms>
+            <permission mode="750" regex=".*\.sh"/>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+   <file-map symbol="wls.server.symbol" source="filegroup5.jar" expanded="true" packaged="false">
+      <platform name="IBM_AIXPPC64"/>
+      <exclude regex="\.ade_path" match-dirs="true"/>
+      <directory dest="" patchable="true">
+         <directory dest="server" mode="750" patchable="true">
+            <directory dest="bin" mode="750" patchable="true">
+               <file size="571" dest="eclipse.sh" mode="750"/>
+            </directory>
+         </directory>
+         <file-perms>
+            <permission mode="750" regex=".*\.sh"/>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+   <file-map symbol="wls.common.symbol" source="filegroup6.jar" expanded="true" compacted="true">
+      <exclude regex="\.ade_path" match-dirs="true"/>
+      <directory dest="" patchable="true">
+         <directory dest="plugins" mode="750" patchable="true">
+            <directory dest="upgrade" mode="750" patchable="true">
+               <file size="45183" pack="true" dest="WebLogicPlugin.jar" mode="640"/>
+               <file size="690" dest="wlsservices.xml" mode="640"/>
+            </directory>
+         </directory>
+         <directory dest="modules" mode="750" patchable="true">
+            <file size="238834" pack="true" dest="com.nimbusds.nimbus-jose-jwt.jar" mode="640"/>
+            <file size="76062" pack="true" dest="net.minidev.json-smart.jar" mode="640"/>
+            <file size="1941" pack="true" dest="net.jcip.jcip-annotations.jar" mode="640"/>
+         </directory>
+         <file-perms>
+            <permission mode="750" regex=".*\.bat"/>
+            <permission mode="750" regex=".*\.cmd"/>
+            <permission mode="750" regex=".*\.pl"/>
+            <permission mode="750" regex=".*\.py"/>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+   <artifact-pom-overrides>
+      <suppress-pom file="common/deployable-libraries/active-cache_1.0.jar" symbol="wls.server.symbol"/>
+      <suppress-pom file="common/deployable-libraries/jsf-1.2.war" symbol="wls.server.symbol"/>
+      <suppress-pom file="common/deployable-libraries/jsf-2.0.war" symbol="wls.server.symbol"/>
+      <suppress-pom file="common/deployable-libraries/jstl-1.2.war" symbol="wls.server.symbol"/>
+      <suppress-pom file="common/deployable-libraries/weblogic-sca-1.2.war" symbol="wls.server.symbol"/>
+      <suppress-pom file="common/deployable-libraries/jax-rs-2.0.war" symbol="wls.server.symbol"/>
+      <suppress-pom file="common/templates/wls/wls.jar" symbol="wls.server.symbol"/>
+      <suppress-pom file="common/templates/wls/wls_coherence_template.jar" symbol="wls.server.symbol"/>
+      <suppress-pom file="common/templates/wls/wls_jrf.jar" symbol="wls.server.symbol"/>
+      <suppress-pom file="common/templates/wls/wls_reconfig_12.2.1.jar" symbol="wls.server.symbol"/>
+      <suppress-pom file="common/templates/wls/wls_reconfig_jrf_12.2.1.jar" symbol="wls.server.symbol"/>
+      <suppress-pom file="common/templates/wls/wls_starter.jar" symbol="wls.server.symbol"/>
+      <suppress-pom file="common/templates/wls/wls_starter_reconfig_12.2.1.jar" symbol="wls.server.symbol"/>
+   </artifact-pom-overrides>
+   <libraries>
+      <library name="oracle.wls.weblogic_comp.wlst.classpath" type="none" visibility="none" size="5504">
+         <entry explode="true" include-parent="false" name="server/lib/weblogic.jar"/>
+      </library>
+   </libraries>
+   <stringsubs>
+      <ns2:group id="WlsHome">
+         <ns2:file-entry name="$wls.server.symbol.path$/server/bin/uninstallSvc.cmd"/>
+         <ns2:file-entry name="$wls.server.symbol.path$/server/bin/setWLSEnv.cmd"/>
+         <ns2:file-entry name="$wls.server.symbol.path$/server/bin/installSvc.cmd"/>
+         <ns2:file-entry name="$wls.server.symbol.path$/common/templates/scripts/wlst/basicWLSDomain.py"/>
+         <ns2:file-entry name="$wls.server.symbol.path$/common/bin/wlsifconfig.cmd"/>
+         <ns2:change-pair-ref name="WL_HOME"/>
+         <ns2:change-pair-ref name="BAR_WL_HOME"/>
+         <ns2:change-pair-ref name="POLICY_WL_HOME"/>
+         <ns2:change-pair-ref name="BEAHOME"/>
+      </ns2:group>
+      <ns2:group id="WlsHomeForward" mode="forward">
+         <ns2:file-entry name="$wls.server.symbol.path$/server/bin/setWLSEnv.sh"/>
+         <ns2:file-entry name="$wls.server.symbol.path$/server/bin/eclipse.sh"/>
+         <ns2:file-entry name="$wls.server.symbol.path$/server/lib/unix/nodemanager.sh"/>
+         <ns2:file-entry name="$wls.server.symbol.path$/server/bin/startRSDaemon.sh"/>
+         <ns2:file-entry name="$wls.server.symbol.path$/server/bin/stopRSDaemon.sh"/>
+         <ns2:file-entry name="$wls.server.symbol.path$/common/bin/wlscontrol.sh"/>
+         <ns2:file-entry name="$wls.server.symbol.path$/common/bin/wlsifconfig.sh"/>
+         <ns2:change-pair-ref name="WL_HOME"/>
+         <ns2:change-pair-ref name="BEAHOME"/>
+         <ns2:change-pair-ref name="BAR_WL_HOME"/>
+         <ns2:change-pair-ref name="POLICY_WL_HOME"/>
+      </ns2:group>
+      <ns2:change-pair id="WL_HOME" before="@WL_HOME" after="$wls.server.symbol.path$"/>
+      <ns2:change-pair id="BAR_WL_HOME" before="@BAR_WL_HOME" after="$wls.server.symbol.path$"/>
+      <ns2:change-pair id="POLICY_WL_HOME" before="@POLICY_WL_HOME" after="$wls.server.symbol.path$"/>
+      <ns2:change-pair id="BEAHOME" before="@BEAHOME" after="$ORACLE_HOME$"/>
+      <ns2:change-pair id="MAJOR" before="@MAJOR" after="12"/>
+      <ns2:change-pair id="MINOR" before="@MINOR" after="2"/>
+      <ns2:change-pair id="SERVICEPACK" before="@SERVICEPACK" after="1"/>
+      <ns2:change-pair id="ROLLINGPATCH" before="@ROLLINGPATCH" after="2"/>
+   </stringsubs>
+</component-def>

@@ -1,0 +1,1284 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.wls.admin.console.en" version="12.2.1.2.0" description="Oracle WebLogic Administration Console English" gdr-version="1.8.0.0" groupId="com.oracle.weblogic" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="wls.server.symbol" source="filegroup1.jar" expanded="true" compacted="true" pom-gen="false">
+      <exclude regex="\.ade_path" match-dirs="true"/>
+      <directory dest="" patchable="true">
+         <directory dest="server" mode="750" patchable="true">
+            <directory dest="lib" mode="750" patchable="true">
+               <directory dest="consoleapp" mode="750" patchable="true">
+                  <directory dest="APP-INF" mode="750" patchable="true">
+                     <directory dest="lib" mode="750" patchable="true">
+                        <file size="20600" pack="true" dest="com.bea.core.process_5.4.0.0.jar" mode="640"/>
+                        <file size="185165" pack="true" dest="commons-beanutils.jar" mode="640"/>
+                        <file size="45932" pack="true" dest="commons-codec-1.3.jar" mode="640"/>
+                        <file size="165658" pack="true" dest="commons-digester.jar" mode="640"/>
+                        <file size="67628" pack="true" dest="commons-fileupload.jar" mode="640"/>
+                        <file size="182775" pack="true" dest="commons-io-2.4.jar" mode="640"/>
+                        <file size="37013" pack="true" dest="commons-logging-1.0.4.jar" mode="640"/>
+                        <file size="187053" pack="true" dest="commons-validator-1.4.1.jar" mode="640"/>
+                        <file size="63407" pack="true" dest="jakarta-oro.jar" mode="640"/>
+                        <file size="15706" pack="true" dest="jstl.jar" mode="640"/>
+                        <file size="344575" pack="true" dest="log4j-1.2.8.jar" mode="640"/>
+                        <file size="1023436" pack="true" dest="netuix_common.jar" mode="640"/>
+                        <file size="4938500" pack="true" dest="netuix_schemas.jar" mode="640"/>
+                        <file size="73197" pack="true" dest="netuix_system.jar" mode="640"/>
+                        <file size="27482" pack="true" dest="p13n_common.jar" mode="640"/>
+                        <file size="1612349" pack="true" dest="p13n-schemas.jar" mode="640"/>
+                        <file size="1705834" pack="true" dest="p13n_system.jar" mode="640"/>
+                        <file size="285391" pack="true" dest="standard.jar" mode="640"/>
+                        <file size="578024" pack="true" dest="struts.jar" mode="640"/>
+                        <file size="103307" pack="true" dest="wlw-system.jar" mode="640"/>
+                        <file size="2829610" pack="true" dest="wsrp-client.jar" mode="640"/>
+                        <file size="1010693" pack="true" dest="wsrp-common.jar" mode="640"/>
+                     </directory>
+                  </directory>
+                  <directory dest="consolehelp" mode="750" patchable="true">
+                     <directory dest="css" mode="750" patchable="true">
+                        <file size="14398" dest="forms.css" mode="640"/>
+                        <file size="2351" dest="login.css" mode="640"/>
+                        <file size="343" dest="navtree.css" mode="640"/>
+                     </directory>
+                     <directory dest="en-us" mode="750" patchable="true">
+                        <directory dest="console-search" mode="750" patchable="true">
+                           <file size="182669" dest="DOCS" mode="640"/>
+                           <file size="10181" dest="DOCS.TAB" mode="640"/>
+                           <file size="7019" dest="OFFSETS" mode="640"/>
+                           <file size="1021528" dest="POSITIONS" mode="640"/>
+                           <file size="56" dest="SCHEMA" mode="640"/>
+                           <file size="276480" dest="TMAP" mode="640"/>
+                        </directory>
+                        <directory dest="taskhelp" mode="750" patchable="true">
+                           <directory dest="images" mode="750" patchable="true">
+                              <file size="917" dest="ActiveView.gif" mode="640"/>
+                              <file size="8473" dest="ChartEditToolIcon.gif" mode="640"/>
+                              <file size="17782" dest="ChartMenu.gif" mode="640"/>
+                              <file size="2819" dest="CopyViewIcon.gif" mode="640"/>
+                              <file size="1029" dest="DashboardChartEditor.gif" mode="640"/>
+                              <file size="2720" dest="DeleteViewIcon.gif" mode="640"/>
+                              <file size="978" dest="icon_custom_mbean.gif" mode="640"/>
+                              <file size="367" dest="icon_jmx_mbean.gif" mode="640"/>
+                              <file size="895" dest="icon_mbean_attribute.gif" mode="640"/>
+                              <file size="897" dest="icon_mbean_instance.gif" mode="640"/>
+                              <file size="989" dest="icon_weblogic_mbean.gif" mode="640"/>
+                              <file size="970" dest="icon_weblogic_platform.gif" mode="640"/>
+                              <file size="901" dest="InactiveView.gif" mode="640"/>
+                              <file size="4293" dest="MetricMenu.gif" mode="640"/>
+                              <file size="2791" dest="NewViewIcon.gif" mode="640"/>
+                              <file size="370" dest="nonDynChange.gif" mode="640"/>
+                              <file size="5092" dest="Overview.gif" mode="640"/>
+                              <file size="17996" dest="policyEdit.gif" mode="640"/>
+                              <file size="79217" dest="policyEdit.psp" mode="640"/>
+                              <file size="13309" dest="policyTableEAR.gif" mode="640"/>
+                              <file size="48112" dest="policyTableEAR.psp" mode="640"/>
+                              <file size="14931" dest="policyTableURL.gif" mode="640"/>
+                              <file size="70573" dest="policyTableURL.psp" mode="640"/>
+                              <file size="2184" dest="PollingStatusIcon.gif" mode="640"/>
+                              <file size="375" dest="refresh_icon.gif" mode="640"/>
+                              <file size="9010" dest="request_method_name_details.gif" mode="640"/>
+                              <file size="11469" dest="request_name_details.gif" mode="640"/>
+                              <file size="14889" dest="rolesTableEAR.gif" mode="640"/>
+                              <file size="66241" dest="rolesTableEAR.psp" mode="640"/>
+                              <file size="12439" dest="rolesTableModule.gif" mode="640"/>
+                              <file size="55388" dest="rolesTableModule.psp" mode="640"/>
+                              <file size="2002" dest="StartViewIcon.gif" mode="640"/>
+                              <file size="2135" dest="StopAllViewsIcon.gif" mode="640"/>
+                              <file size="2035" dest="StopViewIcon.gif" mode="640"/>
+                              <file size="3420" dest="ToolbarMenu.gif" mode="640"/>
+                              <file size="5903" dest="ViewListMenu.gif" mode="640"/>
+                              <file size="3504" dest="ViewMenu.gif" mode="640"/>
+                           </directory>
+                        </directory>
+                        <file size="393" dest="blank.html" mode="640"/>
+                        <file size="7531" dest="CookieClass.js" mode="640"/>
+                        <file size="9049" dest="displayContent.js" mode="640"/>
+                        <file size="3753" dest="index.html" mode="640"/>
+                        <file size="324355" dest="javahelp-map.jhm" mode="640"/>
+                        <file size="287186" dest="javahelp-toc.xml" mode="640"/>
+                        <file size="2299" dest="restart.html" mode="640"/>
+                        <file size="882" dest="thanks.html" mode="640"/>
+                        <file size="921" dest="topicInfo.js" mode="640"/>
+                        <file size="8815" dest="wls-console-help.css" mode="640"/>
+                        <file size="12199" dest="wls.css" mode="640"/>
+                     </directory>
+                     <directory dest="framework" mode="750" patchable="true">
+                        <directory dest="markup" mode="750" patchable="true">
+                           <directory dest="layout" mode="750" patchable="true">
+                              <file size="2062" dest="fourcolumnflow.layout" mode="640"/>
+                              <file size="1867" dest="fourcolumn.gif" mode="640"/>
+                              <file size="493" dest="fourcolumn.html.txt" mode="640"/>
+                              <file size="2252" dest="fourcolumn.layout" mode="640"/>
+                              <file size="1163" dest="onecolumnflow.layout" mode="640"/>
+                              <file size="1236" dest="singlecolumn.gif" mode="640"/>
+                              <file size="200" dest="singlecolumn.html.txt" mode="640"/>
+                              <file size="1306" dest="singlecolumn.layout" mode="640"/>
+                              <file size="1752" dest="threecolumnflow.layout" mode="640"/>
+                              <file size="1777" dest="threecolumn.gif" mode="640"/>
+                              <file size="395" dest="threecolumn.html.txt" mode="640"/>
+                              <file size="1924" dest="threecolumn.layout" mode="640"/>
+                              <file size="1448" dest="twocolumnflow.layout" mode="640"/>
+                              <file size="1332" dest="twocolumn.gif" mode="640"/>
+                              <file size="297" dest="twocolumn.html.txt" mode="640"/>
+                              <file size="1607" dest="twocolumn.layout" mode="640"/>
+                           </directory>
+                           <directory dest="lookandfeel" mode="750" patchable="true">
+                              <file size="1164" dest="console.laf" mode="640"/>
+                           </directory>
+                           <directory dest="menu" mode="750" patchable="true">
+                              <file size="645" dest="multilevel.menu" mode="640"/>
+                              <file size="628" dest="singlelevel.menu" mode="640"/>
+                           </directory>
+                           <directory dest="shell" mode="750" patchable="true">
+                              <file size="777" dest="headerFooter.shell" mode="640"/>
+                           </directory>
+                        </directory>
+                        <directory dest="skeletons" mode="750" patchable="true">
+                           <directory dest="console" mode="750" patchable="true">
+                              <directory dest="css" mode="750" patchable="true">
+                                 <file size="1169" dest="layout.css" mode="640"/>
+                              </directory>
+                              <directory dest="js" mode="750" patchable="true">
+                                 <file size="1755" dest="buttons.js" mode="640"/>
+                                 <file size="1354" dest="util.js" mode="640"/>
+                              </directory>
+                              <file size="1606" dest="abstractbutton.jsp" mode="640"/>
+                              <file size="9101" dest="abstractmenu.jsp" mode="640"/>
+                              <file size="603" dest="body.jsp" mode="640"/>
+                              <file size="4573" dest="book.jsp" mode="640"/>
+                              <file size="4873" dest="borderlayout.jsp" mode="640"/>
+                              <file size="1188" dest="buttondelete.jsp" mode="640"/>
+                              <file size="983" dest="buttonfloat.jsp" mode="640"/>
+                              <file size="432" dest="desktop.jsp" mode="640"/>
+                              <file size="1989" dest="flowlayout.jsp" mode="640"/>
+                              <file size="1853" dest="footer.jsp" mode="640"/>
+                              <file size="1942" dest="gridlayout.jsp" mode="640"/>
+                              <file size="2337" dest="header.jsp" mode="640"/>
+                              <file size="787" dest="head.jsp" mode="640"/>
+                              <file size="1715" dest="multilevelmenu.jsp" mode="640"/>
+                              <file size="765" dest="nolayout.jsp" mode="640"/>
+                              <file size="708" dest="page.jsp" mode="640"/>
+                              <file size="650" dest="placeholder.jsp" mode="640"/>
+                              <file size="555" dest="shell.jsp" mode="640"/>
+                              <file size="1767" dest="singlelevelmenu.jsp" mode="640"/>
+                              <file size="1674" dest="skeleton.xml" mode="640"/>
+                              <file size="429" dest="structure.xml" mode="640"/>
+                              <file size="748" dest="theme.jsp" mode="640"/>
+                              <file size="2013" dest="titlebar.jsp" mode="640"/>
+                              <file size="851" dest="togglebutton.jsp" mode="640"/>
+                              <file size="2587" dest="twocollayout.jsp" mode="640"/>
+                              <file size="2991" dest="window.jsp" mode="640"/>
+                           </directory>
+                        </directory>
+                        <directory dest="skins" mode="750" patchable="true">
+                           <directory dest="console" mode="750" patchable="true">
+                              <directory dest="css" mode="750" patchable="true">
+                                 <file size="4397" dest="console.css" mode="640"/>
+                                 <file size="1982" dest="general.css" mode="640"/>
+                                 <file size="3148" dest="menu.css" mode="640"/>
+                                 <file size="3524" dest="window.css" mode="640"/>
+                              </directory>
+                              <directory dest="images" mode="750" patchable="true">
+                                 <file size="189" dest="gradient-white-none.png" mode="640"/>
+                                 <file size="3610" dest="Loginarea_Background.png" mode="640"/>
+                                 <file size="2455" dest="Login_GC_LoginPage_Bg.gif" mode="640"/>
+                                 <file size="4766" dest="OracleLogo.png" mode="640"/>
+                                 <file size="5033" dest="pageBusy.gif" mode="640"/>
+                                 <file size="1097" dest="pageIdle.gif" mode="640"/>
+                                 <file size="236" dest="r_bg_global.png" mode="640"/>
+                                 <file size="54" dest="shadow-bottom.gif" mode="640"/>
+                                 <file size="113" dest="shadow-corners.gif" mode="640"/>
+                                 <file size="53" dest="shadow-right.gif" mode="640"/>
+                                 <file size="339" dest="tab_left.gif" mode="640"/>
+                                 <file size="1635" dest="tab_right.gif" mode="640"/>
+                                 <file size="2851" dest="titlebar_bg.png" mode="640"/>
+                                 <file size="841" dest="titlebar-button-custom-mode-exit.gif" mode="640"/>
+                                 <file size="841" dest="titlebar-button-custom-mode.gif" mode="640"/>
+                                 <file size="85" dest="titlebar-button-delete.gif" mode="640"/>
+                                 <file size="79" dest="titlebar-button-edit-exit.gif" mode="640"/>
+                                 <file size="78" dest="titlebar-button-edit.gif" mode="640"/>
+                                 <file size="106" dest="titlebar-button-float.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/framework/skins/console/images/titlebar-button-edit-exit.gif" size="79" dest="titlebar-button-help-exit.gif" mode="640"/>
+                                 <file size="78" dest="titlebar-button-help.gif" mode="640"/>
+                                 <file size="76" dest="titlebar-button-maximize.gif" mode="640"/>
+                                 <file size="82" dest="titlebar-button-minimize.gif" mode="640"/>
+                                 <file size="81" dest="titlebar-button-unmaximize.gif" mode="640"/>
+                                 <file size="85" dest="titlebar-button-unminimize.gif" mode="640"/>
+                              </directory>
+                              <file size="1098" dest="skin.xml" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/framework/skeletons/console/structure.xml" size="429" dest="structure.xml" mode="640"/>
+                           </directory>
+                        </directory>
+                     </directory>
+                     <directory dest="images" mode="750" patchable="true">
+                        <file size="212" dest="button_bg_md.png" mode="640"/>
+                        <file size="214" dest="button_bg_mo.png" mode="640"/>
+                        <file size="210" dest="button_bg_n.png" mode="640"/>
+                        <file size="82" dest="high.gif" mode="640"/>
+                        <file size="82" dest="low.gif" mode="640"/>
+                        <file size="82" dest="med.gif" mode="640"/>
+                        <file size="82" dest="medhigh.gif" mode="640"/>
+                        <file size="82" dest="medlow.gif" mode="640"/>
+                        <file size="43" dest="spacer.gif" mode="640"/>
+                     </directory>
+                     <file size="884" dest="consolehelp_en_US.hs" mode="640"/>
+                     <file size="5498" dest="console-help.portal" mode="640"/>
+                     <file size="1580" dest="HelpContentPortlet.dependencies" mode="640"/>
+                     <file size="249" dest="index.jsp" mode="640"/>
+                     <directory dest="navtree" mode="750" patchable="true">
+                        <file size="10662" dest="searchlist.js" mode="640"/>
+                        <file size="37714" dest="tree.js" mode="640"/>
+                     </directory>
+                     <directory dest="PortalConfig" mode="750" patchable="true">
+                        <file size="729" dest="Content.portlet" mode="640"/>
+                        <file size="878" dest="search.dependencies" mode="640"/>
+                        <file size="685" dest="Search.portlet" mode="640"/>
+                        <file size="699" dest="TOC.portlet" mode="640"/>
+                        <file size="1072" dest="tree.dependencies" mode="640"/>
+                     </directory>
+                     <directory dest="utils" mode="750" patchable="true">
+                        <directory dest="JStree" mode="750" patchable="true">
+                           <directory dest="html" mode="750" patchable="true">
+                              <file size="48" dest="blank.html" mode="640"/>
+                              <file size="563" dest="collection.js" mode="640"/>
+                              <file size="1789" dest="jstree.css" mode="640"/>
+                              <file size="15322" dest="jstree.js" mode="640"/>
+                              <file size="6144" dest="Thumbs.db" mode="640"/>
+                              <file size="3014" dest="wadminStyle.css" mode="640"/>
+                           </directory>
+                           <directory dest="images" mode="750" patchable="true">
+                              <file size="149" dest="base_disabled.gif" mode="640"/>
+                              <file size="170" dest="base_disconnected.gif" mode="640"/>
+                              <file size="136" dest="base_error.gif" mode="640"/>
+                              <file size="151" dest="base.gif" mode="640"/>
+                              <file size="120" dest="bg_stripes.gif" mode="640"/>
+                              <file size="67" dest="childrenconnector.gif" mode="640"/>
+                              <file size="63" dest="childrenendconnector.gif" mode="640"/>
+                              <file size="886" dest="document.gif" mode="640"/>
+                              <file size="62" dest="empty.gif" mode="640"/>
+                              <file size="1004" dest="folderclosed_2.gif" mode="640"/>
+                              <file size="161" dest="folderclosed.gif" mode="640"/>
+                              <file size="125" dest="folder_disabled.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/folderclosed.gif" size="161" dest="folder.gif" mode="640"/>
+                              <file size="131" dest="folderopen_disabled.gif" mode="640"/>
+                              <file size="167" dest="folderopen.gif" mode="640"/>
+                              <file size="73" dest="joinbottom.gif" mode="640"/>
+                              <file size="70" dest="join.gif" mode="640"/>
+                              <file size="145" dest="leafclosed.gif" mode="640"/>
+                              <file size="143" dest="leafopened.gif" mode="640"/>
+                              <file size="70" dest="line.gif" mode="640"/>
+                              <file size="85" dest="minusbottom.gif" mode="640"/>
+                              <file size="85" dest="minus.gif" mode="640"/>
+                              <file size="125" dest="page.gif" mode="640"/>
+                              <file size="169" dest="page-original.gif" mode="640"/>
+                              <file size="89" dest="plusbottom.gif" mode="640"/>
+                              <file size="90" dest="plus.gif" mode="640"/>
+                              <file size="66" dest="rootconnector.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/images/spacer.gif" size="43" dest="spacer.gif" mode="640"/>
+                              <file size="118" dest="system.gif" mode="640"/>
+                              <file size="153" dest="workflow_16.gif" mode="640"/>
+                           </directory>
+                           <file size="2513" dest="content.html" mode="640"/>
+                           <file size="38" dest="foo.html" mode="640"/>
+                           <file size="235" dest="index.html" mode="640"/>
+                           <file size="15360" dest="Thumbs.db" mode="640"/>
+                           <file size="2646" dest="toolbar.html" mode="640"/>
+                        </directory>
+                     </directory>
+                     <directory dest="virtualdirectory" mode="750" patchable="true">
+                        <file size="4360959" pack="true" dest="console-help-html.jar" mode="640"/>
+                     </directory>
+                     <directory dest="WEB-INF" mode="750" patchable="true">
+                        <directory dest="classes" mode="750" patchable="true">
+                           <directory dest="com" mode="750" patchable="true">
+                              <directory dest="bea" mode="750" patchable="true">
+                                 <directory dest="help" mode="750" patchable="true">
+                                    <file size="551" dest="ConsoleSearchEngine.class" mode="640"/>
+                                    <file size="1598" dest="ConsoleSearchQuery.class" mode="640"/>
+                                    <directory dest="lifecycle" mode="750" patchable="true">
+                                       <file size="900" dest="HelpSetInfo.class" mode="640"/>
+                                       <file size="969" dest="InitServletHelpBroker.class" mode="640"/>
+                                    </directory>
+                                    <directory dest="utils" mode="750" patchable="true">
+                                       <file size="253" dest="ConsoleHelpException.class" mode="640"/>
+                                       <file size="1673" dest="GeneralBackingFile.class" mode="640"/>
+                                       <file size="3640" dest="HelpContentHelper.class" mode="640"/>
+                                       <file size="6455" dest="HelpSetHelper.class" mode="640"/>
+                                       <file size="1425" dest="HelpSetMap.class" mode="640"/>
+                                       <file size="1263" dest="HelpSingleFileServlet.class" mode="640"/>
+                                       <file size="947" dest="HelpTree.class" mode="640"/>
+                                       <file size="2101" dest="HelpUtilities.class" mode="640"/>
+                                       <file size="4445" dest="PortalUtils.class" mode="640"/>
+                                    </directory>
+                                 </directory>
+                                 <directory dest="toc" mode="750" patchable="true">
+                                    <directory dest="tools" mode="750" patchable="true">
+                                       <file size="5186" dest="HelpTreeHelper.class" mode="640"/>
+                                       <file size="7131" dest="HelpTreeNode.class" mode="640"/>
+                                       <file size="2222" dest="HierarchyBean.class" mode="640"/>
+                                    </directory>
+                                 </directory>
+                              </directory>
+                           </directory>
+                           <directory dest="jsp_servlet" mode="750" patchable="true">
+                              <directory dest="_framework" mode="750" patchable="true">
+                                 <directory dest="_skeletons" mode="750" patchable="true">
+                                    <directory dest="_console" mode="750" patchable="true">
+                                       <file size="14185" dest="__abstractbutton.class" mode="640"/>
+                                       <file size="42445" dest="__abstractmenu.class" mode="640"/>
+                                       <file size="9621" dest="__body.class" mode="640"/>
+                                       <file size="27997" dest="__book.class" mode="640"/>
+                                       <file size="32646" dest="__borderlayout.class" mode="640"/>
+                                       <file size="9898" dest="__buttondelete.class" mode="640"/>
+                                       <file size="8792" dest="__buttonfloat.class" mode="640"/>
+                                       <file size="8116" dest="__desktop.class" mode="640"/>
+                                       <file size="22291" dest="__flowlayout.class" mode="640"/>
+                                       <file size="16422" dest="__footer.class" mode="640"/>
+                                       <file size="16069" dest="__gridlayout.class" mode="640"/>
+                                       <file size="9842" dest="__head.class" mode="640"/>
+                                       <file size="20227" dest="__header.class" mode="640"/>
+                                       <file size="14418" dest="__multilevelmenu.class" mode="640"/>
+                                       <file size="10299" dest="__nolayout.class" mode="640"/>
+                                       <file size="9811" dest="__page.class" mode="640"/>
+                                       <file size="8146" dest="__placeholder.class" mode="640"/>
+                                       <file size="9251" dest="__shell.class" mode="640"/>
+                                       <file size="15516" dest="__singlelevelmenu.class" mode="640"/>
+                                       <file size="9751" dest="__theme.class" mode="640"/>
+                                       <file size="14961" dest="__titlebar.class" mode="640"/>
+                                       <file size="8703" dest="__togglebutton.class" mode="640"/>
+                                       <file size="16865" dest="__twocollayout.class" mode="640"/>
+                                       <file size="23739" dest="__window.class" mode="640"/>
+                                    </directory>
+                                 </directory>
+                              </directory>
+                              <file size="5987" dest="__index.class" mode="640"/>
+                              <directory dest="_jsp" mode="750" patchable="true">
+                                 <directory dest="_errors" mode="750" patchable="true">
+                                    <file size="14334" dest="__404.class" mode="640"/>
+                                    <file size="14346" dest="__500.class" mode="640"/>
+                                    <file size="13083" dest="__503.class" mode="640"/>
+                                 </directory>
+                                 <file size="11592" dest="__contentexception.class" mode="640"/>
+                                 <file size="7402" dest="__contentview.class" mode="640"/>
+                                 <file size="6510" dest="__globalexception.class" mode="640"/>
+                                 <file size="12889" dest="__searchview.class" mode="640"/>
+                                 <file size="6127" dest="__tocexception.class" mode="640"/>
+                                 <file size="13168" dest="__tocview.class" mode="640"/>
+                              </directory>
+                           </directory>
+                           <file size="2655" dest="HelpViewerResources_de.properties" mode="640"/>
+                           <file size="2644" dest="HelpViewerResources_es.properties" mode="640"/>
+                           <file size="2510" dest="HelpViewerResources_fr.properties" mode="640"/>
+                           <file size="2372" dest="HelpViewerResources_it.properties" mode="640"/>
+                           <file size="4274" dest="HelpViewerResources_ja.properties" mode="640"/>
+                           <file size="3739" dest="HelpViewerResources_ko.properties" mode="640"/>
+                           <file size="2181" dest="HelpViewerResources.properties" mode="640"/>
+                           <file size="2542" dest="HelpViewerResources_pt_BR.properties" mode="640"/>
+                           <file size="3104" dest="HelpViewerResources_zh_CN.properties" mode="640"/>
+                           <file size="3141" dest="HelpViewerResources_zh_TW.properties" mode="640"/>
+                           <file size="758" dest="log4j.properties" mode="640"/>
+                           <file size="1701" dest="logging.properties" mode="640"/>
+                        </directory>
+                        <directory dest="lib" mode="750" patchable="true">
+                           <file size="769274" pack="true" dest="beehive-netui-core.jar" mode="640"/>
+                           <file size="631362" pack="true" dest="beehive-netui-tags.jar" mode="640"/>
+                           <file size="576800" pack="true" dest="console.jar" mode="640"/>
+                           <file size="506515" pack="true" dest="jh.jar" mode="640"/>
+                           <file size="6488" pack="true" dest="l10n_taglib.jar" mode="640"/>
+                           <file size="136478" pack="true" dest="netuix_common_web.jar" mode="640"/>
+                           <file size="1651433" pack="true" dest="netuix_servlet.jar" mode="640"/>
+                           <file size="302630" pack="true" dest="portlet-container.jar" mode="640"/>
+                           <file size="15305" pack="true" dest="prefs-spi.jar" mode="640"/>
+                           <file size="47929" pack="true" dest="render_taglib.jar" mode="640"/>
+                           <file size="24350" pack="true" dest="skeleton_taglib.jar" mode="640"/>
+                           <file jarentry="server/lib/consoleapp/APP-INF/lib/standard.jar" size="293750" dest="standard.jar" mode="640"/>
+                           <file size="61743" pack="true" dest="struts-adapter.jar" mode="640"/>
+                           <file jarentry="server/lib/consoleapp/APP-INF/lib/struts.jar" size="588146" dest="struts.jar" mode="640"/>
+                        </directory>
+                        <file size="102810" dest="console-html.tld" mode="640"/>
+                        <file size="5645" dest="jhlib.tld" mode="640"/>
+                        <file size="3015" dest="netuix-config.xml" mode="640"/>
+                        <file size="1524" dest="weblogic.xml" mode="640"/>
+                        <file size="5922" dest="web.xml" mode="640"/>
+                     </directory>
+                  </directory>
+                  <directory dest="help" mode="750" patchable="true">
+                     <directory dest="WEB-INF" mode="750" patchable="true">
+                        <file size="1517" dest="weblogic.xml" mode="640"/>
+                     </directory>
+                  </directory>
+                  <directory dest="META-INF" mode="750" patchable="true">
+                     <file size="531" dest="application.xml" mode="640"/>
+                     <file size="2227" dest="weblogic-application.xml" mode="640"/>
+                  </directory>
+                  <directory dest="webapp" mode="750" patchable="true">
+                     <directory dest="css" mode="750" patchable="true">
+                        <directory dest="lib" mode="750" patchable="true">
+                           <file size="1351" dest="ui.core.css" mode="640"/>
+                           <file size="963" dest="ui.dialog.css" mode="640"/>
+                           <file size="3476" dest="ui-min.css" mode="640"/>
+                           <file size="993" dest="ui.resizable.css" mode="640"/>
+                           <file size="1375" dest="ui.tabs.css" mode="640"/>
+                           <file size="2769" dest="ui.theme.css" mode="640"/>
+                        </directory>
+                        <file size="836" dest="changemgmt.css" mode="640"/>
+                        <file size="8356" dest="content.css" mode="640"/>
+                        <file size="20919" dest="dashboard-min.css" mode="640"/>
+                        <file size="15827" dest="forms.css" mode="640"/>
+                        <file size="552" dest="jndinavtree.css" mode="640"/>
+                        <file size="3194" dest="login.css" mode="640"/>
+                        <file size="11419" dest="mvccore.css" mode="640"/>
+                        <file size="502" dest="navtree.css" mode="640"/>
+                        <file size="433" dest="quicklinks.css" mode="640"/>
+                        <file size="1935" dest="requestPerf.css" mode="640"/>
+                        <file size="845" dest="systemstatus.css" mode="640"/>
+                        <file size="1041" dest="treeview.css" mode="640"/>
+                     </directory>
+                     <file size="35862" dest="consolejndi.portal" mode="640"/>
+                     <file size="22262" dest="console.portal" mode="640"/>
+                     <file size="10161" dest="dashboard" mode="640"/>
+                     <directory dest="framework" mode="750" patchable="true">
+                        <directory dest="features" mode="750" patchable="true">
+                           <directory dest="js" mode="750" patchable="true">
+                              <file size="22416" dest="async.js" mode="640"/>
+                           </directory>
+                           <file size="525" dest="Resources.properties" mode="640"/>
+                        </directory>
+                        <directory dest="markup" mode="750" patchable="true">
+                           <directory dest="layout" mode="750" patchable="true">
+                              <file jarentry="server/lib/consoleapp/consolehelp/framework/markup/layout/fourcolumnflow.layout" size="2062" dest="fourcolumnflow.layout" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/framework/markup/layout/fourcolumn.gif" size="1867" dest="fourcolumn.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/framework/markup/layout/fourcolumn.html.txt" size="493" dest="fourcolumn.html.txt" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/framework/markup/layout/fourcolumn.layout" size="2252" dest="fourcolumn.layout" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/framework/markup/layout/onecolumnflow.layout" size="1163" dest="onecolumnflow.layout" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/framework/markup/layout/singlecolumn.gif" size="1236" dest="singlecolumn.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/framework/markup/layout/singlecolumn.html.txt" size="200" dest="singlecolumn.html.txt" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/framework/markup/layout/singlecolumn.layout" size="1306" dest="singlecolumn.layout" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/framework/markup/layout/threecolumnflow.layout" size="1752" dest="threecolumnflow.layout" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/framework/markup/layout/threecolumn.gif" size="1777" dest="threecolumn.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/framework/markup/layout/threecolumn.html.txt" size="395" dest="threecolumn.html.txt" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/framework/markup/layout/threecolumn.layout" size="1924" dest="threecolumn.layout" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/framework/markup/layout/twocolumnflow.layout" size="1448" dest="twocolumnflow.layout" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/framework/markup/layout/twocolumn.gif" size="1332" dest="twocolumn.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/framework/markup/layout/twocolumn.html.txt" size="297" dest="twocolumn.html.txt" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/framework/markup/layout/twocolumn.layout" size="1607" dest="twocolumn.layout" mode="640"/>
+                           </directory>
+                           <directory dest="lookandfeel" mode="750" patchable="true">
+                              <file size="1179" dest="wlsconsole.laf" mode="640"/>
+                           </directory>
+                           <directory dest="menu" mode="750" patchable="true">
+                              <file jarentry="server/lib/consoleapp/consolehelp/framework/markup/menu/multilevel.menu" size="645" dest="multilevel.menu" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/framework/markup/menu/singlelevel.menu" size="628" dest="singlelevel.menu" mode="640"/>
+                           </directory>
+                           <directory dest="shell" mode="750" patchable="true">
+                              <file jarentry="server/lib/consoleapp/consolehelp/framework/markup/shell/headerFooter.shell" size="777" dest="headerFooter.shell" mode="640"/>
+                           </directory>
+                        </directory>
+                        <directory dest="skeletons" mode="750" patchable="true">
+                           <directory dest="wlsconsole" mode="750" patchable="true">
+                              <directory dest="css" mode="750" patchable="true">
+                                 <file size="1136" dest="layout.css" mode="640"/>
+                              </directory>
+                              <directory dest="js" mode="750" patchable="true">
+                                 <file jarentry="server/lib/consoleapp/consolehelp/framework/skeletons/console/js/buttons.js" size="1755" dest="buttons.js" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/framework/skeletons/console/js/util.js" size="1354" dest="util.js" mode="640"/>
+                              </directory>
+                              <file size="1661" dest="skeleton.xml" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/framework/skeletons/console/structure.xml" size="429" dest="structure.xml" mode="640"/>
+                           </directory>
+                        </directory>
+                        <directory dest="skins" mode="750" patchable="true">
+                           <directory dest="wlsconsole" mode="750" patchable="true">
+                              <directory dest="css" mode="750" patchable="true">
+                                 <file size="5147" dest="console.css" mode="640"/>
+                                 <file size="2074" dest="general.css" mode="640"/>
+                                 <file size="3144" dest="menu.css" mode="640"/>
+                                 <file size="3437" dest="window.css" mode="640"/>
+                              </directory>
+                              <directory dest="images" mode="750" patchable="true">
+                                 <file jarentry="server/lib/consoleapp/consolehelp/framework/skins/console/images/gradient-white-none.png" size="189" dest="gradient-white-none.png" mode="640"/>
+                                 <file size="6261" dest="login-12c.png" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/framework/skins/console/images/Loginarea_Background.png" size="3610" dest="Loginarea_Background.png" mode="640"/>
+                                 <file size="1101" dest="login-GC-page-BG.png" mode="640"/>
+                                 <file size="11705" dest="login_WebLogic_branding.png" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/framework/skins/console/images/OracleLogo.png" size="4766" dest="OracleLogo.png" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/framework/skins/console/images/pageBusy.gif" size="5033" dest="pageBusy.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/framework/skins/console/images/pageIdle.gif" size="1097" dest="pageIdle.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/framework/skins/console/images/r_bg_global.png" size="236" dest="r_bg_global.png" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/framework/skins/console/images/shadow-bottom.gif" size="54" dest="shadow-bottom.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/framework/skins/console/images/shadow-corners.gif" size="113" dest="shadow-corners.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/framework/skins/console/images/shadow-right.gif" size="53" dest="shadow-right.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/framework/skins/console/images/tab_left.gif" size="339" dest="tab_left.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/framework/skins/console/images/tab_right.gif" size="1635" dest="tab_right.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/framework/skins/console/images/titlebar_bg.png" size="2851" dest="titlebar_bg.png" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/framework/skins/console/images/titlebar-button-custom-mode-exit.gif" size="841" dest="titlebar-button-custom-mode-exit.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/framework/skins/console/images/titlebar-button-custom-mode.gif" size="841" dest="titlebar-button-custom-mode.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/framework/skins/console/images/titlebar-button-delete.gif" size="85" dest="titlebar-button-delete.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/framework/skins/console/images/titlebar-button-edit-exit.gif" size="79" dest="titlebar-button-edit-exit.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/framework/skins/console/images/titlebar-button-edit.gif" size="78" dest="titlebar-button-edit.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/framework/skins/console/images/titlebar-button-float.gif" size="106" dest="titlebar-button-float.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/framework/skins/console/images/titlebar-button-edit-exit.gif" size="79" dest="titlebar-button-help-exit.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/framework/skins/console/images/titlebar-button-help.gif" size="78" dest="titlebar-button-help.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/framework/skins/console/images/titlebar-button-maximize.gif" size="76" dest="titlebar-button-maximize.gif" mode="640"/>
+                                 <file size="231" dest="titlebar-button-minimize.png" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/framework/skins/console/images/titlebar-button-unmaximize.gif" size="81" dest="titlebar-button-unmaximize.gif" mode="640"/>
+                                 <file size="251" dest="titlebar-button-unminimize.png" mode="640"/>
+                              </directory>
+                              <file size="1104" dest="skin.xml" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/framework/skeletons/console/structure.xml" size="429" dest="structure.xml" mode="640"/>
+                           </directory>
+                        </directory>
+                     </directory>
+                     <directory dest="images" mode="750" patchable="true">
+                        <directory dest="deployment" mode="750" patchable="true">
+                           <file size="591" dest="der.gif" mode="640"/>
+                           <file size="1043" dest="ear.gif" mode="640"/>
+                           <file size="576" dest="exploded_archive.gif" mode="640"/>
+                           <file size="589" dest="file.gif" mode="640"/>
+                           <file size="353" dest="folder.gif" mode="640"/>
+                           <file size="379" dest="gar.gif" mode="640"/>
+                           <file size="390" dest="jar.gif" mode="640"/>
+                           <file size="353" dest="jdbc_module.gif" mode="640"/>
+                           <file size="154" dest="jms_module.gif" mode="640"/>
+                           <file size="589" dest="library.gif" mode="640"/>
+                           <file jarentry="server/lib/consoleapp/webapp/images/deployment/der.gif" size="591" dest="pem.gif" mode="640"/>
+                           <file jarentry="server/lib/consoleapp/webapp/images/deployment/gar.gif" size="379" dest="rar.gif" mode="640"/>
+                           <file size="376" dest="sca_bepl.gif" mode="640"/>
+                           <file size="568" dest="sca_composite.gif" mode="640"/>
+                           <file size="598" dest="sca_extension.gif" mode="640"/>
+                           <file size="589" dest="sca_java.gif" mode="640"/>
+                           <file size="600" dest="sca_spring.gif" mode="640"/>
+                           <file size="601" dest="war.gif" mode="640"/>
+                           <file size="1024" dest="web_service.gif" mode="640"/>
+                           <file size="357" dest="xml.gif" mode="640"/>
+                           <file jarentry="server/lib/consoleapp/webapp/images/deployment/jar.gif" size="390" dest="zip.gif" mode="640"/>
+                        </directory>
+                        <file size="300" dest="advancedclosed.gif" mode="640"/>
+                        <file size="188" dest="advancedopened.gif" mode="640"/>
+                        <file size="624" dest="app_restart.gif" mode="640"/>
+                        <file jarentry="server/lib/consoleapp/consolehelp/images/button_bg_md.png" size="212" dest="button_bg_md.png" mode="640"/>
+                        <file jarentry="server/lib/consoleapp/consolehelp/images/button_bg_mo.png" size="214" dest="button_bg_mo.png" mode="640"/>
+                        <file jarentry="server/lib/consoleapp/consolehelp/images/button_bg_n.png" size="210" dest="button_bg_n.png" mode="640"/>
+                        <file size="45" dest="buttonSeparator.gif" mode="640"/>
+                        <file size="170" dest="ccont_bd_header_bg.png" mode="640"/>
+                        <file size="172" dest="ccont_header_bg.png" mode="640"/>
+                        <file size="300" dest="checkmark_status.gif" mode="640"/>
+                        <file size="11766" dest="dbbtns.png" mode="640"/>
+                        <file size="2169" dest="dbview.png" mode="640"/>
+                        <file size="1828" dest="dialogClose.png" mode="640"/>
+                        <file size="388" dest="disclose.png" mode="640"/>
+                        <file size="82" dest="dropdown.gif" mode="640"/>
+                        <file size="73" dest="error.gif" mode="640"/>
+                        <file size="343" dest="error_status.gif" mode="640"/>
+                        <file size="2876" dest="footer_bg.png" mode="640"/>
+                        <file size="161" dest="home_ena.gif" mode="640"/>
+                        <file size="77" dest="joinbottom.gif" mode="640"/>
+                        <file size="73" dest="join.gif" mode="640"/>
+                        <file size="83" dest="leafclosed.gif" mode="640"/>
+                        <file size="78" dest="leafopened.gif" mode="640"/>
+                        <file size="516" dest="menubullet_status.png" mode="640"/>
+                        <file size="306" dest="menucheck_status.png" mode="640"/>
+                        <file size="4870" dest="menu_shadow.png" mode="640"/>
+                        <file size="266" dest="menu_shadowtrbl.png" mode="640"/>
+                        <file size="2216" dest="metricIcons.png" mode="640"/>
+                        <file size="7277" dest="m_shadow.png" mode="640"/>
+                        <file size="235" dest="m_shadowtrbl.png" mode="640"/>
+                        <file size="135" dest="newbrowser_sm_qualifier.gif" mode="640"/>
+                        <file size="243" dest="nodeprocessing_anim.gif" mode="640"/>
+                        <file size="585" dest="normal_status.gif" mode="640"/>
+                        <file size="1117" dest="noteCone.png" mode="640"/>
+                        <file size="203" dest="openSubmenu.png" mode="640"/>
+                        <file size="174" dest="overlay.png" mode="640"/>
+                        <file size="1648" dest="page_lev_busy.gif" mode="640"/>
+                        <file size="159" dest="page_lev_idle.gif" mode="640"/>
+                        <file size="908" dest="recording.gif" mode="640"/>
+                        <file size="330" dest="search_ena.gif" mode="640"/>
+                        <file size="55" dest="separator_bg.gif" mode="640"/>
+                        <file jarentry="server/lib/consoleapp/consolehelp/en-us/taskhelp/images/nonDynChange.gif" size="370" dest="serverrestart.gif" mode="640"/>
+                        <file size="2651" dest="severity.png" mode="640"/>
+                        <file size="3719" dest="shuttle.gif" mode="640"/>
+                        <file size="7746" dest="shuttle.png" mode="640"/>
+                        <file size="195" dest="sort_down.gif" mode="640"/>
+                        <file size="195" dest="sort_up.gif" mode="640"/>
+                        <file jarentry="server/lib/consoleapp/consolehelp/images/spacer.gif" size="43" dest="spacer.gif" mode="640"/>
+                        <file size="450" dest="splitter.png" mode="640"/>
+                        <file size="64" dest="table_collapseSection.gif" mode="640"/>
+                        <file size="63" dest="table_expandSection.gif" mode="640"/>
+                        <file size="318" dest="table_invalidResource.gif" mode="640"/>
+                        <file size="186" dest="table_validResource.gif" mode="640"/>
+                        <file size="2847" dest="titleBar_bg.png" mode="640"/>
+                        <file size="315" dest="warning_status.gif" mode="640"/>
+                     </directory>
+                     <directory dest="javascript" mode="750" patchable="true">
+                        <directory dest="lib" mode="750" patchable="true">
+                           <file size="11363" dest="excanvas.js" mode="640"/>
+                           <file size="36657" dest="flot-min.js" mode="640"/>
+                           <file size="57254" dest="jquery-min.js" mode="640"/>
+                           <file size="3335" dest="json2-min.js" mode="640"/>
+                           <file size="94494" dest="ui-min.js" mode="640"/>
+                        </directory>
+                        <file size="2358" dest="ButtonMenu.js" mode="640"/>
+                        <file size="1098" dest="changemgmt.js" mode="640"/>
+                        <file size="21186" dest="chooser.js" mode="640"/>
+                        <file size="1973" dest="console-help.js" mode="640"/>
+                        <file size="6152" dest="consoleUtil.js" mode="640"/>
+                        <file size="151843" dest="db-min.js" mode="640"/>
+                        <file size="6381" dest="DeploymentTargetTag_javascript.js" mode="640"/>
+                        <file size="11957" dest="form.js" mode="640"/>
+                        <file size="5635" dest="help.js" mode="640"/>
+                        <file size="1182" dest="jdbc.js" mode="640"/>
+                        <file size="29212" dest="mvc-min.js" mode="640"/>
+                        <file size="6639" dest="portletrefresh.js" mode="640"/>
+                        <file size="1968" dest="PredicateEditor.js" mode="640"/>
+                        <file size="3783" dest="recorder.js" mode="640"/>
+                        <file size="28118" dest="rp-min.js" mode="640"/>
+                        <file size="6142" dest="table.js" mode="640"/>
+                        <file size="38419" dest="tree.js" mode="640"/>
+                        <file size="1399" dest="treestate.js" mode="640"/>
+                        <file size="1481" dest="wlsform.js" mode="640"/>
+                     </directory>
+                     <directory dest="layouts" mode="750" patchable="true">
+                        <file size="1073" dest="assistantBaseLayout_netui.jsp" mode="640"/>
+                        <file size="1132" dest="assistantFormAndTableLayout_netui.jsp" mode="640"/>
+                        <file size="1203" dest="assistantNoFieldsLayout_netui.jsp" mode="640"/>
+                        <file size="4991" dest="configAndTables_netui.jsp" mode="640"/>
+                        <file size="2624" dest="configBaseLayout_netui.jsp" mode="640"/>
+                        <file size="2656" dest="configBaseLayout.jsp" mode="640"/>
+                        <file size="1497" dest="configBaseLayoutNoTransact.jsp" mode="640"/>
+                        <file size="2874" dest="configBaseLayoutWithButtons_netui.jsp" mode="640"/>
+                        <file size="616" dest="configIntroLayout_netui.jsp" mode="640"/>
+                        <file size="755" dest="configNoFieldsLayout_netui.jsp" mode="640"/>
+                        <file size="3954" dest="configNoTransactAndTables_netui.jsp" mode="640"/>
+                        <file size="2228" dest="configTreeEditor.jsp" mode="640"/>
+                        <file size="648" dest="deploymentDependenciesTreeLayout.jsp" mode="640"/>
+                        <file size="1332" dest="deploymentVariableLayout_netui.jsp" mode="640"/>
+                        <file size="993" dest="domainHealthTable.jsp" mode="640"/>
+                        <file size="830" dest="filterAndTableLayout_netui.jsp" mode="640"/>
+                        <file size="2537" dest="formAndTableLayout_netui.jsp" mode="640"/>
+                        <file size="1038" dest="formWithButtonsLayout_netui.jsp" mode="640"/>
+                        <file size="1326" dest="fourTablesLayout_netui.jsp" mode="640"/>
+                        <file size="4911" dest="policyEditorLayout.jsp" mode="640"/>
+                        <file size="2967" dest="policyEditorLayoutNoMethods.jsp" mode="640"/>
+                        <file size="1596" dest="roFormAndTableLayout_netui.jsp" mode="640"/>
+                        <file size="1074" dest="roForm.jsp" mode="640"/>
+                        <file size="2599" dest="roleEditorLayout.jsp" mode="640"/>
+                        <file size="4378" dest="rootLevelPolicyEditorLayout.jsp" mode="640"/>
+                        <file size="3645" dest="standalone_layout.jsp" mode="640"/>
+                        <file size="655" dest="summarypage.jsp" mode="640"/>
+                        <file size="709" dest="tableBaseLayout_netui.jsp" mode="640"/>
+                        <file size="868" dest="tableBaseMonitoringLayout.jsp" mode="640"/>
+                        <file size="343" dest="tablePreferencesLayout.jsp" mode="640"/>
+                        <file size="2854" dest="tables_netui.jsp" mode="640"/>
+                        <file size="1094" dest="threeTablesLayout_netui.jsp" mode="640"/>
+                        <file size="866" dest="twoTablesLayout_netui.jsp" mode="640"/>
+                        <file size="1163" dest="twoTablesWithButtonsLayout.jsp" mode="640"/>
+                        <file size="5827" dest="webAppAndModulePolicyEditorLayout.jsp" mode="640"/>
+                        <file size="3250" dest="webAppAndModuleRoleEditorLayout.jsp" mode="640"/>
+                        <file size="2541" dest="tableAndFormLayout_netui.jsp" mode="640"/>
+                     </directory>
+                     <directory dest="PortalConfig" mode="750" patchable="true">
+                        <directory dest="app" mode="750" patchable="true">
+                           <file size="114880" dest="App.book" mode="640"/>
+                           <file size="907" dest="ApplicationBindablesContents.portlet" mode="640"/>
+                           <file size="886" dest="ApplicationBindablesHeader.portlet" mode="640"/>
+                           <file size="883" dest="ApplicationBindablesTree.portlet" mode="640"/>
+                           <file size="871" dest="ApplicationControlCaches.portlet" mode="640"/>
+                           <file size="894" dest="ApplicationMonitorWorkload.portlet" mode="640"/>
+                           <file size="869" dest="ApplicationOverview.portlet" mode="640"/>
+                           <file size="865" dest="ApplicationTesting.portlet" mode="640"/>
+                           <file size="916" dest="ApplicationTunablesContentsDefault.portlet" mode="640"/>
+                           <file size="898" dest="ApplicationTunablesHeader.portlet" mode="640"/>
+                           <file size="884" dest="ApplicationTunablesTree.portlet" mode="640"/>
+                           <file size="859" dest="EditAnnotation.portlet" mode="640"/>
+                        </directory>
+                        <directory dest="bridge" mode="750" patchable="true">
+                           <file size="18123" dest="Bridge.book" mode="640"/>
+                        </directory>
+                        <directory dest="changemgmt" mode="750" patchable="true">
+                           <file size="9411" dest="ChangeManagement.book" mode="640"/>
+                           <file size="1940" dest="ChangeManager.dependencies" mode="640"/>
+                           <file size="868" dest="ChangeManager.portlet" mode="640"/>
+                        </directory>
+                        <directory dest="connector" mode="750" patchable="true">
+                           <file size="148931" dest="Connector.book" mode="640"/>
+                           <file size="934" dest="ConnectorConfigurationAdminObjects.portlet" mode="640"/>
+                           <file size="962" dest="ConnectorConfigurationOutboundConnection.portlet" mode="640"/>
+                           <file size="928" dest="ConnectorConfigurationProperties.portlet" mode="640"/>
+                           <file size="919" dest="ConnectorControlConnectionPools.portlet" mode="640"/>
+                           <file size="944" dest="ConnectorMonitorConnectionPoolTable.portlet" mode="640"/>
+                           <file size="932" dest="ConnectorMonitorInboundListeners.portlet" mode="640"/>
+                           <file size="885" dest="ConnectorMonitorWorkload.portlet" mode="640"/>
+                           <file size="840" dest="ConnectorNotes.portlet" mode="640"/>
+                           <file size="908" dest="ConnectorSecurityCredentialMap.portlet" mode="640"/>
+                           <file size="935" dest="ConnectorSecurityInboundPrincipalMappings.portlet" mode="640"/>
+                           <file size="897" dest="ConnectorSecurityPrincipals.portlet" mode="640"/>
+                           <file size="853" dest="ConnectorTesting.portlet" mode="640"/>
+                        </directory>
+                        <directory dest="contentheader" mode="750" patchable="true">
+                           <file size="634" dest="ContentHeader_breadcrumbs.portlet" mode="640"/>
+                           <file size="700" dest="ContentHeader_messages.portlet" mode="640"/>
+                           <file size="904" dest="ContentHeader_toolbar.dependencies" mode="640"/>
+                           <file size="750" dest="ContentHeader_toolbar.portlet" mode="640"/>
+                        </directory>
+                        <directory dest="core" mode="750" patchable="true">
+                           <directory dest="classes" mode="750" patchable="true">
+                              <file size="15289" dest="CoreClasses.book" mode="640"/>
+                           </directory>
+                           <directory dest="cluster" mode="750" patchable="true">
+                              <file size="58616" dest="CoreCluster.book" mode="640"/>
+                           </directory>
+                           <directory dest="domain" mode="750" patchable="true">
+                              <file size="110364" dest="CoreDomain.book" mode="640"/>
+                              <file size="839" dest="DomainSecurityJaspicAcpNotes.portlet" mode="640"/>
+                           </directory>
+                           <directory dest="cmotemplate" mode="750" patchable="true">
+                              <file size="23758" dest="CoreManagedObjectTemplate.book" mode="640"/>
+                           </directory>
+                           <directory dest="rcmmanager" mode="750" patchable="true">
+                              <file size="18510" dest="CoreRCMManager.book" mode="640"/>
+                           </directory>
+                           <directory dest="jndi" mode="750" patchable="true">
+                              <file size="20859" dest="ForeignJNDI.book" mode="640"/>
+                           </directory>
+                           <directory dest="logfilter" mode="750" patchable="true">
+                              <file size="3921" dest="CoreLogfilter.book" mode="640"/>
+                           </directory>
+                           <directory dest="machine" mode="750" patchable="true">
+                              <file size="18879" dest="CoreMachine.book" mode="640"/>
+                           </directory>
+                           <directory dest="migration" mode="750" patchable="true">
+                              <file size="19105" dest="CoreMigration.book" mode="640"/>
+                           </directory>
+                           <file size="831" dest="CoreNotes.portlet" mode="640"/>
+                           <file size="35910" dest="ResourceGroup.book" mode="640"/>
+                           <directory dest="partition" mode="750" patchable="true">
+                              <file size="24253" dest="ResourceGroupTemplate.book" mode="640"/>
+                           </directory>
+                           <directory dest="server" mode="750" patchable="true">
+                              <file size="902" dest="ChannelMonitorConnections.portlet" mode="640"/>
+                              <file size="183329" dest="CoreServer.book" mode="640"/>
+                              <file size="906" dest="ExecuteQueueMonitorThreads.portlet" mode="640"/>
+                              <file size="860" dest="ServerMonitoringJta.portlet" mode="640"/>
+                           </directory>
+                           <directory dest="singletonservice" mode="750" patchable="true">
+                              <file size="9551" dest="SingletonService.book" mode="640"/>
+                           </directory>
+                           <directory dest="tasks" mode="750" patchable="true">
+                              <file size="27030" dest="CoreTasks.book" mode="640"/>
+                           </directory>
+                           <directory dest="virtualhost" mode="750" patchable="true">
+                              <file size="14623" dest="CoreVirtualhost.book" mode="640"/>
+                           </directory>
+                           <directory dest="virtualtarget" mode="750" patchable="true">
+                              <file size="13451" dest="CoreVirtualtarget.book" mode="640"/>
+                           </directory>
+                           <directory dest="work" mode="750" patchable="true">
+                              <file size="49581" dest="CoreWork.book" mode="640"/>
+                           </directory>
+                        </directory>
+                        <directory dest="diagnostics" mode="750" patchable="true">
+                           <directory dest="archive" mode="750" patchable="true">
+                              <file size="17798" dest="Archive.book" mode="640"/>
+                              <file size="739" dest="EnableDisableWLDFDataRetirement.portlet" mode="640"/>
+                           </directory>
+                           <directory dest="image" mode="750" patchable="true">
+                              <file size="3673" dest="Image.book" mode="640"/>
+                           </directory>
+                           <directory dest="module" mode="750" patchable="true">
+                              <file size="911" dest="ModuleConfigInstrumentation.portlet" mode="640"/>
+                           </directory>
+                           <file size="147192" dest="Diagnostics.book" mode="640"/>
+                           <file size="911" dest="NotificationConfigGeneral.portlet" mode="640"/>
+                           <file size="1316" dest="RequestPerformance.dependencies" mode="640"/>
+                        </directory>
+                        <directory dest="ejb" mode="750" patchable="true">
+                           <file size="110542" dest="Ejb.book" mode="640"/>
+                           <file size="856" dest="EJBMonitorWorkload.portlet" mode="640"/>
+                           <file size="824" dest="EJBTesting.portlet" mode="640"/>
+                           <file size="828" dest="EJBTunables.portlet" mode="640"/>
+                        </directory>
+                        <directory dest="filet3" mode="750" patchable="true">
+                           <file size="10632" dest="Filet3.book" mode="640"/>
+                        </directory>
+                        <file size="6512" dest="General.book" mode="640"/>
+                        <directory dest="home" mode="750" patchable="true">
+                           <file size="1910" dest="HomePage.book" mode="640"/>
+                        </directory>
+                        <directory dest="jcom" mode="750" patchable="true">
+                           <file size="13134" dest="jcom.book" mode="640"/>
+                        </directory>
+                        <directory dest="jdbc" mode="750" patchable="true">
+                           <directory dest="application" mode="750" patchable="true">
+                              <directory dest="datasources" mode="750" patchable="true">
+                                 <file size="89686" dest="JdbcDataSource.book" mode="640"/>
+                              </directory>
+                              <directory dest="virtualdatasources" mode="750" patchable="true">
+                                 <file size="15461" dest="JdbcVirtualDataSource.book" mode="640"/>
+                                 <file size="1034" dest="JDBCVirtualDataSourceConfigGeneral.portlet" mode="640"/>
+                              </directory>
+                           </directory>
+                           <directory dest="datasources" mode="750" patchable="true">
+                              <file size="965" dest="JDBCDataSourceConfigConnectionPool.portlet" mode="640"/>
+                              <file size="953" dest="JDBCDataSourceConfigDiagnostics.portlet" mode="640"/>
+                              <file size="909" dest="JDBCDataSourceConfig.portlet" mode="640"/>
+                              <file size="941" dest="JDBCDataSourceConfigSecurity.portlet" mode="640"/>
+                              <file size="953" dest="JDBCDataSourceConfigTransaction.portlet" mode="640"/>
+                              <file size="1003" dest="JDBCDataSourceMonitorStatistics.portlet" mode="640"/>
+                              <file size="991" dest="JDBCDataSourceMonitorTesting.portlet" mode="640"/>
+                              <file size="950" dest="JDBCDataSourceONSClientConfig.portlet" mode="640"/>
+                              <file size="941" dest="JDBCDataSourceOracleParams.portlet" mode="640"/>
+                              <file size="68809" dest="JdbcDatasources.book" mode="640"/>
+                           </directory>
+                           <directory dest="javaeedatasources" mode="750" patchable="true">
+                              <file size="21287" dest="JavaEEDataSource.book" mode="640"/>
+                           </directory>
+                           <file size="865" dest="JDBCApplicationOverview.portlet" mode="640"/>
+                           <file size="854" dest="JDBCModuleOverview.portlet" mode="640"/>
+                           <file size="820" dest="JDBCNotes.portlet" mode="640"/>
+                           <file size="828" dest="JDBCTargets.portlet" mode="640"/>
+                           <directory dest="virtualdatasources" mode="750" patchable="true">
+                              <file size="9552" dest="JDBCVirtualDataSources.book" mode="640"/>
+                           </directory>
+                        </directory>
+                        <directory dest="jms" mode="750" patchable="true">
+                           <directory dest="bridgedestination" mode="750" patchable="true">
+                              <file size="9683" dest="JmsBridgedestination.book" mode="640"/>
+                           </directory>
+                           <directory dest="connection" mode="750" patchable="true">
+                              <file size="15542" dest="JmsConnection.book" mode="640"/>
+                           </directory>
+                           <directory dest="consumer" mode="750" patchable="true">
+                              <file size="1962" dest="JmsConsumer.book" mode="640"/>
+                           </directory>
+                           <directory dest="destinations" mode="750" patchable="true">
+                              <file size="69690" dest="JmsDestinations.book" mode="640"/>
+                           </directory>
+                           <directory dest="distributeddestinations" mode="750" patchable="true">
+                              <file size="704" dest="CreateJMSDistributedDestinationMember.portlet" mode="640"/>
+                              <file size="28021" dest="JmsDistributeddestinations.book" mode="640"/>
+                           </directory>
+                           <directory dest="errorhandling" mode="750" patchable="true">
+                              <file size="5020" dest="ErrorHandling.book" mode="640"/>
+                           </directory>
+                           <directory dest="foreignjms" mode="750" patchable="true">
+                              <file size="23249" dest="JmsForeignjms.book" mode="640"/>
+                           </directory>
+                           <file size="842" dest="JMSMBeanNotes.portlet" mode="640"/>
+                           <directory dest="message" mode="750" patchable="true">
+                              <file size="14388" dest="JMSMessage.book" mode="640"/>
+                           </directory>
+                           <directory dest="modules" mode="750" patchable="true">
+                              <file size="18295" dest="JMSModules.book" mode="640"/>
+                              <file size="831" dest="JMSTargets.portlet" mode="640"/>
+                              <directory dest="system" mode="750" patchable="true">
+                                 <file size="28908" dest="JMSSystemModules.book" mode="640"/>
+                              </directory>
+                           </directory>
+                           <directory dest="pathservice" mode="750" patchable="true">
+                              <file size="10302" dest="PathService.book" mode="640"/>
+                           </directory>
+                           <directory dest="producer" mode="750" patchable="true">
+                              <file size="1959" dest="JmsProducer.book" mode="640"/>
+                           </directory>
+                           <directory dest="quota" mode="750" patchable="true">
+                              <file size="4878" dest="JMSQuota.book" mode="640"/>
+                           </directory>
+                           <directory dest="remotesafcontext" mode="750" patchable="true">
+                              <file size="5162" dest="RemoteSAFContext.book" mode="640"/>
+                           </directory>
+                           <directory dest="safagent" mode="750" patchable="true">
+                              <file size="45298" dest="SAFAgent.book" mode="640"/>
+                              <file size="943" dest="SAFRemoteEndpointMessagesTable.portlet" mode="640"/>
+                           </directory>
+                           <directory dest="safdestination" mode="750" patchable="true">
+                              <file size="678" dest="CreateSAFDestination.portlet" mode="640"/>
+                              <file size="26807" dest="SAFDestination.book" mode="640"/>
+                           </directory>
+                           <directory dest="server" mode="750" patchable="true">
+                              <file size="46967" dest="JmsServer.book" mode="640"/>
+                           </directory>
+                           <directory dest="session" mode="750" patchable="true">
+                              <file size="17154" dest="JmsSession.book" mode="640"/>
+                           </directory>
+                           <directory dest="stores" mode="750" patchable="true">
+                              <file size="33592" dest="JmsStores.book" mode="640"/>
+                           </directory>
+                           <directory dest="subscribers" mode="750" patchable="true">
+                              <file size="5673" dest="JmsSubscribers.book" mode="640"/>
+                           </directory>
+                           <directory dest="templates" mode="750" patchable="true">
+                              <file size="20756" dest="JmsTemplates.book" mode="640"/>
+                           </directory>
+                           <directory dest="uniformdistdestination" mode="750" patchable="true">
+                              <directory dest="subscribers" mode="750" patchable="true">
+                                 <file size="2770" dest="JmsUniformDistributedTopicDurableSubscribers.book" mode="640"/>
+                              </directory>
+                              <file size="962" dest="JMSUniformDistributedQueueMemberTable.portlet" mode="640"/>
+                              <file size="53726" dest="UniformDistDestination.book" mode="640"/>
+                           </directory>
+                        </directory>
+                        <directory dest="jndi" mode="750" patchable="true">
+                           <file size="972" dest="CreateJNDIBindingRole.portlet" mode="640"/>
+                           <file size="980" dest="CreateJNDIContentRole.portlet" mode="640"/>
+                           <file size="980" dest="CreateJNDIContextRole.portlet" mode="640"/>
+                           <file size="923" dest="DeleteJNDIBindingRoles.portlet" mode="640"/>
+                           <file size="923" dest="DeleteJNDIContentRoles.portlet" mode="640"/>
+                           <file size="923" dest="DeleteJNDIContextRoles.portlet" mode="640"/>
+                           <file size="918" dest="EditJNDIBindingRole.portlet" mode="640"/>
+                           <file size="918" dest="EditJNDIContentRole.portlet" mode="640"/>
+                           <file size="918" dest="EditJNDIContextRole.portlet" mode="640"/>
+                           <file size="633" dest="jndibinding.portlet" mode="640"/>
+                           <file size="922" dest="JNDIBindingSecurityPolicies.portlet" mode="640"/>
+                           <file size="893" dest="JNDIBindingSecurityRolesTable.portlet" mode="640"/>
+                           <file size="922" dest="JNDIContentSecurityPolicies.portlet" mode="640"/>
+                           <file size="900" dest="JNDIContentSecurityRolesTable.portlet" mode="640"/>
+                           <file size="643" dest="jndicontext.portlet" mode="640"/>
+                           <file size="922" dest="JNDIContextSecurityPolicies.portlet" mode="640"/>
+                           <file size="900" dest="JNDIContextSecurityRolesTable.portlet" mode="640"/>
+                           <file size="1696" dest="jnditree.dependencies" mode="640"/>
+                           <file size="767" dest="jnditree.portlet" mode="640"/>
+                        </directory>
+                        <directory dest="jolt" mode="750" patchable="true">
+                           <file size="2197" dest="Jolt.book" mode="640"/>
+                        </directory>
+                        <directory dest="library" mode="750" patchable="true">
+                           <file size="4832" dest="Library.book" mode="640"/>
+                        </directory>
+                        <directory dest="mail" mode="750" patchable="true">
+                           <file size="10894" dest="Mail.book" mode="640"/>
+                        </directory>
+                        <directory dest="mbeansearch" mode="750" patchable="true">
+                           <file size="2290" dest="MBeanSearch.book" mode="640"/>
+                        </directory>
+                        <directory dest="navtree" mode="750" patchable="true">
+                           <directory dest="JStree" mode="750" patchable="true">
+                              <directory dest="html" mode="750" patchable="true">
+                                 <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/html/blank.html" size="48" dest="blank.html" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/html/collection.js" size="563" dest="collection.js" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/html/jstree.css" size="1789" dest="jstree.css" mode="640"/>
+                                 <file size="15326" dest="jstree.js" mode="640"/>
+                                 <file size="33515" dest="tree.js" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/html/wadminStyle.css" size="3014" dest="wadminStyle.css" mode="640"/>
+                              </directory>
+                              <directory dest="images" mode="750" patchable="true">
+                                 <directory dest="j2ee" mode="750" patchable="true">
+                                    <file size="370" dest="ClassDeployment.gif" mode="640"/>
+                                    <file size="359" dest="ear.gif" mode="640"/>
+                                    <file size="164" dest="exploded_archive.gif" mode="640"/>
+                                    <file size="357" dest="jar.gif" mode="640"/>
+                                    <file size="244" dest="rar.gif" mode="640"/>
+                                    <file size="355" dest="war.gif" mode="640"/>
+                                 </directory>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/bg_stripes.gif" size="120" dest="bg_stripes.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/childrenconnector.gif" size="67" dest="childrenconnector.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/childrenendconnector.gif" size="63" dest="childrenendconnector.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/document.gif" size="886" dest="document.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/folderclosed_2.gif" size="1004" dest="folderclosed_2.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/folderclosed.gif" size="161" dest="folderclosed.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/folderopen.gif" size="167" dest="folderopen.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/leafclosed.gif" size="145" dest="leafclosed.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/leafopened.gif" size="143" dest="leafopened.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/rootconnector.gif" size="66" dest="rootconnector.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/images/spacer.gif" size="43" dest="spacer.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/system.gif" size="118" dest="system.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/workflow_16.gif" size="153" dest="workflow_16.gif" mode="640"/>
+                              </directory>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/content.html" size="2513" dest="content.html" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/foo.html" size="38" dest="foo.html" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/index.html" size="235" dest="index.html" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/toolbar.html" size="2646" dest="toolbar.html" mode="640"/>
+                           </directory>
+                           <file size="781" dest="navtree.dependencies" mode="640"/>
+                           <file size="764" dest="navtree.portlet" mode="640"/>
+                        </directory>
+                        <directory dest="persistence" mode="750" patchable="true">
+                           <file size="60415" dest="Persistence.book" mode="640"/>
+                           <file size="876" dest="PersistenceUnitTable.portlet" mode="640"/>
+                        </directory>
+                        <directory dest="preferences" mode="750" patchable="true">
+                           <file size="14405" dest="Preferences.book" mode="640"/>
+                        </directory>
+                        <directory dest="quicklinks" mode="750" patchable="true">
+                           <file size="571" dest="QuickLinks.dependencies" mode="640"/>
+                           <file size="834" dest="QuickLinks.portlet" mode="640"/>
+                        </directory>
+                        <directory dest="sca" mode="750" patchable="true">
+                           <file size="6384" dest="SCA.book" mode="640"/>
+                        </directory>
+                        <directory dest="security" mode="750" patchable="true">
+                           <directory dest="group" mode="750" patchable="true">
+                              <file size="7339" dest="SecurityGroup.book" mode="640"/>
+                           </directory>
+                           <directory dest="policies" mode="750" patchable="true">
+                              <file size="6088" dest="SecurityPolicy.book" mode="640"/>
+                           </directory>
+                           <directory dest="providers" mode="750" patchable="true">
+                              <file size="936" dest="SAML20WebSSOPartnerARSEndpointTable.portlet" mode="640"/>
+                              <file size="904" dest="SAML20WebSSOPartnerConfigSiteInfo.portlet" mode="640"/>
+                              <file size="947" dest="SAML20WebSSOPartnerConfigSSOSigningCert.portlet" mode="640"/>
+                              <file size="977" dest="SAML20WebSSOPartnerConfigTransportLayerClientCert.portlet" mode="640"/>
+                              <file size="912" dest="SecurityProviderMigrationExport.portlet" mode="640"/>
+                              <file size="912" dest="SecurityProviderMigrationImport.portlet" mode="640"/>
+                              <file size="187630" dest="SecurityProviders.book" mode="640"/>
+                           </directory>
+                           <directory dest="realm" mode="750" patchable="true">
+                              <file size="49782" dest="SecurityRealm.book" mode="640"/>
+                           </directory>
+                           <directory dest="users" mode="750" patchable="true">
+                              <file size="9699" dest="SecurityUsers.book" mode="640"/>
+                           </directory>
+                           <directory dest="workcontext" mode="750" patchable="true">
+                              <file size="13200" dest="workcontext.book" mode="640"/>
+                           </directory>
+                        </directory>
+                        <directory dest="snmp" mode="750" patchable="true">
+                           <directory dest="attribute" mode="750" patchable="true">
+                              <file size="8508" dest="SnmpAttribute.book" mode="640"/>
+                              <file size="920" dest="SNMPAttributeChangeTable.portlet" mode="640"/>
+                           </directory>
+                           <directory dest="general" mode="750" patchable="true">
+                              <file size="851" dest="SNMPGeneralConfig.portlet" mode="640"/>
+                           </directory>
+                           <directory dest="logfilter" mode="750" patchable="true">
+                              <file size="8330" dest="SnmpLogfilter.book" mode="640"/>
+                              <file size="896" dest="SNMPLogFilterTable.portlet" mode="640"/>
+                           </directory>
+                           <directory dest="monitors" mode="750" patchable="true">
+                              <file size="913" dest="SNMPCounterMonitorTable.portlet" mode="640"/>
+                              <file size="905" dest="SNMPGaugeMonitorTable.portlet" mode="640"/>
+                              <file size="23973" dest="SnmpMonitors.book" mode="640"/>
+                              <file size="909" dest="SNMPStringMonitorTable.portlet" mode="640"/>
+                           </directory>
+                           <directory dest="proxy" mode="750" patchable="true">
+                              <file size="6975" dest="SnmpProxy.book" mode="640"/>
+                              <file size="868" dest="SNMPProxyTable.portlet" mode="640"/>
+                           </directory>
+                           <file size="43068" dest="Snmp.book" mode="640"/>
+                           <file size="858" dest="SNMPNotes.portlet" mode="640"/>
+                           <directory dest="traps" mode="750" patchable="true">
+                              <file size="908" dest="SNMPTrapDestinationTable.portlet" mode="640"/>
+                              <file size="7269" dest="SnmpTraps.book" mode="640"/>
+                           </directory>
+                        </directory>
+                        <directory dest="status" mode="750" patchable="true">
+                           <file size="573" dest="SystemStatus.dependencies" mode="640"/>
+                           <file size="903" dest="SystemStatus.portlet" mode="640"/>
+                        </directory>
+                        <directory dest="summary" mode="750" patchable="true">
+                           <file size="7641" dest="Summary.book" mode="640"/>
+                        </directory>
+                        <directory dest="webapp" mode="750" patchable="true">
+                           <file size="132678" dest="Webapp.book" mode="640"/>
+                           <file size="881" dest="WebAppConfigurationLogging.portlet" mode="640"/>
+                           <file size="881" dest="WebAppConfiguration.portlet" mode="640"/>
+                           <file size="899" dest="WebAppMonitorJaxRsApplications.portlet" mode="640"/>
+                           <file size="872" dest="WebAppMonitorPageFlows.portlet" mode="640"/>
+                           <file size="864" dest="WebAppMonitorRunning.portlet" mode="640"/>
+                           <file size="868" dest="WebAppMonitorServlets.portlet" mode="640"/>
+                           <file size="868" dest="WebAppMonitorSessions.portlet" mode="640"/>
+                           <file size="868" dest="WebAppMonitorWorkload.portlet" mode="640"/>
+                           <file size="811" dest="WebAppSecurityJaspic.portlet" mode="640"/>
+                           <file size="836" dest="WebAppTesting.portlet" mode="640"/>
+                           <file size="868" dest="WebAppTunablesGeneral.portlet" mode="640"/>
+                           <file size="868" dest="WebAppTunablesLogging.portlet" mode="640"/>
+                        </directory>
+                        <directory dest="webservice" mode="750" patchable="true">
+                           <directory dest="preDiablo" mode="750" patchable="true">
+                              <file size="4892" dest="WebService.book" mode="640"/>
+                           </directory>
+                           <directory dest="webservicesecurity" mode="750" patchable="true">
+                              <directory dest="credentialprovider" mode="750" patchable="true">
+                                 <file size="18947" dest="CredentialProvider.book" mode="640"/>
+                              </directory>
+                              <directory dest="tokenhandler" mode="750" patchable="true">
+                                 <file size="18428" dest="TokenHandler.book" mode="640"/>
+                              </directory>
+                              <file size="10904" dest="WebServiceSecurity.book" mode="640"/>
+                           </directory>
+                           <file size="954" dest="ComponentMonitorWebServiceClients.portlet" mode="640"/>
+                           <file size="64194" dest="WebService.book" mode="640"/>
+                           <file size="713" dest="WebServiceConfigAtomicTransaction.portlet" mode="640"/>
+                           <file size="884" dest="WebServiceTunablesGeneral.portlet" mode="640"/>
+                        </directory>
+                        <directory dest="wtc" mode="750" patchable="true">
+                           <file size="2133" dest="Wtc.book" mode="640"/>
+                        </directory>
+                        <directory dest="xmlregistry" mode="750" patchable="true">
+                           <file size="43716" dest="Xmlregistry.book" mode="640"/>
+                        </directory>
+                        <directory dest="osgiframework" mode="750" patchable="true">
+                           <file size="11537" dest="OsgiFramework.book" mode="640"/>
+                        </directory>
+                        <directory dest="interceptors" mode="750" patchable="true">
+                           <file size="18490" dest="Interceptors.book" mode="640"/>
+                        </directory>
+                     </directory>
+                     <directory dest="ui" mode="750" patchable="true">
+                        <file size="1974" dest="requestPerformance.html" mode="640"/>
+                     </directory>
+                     <directory dest="utils" mode="750" patchable="true">
+                        <directory dest="JStree" mode="750" patchable="true">
+                           <directory dest="html" mode="750" patchable="true">
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/html/blank.html" size="48" dest="blank.html" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/html/collection.js" size="563" dest="collection.js" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/html/jstree.css" size="1789" dest="jstree.css" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/html/jstree.js" size="15322" dest="jstree.js" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/html/wadminStyle.css" size="3014" dest="wadminStyle.css" mode="640"/>
+                           </directory>
+                           <directory dest="images" mode="750" patchable="true">
+                              <directory dest="j2ee" mode="750" patchable="true">
+                                 <file jarentry="server/lib/consoleapp/webapp/PortalConfig/navtree/JStree/images/j2ee/ClassDeployment.gif" size="370" dest="ClassDeployment.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/webapp/PortalConfig/navtree/JStree/images/j2ee/ear.gif" size="359" dest="ear.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/webapp/PortalConfig/navtree/JStree/images/j2ee/exploded_archive.gif" size="164" dest="exploded_archive.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/webapp/PortalConfig/navtree/JStree/images/j2ee/jar.gif" size="357" dest="jar.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/webapp/PortalConfig/navtree/JStree/images/j2ee/rar.gif" size="244" dest="rar.gif" mode="640"/>
+                                 <file jarentry="server/lib/consoleapp/webapp/PortalConfig/navtree/JStree/images/j2ee/war.gif" size="355" dest="war.gif" mode="640"/>
+                              </directory>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/base_disabled.gif" size="149" dest="base_disabled.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/base_disconnected.gif" size="170" dest="base_disconnected.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/base_error.gif" size="136" dest="base_error.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/bg_stripes.gif" size="120" dest="bg_stripes.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/childrenconnector.gif" size="67" dest="childrenconnector.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/childrenendconnector.gif" size="63" dest="childrenendconnector.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/document.gif" size="886" dest="document.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/empty.gif" size="62" dest="empty.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/folderclosed_2.gif" size="1004" dest="folderclosed_2.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/folderclosed.gif" size="161" dest="folderclosed.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/folder_disabled.gif" size="125" dest="folder_disabled.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/folderclosed.gif" size="161" dest="folder.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/folderopen_disabled.gif" size="131" dest="folderopen_disabled.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/folderopen.gif" size="167" dest="folderopen.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/webapp/images/joinbottom.gif" size="77" dest="joinbottom.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/webapp/images/join.gif" size="73" dest="join.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/leafclosed.gif" size="145" dest="leafclosed.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/leafopened.gif" size="143" dest="leafopened.gif" mode="640"/>
+                              <file size="73" dest="line.gif" mode="640"/>
+                              <file size="84" dest="minusbottom.gif" mode="640"/>
+                              <file size="85" dest="minus.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/page.gif" size="125" dest="page.gif" mode="640"/>
+                              <file size="88" dest="plusbottom.gif" mode="640"/>
+                              <file size="89" dest="plus.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/rootconnector.gif" size="66" dest="rootconnector.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/images/spacer.gif" size="43" dest="spacer.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/system.gif" size="118" dest="system.gif" mode="640"/>
+                              <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/images/workflow_16.gif" size="153" dest="workflow_16.gif" mode="640"/>
+                           </directory>
+                           <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/content.html" size="2513" dest="content.html" mode="640"/>
+                           <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/foo.html" size="38" dest="foo.html" mode="640"/>
+                           <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/index.html" size="235" dest="index.html" mode="640"/>
+                           <file jarentry="server/lib/consoleapp/consolehelp/utils/JStree/toolbar.html" size="2646" dest="toolbar.html" mode="640"/>
+                        </directory>
+                     </directory>
+                     <directory dest="WEB-INF" mode="750" patchable="true">
+                        <directory dest="lib" mode="750" patchable="true">
+                           <file size="293266" pack="true" dest="beehive-controls.jar" mode="640"/>
+                           <file jarentry="server/lib/consoleapp/consolehelp/WEB-INF/lib/beehive-netui-core.jar" size="779658" dest="beehive-netui-core.jar" mode="640"/>
+                           <file jarentry="server/lib/consoleapp/consolehelp/WEB-INF/lib/beehive-netui-tags.jar" size="639797" dest="beehive-netui-tags.jar" mode="640"/>
+                           <file size="6898" pack="true" dest="client_taglib.jar" mode="640"/>
+                           <file size="642405" pack="true" dest="console-de.jar" mode="640"/>
+                           <file size="626173" pack="true" dest="console-es.jar" mode="640"/>
+                           <file size="632721" pack="true" dest="console-fr.jar" mode="640"/>
+                           <file size="606974" pack="true" dest="console-it.jar" mode="640"/>
+                           <file size="739523" pack="true" dest="console-ja.jar" mode="640"/>
+                           <file size="26669776" pack="true" dest="console.jar" mode="640"/>
+                           <file size="678574" pack="true" dest="console-ko.jar" mode="640"/>
+                           <file size="640982" pack="true" dest="console-pt_BR.jar" mode="640"/>
+                           <file size="646269" pack="true" dest="console-zh_CN.jar" mode="640"/>
+                           <file size="649766" pack="true" dest="console-zh_TW.jar" mode="640"/>
+                           <file jarentry="server/lib/consoleapp/consolehelp/WEB-INF/lib/l10n_taglib.jar" size="7354" dest="l10n_taglib.jar" mode="640"/>
+                           <file size="48522" pack="true" dest="netui-adapter.jar" mode="640"/>
+                           <file jarentry="server/lib/consoleapp/consolehelp/WEB-INF/lib/netuix_common_web.jar" size="139601" dest="netuix_common_web.jar" mode="640"/>
+                           <file jarentry="server/lib/consoleapp/consolehelp/WEB-INF/lib/netuix_servlet.jar" size="1675237" dest="netuix_servlet.jar" mode="640"/>
+                           <file jarentry="server/lib/consoleapp/consolehelp/WEB-INF/lib/portlet-container.jar" size="306388" dest="portlet-container.jar" mode="640"/>
+                           <file jarentry="server/lib/consoleapp/consolehelp/WEB-INF/lib/prefs-spi.jar" size="15985" dest="prefs-spi.jar" mode="640"/>
+                           <file jarentry="server/lib/consoleapp/consolehelp/WEB-INF/lib/render_taglib.jar" size="48450" dest="render_taglib.jar" mode="640"/>
+                           <file jarentry="server/lib/consoleapp/consolehelp/WEB-INF/lib/skeleton_taglib.jar" size="25369" dest="skeleton_taglib.jar" mode="640"/>
+                           <file jarentry="server/lib/consoleapp/APP-INF/lib/standard.jar" size="293750" dest="standard.jar" mode="640"/>
+                           <file jarentry="server/lib/consoleapp/consolehelp/WEB-INF/lib/struts-adapter.jar" size="63634" dest="struts-adapter.jar" mode="640"/>
+                           <file jarentry="server/lib/consoleapp/APP-INF/lib/struts.jar" size="588146" dest="struts.jar" mode="640"/>
+                           <file size="285360" pack="true" dest="wldfclient-min.jar" mode="640"/>
+                        </directory>
+                        <directory dest="src" mode="750" patchable="true">
+                           <directory dest="com" mode="750" patchable="true">
+                              <directory dest="bea" mode="750" patchable="true">
+                                 <directory dest="console" mode="750" patchable="true">
+                                    <directory dest="utils" mode="750" patchable="true">
+                                       <directory dest="diagnostics" mode="750" patchable="true">
+                                          <directory dest="query" mode="750" patchable="true">
+                                             <file size="3646" dest="Query.g" mode="640"/>
+                                             <file size="3347" dest="TreeParser.g" mode="640"/>
+                                          </directory>
+                                       </directory>
+                                    </directory>
+                                 </directory>
+                              </directory>
+                           </directory>
+                        </directory>
+                        <directory dest="templates" mode="750" patchable="true">
+                           <file size="15491" dest="assistant.xml" mode="640"/>
+                           <file size="13323" dest="form.xml" mode="640"/>
+                           <file size="1276" dest="portletrefresh.xml" mode="640"/>
+                           <file size="1923" dest="summarypage.xml" mode="640"/>
+                           <file size="7164" dest="tablePreferences.xml" mode="640"/>
+                        </directory>
+                        <file size="2273" dest="beehive-netui-config.xml" mode="640"/>
+                        <file size="2510" dest="beehive-url-template-config.xml" mode="640"/>
+                        <file size="89169" dest="console-extension.tld" mode="640"/>
+                        <file jarentry="server/lib/consoleapp/consolehelp/WEB-INF/console-html.tld" size="102810" dest="console-html.tld" mode="640"/>
+                        <file size="21" dest="loading.html" mode="640"/>
+                        <file size="3023" dest="netuix-config.xml" mode="640"/>
+                        <file size="9315" dest="struts-auto-config-bridge.xml" mode="640"/>
+                        <file size="21997" dest="struts-auto-config-connector.xml" mode="640"/>
+                        <file size="178954" dest="struts-auto-config-core.xml" mode="640"/>
+                        <file size="44508" dest="struts-auto-config-diagnostics.xml" mode="640"/>
+                        <file size="5307" dest="struts-auto-config-filet3.xml" mode="640"/>
+                        <file size="108909" dest="struts-auto-config-j2ee.xml" mode="640"/>
+                        <file size="31518" dest="struts-auto-config-jdbc.xml" mode="640"/>
+                        <file size="124276" dest="struts-auto-config-jms.xml" mode="640"/>
+                        <file size="1797" dest="struts-auto-config-jta.xml" mode="640"/>
+                        <file size="5582" dest="struts-auto-config-osgiframework.xml" mode="640"/>
+                        <file size="5325" dest="struts-auto-config-mail.xml" mode="640"/>
+                        <file size="1999" dest="struts-auto-config-mbeansearch.xml" mode="640"/>
+                        <file size="75225" dest="struts-auto-config-security.xml" mode="640"/>
+                        <file size="22515" dest="struts-auto-config-snmp.xml" mode="640"/>
+                        <file size="7424" dest="struts-auto-config-interceptors.xml" mode="640"/>
+                        <file size="34218" dest="struts-config_1_2.dtd" mode="640"/>
+                        <file size="12647" dest="struts-config.xml" mode="640"/>
+                        <file size="1476" dest="struts-merge.xml" mode="640"/>
+                        <file size="1338" dest="struts-nested-merge.xml" mode="640"/>
+                        <file size="32563" dest="web-app_2_3.dtd" mode="640"/>
+                        <file size="19960" dest="weblogic810-web-jar.dtd" mode="640"/>
+                        <file size="1732" dest="weblogic.xml" mode="640"/>
+                        <file size="13234" dest="web.xml" mode="640"/>
+                        <file size="117152" dest="wlp-resources.data" mode="640"/>
+                     </directory>
+                  </directory>
+               </directory>
+               <directory dest="console-ext" mode="750" patchable="true">
+                  <directory dest="autodeploy" mode="750" patchable="true">
+                     <file size="1517477" pack="true" dest="core-partition.jar" mode="640"/>
+                     <file size="999440" pack="true" dest="coherence.jar" mode="640"/>
+                     <file size="40661" pack="true" dest="core-connector.jar" mode="640"/>
+                     <file size="100479" pack="true" dest="core-ejb.jar" mode="640"/>
+                     <file size="20180" pack="true" dest="core-jms.jar" mode="640"/>
+                     <file size="239447" pack="true" dest="jolt.jar" mode="640"/>
+                     <file size="905662" pack="true" dest="wtc.jar" mode="640"/>
+                  </directory>
+                  <directory dest="templates" mode="750" patchable="true">
+                     <file size="1120" dest="build-new-laf.xml" mode="640"/>
+                     <file size="445657" pack="true" dest="laftemplate.zip" mode="640"/>
+                  </directory>
+                  <file size="887" dest="ConsoleExtensions.xml" mode="640"/>
+                  <file size="9122" pack="true" dest="diagnostics-console-extension.jar" mode="640"/>
+                  <file size="148455" pack="true" dest="spring-console.jar" mode="640"/>
+                  <file size="75810" pack="true" dest="weblogic-sca-console.jar" mode="640"/>
+               </directory>
+            </directory>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+</component-def>

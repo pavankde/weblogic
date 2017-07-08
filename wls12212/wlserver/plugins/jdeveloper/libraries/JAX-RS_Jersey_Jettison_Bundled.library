@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<library name="JAX-RS Jersey Jettison (Bundled)" deployed="false" xmlns="http://xmlns.oracle.com/jdeveloper/1013/manifest-libraries">
+  <export-specification>JAX-RS_Jersey_Jettison_Bundled.exports</export-specification>
+  <classpath export="library">../../../../oracle_common/modules/org.codehaus.jettison.jettison.jar</classpath>
+</library>

@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.nginst.common" version="13.9.1.0.0" description="Next Generation Installation Common" description-key="component.description" gdr-version="1.8.0.0" singleton="true" pom-gen="false" groupId="com.oracle.oui" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="oracle.nginst.common.symbol" source="filegroup1.jar" expanded="true" compacted="true" bootstrap="true">
+      <directory dest="" patchable="true">
+         <directory dest="modules" mode="750" patchable="true">
+            <file size="130559" dest="jersey-client-1.12.jar" mode="640"/>
+            <file size="461868" dest="jersey-core-1.12.jar" mode="640"/>
+            <file size="1075679" dest="jackson-databind-2.4.3.jar" mode="640"/>
+            <file size="487327" dest="com.oracle.cie.oui-common_12.8.0.0.jar" mode="640"/>
+            <file size="1223157" dest="com.oracle.cie.gdr_1.8.0.0.jar" mode="640"/>
+            <file size="578333" dest="com.oracle.cie.rest_1.8.0.0.jar" mode="640"/>
+            <file size="1698736" dest="xmlparserv2.jar" mode="640"/>
+            <file size="38604" dest="jackson-annotations-2.4.3.jar" mode="640"/>
+            <file size="59802" dest="com.oracle.cie.repo-common_1.8.0.0.jar" mode="640"/>
+            <file size="5067192" dest="com.oracle.cie.ora-installer_12.8.0.0.jar" mode="640"/>
+            <file size="31946" dest="jackson-module-jaxb-annotations-2.4.3.jar" mode="640"/>
+            <file size="225295" dest="jackson-core-2.4.3.jar" mode="640"/>
+            <file size="10939" dest="com.oracle.cie.ora-installer-interfaces_12.8.0.0.jar" mode="640"/>
+            <file size="478424" dest="com.oracle.cie.gdr-schema_1.8.0.0.jar" mode="640"/>
+         </directory>
+         <file-perms>
+            <permission mode="750" regex=".*\.sh"/>
+            <permission mode="750" regex=".*\.cmd"/>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <modifier type="text" regex=".*\.sh"/>
+      <modifier type="text" regex=".*\.cmd"/>
+      <modifier type="delayed-deinstall" regex=".*" match-dirs="true"/>
+   </file-map>
+</component-def>

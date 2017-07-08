@@ -1,0 +1,33 @@
+User invokes OPatch via "NApply" to process the following patches:
+
+Patch ID: 18905788
+Patch Location: "C:\Windows\Temp\OraInstall2017-07-08_09-17-34AM\swflib\p18905788_122100_Generic-150524.2213\18905788"
+Patch storage area: "L:/sw/java/servers/wls12212\.patch_storage\18905788_Mar_7_2015_00_43_09"
+
+Patch ID: 19002423
+Patch Location: "C:\Windows\Temp\OraInstall2017-07-08_09-17-34AM\swflib\p19002423_122100_Generic-150506.0058\19002423"
+Patch storage area: "L:/sw/java/servers/wls12212\.patch_storage\19002423_Apr_9_2015_23_09_16"
+
+Patch ID: 19030178
+Patch Location: "C:\Windows\Temp\OraInstall2017-07-08_09-17-34AM\swflib\p19030178_122100_Generic-150819.2212\19030178"
+Patch storage area: "L:/sw/java/servers/wls12212\.patch_storage\19030178_Aug_4_2015_05_40_22"
+
+Patch ID: 19154304
+Patch Location: "C:\Windows\Temp\OraInstall2017-07-08_09-17-34AM\swflib\p19154304_122100_Generic-150830.2127\19154304"
+Patch storage area: "L:/sw/java/servers/wls12212\.patch_storage\19154304_Aug_25_2015_07_10_13"
+
+Patch ID: 19632480
+Patch Location: "C:\Windows\Temp\OraInstall2017-07-08_09-17-34AM\swflib\p19632480_122100_Generic-150830.2127\19632480"
+Patch storage area: "L:/sw/java/servers/wls12212\.patch_storage\19632480_Aug_25_2015_07_19_43"
+
+Patch ID: 19795066
+Patch Location: "C:\Windows\Temp\OraInstall2017-07-08_09-17-34AM\swflib\p19795066_122100_Generic-150716.0655\19795066"
+Patch storage area: "L:/sw/java/servers/wls12212\.patch_storage\19795066_Jul_16_2015_15_51_43"
+
+Patch ID: 21663638
+Patch Location: "C:\Windows\Temp\OraInstall2017-07-08_09-17-34AM\swflib\p21663638_121020_Generic-160831.1412\21663638"
+Patch storage area: "L:/sw/java/servers/wls12212\.patch_storage\21663638_Aug_31_2016_21_01_13"
+
+Patch ID: 22754279
+Patch Location: "C:\Windows\Temp\OraInstall2017-07-08_09-17-34AM\swflib\p22754279_121020_Generic-160722.0213\22754279"
+Patch storage area: "L:/sw/java/servers/wls12212\.patch_storage\22754279_Jul_9_2016_00_36_58"

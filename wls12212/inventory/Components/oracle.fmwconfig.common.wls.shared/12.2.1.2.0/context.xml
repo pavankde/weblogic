@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone="yes" ?>
+<!-- Copyright (c) 1999, 2017, Oracle. All rights reserved. -->
+<!-- Do not modify the contents of this file by hand. -->
+<COMP_CONTEXT>
+   <VAR_LIST SIZE="7">
+      <VAR NAME="s_wlstTitle" TYPE="String" DESC_RES_ID="s_wlstTitle_DESC" SECURE="F" VAL="WebLogic Scripting Tool" ADV="F" CLONABLE="F" USER_INPUT="CALC"/>
+      <VAR NAME="s_configWizardTitle" TYPE="String" DESC_RES_ID="s_configWizardTitle_DESC" SECURE="F" VAL="Configuration Wizard" ADV="F" CLONABLE="F" USER_INPUT="CALC"/>
+      <VAR NAME="s_shortcutRoot" TYPE="String" DESC_RES_ID="s_shortcutRoot_DESC" SECURE="F" VAL="Oracle\OracleHome1" ADV="F" CLONABLE="F" USER_INPUT="CALC"/>
+      <VAR NAME="JAVA_VENDOR" TYPE="String" DESC_RES_ID="JAVA_VENDOR_DESC" SECURE="F" VAL="Oracle" ADV="F" CLONABLE="T" USER_INPUT="CALC"/>
+      <VAR NAME="JAVA_HOME_LOCATION" TYPE="String" DESC_RES_ID="JAVA_HOME_LOCATION_DESC" SECURE="F" VAL="C:\Program Files\Java\jdk1.8.0_131" ADV="F" CLONABLE="T" USER_INPUT="CALC"/>
+      <VAR NAME="JAVA_64" TYPE="String" DESC_RES_ID="JAVA_64_DESC" SECURE="F" VAL="false" ADV="F" CLONABLE="T" USER_INPUT="CALC"/>
+      <VAR NAME="s_toolsShortcutRoot" TYPE="String" DESC_RES_ID="s_toolsShortcutRoot_DESC" SECURE="F" VAL="Oracle\OracleHome1\WebLogic Server 12.2.1\Tools" ADV="F" CLONABLE="F" USER_INPUT="CALC"/>
+      <VAR NAME="PROD_HOME" TYPE="String" DESC_RES_ID="" SECURE="F" VAL="L:\sw\java\servers\wls12212\oracle.fmwconfig.common.wls.shared" ADV="F" CLONABLE="T" USER_INPUT="CALC"/>
+   </VAR_LIST>
+   <CONST_LIST SIZE="17">
+      <CONST NAME="COMPONENT_DESC" PLAT_SP="F" TYPE="String" TRANS="T" VAL="COMPONENT_DESC_ALL"/>
+      <CONST NAME="s_toolsShortcutRoot_DESC" PLAT_SP="F" TYPE="String" TRANS="F" VAL="WLS Tools Windows Shortcut Directory"/>
+      <CONST NAME="s_configWizardTitle_DESC" PLAT_SP="F" TYPE="String" TRANS="F" VAL="Configuration Wizard Shortcut Title"/>
+      <CONST NAME="s_shortcutRoot_DESC" PLAT_SP="F" TYPE="String" TRANS="F" VAL="Windows Shortcut Root Directory"/>
+      <CONST NAME="s_wlstTitle_DESC" PLAT_SP="F" TYPE="String" TRANS="F" VAL="WebLogic Scripting Tool Shortcut Title"/>
+      <CONST NAME="Complete" PLAT_SP="F" TYPE="String" TRANS="T" VAL="Complete_ALL"/>
+      <CONST NAME="Complete_DESC" PLAT_SP="F" TYPE="String" TRANS="T" VAL="Complete_DESC_ALL"/>
+      <CONST NAME="Typical_DESC" PLAT_SP="F" TYPE="String" TRANS="T" VAL="Typical_DESC_ALL"/>
+      <CONST NAME="Minimum_DESC" PLAT_SP="F" TYPE="String" TRANS="T" VAL="Minimum_DESC_ALL"/>
+      <CONST NAME="COMPONENT_NAME" PLAT_SP="F" TYPE="String" TRANS="F" VAL="oracle.fmwconfig.common.wls.shared"/>
+      <CONST NAME="JAVA_VENDOR_DESC" PLAT_SP="F" TYPE="String" TRANS="F" VAL="JAVA_VENDOR"/>
+      <CONST NAME="Typical" PLAT_SP="F" TYPE="String" TRANS="T" VAL="Typical_ALL"/>
+      <CONST NAME="Custom_DESC" PLAT_SP="F" TYPE="String" TRANS="T" VAL="Custom_DESC_ALL"/>
+      <CONST NAME="Custom" PLAT_SP="F" TYPE="String" TRANS="T" VAL="Custom_ALL"/>
+      <CONST NAME="JAVA_64_DESC" PLAT_SP="F" TYPE="String" TRANS="F" VAL="JAVA_64"/>
+      <CONST NAME="JAVA_HOME_LOCATION_DESC" PLAT_SP="F" TYPE="String" TRANS="F" VAL="JAVA_HOME"/>
+      <CONST NAME="Minimum" PLAT_SP="F" TYPE="String" TRANS="T" VAL="Minimum_ALL"/>
+   </CONST_LIST>
+</COMP_CONTEXT>

@@ -1,0 +1,39 @@
+<oneoff_inventory>
+    <opack_version version="13.2.0.2.6"/>
+    <patch_description>One-off</patch_description>
+    <patch_id number="21663638"/>
+    <unique_patch_id>20477024</unique_patch_id>
+    <cannot_autorollback>false</cannot_autorollback>
+    <date_of_patch year="2016" month="Aug" day="31" time="21:01:13 hrs" zone="UTC"/>
+    <base_bugs>
+        <bug number="21663638" description="FUSION APPS FUNCTIONALITY FAILURE DUE TO TYPE MISMATCH IN ENQUEUE/DEQUEUE MESSAG"/>
+    </base_bugs>
+    <required_components>
+        <component internal_name="oracle.dbjava.jdbc" version="12.1.0.2.0" opt_req="O"/>
+        <component internal_name="oracle.javavm.jrf" version="12.1.0.2.1" opt_req="O"/>
+        <component internal_name="oracle.javavm.jrf" version="12.1.0.2.0" opt_req="O"/>
+        <component internal_name="oracle.dbjava.ic" version="12.1.0.2.0" opt_req="O"/>
+    </required_components>
+    <os_platforms>
+        <platform name="Generic Platform 1" id="0"/>
+    </os_platforms>
+    <executables></executables>
+    <instance_shutdown>true</instance_shutdown>
+    <instance_shutdown_message></instance_shutdown_message>
+    <online_rac_installable>false</online_rac_installable>
+    <run_as_root>false</run_as_root>
+    <sql_migrate>false</sql_migrate>
+    <wls_prereq_oneoffs></wls_prereq_oneoffs>
+    <prereq_oneoffs></prereq_oneoffs>
+    <coreq_oneoffs></coreq_oneoffs>
+    <overlay_oneoffs></overlay_oneoffs>
+    <patch_type value="singleton"/>
+    <patch_language value="en"/>
+    <product_family value="fmw"/>
+    <patching_model value="one-off"/>
+    <auto>false</auto>
+    <translatable>false</translatable>
+    <applicable_product/>
+    <products></products>
+    <update_components></update_components>
+</oneoff_inventory>

@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+<component-def name="oracle.org.bouncycastle" version="12.2.1.2.0" description="BouncyCastle" gdr-version="1.8.0.0" groupId="com.oracle.weblogic" xmlns:ns2="http://xmlns.oracle.com/cie/stringsubs" xmlns="http://xmlns.oracle.com/cie/gdr/cpd">
+   <file-map symbol="wls.common.symbol" source="filegroup1.jar" expanded="true" compacted="true">
+      <exclude regex="\.ade_path" match-dirs="true"/>
+      <directory dest="" patchable="true">
+         <directory dest="modules" mode="750" patchable="true">
+            <file size="3258334" pack="true" dest="org.bouncycastle.bcprov-jdk15on.jar" mode="640"/>
+            <file size="3325287" pack="true" dest="org.bouncycastle.bcprov-ext-jdk15on.jar" mode="640"/>
+            <file size="668383" pack="true" dest="org.bouncycastle.bcpkix-jdk15on.jar" mode="640"/>
+         </directory>
+         <file-perms>
+            <permission mode="640" regex=".*"/>
+         </file-perms>
+      </directory>
+      <file-perms>
+         <permission mode="750" regex=".*" match-dirs="true"/>
+      </file-perms>
+   </file-map>
+   <libraries>
+      <library name="oracle.bouncycastle" type="none" visibility="none" suppress-version="true" size="7295944">
+         <entry explode="true" include-parent="false" name="modules/org.bouncycastle.bcprov-jdk15on.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.bouncycastle.bcprov-ext-jdk15on.jar"/>
+         <entry explode="true" include-parent="false" name="modules/org.bouncycastle.bcpkix-jdk15on.jar"/>
+      </library>
+   </libraries>
+</component-def>
